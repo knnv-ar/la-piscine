@@ -14,7 +14,7 @@ var w = 512;
 var h = 512;
 
 function setup() {
-  canvas = createCanvas(w, h);
+  let canvas = createCanvas(w, h);
   // aquí va el id del div que contiene el archivo.js
   canvas.parent("div-sketch");
   frameRate(30);
