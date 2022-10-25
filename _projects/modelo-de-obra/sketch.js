@@ -11,7 +11,7 @@ function setup() {
   // Insertar en setup() y adecuar DESDE AQUÍ...
   // recordar que si usás WEBGL, lo tenés que
   // incorporar como tercer parámetro:
-  canvas = createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   // ... HASTA AQUÍ.
   background(204);
