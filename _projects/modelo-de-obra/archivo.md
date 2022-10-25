@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Título de la obra"
+title: "Modelo de obra"
 date: 2022-11-9
 thumbnail: thumbnail.png
 dependencies:
