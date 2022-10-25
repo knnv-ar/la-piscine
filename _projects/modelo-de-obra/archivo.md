@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Modelo de obra"
-date: 2022-11-9
+date: 2022-11-09
 thumbnail: thumbnail.png
 dependencies:
-    - p5
-    - p5.sound
-    - p5.dom
+  - p5
+  - p5.sound
 ---
 
 <div id="div-sketch">
