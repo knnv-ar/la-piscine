@@ -18,7 +18,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 400);
+  canvas = createCanvas(600, 400);
+  canvas.parent('div-sketch');
   sonido.loop();
   amplitud = new p5.Amplitude();
   fft = new p5.FFT();
