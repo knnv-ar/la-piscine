@@ -10,8 +10,8 @@ var colorRect = 0,
   valorSeno = 0;
 
 // variables que controlan alto y ancho
-var w = window.innerWidth;
-var h = window.innerHeight;
+var w = 512;
+var h = 512;
 
 function setup() {
   canvas = createCanvas(w, h);
@@ -116,9 +116,9 @@ function auraRedonda() {
 }
 
 // window resize
-window.onresize = function() {
+window.onresize = function () {
   // assigns new values for width and height variables
   w = window.innerWidth;
-  h = window.innerHeight;  
-  canvas.size(w,h);
+  h = window.innerHeight;
+  canvas.size(w, h);
 }
