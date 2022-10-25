@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Modelo de obra"
-date: 2022-10-09
+date: 2022-11-09
 thumbnail: thumbnail.png
 dependencies:
   - p5
