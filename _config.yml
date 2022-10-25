@@ -16,7 +16,7 @@
 title: <la-piscine> galería de arte digital
 email: raul.lacabanne@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  <la-piscine> es una galería de arte digital que exhibe los trabajos realizados por los estudiantes que cursaron las asignaturas Artes Multimediales 1 y 4 pertenecientes a la Licenciatura en Artes Multimediales del Área Transdepartamental de Artes Multimediales de la Universidad Nacional de las Artes (Ciudad Autónoma de Buenos Aires - Argentina). Este sitio está desarrollado a partir de un fork de la plantilla portfolio de Benjamin Habert (https://github.com/benjaminhabert). Copyleft 2020-2022.
+  <la-piscine> galería de arte digital | Artes Multimediales 1 y 4, cátedra Lacabanne | Licenciatura en Artes Multimediales | Área Transdepartamental de Artes Multimediales | Universidad Nacional de las Artes | Buenos Aires - Argentina | 2020-2022
 baseurl: "/la-piscine" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: raullacabanne
