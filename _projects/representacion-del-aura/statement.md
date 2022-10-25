@@ -9,7 +9,7 @@ dependencies:
 ---
 
 <div id="div-sketch" >
-    <script type="text/javascript" src="sketch.js"></script>
+  <script type="text/javascript" src="sketch.js"></script>
 </div>
 
 _Martín Antuña, 2021._
