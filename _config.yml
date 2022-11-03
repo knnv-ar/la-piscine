@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: <la-piscine> galería de arte digital
+title: <la-piscine> galería de arte
 email: raul.lacabanne@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  <la-piscine> galería de arte digital | Artes Multimediales 1 y 4, cátedra Lacabanne | Licenciatura en Artes Multimediales | Área Transdepartamental de Artes Multimediales | Universidad Nacional de las Artes | Buenos Aires - Argentina | 2020-2022
+  <la-piscine> galería de arte | Artes Multimediales 1 y 4, cátedra Lacabanne | Licenciatura en Artes Multimediales | Área Transdepartamental de Artes Multimediales | Universidad Nacional de las Artes | Buenos Aires - Argentina | 2020-2022
 baseurl: "/la-piscine" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: raullacabanne
