@@ -26,6 +26,8 @@ In aliquam sem fringilla ut morbi tincidunt augue. Adipiscing at in tellus integ
 
 Lorem sed risus ultricies tristique nulla. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper. Ut tortor pretium viverra suspendisse potenti nullam. At lectus urna duis convallis. Fermentum et sollicitudin ac orci. Vestibulum lectus mauris ultrices eros in cursus. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. A diam sollicitudin tempor id eu. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Platea dictumst quisque sagittis purus sit amet.
 
+Probando alguna modificación como colaboradore.
+
 **Bibliografía**
 
 FRICKE, Christiane. (1999). _"Nuevos Medios"_ en AAVV. Arte de siglo XX. Vol. II. München: Taschen.
