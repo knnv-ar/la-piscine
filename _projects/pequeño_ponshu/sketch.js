@@ -1,6 +1,7 @@
 //TP.01 ESCRITO.txt
 //Título de la Obra: "PEQUEÑO PONSHU"
 //Año:2022
+//
 //Autor/a: Romina Alejandra González
 
 function setup() {
