@@ -11,7 +11,7 @@ function draw() {
   b = random(0, 255);
 
   background(0);
-  console.log(mouseX, mouseY);
+  
 
   frameRate(30);
 
