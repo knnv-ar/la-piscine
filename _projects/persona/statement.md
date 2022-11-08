@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Persona"
-date: 2022-29-05
+date: 2022-05-29
 thumbnail: thumbnail.png
 dependencies:
   - p5
