@@ -5,7 +5,7 @@
 var luces = true;
 var posZ = 5;
 let Whistle;
-let img, img2, img3 ;
+let img2;
 
 function preload() {
   Whistle = loadSound("./archivos/Whistle.mp3");
@@ -16,7 +16,6 @@ function setup() {
   Whistle.loop();
   Whistle.setVolume(0.3);
   img2 = loadImage("./archivos/yokoo.jpg");
-  img3 = loadImage("./archivos/yoko.jpg");
 }
 function draw() {
   ambientLight(255);
