@@ -6,13 +6,11 @@ function preload() {
 }
 
 function setup() {
+  noCanvas();
   let canvas = createCanvas(700, 700);
   canvas.parent('div-sketch');
 
-  vid = createVideo(
-    ['monkeytrouble3.mp4'],
-    vidLoad
-  );
+  vid = createVideo('monkeytrouble3.mp4', vidLoad);
   
   soundo.loop();
   soundo.play();
