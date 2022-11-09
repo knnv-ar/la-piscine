@@ -13,7 +13,8 @@ var color1;
 var color2;
 
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   frameRate(60);
 
   ////////////////////////FONDO//////////////////////////////
