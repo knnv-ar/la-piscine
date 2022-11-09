@@ -20,7 +20,7 @@ En Obra para teclado y mouse están presentes el sonido y la imagen,el objetivo 
 
 Interacción:
 
-Mouse:mover en sentido X / Y 
+Mouse: mover en sentido X / Y 
 
 Teclado:
 
