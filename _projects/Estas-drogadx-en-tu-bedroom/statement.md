@@ -16,8 +16,8 @@ _Renato Felice Sandes Caccia, 2022._
 
 **Estas drogadx en tu bedroom**
 
-El objetivo de mi obra es hacerte parte de la misma estando dentro de una habitación, drogade, donde tu perspectiva está comprometida ya que es una ilusión. A su vez al ver que las estructuras se mueven solas de por sí, no temes otra opción más que disfrutar el momento ya que esta es una situación incontrolable de la cual por no ahora, no podés salir. 
-Si te sentís capaz de no controlar todo, accede a ella con el próximo [link](https://editor.p5js.org/t4t0/full/3UvqMBv8z).
+El objetivo de mi obra es hacerte parte de la misma estando dentro de una habitación, drogade, donde tu perspectiva está comprometida ya que es una ilusión. A su vez al ver que las estructuras se mueven solas de por sí, no tenes otra opción más que disfrutar el momento ya que esta es una situación incontrolable de la cual por no ahora, no podés salir. 
+Si te sentís capaz de no controlar todo, quedate mirandola.
 
 La técnica utilizada fue con un punto de fuga creando una habitación en perspectiva a través de figuras primitivas (líneas y trapecios isósceles, círculos, elipses, rectángulos y paralelogramos).
 
