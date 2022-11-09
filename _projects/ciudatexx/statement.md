@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ciudatexx"
-date: 2022-11-28
+date: 2022-11-08
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -37,9 +37,6 @@ el marco de su realidad sociológica. ...
 Mi intención es realzar las diversas texturas que nos ofrecen la yuxtaposición de edificios con sus arquitecturas. La obra mantiene unos colores grises porque considero que los días nublados nos permiten apreciar mejor los detalles, los contrastes y las formas de una manera más poética o melancólica.   
 
 Ciudatexx no busca reprensetar una ciudad común y corriente sino salirse de ese formalismo y deconstruir la arquitectura, invitar al espectador a una ciudad surreal, a una ciudad que pueda verla desde de su su propia perspectiva apreciando las diferencias. Es una obra "abierta" y creo que para cada espectador puede significar algo: un día feliz, un día triste, un paseo, un recorrido o el preciso momento en el que paramos y miramos a nuestro alrededor y nos permitimos apreciar.
-
-
-
 
 **Bibliografía**
 
