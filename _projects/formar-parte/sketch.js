@@ -14,7 +14,9 @@ function preload() {
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+  let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+  canvas.parent('div-sketch');
+ 
 }
 
 function draw() {
