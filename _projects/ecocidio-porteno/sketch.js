@@ -22,16 +22,16 @@ let a = 5;
 function preload() {
   sonido = loadSound("sierra.mp3");
 
-  img0 = loadImage("img/img000.jpg");
+  img0 = loadImage("./img/img000.jpg");
 
-  img1 = loadImage("img/img001.jpg");
+  img1 = loadImage("./img/img001.jpg");
 
   //fotos ecocidio
 
-  img2 = loadImage("img/img002.jpg");
-  img3 = loadImage("img/img003.jpg");
-  img4 = loadImage("img/img004.jpg");
-  img5 = loadImage("img/img005.jpg");
+  img2 = loadImage("./img/img002.jpg");
+  img3 = loadImage("./img/img003.jpg");
+  img4 = loadImage("./img/img004.jpg");
+  img5 = loadImage("./img/img005.jpg");
 }
 
 function setup() {
