@@ -2,7 +2,7 @@
 layout: post
 title: "Formar parte"
 date: 2022-10-09
-thumbnail: thumbnail.png
+thumbnail: tumbnail.png
 dependencies:
   - p5
   - p5.sound
