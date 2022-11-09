@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vigilar y sentir."
-date: 2022
+date: 2022-11-07
 thumbnail: thumbnail.png
 dependencies:
   - p5
