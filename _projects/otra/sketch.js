@@ -1,12 +1,9 @@
-
 let vid;
-let sound 
+let soundo;
+
 function preload() {
-  sound = loadSound('tos.mp3');
+  soundo = loadSound('tos.mp3');
 }
-
-
-
 
 function setup() {
   let canvas = createCanvas(512, 512);
@@ -17,8 +14,8 @@ function setup() {
     vidLoad
   );
   
-  sound.loop();
-  sound.play();
+  soundo.loop();
+  soundo.play();
   
   vid.size(700, 700);
 }
