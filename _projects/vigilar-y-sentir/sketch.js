@@ -23,7 +23,8 @@ var escalar2 = 60;
 var velocidad2 = 0.2;
 
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+canvas.parent('div-sketch');
   background(0);
   //angleMode(DEGREES);
   stroke(256);
