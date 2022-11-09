@@ -14,7 +14,7 @@ dependencies:
 
 _Giuliana Pugliese_, 2022.
 
-**Bola de feriche**
+**El cubo magico**
 
 
 La obra el cubo mágico intenta asemejarse a una habitación donde al recorrerla te encontrarás con advertencias importantes sobre su uso, y la elección entre dos obras  psicodélicas distintas dentro de una misma. Ellas están ubicadas en distintos cuadros en los extremos de la habitación y podrás verlas en profundidades apretando el mouse izquierdo o el derecho según tus intereses.
