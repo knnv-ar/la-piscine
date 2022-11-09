@@ -17,11 +17,11 @@ let angulo = 0.0;
 
 function preload() 
 {
-  img1 = loadImage("imagenes/caos.jpg");
-  img2 = loadImage("imagenes/calma.jpg");
-  musiquita1 = loadSound("sonido/lluvia para dormir.mp4");
-  musiquita2 = loadSound("sonido/relaxx.mp4");
-  letrita = loadFont("tipografia/LEMONMILK-BoldItalic.otf");
+  img1 = loadImage("./assets/caos.jpg");
+  img2 = loadImage("./assets/calma.jpg");
+  musiquita1 = loadSound("./assets/lluvia para dormir.mp4");
+  musiquita2 = loadSound("./assets/relaxx.mp4");
+  letrita = loadFont("./assets/LEMONMILK-BoldItalic.otf");
 }
 
 
