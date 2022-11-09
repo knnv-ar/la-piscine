@@ -18,6 +18,28 @@ _Ingrid Buslemen_, 2022.
 
 En Obra para teclado y mouse están presentes el sonido y la imagen,el objetivo es ser un instrumento que a través de las teclas y movimientos horizontales y verticales produce diversas composiciones sonoras y visuales en simultaneidad.
 
+Interacción:
+
+Mouse:mover en sentido X / Y 
+
+Teclado:
+
+piano="p"
+
+pizz="z"
+
+cello="c"
+
+pad="d"
+
+perc="r"
+
+sint="s"
+
+sint2="S"
+
+tenido="t"
+
 
 **Desarrollo técnico, estético y conceptual**
 
