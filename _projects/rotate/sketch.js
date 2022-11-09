@@ -3,15 +3,17 @@ var cantidadEstrellas = 800;
 var estrellasDatos = [];
 
 function preload() {
-   img1 = loadImage("/imagenes/textura.jpg");
-   sonido = loadSound("musica/rock.m4a");
+   img1 = loadImage("./imagenes/textura.jpg");
+   sonido = loadSound("./musica/rock.m4a");
 }
+
 function setup() {
   let canvas = createCanvas(600, 600, WEBGL);
   canvas.parent('div-sketch');
   sonido.loop();
   populateStars(cantidadEstrellas);
 }
+
 function draw() {
   background(0);
   estrellas(cantidadEstrellas);
@@ -66,6 +68,7 @@ function draw() {
   translate(0, 0, 50);
   pop();
   }
+   
   function estrellas(numero) {
 
       for (let i = 0; i < numero; i++) {
@@ -75,6 +78,7 @@ function draw() {
     }
   }
 }
+
 function populateStars(numero) {
 
   for (let i = 0; i < numero; i++) {
