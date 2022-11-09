@@ -7,8 +7,11 @@ dependencies:
   - p5
   - p5.sound
 ---
+
 <div id="div-sketch">
-<script type="text/javascript" src="sketch.js"></script></div>
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
 _Giuliana Pugliese_, 2022.
 
 Título de la obra: "el ojo no humano"
