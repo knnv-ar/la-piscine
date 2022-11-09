@@ -10,6 +10,7 @@ let yPunto;
 let interferencia; //Genera puntos cuadrados de distintos tamaños
 let amountInter = 1000; // cantidad de puntos
 const blanco = [255, 255, 255, 255]; //Valor de blanco
+let appleFont, beep, shephard;
 
 //==============================================================
 
