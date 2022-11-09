@@ -49,7 +49,7 @@ function setup() {
 //ocultar cursor
     noCursor();
 //video de pared de sangre
-    pared = createVideo("Assets/ambiente/paredv.mp4");
+    pared = createVideo("assets/ambiente/paredv.mp4");
     pared.loop();
     pared.hide();
 //loop audio de fondo
