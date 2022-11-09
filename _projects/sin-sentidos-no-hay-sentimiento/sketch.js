@@ -8,9 +8,9 @@ let volumen;
 
 
 function preload() {
-  carita = loadImage("IMG/CARA.jpg");
-  corazon = loadImage("IMG/corazon.png");
-  noMiedo = loadImage("IMG/miedo.jpg");
+  carita = loadImage("CARA.jpg");
+  corazon = loadImage("corazon.png");
+  noMiedo = loadImage("miedo.jpg");
  
   noEscuchas = createAudio("noEscuchas.m4a");
  
