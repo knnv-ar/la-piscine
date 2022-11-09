@@ -6,7 +6,7 @@ let cancion;
 let cantPlay=0;
 
 function mouseClicked() {
-  if(){
+  if(cantPlay<10){
    cancion.loop();
     cantPlay++;
   }else{
