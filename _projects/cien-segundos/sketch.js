@@ -23,6 +23,7 @@ function preload() {
 
 function setup() {
   createCanvas(900, 500);
+  canvas.parent('div-sketch');
   frameRate(60);
   beep.setVolume(0.7);
   shephard.setVolume(0);
