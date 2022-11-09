@@ -1,10 +1,11 @@
 function preload(){
-  cancion = loadSound("assets/cancion.mp3");
-  fuente = loadFont("assets/dogica.ttf");
+  cancion = loadSound("./assets/cancion.mp3");
+  fuente = loadFont("./assets/dogica.ttf");
 }
 
 function setup() {
-  createCanvas(400, 400);
+ let canvas = createCanvas(400, 400);
+ canvas.parent('div-sketch');
   }
 
 function draw() {
