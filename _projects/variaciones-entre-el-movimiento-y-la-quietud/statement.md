@@ -18,6 +18,8 @@ _Ingrid Buslemen_, 2022.
 
 Variaciones entre el movimiento y la quietud es una obra de gestualidades que parte de la investigación de la repetición y la búsqueda de producir dinamismo en una imagen estática. Este dinamismo se manifiesta a través del movimiento en el espacio, la direccionalidad, la textura y las diferentes formas de pueden construir a partir de dicho gesto.
 
+Interacción: presionar los numeros 1-2-3-4 para ver las obras.
+
 **Desarrollo técnico, estético y conceptual**
 
 Inspirándome en los artistas Ben. F Laposky y Herbert W. Franke lleve a cabo el concepto de imagen estática que produce movimiento, en la obra se ve reflejado a través de un gesto y su deconstrucción, haciendo énfasis en sus parámetros para crear nuevas formas, es decir, varios fragmentos conforman una unidad (totalidad) tal como se menciona en el texto “La obra de arte vanguardista” (1974)de Peter Burger “la obra de arte orgánica pretende una impresión global. Sus momentos concretos, que solo tienen sentido en conexión con la totalidad de la obra, remiten siempre, al observarlos por separado, a esa totalidad. Los momentos concretos de la obra de vanguardia tienen, en cambio, un elevado grado de independencia, y pueden ser leídos o interpretados tanto en conjunto como por separado, sin necesidad de contemplar el todo de la obra de la obra. En la obra de vanguardia solo puede hablarse en sentido restringido de “totalidad de la obra” como suma de la totalidad de los posibles sentidos”.
