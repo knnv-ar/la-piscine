@@ -8,16 +8,16 @@ let volumen;
 
 
 function preload() {
-  carita = loadImage("IMG/CARA.jpg");
-  corazon = loadImage("IMG/corazon.png");
-  noMiedo = loadImage("IMG/miedo.jpg");
+  carita = loadImage("CARA.jpg");
+  corazon = loadImage("corazon.png");
+  noMiedo = loadImage("miedo.jpg");
  
   noEscuchas = createAudio("noEscuchas.m4a");
  
 }
 
 function setup() {
-  let canvas = createCanvas(2000, 2500, WEBGL);
+  let canvas = createCanvas(512,600, WEBGL);
   canvas.parent('div-sketch');
   noEscuchas.loop();
   noEscuchas.volume(0.035);
