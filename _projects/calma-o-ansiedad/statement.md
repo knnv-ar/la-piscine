@@ -17,7 +17,7 @@ _Julieta Agustina Bascuas_, 2022.
 **¿CALMA O ANSIEDAD?**
 
 "¿Calma o ansiedad?" es una obra la cual invita al espectador a reemplantearse su situacion emocional con respecto a su semana, tratando de que pueda identificar situaciones donde le hayan transmitido paz o ansiedad, con dos sonidos distintos de fondo los transportara a aquel pensamiento, dando asi el espacio de buscar una forma de como podria manejarlo para la proxima situacion parecida.
-
+Para interactuar utiliza las teclas 1 y 2 para ir a tu mood.
 **Desarrollo técnico, estético y conceptual**
 
 Para esta presentacion estuve en semanas de parciales, entregas de trabajos finales y un monton de cosas por las que pasamos los estudiantes.
