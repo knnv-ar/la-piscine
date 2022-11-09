@@ -6,7 +6,7 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(512, 512);
+  let canvas = createCanvas(700, 700);
   canvas.parent('div-sketch');
 
   vid = createVideo(
