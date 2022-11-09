@@ -14,7 +14,7 @@ let zValue = 12,
   azul;
 
 function setup() {
-  let canvas = createCanvas(650, 500, WEBGL);
+  let canvas = createCanvas(850, windowHeight, WEBGL);
   canvas.parent('div-sketch');
   angleMode(DEGREES);
   frameRate(60);
