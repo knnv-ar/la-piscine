@@ -18,7 +18,7 @@ _Fernando Germán Oliva_, 2022.
 
 Se despoja a los árboles de su follaje por podas reiteradas, se podan y se extraen árboles de a miles por año, se cubren con cemento y plástico los espacios verdes, se enajena tierra pública para beneficios de unos pocos, se demuele y se cementa toda la ciudad eliminando pulmones de manzana y suelo absorbente. Todo esto violando la Ley Nro.3263 ARBOLADO PÚBLICO URBANO. 
 
-Iniciado este trabajo artístico vemos una fotografía del Obelisco alejarse de la pantalla dando lugar a cuatro cilindros, cada uno distribuido en cada cuadrante de la pantalla, rotando sobre su eje vertical. No está demás aclarar que el background es el color amarillo. En la superficie de estas figuras podemos observar evidencia fotográfica de de lo que realmente es un crimen contra la naturaleza. Con respesto al sonido, corresponde a una motosierra y que por momentos pueden apreciarse algunas voces de personas. 
+Iniciado este trabajo artístico vemos una fotografía del Obelisco alejarse de la pantalla dando lugar a cuatro cilindros, cada uno distribuido en cada cuadrante de la pantalla, rotando sobre su eje vertical. No está demás aclarar que el background es el color amarillo. En la superficie de estas figuras podemos observar evidencia fotográfica de de lo que realmente es un crimen contra la naturaleza. Con respesto al sonido, corresponde a una motosierra y que por momentos pueden apreciarse algunas voces de personas. Para interacctuar con esta obra desplace el mouse/ratón sobre la imagen o presione la tecla v.
 
 Este trabajo tiene como finalidad u objetivo visibilizar la destrucción de los espacios verdes provocado por el Gobierno de la Ciudad de Buenos Aires (GBCA) junto a las empresas contratistas de poda y mantenimiento de parques.
 
