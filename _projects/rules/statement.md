@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modelo de obra"
+title: "Rules"
 date: 2022-10-09
 thumbnail: thumbnail.png
 dependencies:
