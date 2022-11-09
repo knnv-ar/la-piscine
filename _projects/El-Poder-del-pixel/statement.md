@@ -2,7 +2,7 @@
 layout: post
 title: "El poder del pixel"
 date: 2022-10-09
-thumbnail: thumbnail.png
+thumbnail: thumbnail2.png
 dependencies:
   - p5
   - p5.sound
