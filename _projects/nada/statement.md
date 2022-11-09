@@ -18,6 +18,12 @@ _Máximo Guillermo Díaz_, 2022.
 
 “Nada.” es una obra interactiva que invita al espectador a participar y crear sus propias obras. Su funcionamiento azaroso logra que cada obra creada por el espectador sea única.
 
+Funcionamiento:
+
+-	Botón derecho del mouse: círculos.
+-	Botón izquierdo del mouse: triángulos.
+-	Teclado (cualquier tecla): nada.
+
 **Desarrollo técnico, estético y conceptual**
 
 Cansado de ver siempre lo mismo decidí no ver nada… 
