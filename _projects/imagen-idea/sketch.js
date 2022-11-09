@@ -180,6 +180,10 @@ function figura() {
   sphere(250, 14, 100);
 }
 
+function windowResized() {
+  resizeCanvas(850, windowHeight, WEBGL);
+}
+
 function cDerecho() {
   document.oncontextmenu = function () {
     return false;
