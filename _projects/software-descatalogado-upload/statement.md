@@ -16,7 +16,6 @@ _Tomas Pojaghi_, 2022.
 
 **Software descatalogado**
 
-
 La obra 'Software descatalogado' está constituida por 4 elementos geométricos. Conviven en un entorno digital, programado en P5, donde las posibilidades de reorganización y alteración de la materia son prácticamente infinitas. Los objetos que forman la obra son modificados aleatoriamente, cambiando su ubicación y forma. Además, se generan réplicas de sí mismas en tiempo real. 
 
 > Al darle inicio a la reproducción, podremos ver a un círculo que se mueve en una diágonal mientras altera su tamaño. Al mismo tiempo, un segundo círculo traza un movimiento horizontal. Hay una segunda instancia visual, en la cual replicaremos el encendido de una máquina, al clickear el botón derecho del mouse.
