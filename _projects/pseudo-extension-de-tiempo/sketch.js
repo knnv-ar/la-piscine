@@ -22,7 +22,8 @@ function draw() {
 
 function keyReleased(){
   if (key == "x"){
-    cancion.play()
+    cancion.stop();
+    cancion.play();
   }
    
 }
