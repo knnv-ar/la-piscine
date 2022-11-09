@@ -8,15 +8,15 @@ let Whistle;
 let img, img2, img3 ;
 
 function preload() {
-  Whistle = loadSound("Whistle.mp3");
+  Whistle = loadSound("./archivos/Whistle.mp3");
 }
 function setup() {
   let canvas = createCanvas(512, 512, WEBGL);
   canvas.parent('div-sketch');
   Whistle.loop();
   Whistle.setVolume(0.3);
-  img2 = loadImage("yokoo.jpg");
-  img3 = loadImage("yoko.jpg");
+  img2 = loadImage("./archivos/yokoo.jpg");
+  img3 = loadImage("./archivos/yoko.jpg");
 }
 function draw() {
   ambientLight(255);
