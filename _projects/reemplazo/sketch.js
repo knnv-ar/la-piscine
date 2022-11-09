@@ -2,8 +2,8 @@
 // Título de la obra: "Reemplazo"
 
 // Presionar 'ENTER' para entrar al mundo tecnológico.
-// Para ver belleza real, presionar la tecla 'r'.
-// Para volver a la belleza virtual, presionar la tecla 'v'.
+// Para ver belleza real, presionar la tecla 'R'.
+// Para volver a la belleza virtual, presionar la tecla 'V'.
 
 var mode, pixeboy, lentes;
 var angulo = 0.0;
@@ -55,8 +55,8 @@ const stars = [];
 function setup() {
   mode = 0;
   let canvas = createCanvas(600, 420, WEBGL);
-canvas.parent('div-sketch');
-  for (let i = 0; i < 80; i++) {
+  canvas.parent('div-sketch');
+  for (let i = 0; i < 60; i++) {
     stars.push(new Star());
   }
 }
@@ -150,9 +150,9 @@ function draw() {
 function keyPressed() {
   if (keyCode === ENTER) {
     mode = 1;
-  } else if (key === "r") {
+  } else if (key === "r" || key === "R") {
     mode = 2;
-  } else if (key === "v") {
+  } else if (key === "v" || key === "V") {
     mode = 1;
   }
 
