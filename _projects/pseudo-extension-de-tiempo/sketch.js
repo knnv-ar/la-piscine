@@ -22,7 +22,7 @@ function draw() {
 
 
    
-}
+
 
 var angulo = 0.0; //angulo para el color
 angulo1 = 0.0; //angulo para escena 2
@@ -257,7 +257,7 @@ function keyReleased(){
     cancion.stop();
     cancion.play();
   }
-
+}
 /* function lineasMouse() {
   stroke(mouseY, mouseX);
   line(0, 0, mouseX, mouseY);
