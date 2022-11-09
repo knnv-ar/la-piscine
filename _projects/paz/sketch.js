@@ -17,7 +17,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  let canvas = createCanvas(800, 800);
+  canvas.parent('div-sketch');
   music.loop();
 
   for (let i = 0; i <= cantidad; i++) {
