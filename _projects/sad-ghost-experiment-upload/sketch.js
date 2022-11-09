@@ -17,9 +17,9 @@ function setup() {
   cronometro = 2;
   oscilador1();
   delay1();
-  botonOnOff();
-  botonSeleccionador();
-  deslizadorVolumen();
+  canvas.botonOnOff();
+  canvas.botonSeleccionador();
+  canvas.deslizadorVolumen();
 }
 
 function draw() {
