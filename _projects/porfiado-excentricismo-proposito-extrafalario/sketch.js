@@ -18,16 +18,16 @@ var img10;
 var x = 5;
 
 function preload() {
-  cancionn = loadSound("bassturbation.mp3");
-  img01 = loadImage("imagenes/dnts.jpg");
-  img02 = loadImage("imagenes/DSC00138.JPG");
-  img04 = loadImage("imagenes/IMG_4073.jpg");
-  img05 = loadImage("imagenes/prot11.jpg");
-  img06 = loadImage("imagenes/prot18.jpg");
-  img07 = loadImage("imagenes/prot15.jpg");
-  img08 = loadImage("imagenes/prott.jpg");
-  img09 = loadImage("imagenes/prot13.jpg");
-  img010 = loadImage("imagenes/prot4.jpg");
+  cancionn = loadSound("./imagenes/bassturbation.mp3");
+  img01 = loadImage("./imagenes/dnts.jpg");
+  img02 = loadImage("./imagenes/DSC00138.JPG");
+  img04 = loadImage("./imagenes/IMG_4073.jpg");
+  img05 = loadImage("./imagenes/prot11.jpg");
+  img06 = loadImage("./imagenes/prot18.jpg");
+  img07 = loadImage("./imagenes/prot15.jpg");
+  img08 = loadImage("./imagenes/prott.jpg");
+  img09 = loadImage("./imagenes/prot13.jpg");
+  img010 = loadImage("./imagenes/prot4.jpg");
 }
 
 function setup() {
