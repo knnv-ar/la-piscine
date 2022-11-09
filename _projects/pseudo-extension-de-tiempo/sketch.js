@@ -20,11 +20,7 @@ function draw() {
   escena4();
   }
 
-function keyReleased(){
-  if (key == "x"){
-    cancion.stop();
-    cancion.play();
-  }
+
    
 }
 
@@ -255,6 +251,12 @@ function escena4(){
   
   angulo3 += 0.05
 }
+
+function keyReleased(){
+  if (key == "x"){
+    cancion.stop();
+    cancion.play();
+  }
 
 /* function lineasMouse() {
   stroke(mouseY, mouseX);
