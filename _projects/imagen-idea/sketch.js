@@ -14,7 +14,7 @@ let zValue = 12,
   azul;
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+  let canvas = createCanvas(650, 500, WEBGL);
   canvas.parent('div-sketch');
   angleMode(DEGREES);
   frameRate(60);
@@ -178,10 +178,6 @@ function figura() {
   shininess(40);
   // Esfera
   sphere(250, 14, 100);
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
 
 function cDerecho() {
