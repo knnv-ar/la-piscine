@@ -1,11 +1,19 @@
 //"CONJUNTIVA"
 //si queres acomapañar la obra con musica toca la pantalla
-var luces = false;
-var posZ = 2000;
-var cancion;
+let luces = false;
+let posZ = 2000;
+let cancion;
+let cantPlay=0;
 
 function mouseClicked() {
-  cancion.loop()
+  if(cantPlay<10){
+   cancion.loop();
+    cantPlay++;
+  }else{
+  cancion.stop();
+    cantPlay=0;
+  }
+ 
 }
 function preload() {
   cancion = loadSound("death.mp3");

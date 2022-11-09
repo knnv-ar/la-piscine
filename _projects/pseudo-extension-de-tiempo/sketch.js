@@ -20,12 +20,9 @@ function draw() {
   escena4();
   }
 
-function keyReleased(){
-  if (key == "x"){
-    cancion.play()
-  }
+
    
-}
+
 
 var angulo = 0.0; //angulo para el color
 angulo1 = 0.0; //angulo para escena 2
@@ -255,6 +252,12 @@ function escena4(){
   angulo3 += 0.05
 }
 
+function keyReleased(){
+  if (key == "x"){
+    cancion.stop();
+    cancion.play();
+  }
+}
 /* function lineasMouse() {
   stroke(mouseY, mouseX);
   line(0, 0, mouseX, mouseY);

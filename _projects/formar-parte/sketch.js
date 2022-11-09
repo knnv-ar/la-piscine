@@ -23,64 +23,65 @@ function draw() {
   
   
 
-  //estribo
+//estribo
   if (keyIsPressed) {
-    if (key == "q") {
+    if (key == "q" || key == "Q") {
       estribo.stop();
       estribo.loop();
     }
   }
   if (keyIsPressed) {
-    if (key == "w") {
+    if (key == "w" || key == "W") {
       estribo.stop();
     }
   }
 
   //estrofa
   if (keyIsPressed) {
-    if (key == "a") {
+    if (key == "a" || key == "A") {
       estrofa.stop();
       estrofa.loop();
     }
   }
   if (keyIsPressed) {
-    if (key == "s") {
+    if (key == "s" || key == "S") {
       estrofa.stop();
     }
   }
 
   //voxes
   if (keyIsPressed) {
-    if (key == "z") {
+    if (key == "z" || key == "Z") {
       vox1.stop();
       vox1.play();
     }
   }
   if (keyIsPressed) {
-    if (key == "x") {
+    if (key == "x" || key == "X") {
       vox2.stop();
       vox2.play();
     }
   }
 
   if (keyIsPressed) {
-    if (key == "c") {
+    if (key == "c"|| key == "C") {
       vox3.stop();
       vox3.play();
     }
   }
   if (keyIsPressed) {
-    if (key == "v") {
+    if (key == "v"|| key == "V") {
       vox4.stop();
       vox4.play();
     }
   }
   if (keyIsPressed) {
-    if (key == "b") {
+    if (key == "b"|| key == "B") {
       vox5.stop();
       vox5.play();
     }
   }
+
 
   //Figura 1
   if (estribo.isLooping()) {
