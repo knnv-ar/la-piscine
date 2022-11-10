@@ -30,7 +30,7 @@ function setup() {
     });
   
   let onOff=botonOnOff;
-  onOff.parent('defaultCanvas0');
+  onOff.parent('div-sketch');
   
   seleccion = createSelect().position(5, 50).style ("font-family","courier");
   seleccion.option("sine");
@@ -42,7 +42,7 @@ function setup() {
   });
   
   let sel=seleccion;
-  sel.parent('defaultCanvas0');
+  sel.parent('div-sketch');
   
   volumen = createSlider(0, 0.1, 0, 0).position(0, 80);
   volumen.input(function () {
@@ -50,7 +50,7 @@ function setup() {
   });
   
   let des=volumen;
-  des.parent('defaultCanvas0');
+  des.parent('div-sketch');
 }
 
 function draw() {
