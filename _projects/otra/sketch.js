@@ -17,9 +17,8 @@ function setup() {
 }
 
 function draw() {
-  image(videomono, 700, 700); // dibuja una segunda copia en el lienzo.
+  image(videomono, 0, 0); // dibuja una segunda copia en el lienzo.
   videomono.loop();
-   //vid.volume(0);
 }
 
 
