@@ -50,7 +50,7 @@ function setup() {
   });
   
   let des=volumen;
-  des..parent('div-sketch');
+  des.parent('div-sketch');
 }
 
 function draw() {
