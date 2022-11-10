@@ -83,3 +83,18 @@ function mouseWheel(event) {
   a += event.delta;
   return false;
 }
+
+document.oncontextmenu = function () {
+  return false;
+};
+
+
+function oscilador1() {
+  sinte1 = new p5.Pulse();
+  sinte1.amp(0);
+}
+
+function delay1() {
+  delay = new p5.Delay();
+  delay.process(sinte1, 0.44, 0.5, 2000);
+}
