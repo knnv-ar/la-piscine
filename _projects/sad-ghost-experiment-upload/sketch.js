@@ -17,9 +17,40 @@ function setup() {
   cronometro = 2;
   oscilador1();
   delay1();
-  botonOnOff();
-  botonSeleccionador();
-  deslizadorVolumen();
+   botonOnOff = createButton("play")
+    .position(5, 5) .style ("font-family","courier")
+    .mousePressed(() => {
+      if (sinte1.started) {
+        sinte1.stop();
+        botonOnOff.html ("play")
+      } else {
+        sinte1.start();
+         botonOnOff.html ("stop")
+      }
+    });
+  
+  let onOff=botonOnOff;
+  onOff.parent('div-sketch');
+  
+  seleccion = createSelect().position(5, 50).style ("font-family","courier");
+  seleccion.option("sine");
+  seleccion.option("triangle");
+  seleccion.option("square");
+
+  seleccion.changed(function () {
+    sinte1.setType(seleccion.value());
+  });
+  
+  let sel=seleccion;
+  sel.parent('div-sketch');
+  
+  volumen = createSlider(0, 0.1, 0, 0).position(0, 80);
+  volumen.input(function () {
+    sinte1.amp(volumen.value());
+  });
+  
+  let des=volumen;
+  des..parent('div-sketch');
 }
 
 function draw() {
@@ -48,37 +79,7 @@ function draw() {
   }
 }
 
-
-
-document.oncontextmenu = function () {
+function mouseWheel(event) {
+  a += event.delta;
   return false;
-};
-
-
-
-
-function oscilador1() {
-  sinte1 = new p5.Pulse();
-  sinte1.amp(0);
 }
-
-function delay1() {
-  delay = new p5.Delay();
-  delay.process(sinte1, 0.44, 0.5, 2000);
-}
-
-function botonOnOff() {
-
-}
-
-function botonSeleccionador() {
-
-}
-
-
-
-function deslizadorVolumen() {
- 
-}
-
-
