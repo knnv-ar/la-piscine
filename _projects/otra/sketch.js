@@ -13,11 +13,12 @@ function setup() {
   
   soundo.loop();
   soundo.play();
+   videomono.loop();
 }
 
 function draw() {
   image(videomono, 0, 0); // dibuja una segunda copia en el lienzo.
-  videomono.loop();
+ 
 }
 
 
