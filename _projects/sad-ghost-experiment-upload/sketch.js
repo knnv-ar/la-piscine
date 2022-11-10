@@ -75,23 +75,13 @@ function botonOnOff() {
 }
 
 function botonSeleccionador() {
-  seleccion = createSelect().position(5, 50).style ("font-family","courier");
-  seleccion.option("sine");
-  seleccion.option("triangle");
-  seleccion.option("square");
 
-  seleccion.changed(function () {
-    sinte1.setType(seleccion.value());
-  });
 }
 
 
 
 function deslizadorVolumen() {
-  volumen = createSlider(0, 0.1, 0, 0).position(0, 80);
-  volumen.input(function () {
-    sinte1.amp(volumen.value());
-  });
+ 
 }
 
 
