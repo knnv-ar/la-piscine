@@ -71,17 +71,7 @@ function delay1() {
 }
 
 function botonOnOff() {
-  botonOnOff = createButton("play")
-    .position(5, 5) .style ("font-family","courier")
-    .mousePressed(() => {
-      if (sinte1.started) {
-        sinte1.stop();
-        botonOnOff.html ("play")
-      } else {
-        sinte1.start();
-         botonOnOff.html ("stop")
-      }
-    });
+
 }
 
 function botonSeleccionador() {
