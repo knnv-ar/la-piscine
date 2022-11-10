@@ -1,5 +1,4 @@
-
-let vid;
+let videomono;
 let soundo;
 
 function preload() {
@@ -7,25 +6,20 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(512, 512);
+  let canvas = createCanvas(700, 700);
   canvas.parent('div-sketch');
-  noCanvas();
  
-
-  vid = createVideo(
-    'monkeytrouble3.mp4',
-    vidLoad
-  );
+  videomono = createVideo('monkeytrouble3.mp4');
+  videomono.hide();
   
   soundo.loop();
   soundo.play();
-  
-  vid.size(700, 700);
+   videomono.loop();
 }
 
-function vidLoad() {
-  vid.loop();
-  vid.volume(0);
+function draw() {
+  image(videomono, 0, 0); // dibuja una segunda copia en el lienzo.
+ 
 }
 
 
