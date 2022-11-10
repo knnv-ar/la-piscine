@@ -18,7 +18,7 @@ var img10;
 var x = 5;
 
 function preload() {
-  cancionn = loadSound("./imagenes/bassturbation.mp3");
+  cancionn = loadSound("./archivos/bassturbation.mp3");
   img01 = loadImage("./archivos/dnts.jpg");
   img02 = loadImage("./archivos/DSC00138.JPG");
   img04 = loadImage("./archivos/IMG_4073.jpg");
