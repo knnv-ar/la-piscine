@@ -18,7 +18,7 @@ function setup() {
   oscilador1();
   delay1();
    botonOnOff = createButton("play")
-    .position(5, 5) .style ("font-family","courier")
+    .position(745,-81, 'relative') .style ("font-family","courier")
     .mousePressed(() => {
       if (sinte1.started) {
         sinte1.stop();
@@ -32,7 +32,7 @@ function setup() {
   let onOff=botonOnOff;
   onOff.parent('div-sketch');
   
-  seleccion = createSelect().position(5, 50).style ("font-family","courier");
+  seleccion = createSelect().position(657,-57, 'relative').style ("font-family","courier");
   seleccion.option("sine");
   seleccion.option("triangle");
   seleccion.option("square");
@@ -44,7 +44,7 @@ function setup() {
   let sel=seleccion;
   sel.parent('div-sketch');
   
-  volumen = createSlider(0, 0.1, 0, 0).position(0, 80);
+  volumen = createSlider(0, 0.1, 0, 0).position(527,-31, 'relative');
   volumen.input(function () {
     sinte1.amp(volumen.value());
   });
