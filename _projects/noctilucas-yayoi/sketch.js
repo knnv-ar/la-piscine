@@ -2,17 +2,20 @@
 //declaro variables brillo y parpadeo
 let brillo;
 let parpadeo;
+
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
+  frameRate(5);
 }
 
 function draw() {
-  console.log(mouseX, mouseY);
+  //console.log(mouseX, mouseY);
   //fondo negro
   background(0);
   brillo = random(0, 256);
   //parpadeo = random(1, 2);
-  frameRate(5);
+
   fill(brillo);
 
   //recordar circle(x, y, tamaño)
