@@ -10,7 +10,6 @@ function setup() {
   canvas.parent('div-sketch');
  
   videomono = createVideo('monkeytrouble3.mp4');
-  //videomono.hide(); 
   
   soundo.loop();
   soundo.play();
