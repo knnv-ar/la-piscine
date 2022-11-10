@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Otra"
-date: 2022-10-09
+date: 2022-11-08
 thumbnail: thumbnail.png
 dependencies:
   - p5
