@@ -24,8 +24,8 @@ let numeroRecorte;
 
 //luz pistola
 
-let locX = mouseX - width / 2;
-let locY = mouseY - height / 2;
+let locX;
+let locY;
 
 //recortes
 
@@ -59,7 +59,8 @@ function setup() {
 
 function draw() {
     background(0);
-
+locX = mouseX - width / 2;
+locY = mouseY - height / 2;
   //luces
   //luz general
     lights();
