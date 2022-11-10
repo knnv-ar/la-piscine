@@ -19,15 +19,15 @@ var x = 5;
 
 function preload() {
   cancionn = loadSound("./imagenes/bassturbation.mp3");
-  img01 = loadImage("./imagenes/dnts.jpg");
-  img02 = loadImage("./imagenes/DSC00138.JPG");
-  img04 = loadImage("./imagenes/IMG_4073.jpg");
-  img05 = loadImage("./imagenes/prot11.jpg");
-  img06 = loadImage("./imagenes/prot18.jpg");
-  img07 = loadImage("./imagenes/prot15.jpg");
-  img08 = loadImage("./imagenes/prott.jpg");
-  img09 = loadImage("./imagenes/prot13.jpg");
-  img010 = loadImage("./imagenes/prot4.jpg");
+  img01 = loadImage("./archivos/dnts.jpg");
+  img02 = loadImage("./archivos/DSC00138.JPG");
+  img04 = loadImage("./archivos/IMG_4073.jpg");
+  img05 = loadImage("./archivos/prot11.jpg");
+  img06 = loadImage("./archivos/prot18.jpg");
+  img07 = loadImage("./archivos/prot15.jpg");
+  img08 = loadImage("./archivos/prott.jpg");
+  img09 = loadImage("./archivos/prot13.jpg");
+  img010 = loadImage("./archivos/prot4.jpg");
 }
 
 function setup() {
