@@ -48,10 +48,7 @@ function draw() {
   }
 }
 
-function mouseWheel(event) {
-  a += event.delta;
-  return false;
-}
+
 
 document.oncontextmenu = function () {
   return false;
