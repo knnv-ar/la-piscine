@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Noctilucas Yayoi"
 date: 2022-11-09
@@ -30,11 +31,14 @@ hombres fundadores de la “industria de lo bello” hubiera imaginado.
 
 Noctilucas, es una obra realizada digitalmente, inspirada en la multiplicidad. 
 Las producciones artisticas siempre habian podido ser imitadas,  pero es en nuestro paradigma, cuando tienen una nueva cualidad que le es propia e ineherente, la obicuidad, esa virtud de estar presente en todas partes al mismo tiempo.
+
 Esta obicuidad esta dispuesta de destruirlo todo para construirlo una y otra vez, para enseñarnos que ya no necesitamos de museos donde las producciones, son despojadas de su razon de ser como tal para convertirse en un producto aburguesado.
+
 Quizas este nuevo paradigma este excedido de magia, y como temia Valery,(1928) “ya es imposible comer o beber en un café sin verse perturbado”(p.133) por, en nuestro caso una imagen digital desde cualquier dispositivo.
+
 Pero esto no es algo negativo, por lo contrario es un impulso a la busqueda constante de nuevas expresiones, asi como de sensaciones.
-“Hay días malos; hay personas muy solas, y no faltan aquéllas a quienes la edad o el desvalimiento encierran consigo mismas, que ya se conocen de sobra.
-Hete aquí que esos ratos vacíos y tristes y esos seres destinados al bostezo y los pensamientos taciturnos son ahora dueños de adornar su ocio”(Valery, Paul, 1928,p.133), con nuestro arte digital.
+
+“Hay días malos; hay personas muy solas, y no faltan aquéllas a quienes la edad o el desvalimiento encierran consigo mismas, que ya se conocen de sobra. Hete aquí que esos ratos vacíos y tristes y esos seres destinados al bostezo y los pensamientos taciturnos son ahora dueños de adornar su ocio” (Valery, Paul, 1928,p.133), con nuestro arte digital.
 
 
 **Bibliografía**
