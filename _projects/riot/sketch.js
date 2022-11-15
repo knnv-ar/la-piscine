@@ -136,6 +136,7 @@ locY = mouseY - height / 2;
 //disparo-click
 function mousePressed() {
     //fondo
+    riot.stop();
     riot.play();
 
     //disparo
@@ -143,3 +144,4 @@ function mousePressed() {
     numeroRecorte = int(random(27) + 1);
     noticias = true;
 }
+
