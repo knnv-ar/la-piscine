@@ -136,8 +136,7 @@ locY = mouseY - height / 2;
 //disparo-click
 function mousePressed() {
     //fondo
-    riot.stop();
-    riot.play();
+  
 
     //disparo
     shot.play();
