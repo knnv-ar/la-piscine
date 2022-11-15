@@ -18,7 +18,7 @@ _Sol Puig_, 2022.
 
 Al ver la obra de Vera Molnár, artista pionera en arte informático y algorítmico, se vino a mi cabeza la frase “La vida es un círculo” y en base a ella quise crear una obra que permita al usuario ver y entender que la vida no va en línea recta.
 
-Al ver la obra de Vera Molnár, artista pionera en arte informático y algorítmico, se vino a mi cabeza la frase “La vida es un círculo” y en base a ella quise crear una obra que permita al usuario ver y entender que la vida no va en línea recta.
+Todo en la naturaleza está relacionado con los ciclos, existen ciclos lunares, de mareas, de apareamiento, de nacimiento y de muerte. Hay momentos en que se pasa de tener mucho dinero a no tener nada, de estar en pareja a estar soltero, de ser amigo de alguien a desconocer totalmente a esa persona o de tener una gran casa a vivir en un pequeño departamento. Todos estos cambios, sean buenos o malos, nos trascienden y movilizan haciendo que el rumbo de nuestra vida cambie completamente.
 
 **Desarrollo técnico, estético y conceptual**
 
