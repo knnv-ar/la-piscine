@@ -4,8 +4,8 @@ title: "teatralidad-abstracta "
 date: 2022-11-09
 thumbnail: thumbnail.png
 dependencies:
-  - p5
-  - p5.sound
+  - p5.v150
+  - p5.sound.v150
 ---
 
 <div id="div-sketch">
