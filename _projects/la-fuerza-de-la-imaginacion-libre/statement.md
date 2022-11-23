@@ -2,7 +2,7 @@
 layout: post
 title: "La Fuerza de la Imaginación Libre"
 date: 2022-11-23
-thumbnail: thubnail.png
+thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
