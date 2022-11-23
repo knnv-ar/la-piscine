@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " [k][E][s][e][S][T][o][B][a][b][Y][y]?"
+title: "kesestobaby"
 date: 2022-10-09
 thumbnail: thumbnail.png
 dependencies:
