@@ -2,7 +2,7 @@
 layout: post
 title: "El Reflejo de Otra Realidad"
 date: 2022-11-23
-thumbnail: thubnail.png
+thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
