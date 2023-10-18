@@ -28,4 +28,5 @@ Esta pieza fue creada en semejanza con una obra de Laposky. Dentro de esta colec
 
 **Bibliografía**
 
- Valery Paul (1928) “La conquista de la ubicuidad”
+
+ Valery Paul (1928) “La conquista de la ubicuidad”.
