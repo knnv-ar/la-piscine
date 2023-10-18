@@ -14,14 +14,8 @@ dependencies:
 <div id="div-sketch1">
   <script type="text/javascript" src="sketch1.js"></script>
 </div>
-<div id="div-sketch2">
-  <script type="text/javascript" src="sketch2.js"></script>
-</div>
-<div id="div-sketch3">
-  <script type="text/javascript" src="sketch3.js"></script>
-</div>
 
-_Autor/a: KREA (Yanina Longo)_, 2023.
+_KREA (Yanina Longo)_, 2023.
 
 **Desmaterializacion Sensacional**
 
