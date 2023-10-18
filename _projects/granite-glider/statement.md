@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Forma y algoritmo"
-date: 2022-10-09
+date: 2023-07-04
 thumbnail: thumbnail.png
 dependencies:
   - p5
