@@ -16,7 +16,7 @@ _Ramiro Arambarri_, 2023.
 
 **Esfuerzos aleatorios**
 
-La obra “Esfuerzos aleatorios” consta de dos partes. La primera parte consiste en una pantalla negra sobre la que líneas blancas se generan aleatoriamente construyendo rostros de manera esquemática. Transcurrido un segundo la pantalla se reinicia. El proceso se repite 4 veces y media, y luego la obra pasa abruptamente a su segunda parte, que es simplemente una pantalla en negro. 
+La obra “Esfuerzos aleatorios” consta de dos partes. La primera parte consiste en una pantalla negra sobre la que líneas blancas se generan aleatoriamente construyendo rostros de manera esquemática. Transcurrido un segundo la pantalla se reinicia. El proceso se repite cuatro veces y media, y luego la obra pasa abruptamente a su segunda parte, que es simplemente una pantalla en negro. 
 
 **Desarrollo técnico, estético y conceptual**
 
