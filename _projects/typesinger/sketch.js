@@ -4,36 +4,104 @@ function setup() {
 }
 
 function draw() {
-    background(100);
+    background(220);
 
     push();
-    noStroke();
-    fill(256);
-    //El objetivo es crear 4 ellipses al estilo de las obras de Michael Noll como nuestro espacio principal de trabajo. Para eso vamos a crear dos variables que usaremos para posicionar los ellipses en sus ejes Xs e Ys, y luego 3 variables más, las cuales vamos a crear en base a ir dvidiéndo la primera variable creada por dos.
-    var quarterWidth = width / 2;
-    var quarterHeight = height / 2;
+    rectMode(CENTER)
+        //rectangulos
+    for (var i = 0; i < 8; i++) {
+        for (var j = 0; j < 8; j++) {
+            var x = i * 50 + 81;
+            var y = j * 50 + 128;
+            var d = j * 7;
 
-    var x1 = quarterWidth / 2;
-    var y1 = quarterHeight / 2;
-    var diameter1 = min(quarterWidth, quarterHeight) - 50;
+            fill(j * 20);
+            noStroke();
 
-    var x2 = quarterWidth + quarterWidth / 2;
-    var y2 = quarterHeight / 2;
-    var diameter2 = min(quarterWidth, quarterHeight) - 50;
+            rect(x, y, d);
+        }
+    }
+    for (var i = 0; i < 8; i++) {
+        for (var j = 0; j < 8; j++) {
+            var x = i * 50 + 81;
+            var y = j * 50 + 128;
+            var d = j * 5;
 
-    var x3 = quarterWidth / 2;
-    var y3 = quarterHeight + quarterHeight / 2;
-    var diameter3 = min(quarterWidth, quarterHeight) - 50;
+            fill(j * 30);
+            noStroke();
 
-    var x4 = quarterWidth + quarterWidth / 2;
-    var y4 = quarterHeight + quarterHeight / 2;
-    var diameter4 = min(quarterWidth, quarterHeight) - 50;
+            rect(x, y, d);
+        }
+    }
+    pop();
 
-    // Dibuja las elipses
-    ellipse(x1, y1, diameter1, diameter1);
-    ellipse(x2, y2, diameter2, diameter2);
-    ellipse(x3, y3, diameter3, diameter3);
-    ellipse(x4, y4, diameter4, diameter4);
+    //lineas horizontales superiores
+    push();
+    if (keyIsPressed) {
+        var lineSpacing = 600 / 380;
+        var lineWidth = 0.15;
+        push();
+        stroke(0);
+        strokeWeight(lineWidth);
+        for (let i = 0; i < 80; i++) {
+            var y = lineSpacing * (i + 10);
+
+            line(0, y, width, y, lineWidth);
+        }
+        pop();
+    } else {
+        var lineSpacing = 600 / 380;
+        var lineWidth = 0.5;
+
+        push();
+        stroke(0);
+        strokeWeight(lineWidth);
+        for (let i = 0; i < 80; i++) {
+            var y = lineSpacing * (i + 10);
+
+            line(0, y, width, y, lineWidth);
+        }
+        pop();
+    }
+    pop();
+
+    //Si se mantiene el mouse clickeado cambia el color de las 3 primitivas
+    push();
+    var shapeType = floor(random(3));
+    var x = random(width);
+    var y = random(height / 4);
 
 
+    if (mouseIsPressed) {
+        noStroke();
+        fill(100, 100, 100);
+
+        switch (shapeType) {
+            case 0:
+                ellipse(x, y, 20, 20);
+                break;
+            case 1:
+                rect(x, y, 50, 50);
+                break;
+            case 2:
+                triangle(x, y, x + 50, y, x + 30, y + 30);
+                break;
+        }
+    } else {
+        noStroke();
+        fill(255, 255, 255);
+
+        switch (shapeType) {
+            case 0:
+                ellipse(x, y, 20, 20);
+                break;
+            case 1:
+                rect(x, y, 50, 50);
+                break;
+            case 2:
+                triangle(x, y, x + 50, y, x + 30, y + 30);
+                break;
+        }
+    }
+    pop();
 }
