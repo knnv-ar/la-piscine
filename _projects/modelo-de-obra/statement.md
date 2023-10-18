@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modelo de obra"
+title: "Mixed Feelings"
 date: 2022-10-09
 thumbnail: thumbnail.png
 dependencies:
@@ -12,24 +12,18 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Nombre y Apellido del/la autor/a_, 2022.
+_Guadalupe Avalos_, 2023.
 
-**Título de la obra**
+**Mixed Feelings**
 
-Esta será una breve descripción de la obra (mín 150 - máx 200 palabras). Facilisis gravida neque convallis a cras semper auctor. Nec tincidunt praesent semper feugiat nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Quam quisque id diam vel quam elementum pulvinar etiam. Eu sem integer vitae justo eget magna fermentum iaculis. Faucibus scelerisque eleifend donec pretium vulputate sapien. Felis donec et odio pellentesque diam volutpat. Nullam non nisi est sit amet facilisis.
+¿No creen que a veces nos empeñamos en sobre pensar las cosas cuando no nos damos cuenta que esa felicidad que buscamos está a 1 paso de nosotros? Esta obra inspirada en su mayor parte en la obra del referente Ben Laposky "abstraccion electrónica #4", consta de 3 instancias que vamos a denominar introducción, desarrollo y explosion. En estas etapas se quiere trasmitir al espectador las sensaciones que uno tracita al descubrir lo que le apasiona, lo que le genera ese revuelo de emociones en segundos por concluir finalmente en lo que siente su corazón. Aunque yo, como autora de esta obra le adjudico una interpretación, la misma puede tener múltiples sentidos para el espectador.
 
 **Desarrollo técnico, estético y conceptual**
-
-Desarrollo técnico, estético y conceptual (describa en un mínimo de 200 y un máximo de 500 palabras las características técnicas, estéticas, conceptuales, referentes artísticos y bibliografía utilizada). Pretium viverra suspendisse potenti nullam ac. Diam vulputate ut pharetra sit amet. Pellentesque pulvinar pellentesque habitant morbi. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Convallis aenean et tortor at risus viverra adipiscing at in. At quis risus sed vulputate odio ut enim blandit volutpat. Sed felis eget velit aliquet sagittis. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Consequat nisl vel pretium lectus quam id. Libero id faucibus nisl tincidunt eget nullam. Mi sit amet mauris commodo quis imperdiet. Faucibus interdum posuere lorem ipsum dolor sit. Ultrices neque ornare aenean euismod elementum nisi quis. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-
-In aliquam sem fringilla ut morbi tincidunt augue. Adipiscing at in tellus integer feugiat scelerisque varius. Sed nisi lacus sed viverra. Neque gravida in fermentum et sollicitudin ac. Erat imperdiet sed euismod nisi porta lorem mollis. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Id nibh tortor id aliquet lectus. Nam at lectus urna duis convallis convallis tellus id. Magna etiam tempor orci eu lobortis elementum. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Sit amet tellus cras adipiscing. Turpis nunc eget lorem dolor sed viverra.
-
-Lorem sed risus ultricies tristique nulla. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper. Ut tortor pretium viverra suspendisse potenti nullam. At lectus urna duis convallis. Fermentum et sollicitudin ac orci. Vestibulum lectus mauris ultrices eros in cursus. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. A diam sollicitudin tempor id eu. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Platea dictumst quisque sagittis purus sit amet.
+En principio, Valery Paul (1928), dentro de su texto “La conquista de la ubicuidad” hace una reflexión sobre las obras de arte que llamaron mucho mi atención y terminaron siendo esa inspiración que necesitaba para crear mi pieza.
+" Las obras adquirirán una especie de ubicuidad. Su presencia inmediata o su restitución en cualquier momento obedecerán a una llamada nuestra. Ya no estarán sólo en sí mismas, sino todas en donde haya alguien y un aparato. Ya no serán sino diversos tipos de fuente u origen, y se encontrarán o reencontrarán íntegros sus beneficios en donde se desee"
+La principal frase que retumbo en mi mente fue “Su presencia inmediata o su restitución en cualquier momento obedecerán a una llamada nuestra”. Esta posibilidad que se nos dio a partir de un momento en la historia, donde podemos “controlar” o tenemos esa “ilimitación” de algún modo en el uso del arte quería que se refleje en esta pieza, donde se puede tener interacción con la misma cuando se desee haciendo click con el mouse o simplemente moviéndolo gracias a diferentes funciones empleadas en el código. 
+Como mencione antes, la obra consta de 3 etapas, introducción, desarrollo y explosión. En la “introducción” apreciamos una pantalla en completa oscuridad que hasta que no ponemos el mouse encima, no se visualiza la figura de un corazón y un signo de pregunta. Trate de interpretar esa instancia donde nos encontramos desalentados, o más bien, cuando se produce esa especie de “sombra” en nuestro camino y que hasta que no demos ESE paso, seguiremos perdidos. La segunda instancia “desarrollo” consta justamente de nuestro proceso interno al darlo. Podemos ver la silueta de un rostro junto a otro corazón, pero esta vez con un resplandor saliendo de su centro que puede ser controlado por el espectador. Este efecto de luz se genera utilizando una repetición de líneas que dan esa ilusión óptica de destello que se expande hasta los bordes de la obra. En esta etapa quiero plasmar ese preciso momento en el que nace esa pisca de pasión dentro nuestro y nos aclara el camino, nuestro verdadero ser. Para luego ir a la tercera etapa “explosión". En esta etapa final, se quiere descontracturar visualmente al espectador de lo que estuvo viendo. Tras ver tanta "tranquilidad" dentro de la obra, quiero generar ese desoriento en el espectador con un solo click del mouse. En esta etapa seguimos viendo la anterior, pero ahora podemos presenciar un efecto de luz apagándose y prendiéndose en forma de bucle, junto a círculos aleatorios generándose en la obra. Acá es cuando damos finalmente ese paso hacia la pasión, cuando se genera ese "desorden" de emociones que simbolizan a su misma vez, esa claridad o libertad de expresión, esos sentimientos encontrados. 
+Esta pieza fue creada en semejanza con una obra de Laposky. Dentro de esta colección Laposky hace uso de un osciloscopio analógico para crear patrones de luz electrónicamente y captarlos con fotografía fija. Aun sin saber este contexto, podemos diferenciar en sus obras el uso de la luz para crear obras abstractas, algo con lo que se quiso jugar a lo largo de esta pieza. Pero la obra elegida, la nominada "Oscillon 4", muestra ese "desorden perfecto" particular en mi pieza. Analizando la obra, a los ojos de esta artista, se visualiza una hermosa ave blanca, símbolo de libertad.
 
 **Bibliografía**
-
-FRICKE, Christiane. (1999). _"Nuevos Medios"_ en AAVV. Arte de siglo XX. Vol. II. München: Taschen.
-
-GROYS, Boris. (2016). _"Arte en flujo. Ensayos sobre la evanescencia del presente"_. Buenos Aires: Caja Negra.
-
-TAYLOR, Diana. (2012). _"¿Cuáles son los antecedentes del arte de performance?"_ en Performance. Buenos Aires: Asunto Impreso.
+ Valery Paul (1928) “La conquista de la ubicuidad”
