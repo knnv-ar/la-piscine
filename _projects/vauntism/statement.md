@@ -29,10 +29,7 @@ La obra de arte se llama "Vauntism" porque estaba buscando un nombre que fuera s
 
 **Bibliografía**
 
-APELLIDO, Nombre. (año). _"Título del libro"_. Ciudad: Editorial.
-- BÜRGER, Peter. ([1974], 2000). “III. La obra de arte vanguardista”, en Teoría
-de la vanguardia. Barcelona: Ediciones Península, 3ra ed., pp. 111-149. 
+- BÜRGER, Peter. ([1974], 2000). “III. La obra de arte vanguardista”, en Teoría de la vanguardia. Barcelona: Ediciones Península, 3ra ed., pp. 111-149. 
 
-- HEINICH, Nathalie. ([2014], 2017). “La obra más allá del objeto” en El
-paradigma del arte contemporáneo: estructuras de una revolución artística.
+- HEINICH, Nathalie. ([2014], 2017). “La obra más allá del objeto” en El paradigma del arte contemporáneo: estructuras de una revolución artística.
 Madrid: Casimiro, pp. 95-119
