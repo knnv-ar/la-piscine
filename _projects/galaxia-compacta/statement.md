@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Galaxia compacta"
 date: 2023-07-04
