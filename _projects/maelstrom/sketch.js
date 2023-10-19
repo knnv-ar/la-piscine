@@ -8,7 +8,8 @@ var transp;
 var x, x1, x2;
 
 function setup() {
-  createCanvas(512, 512);
+ let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   z = 41;
   z1 = 198;
   z2 = 341;
