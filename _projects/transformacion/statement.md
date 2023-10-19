@@ -30,13 +30,18 @@ Teniendo en cuenta las palabras de Nathalie Heinich: “El concepto de la obra e
 
 Mientras iba experimentando cómo llevar a cabo mis ideas, me encontré con resultados inesperados que me sorprendieron. En una entrevista, Vera Molnar expresó: “La aleatoriedad en una computadora funciona igual que la intuición, permitiendo un mundo de posibilidades que con nuestra limitada imaginación, no podríamos haber pensado”. En este momento de experimentación, donde me ví sorprendida, comprendo las palabras de Jose Luis Brea cuando afirma: “El propio trabajo, la actividad que lo concreta, es en realidad el que nos produce”.
 
+Teniendo en cuenta las palabras de Nathalie Heinich: “El concepto de la obra es la obra, pues las ideas se consideran como obras [...]. En el arte conceptual, lo que importa ante todo es la idea, la intención y la elección del artista" ¹  encuentro una conexión directa con mi trabajo, al decidir trabajar en torno al concepto de la transformación. Los cuadrados en movimiento representan visualmente la materialización de esta idea.
+
+Mientras iba experimentando cómo llevar a cabo mis ideas, me encontré con resultados inesperados que me sorprendieron. En una entrevista, Vera Molnar expresó: “La aleatoriedad en una computadora funciona igual que la intuición, permitiendo un mundo de posibilidades que con nuestra limitada imaginación, no podríamos haber pensado”. En este momento de experimentación, donde me ví sorprendida, comprendo las palabras de Jose Luis Brea cuando afirma: “El propio trabajo, la actividad que lo concreta, es en realidad el que nos produce” ².
+
 
 **Bibliografía**
 
-HEINICH, Nathalie. (2014, 2017). _“La obra más allá del objeto”_ en El
-paradigma del arte contemporáneo: estructuras de una revolución artística.
-Madrid: Casimiro, pp. 95-119. (DAA: 39m)
+HEINICH, Nathalie. (2014, 2017). _“La obra más allá del objeto”_ en El paradigma del arte contemporáneo: estructuras de una revolución artística. Madrid: Casimiro, pp. 95-119.
 
-BREA, José Luis. (2008). _“Redefinición de las prácticas artísticas (s. 21)”_ en El
-tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo
-cultural. Murcia: CENDEAC, pp. 106-113. (DAA: 30m)
+BREA, José Luis. (2008). _“Redefinición de las prácticas artísticas (s. 21)”_ en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
+
+HEINICH, Nathalie. (2014, 2017). _“La obra más allá del objeto”_ en El paradigma del arte contemporáneo: estructuras de una revolución artística. Madrid: Casimiro, pp. 95-119.
+
+BREA, José Luis. (2008). _“Redefinición de las prácticas artísticas (s. 21)”_ en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
+
