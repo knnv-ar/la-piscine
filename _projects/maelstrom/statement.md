@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "maelstrom"
-date: 2022-10-09
+date: 2023-07-04
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -31,6 +31,7 @@ Nuevamente cito a José Luis Brea; “Nos interesa investigar la inadecuación c
 Hoy la digitalización es una novedad, que coexiste con formas ya conocidas de producción. Es evidente que la circulación del arte se modificará, que habrá nuevos modos de ver, presentar, y vender las producciones, y todos los involucrados deberán adaptarse.
 
 **Bibliografía**
+
 VALÉRY, Paul. ([1960], 1999). La conquista de la ubicuidad (1928). En Piezas
 sobre arte. Madrid: Visor, pp.131-133
 
