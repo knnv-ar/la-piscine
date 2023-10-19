@@ -30,6 +30,4 @@ Desde un sentido metafórico, cada día se elige una dirección para nuestra vid
 
 VALÉRY, Paul. (1928). La conquista de la ubicuidad
 
-
 BREA, José Luis-LSA47. (2008). Redefinición de las prácticas artísticas s21.pdf
-
