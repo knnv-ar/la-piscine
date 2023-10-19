@@ -1,7 +1,7 @@
 let angulo = 0;
 function setup() {
-  createCanvas(512, 512);
-  Canvas.parent('div-sketch')
+  let canvas=createCanvas(512, 512);
+  canvas.parent('div-sketch')
 }
 
 function draw() {
