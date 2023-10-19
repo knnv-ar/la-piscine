@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "¿A donde querés estar?"
-date: 2023-18-10
+date: 2023-07-04
 thumbnail: thumbnail.png
 dependencies:
   - p5
