@@ -33,10 +33,6 @@ Mientras iba experimentando cómo llevar a cabo mis ideas, me encontré con resu
 
 **Bibliografía**
 
-¹- HEINICH, Nathalie. (2014, 2017). _“La obra más allá del objeto”_ en El
-paradigma del arte contemporáneo: estructuras de una revolución artística.
-Madrid: Casimiro, pp. 95-119. (DAA: 39m)
+HEINICH, Nathalie. (2014, 2017). _“La obra más allá del objeto”_ en El paradigma del arte contemporáneo: estructuras de una revolución artística. Madrid: Casimiro, pp. 95-119. (DAA: 39m)
 
-² - BREA, José Luis. (2008). _“Redefinición de las prácticas artísticas (s. 21)”_ en El
-tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo
-cultural. Murcia: CENDEAC, pp. 106-113. (DAA: 30m)
+BREA, José Luis. (2008). _“Redefinición de las prácticas artísticas (s. 21)”_ en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113. (DAA: 30m)
