@@ -55,4 +55,7 @@ function mousePressed() {
     x[i] = random(width);
     y[i] = random(height);
   }
+  document.oncontextmenu = function () {
+    return false;
+  };
 }
