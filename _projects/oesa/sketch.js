@@ -141,7 +141,7 @@ function draw() {
   }
 
   // mouse
-  if (dist(mouseX, mouseY, 256, 256) < 30) cursor(HAND);
+  if (dist(mouseX, mouseY, 256, 256) < 45) cursor(HAND);
   else cursor(CROSS);
 }
 
@@ -150,10 +150,10 @@ function draw() {
 function touchEnded() {
   push();
   resetMatrix();
-  if (dist(mouseX, mouseY, 256, 256) < 30) {
-    anguloPar = random(2*PI );
-    anguloImpar = random(2*PI );
-    long = random(1.5, 36);
+  if (dist(mouseX, mouseY, 256, 256) < 45) {
+    anguloPar = random(2 * PI);
+    anguloImpar = random(2 * PI);
+    long = random(1.5, 50);
     setup();
   }
   pop();
@@ -202,3 +202,7 @@ function keyPressed() {
     else loop();
   }
 }
+
+const cnv = document.getElementById("defaultCanvas0"); // id del canvas que crea p5
+cnv.style.setProperty("touch-action", "manipulation"); // para que no haga zoom tocar doble en el celu
+cnv.style.setProperty("user-select", "none"); // para que no seleccione el texto al clickear doble
