@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "OesA"
-date: 2022-10-09
+title: "OESA"
+date: 2023-06-27
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
 
 _Martin Julio_, 2023.
 
-**OesA**
+**OESA**
 
 Leí de Nathalie Heinich una colección de proezas de gente en Europa y Estados Unidos que ganaron en el juego que ellos mismos construyeron, en base a sus propias condiciones. Inevitablemente llegan la historia, el arte, los movimientos y vanguardias que han sido exportados desde el centro global para establecer una referencia absoluta de memoria colectiva. No entiendo en qué pueden servirme. Prefiero no entenderlo. Prefiero olvidarlo. La historia del progreso y de la acumulación del conocimiento no me atraen. No creo que valga la pena insistir en un sistema cuya referencia es excluyente de mi propio contexto.
 
@@ -24,7 +24,9 @@ Rescato la experimentación como única forma posible de expresión, ya sea medi
 
 **Desarrollo**
 
-La conjetura de Collatz o de "3n+1", propone que aplicando reiterativamente dos reglas* simples sobre un número cualquiera, se obtendrá una serie que acabará llegando siempre a 1. Es fácil de calcularla en números pequeños y hasta el momento, con cualquier número imaginable que se haya intentado, se mantiene la conjetura como verdadera. Pero la pequeñez y la imaginación son relativas, dependen de lo que se tome como referencia de origen. Con números lejanos el proceso se vuelve extenso hasta lo absurdo. La dificultad está en que, contrario a lo aparentemente simple del problema, no ha  sido posible darle una solución general mediante una demostración completa. En otras palabras, es imposible de analizar racionalmente. Además se han intentado comprobar grupos de números extremadamente grandes, pero no se ha podido encontrar ninguna (al menos una) sucesión que no acabe llegando a 1 —y así poder establecer la conjetura como falsa sin necesidad de un método general—. Por más abstractas que se han vuelto las matemáticas o por más capacidad de cómputo que se disponga, ha sido imposible respinder si, más allá de los números humanamente alcanzables, existe un patrón que se repite infinitamente o no. 
+La conjetura de Collatz o de "3n+1", propone que aplicando reiterativamente dos reglas* simples sobre un número cualquiera, se obtendrá una serie que acabará llegando siempre a 1. Es fácil de calcularla en números pequeños y hasta el momento, con cualquier número imaginable que se haya intentado, se mantiene la conjetura como verdadera. Pero la pequeñez y la imaginación son relativas, dependen de lo que se tome como referencia de origen. Con números lejanos el proceso se vuelve extenso hasta lo absurdo. La dificultad está en que, contrario a lo aparentemente simple del problema, no ha  sido posible darle una solución general mediante una demostración completa. En otras palabras, es imposible de analizar racionalmente. Además se han intentado comprobar grupos de números extremadamente grandes, pero no se ha podido encontrar ninguna (al menos una) sucesión que no acabe llegando a 1 —y así poder establecer la conjetura como falsa sin necesidad de un método general—. Por más abstractas que se han vuelto las matemáticas o por más capacidad de cómputo que se disponga, ha sido imposible responder si, más allá de los números humanamente alcanzables, existe un patrón que se repite infinitamente o no. 
+
+(*) Las reglas son las siguientes: a partir de un número entero cualquiera distinto de 0, evaluar si es par o no. En caso par dividir por 2. En caso impar multiplicar por 3 y sumar 1. Volver a aplicar las mismas instrucciones sobre el resultado obtenido hasta (eventualmente) llegar a 1.
 
 **Olvidar es Aprender**
 
@@ -34,7 +36,7 @@ La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispos
 
 La historia es ficción, un subproducto del ejercicio del poder. La memoria está mil veces sobrescrita, lo entendible está restringido. Pero no somos solamente humanos. No existe solamente lo que entendemos. Olvidar es aprender sobre lo inentendible.
 
-Y en la complejidad habitan todas las formas. Ser humano es una restricción con forma de espiral, un camino circular, una conjetura incomprobable. La realidad desborda toda forma, toda categoría. No es asimilable, no pertenece a nada, tal vez existe solamente en quien la experimenta.
+En la complejidad habitan todas las formas. Ser humano es una restricción con forma de espiral, un camino circular, una conjetura incomprobable. La realidad desborda toda forma, toda categoría, no es asimilable, no pertenece a nada. Solo queda experimentar.
 
 **Bibliografía**
 
