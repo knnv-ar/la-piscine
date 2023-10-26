@@ -26,7 +26,7 @@ Rescato la experimentación como única forma posible de expresión, ya sea medi
 
 La conjetura de Collatz o de "3n+1", propone que aplicando reiterativamente dos reglas* simples sobre un número cualquiera, se obtendrá una serie que acabará llegando siempre a 1. Es fácil de calcularla en números pequeños y hasta el momento, con cualquier número imaginable que se haya intentado, se mantiene la conjetura como verdadera. Pero la pequeñez y la imaginación son relativas, dependen de lo que se tome como referencia de origen. Con números lejanos el proceso se vuelve extenso hasta lo absurdo. La dificultad está en que, contrario a lo aparentemente simple del problema, no ha  sido posible darle una solución general mediante una demostración completa. En otras palabras, es imposible de analizar racionalmente. Además se han intentado comprobar grupos de números extremadamente grandes, pero no se ha podido encontrar ninguna (al menos una) sucesión que no acabe llegando a 1 —y así poder establecer la conjetura como falsa sin necesidad de un método general—. Por más abstractas que se han vuelto las matemáticas o por más capacidad de cómputo que se disponga, ha sido imposible responder si, más allá de los números humanamente alcanzables, existe un patrón que se repite infinitamente o no. 
 
-(*) Las reglas son las siguientes: a partir de un número entero cualquiera distinto de 0, evaluar si es par o no. En caso par dividir por 2. En caso impar multiplicar por 3 y sumar 1. Volver a aplicar las mismas instrucciones sobre el resultado obtenido hasta (eventualmente) llegar a 1.
+(*) Las reglas son las siguientes: a partir de un número entero positivo cualquiera, evaluar si es par o no. En caso par dividir por 2. En caso impar multiplicar por 3 y sumar 1. Volver a aplicar las mismas instrucciones sobre el resultado obtenido hasta (eventualmente) llegar a 1.
 
 **Olvidar es Aprender**
 
@@ -43,6 +43,10 @@ En la complejidad habitan todas las formas. Ser humano es una restricción con f
 HEINICH, Nathalie. (2014). _"La obra más allá del objeto"_. en El
 paradigma del arte contemporáneo: estructuras de una revolución artística.
 Madrid: Casimiro, pp. 95-119. (DAA: 39m)
+
+**Código**
+
+https://editor.p5js.org/martin_julio/sketches/dw8EZzpSH
 
 **Controles**
 
