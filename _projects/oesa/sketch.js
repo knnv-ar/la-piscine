@@ -53,6 +53,9 @@ function setup() {
 
   let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
+  canvas.style('user-select', 'none'); // para que no seleccione el texto al clickear doble
+  canvas.style('touch-action', 'manipulation'); // para que no haga zoom al tocar doble en el celu
+  
   background(150);
 
   num = 3;
@@ -202,7 +205,3 @@ function keyPressed() {
     else loop();
   }
 }
-
-const cnv = document.getElementById("defaultCanvas0"); // id del canvas que crea p5
-cnv.style.setProperty("touch-action", "manipulation"); // para que no haga zoom tocar doble en el celu
-cnv.style.setProperty("user-select", "none"); // para que no seleccione el texto al clickear doble
