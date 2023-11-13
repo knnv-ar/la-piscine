@@ -8,9 +8,10 @@ let z =  0;
 let expl = [];
 
 function setup() {
+
+  let canvas = createCanvas(540, 960);
+  canvas.parent('div-sketch');
   
-  createCanvas(540, 960);
-  windowResized();
   background(220);
   
   cielo = loadImage("img/cielo.png");
@@ -41,23 +42,4 @@ function draw() {
 function mouseReleased() {
   if ( cl < 12) cl++;
   else if ( cl >= 12) z++;
-}
-
-function windowResized() {
-  
-  const pg = document.getElementsByTagName("body")[0];
-  const cnv = document.getElementById("defaultCanvas0");
-  
-  pg.style.backgroundColor = "rgb(0,0,0)";
-  pg.style.display = "flex";
-  pg.style.justifyContent = "center";
-  pg.style.alignItems = "center";
-  pg.style.overflow = "hidden";
-  pg.style.width = "100vw";
-  pg.style.height = "100vh";
-  cnv.style.margin = "2vw";
-  if (windowWidth > windowHeight ) {
-    cnv.style.height = "96vh";
-    cnv.style.width = "54vh";
-  }
 }
