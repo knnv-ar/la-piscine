@@ -32,7 +32,7 @@ Esta obra es reflejo de la cursada de Artes Multimediales 1. En su raíz de rizo
 
 ~ Para lo demás ~
 
-Esta idea es imaginación del cuento llamado "El zapallo que se hizo cosmos" de Macedonio Fernández. De entre todas las metáforas producidas por la cienca ficción, un zapallo destructor de mundos me parece de las más acertadas. Es atemporal, no se agota nunca. Podría suceder ahora mismo, mañana en la tarde, el próximo milenio, o bien podría ser que ya sucedió y vivimos dentro suyo. Es inquietante (como un espejo) porque en parte nos incluye y también somos zapallo; porque en parte es ajeno, una amenaza; porque en parte nos está imitando y nos sobrepasa por completo.
+Esta idea es imaginación del cuento llamado "El zapallo que se hizo cosmos" de Macedonio Fernández. Entre todas las metáforas producidas por la cienca ficción, un zapallo destructor de mundos me parece de las más acertadas. Es atemporal, no se agota nunca. Podría suceder ahora mismo, mañana en la tarde, el próximo milenio, o bien podría ser que ya sucedió y vivimos dentro suyo. Es inquietante (como un espejo) porque en parte nos incluye y también somos zapallo; porque en parte es ajeno, una amenaza; porque en parte nos está imitando y nos sobrepasa por completo.
 
 Sea como sea, habitamos los residuos de su crecimiento, _fantasmas en la máquina_. No creo en la esperanza, por eso me gusta este cuento. Copio acá el inicio:
 
