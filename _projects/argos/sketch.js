@@ -3,7 +3,7 @@ var disturbio = false;
 var pureza = 155;
 
 function setup() {
-  let = createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   rg = 14;
 }
