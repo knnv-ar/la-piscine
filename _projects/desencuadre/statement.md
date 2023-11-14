@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Desencuadre"
-date: 2023-20-10
+date: 2023-07-04
 thumbnail: thumbnail.png
 dependencies:
   - p5
