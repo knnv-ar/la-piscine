@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "synth-uno"
+title: "RUIDO AFUERA"
 date: 2023-10-25
 thumbnail: thumbnail.png
 dependencies:
