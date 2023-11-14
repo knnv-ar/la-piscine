@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "IBIDEM"
-date: 2023-7-3
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
+  - p5.sound
 ---
 
 <div id="div-sketch">
