@@ -7,8 +7,8 @@ let miFuente; // Almacenar la fuente de texto
 
 function preload() {
   // Función de p5.js para cargar recursos antes de iniciar el programa
-  miFuente = loadFont('/fuente.otf'); // Carga la fuente
-  miCancion = loadSound('/videoplayback.m4a'); // Carga el archivo de audio
+  miFuente = loadFont('./fuente.otf'); // Carga la fuente
+  miCancion = loadSound('./videoplayback.m4a'); // Carga el archivo de audio
 }
 
 function setup() {
