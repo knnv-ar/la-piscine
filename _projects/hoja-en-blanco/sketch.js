@@ -23,16 +23,16 @@ function preload() {
   fondo = loadImage("imagenes/fondo.jpg");
 
   nota1 = loadSound("sonidos/do.mp3");
-  nota2 = loadSound("sonidos/do#.mp3");
+  nota2 = loadSound("sonidos/do_.mp3");
   nota3 = loadSound("sonidos/re.mp3");
-  nota4 = loadSound("sonidos/re#.mp3");
+  nota4 = loadSound("sonidos/re_.mp3");
   nota5 = loadSound("sonidos/mi.mp3");
   nota6 = loadSound("sonidos/fa.mp3");
-  nota7 = loadSound("sonidos/fa#.mp3");
+  nota7 = loadSound("sonidos/fa_.mp3");
   nota8 = loadSound("sonidos/sol.mp3");
-  nota9 = loadSound("sonidos/sol#.mp3");
+  nota9 = loadSound("sonidos/sol_.mp3");
   nota10 = loadSound("sonidos/la.mp3");
-  nota11 = loadSound("sonidos/la#.mp3");
+  nota11 = loadSound("sonidos/la_.mp3");
   nota12 = loadSound("sonidos/si.mp3");
 }
 ///////////////////////SETUP//////////////////////////////////
