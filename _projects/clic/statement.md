@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Clic"
-date: 2023-11-15
+date: 2023-11-14
 thumbnail: thumbnail.png
 dependencies:
   - p5
