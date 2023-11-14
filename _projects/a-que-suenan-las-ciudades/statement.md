@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "a que suenan las ciudades"
-date: 2023
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
