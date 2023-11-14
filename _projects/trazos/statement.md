@@ -1,5 +1,21 @@
-**Trazos**
+---
+layout: post
+title: "Trazos"
+date: 2023-11-12
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+
 _Rhancis Parra_ 2023.
+
+**Trazos**
 
 **Breve descripción**
 
