@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Como en casa"
-date: 2022-10-09
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-Florencia Ferrari, 2023.
+_Florencia Ferrari_, 2023.
 
 **Como en casa**
 
