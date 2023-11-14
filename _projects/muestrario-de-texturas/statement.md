@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Muestrario de movimiento y texturas"
-date: 2023
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
