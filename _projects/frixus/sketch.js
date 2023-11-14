@@ -24,7 +24,7 @@ function preload() {
 }
 
 function setup() {
-  let = createCanvas(900, 800, WEBGL);
+  let canvas= createCanvas(900, 800, WEBGL);
 canvas.parent('div-sketch');
 cancion.loop();
 }
