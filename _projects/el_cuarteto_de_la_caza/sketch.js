@@ -10,13 +10,13 @@ let video;
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  mySound = loadSound('sound/sol.mp3');
+  mySound = loadSound('sol.mp3');
 }
 
 function setup() {
  let canvas= createCanvas(1000, 1000);
   canvas.parent('div-sketch');
-  video = createVideo("video/MVI_7884.mp4");
+  video = createVideo("MVI_7884.mp4");
   video.size(width, height);
   video.hide();
   video.loop();
