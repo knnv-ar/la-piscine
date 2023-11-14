@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "depth beziers"
-date: 2023-04-09
+date: 2023-09-04
 thumbnail: thumbnail.png
 dependencies:
   - p5
