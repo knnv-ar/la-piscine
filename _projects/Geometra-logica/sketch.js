@@ -1,6 +1,6 @@
 function setup() 
 {
-  let canvas = createcanvas(512, 512);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   background(0);
   frameRate(24);
