@@ -1,7 +1,7 @@
-
-
-Título de la obra : ATP
-date: 2023-12-11
+---
+layout: post
+title: "ATP"
+date: 2023-11-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
