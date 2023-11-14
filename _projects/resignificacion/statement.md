@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bola de fetiche"
-date: 2022-10-09
+title: "Resignificación"
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
