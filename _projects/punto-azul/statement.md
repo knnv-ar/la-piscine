@@ -14,7 +14,7 @@ dependencies:
 
 _Virginia Wulf _, 2023.
 
-**Bola de feriche**
+**Punto Azul**
 
 En la obra, se puede apreciar la representación de la creación de Adán, donde se muestra a Dios y a Adán tocándose las manos con la Tierra en el centro, a su vez se puede explorar y moverse alrededor. Esta idea se refleja en cómo las obras de arte, como cuadros y estatuas, esperaban pacientemente a ser contempladas, como fantasmas sedentarios que solo hablan cuando se les dirige la palabra.
  La Tierra gira en su propio tiempo mientras que los días pasan, y la obra gira alrededor de ella. Si no se comprende la historio de la creación de Adán, no se puede entender por qué la Tierra está en el centro ni cuál es el propósito de la obra.
