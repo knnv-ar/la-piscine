@@ -14,7 +14,7 @@ dependencies:
 
 _Ponce de león, Bautista noé_, 2022.
 
-**Bola de feriche**
+**Geometria logica**
 
 Breve descripción:  La obra trata de representar un fondo difuso el cual está alumbrado por un foco que,con la distancia, va perdiendo aquella fuerza del principio y termina produciendo una oscuridad similar a la del fondo.
 
