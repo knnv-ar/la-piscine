@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La nada y el todo"
-date: 2023-12-11
+date: 2023-11-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
