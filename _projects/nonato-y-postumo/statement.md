@@ -1,10 +1,11 @@
-	---
+---
 layout: post
 title: "Nonato y Póstumo"
 date: 2023-11-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
+  - p5.sound
 ---
 
 <div id="div-sketch">
