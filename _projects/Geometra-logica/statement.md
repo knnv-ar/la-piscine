@@ -1,7 +1,7 @@
 --
 layout: post
 title: "Geometria logica"
-date: 2023-29-05
+date: 2023-05-29
 thumbnail: thumbnail.png
 dependencies:
   - p5
