@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-Florencia Ferrari, 2023.
+_Florencia Ferrari_, 2023.
 
 **Clickeame**
 
