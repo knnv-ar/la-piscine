@@ -1,4 +1,4 @@
-let x, y, z, espacio, filas, colum, dentro;
+let x, y, z, espacio, filas, colum, dentro, synth;
 let ancho, alto, profundidad;
 let rotacionX, rotacionY;
 let camX, camY, camZ;
@@ -13,7 +13,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 500, WEBGL);
+ let canvas= createCanvas(500, 500, WEBGL);
+  canvas.parent('div-sketch');
   synth.loop();
   // Tamaño de los cuadrados
   let cube = 300;
