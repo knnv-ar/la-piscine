@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Estelas Programadas"
-date: 2023-11-15
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
