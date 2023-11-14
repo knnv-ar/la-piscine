@@ -10,7 +10,7 @@ let video;
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  mySound = loadSound('sound/sol (5).mp3');
+  mySound = loadSound('sound/sol.mp3');
 }
 
 function setup() {
