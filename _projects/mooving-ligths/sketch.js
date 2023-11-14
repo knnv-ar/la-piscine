@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  bkground(0);
+  background(0);
   translate(width / 2, height / 2);
   
   // Primera figura
