@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Argos"
-date: 2022-10-09
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
