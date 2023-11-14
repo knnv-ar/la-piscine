@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(650, 400);
+  let canvas = createCanvas(650, 400,WEBGL);
   canvas.parent('div-sketch');
   ambientLight(100, 100, 100); // Establece la luz ambiente
   pointLight(255, 255, 255, 0, 0, 100); // Establece una luz puntual
