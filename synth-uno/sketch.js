@@ -18,7 +18,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(488, 600);
+ let canvas= createCanvas(488, 600);
+   canvas.parent('div-sketch');
   textSize(16);
   textFont('Pixelify Sans');
   canciones[pistaActual].loop();
