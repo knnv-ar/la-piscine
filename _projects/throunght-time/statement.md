@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Bola de fetiche"
-date: 2023-11-15
+title: "Throunght time"
+date: 2023-11-14
 thumbnail: thumbnail.png
 dependencies:
   - p5
