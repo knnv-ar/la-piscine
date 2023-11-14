@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Primivismo temporal"
-date: 2023-22-10
+date: 2023-11-10
 thumbnail: thumbnail.png
 dependencies:
   - p5
