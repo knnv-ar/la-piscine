@@ -2,7 +2,7 @@ function setup() {
   frameRate(5);
   //actualización del canvas, 5 fps por segundos.
 
-  let = createCanvas(512,512);
+  let canvas = createCanvas(512,512);
   canvas.parent('div-sketch');
 
   rectMode(CENTER);
