@@ -16,19 +16,19 @@ _Martin Julio_, 2023.
 
 **Un zapallo**
 
-***
+<br>***<br>
 
 ~ Para la academia ~
 
 Este trabajo es consecuencia de los siguientes textos: AIRA, César. ([2013], 2016). “Sobre el arte contemporáneo” en Sobre el arte contemporáneo. Buenos Aires: Literatura Random House, pp. 11-56. (DAA: 1: 02m). KAPROW, Allan. ([2015], 2016). “Happenings en la escena newyorkina (1961)” en Entre el arte y la vida. Ensayos sobre el happening. Barcelona: Alpha Decay, pp. 57-74. TAYLOR, Diana. (2012). “Los nuevos usos de performance” en Performance. Buenos Aires: Asunto Impreso, pp. 88-110. FRICKE, Christiane. (1999). “Nuevos Medios”. En “AAVV. Arte de siglo XX. Vol. II. München: Taschen. pp.576-590. GALANTER, Philip. (2011). "Entre dos fuegos: el arte-ciencia y la guerra entre ciencia y humanidades". En Revista Artnodes, Noviembre 2011, UOC, ISSN 1695-5951. ARNS, Inke. (2005). "El código como acto de habla performativo". En Revista Artnodes, Julio de 2005, ISSN 1695-5951.
 
-***
+<br>***<br>
 
 ~ Para la exposición final ~
 
 Esta obra es reflejo de la cursada de Artes Multimediales 1. En su raíz de rizoma se une a todas las visiones y experiencias compartidas, que crean una obra común, un cuerpo complejo. Cada expresión es solo una de sus muchas superficies, y cada superficie refleja las imágenes de forma distinta. Pregunta, ¿Cómo se evalúa algo así? ¿Qué sentido tiene aislar los fragmentos y desconocer el todo? El aprendizaje es colectivo, se entremezcla por naturaleza, como las plantas. Individualizarlo es mutilación, corregir las diferencias es reprimir. Muchas gracias por no haberlo hecho.
 
-***
+<br>***<br>
 
 ~ Para lo demás ~
 
