@@ -4,6 +4,7 @@ let z3 = 170;
 let z2 = 0;
 let zDirection3 = 1;
 let zDirection2 = 1;
+let sonido;
 
 let txtr = [
   "आदि मे भगवान् आकाश आ पृथ्वी के निर्माण केने छलाह ",
