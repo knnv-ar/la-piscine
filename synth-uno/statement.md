@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RUIDO AFUERA"
-date: 2023-10-25
+date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
