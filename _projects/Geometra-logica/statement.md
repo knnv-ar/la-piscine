@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "Geometria logica"
 date: 2023-05-29
