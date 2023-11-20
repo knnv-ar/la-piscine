@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Technological extension"
 date: 2023-11-15
