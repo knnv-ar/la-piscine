@@ -16,3 +16,5 @@
 - name: live
   element: <script type="text/javascript" src="http://livejs.com/live.js"></script>
   
+- name: face-api
+  element: <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1/dist/face-api.js"></script>
