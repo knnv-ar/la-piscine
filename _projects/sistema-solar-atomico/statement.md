@@ -1,4 +1,4 @@
-
+---
 layout: post
 title: "Sistema solar atomico"
 date: 2024-11-05
