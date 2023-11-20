@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sistema solar atomico"
-date: 2024-11-05
+date: 2023-11-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
