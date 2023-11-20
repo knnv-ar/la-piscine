@@ -2,7 +2,6 @@
 layout: post
 titulo: "Todo desaparece"
 date: 2023-11-11
-Enlace a la obra: https://editor.p5js.org/cybevero/sketches/Z0Ky2DNH_ 
 thumbnail: thumbnail.png
 dependencies:
   - p5
