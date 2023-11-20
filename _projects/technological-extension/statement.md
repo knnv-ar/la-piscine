@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Technological extension"
 date: 2023-11-15
@@ -18,6 +19,7 @@ _Avalos Guadalupe_, 2023.
 Hoy en dia todos coincidimos que la tecnologia se lleva gran parte de nuestras vidas por no decir toda. Sin ella es casi imposible poder mantenerse al pie de la sociedad. Y esta obra intenta reflejar esa extension de cada ser humano de la contemporaneidad, quien subsiste con la tecnologia, a veces sin decidirlo. Ese lado de este nuevo mundo que decidimos crear y nos termino obligando a ser parte de el, con sus consecuencias incluidas. La obra consta de 2 escenarios claves, los llamaremos "encierro" y "bucle".
 
 **Desarrollo técnico, estético y conceptual**
+
 En primera instancia, la inspiracion de esta obra yase de los dichos de Diana Taylor sobre el "Cuerpo Tecnologico". Ella, usa este concepto para referirse a como la tecnologia se ha vuelto intrínseca en la representacion y percepcion de nuestros cuerpos. 
 _"La tecnología que se reemplaza y sustituye por el cuerpo humano, a la vez, se convierte en la forma de imaginar estos nuevos cuerpos, radicalmente alterados."_
 
