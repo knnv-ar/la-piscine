@@ -15,7 +15,7 @@ let camZ = 0;
 let step = 10; 
 
 function setup() {
-  let canvas = createCanvas(512,512,WEBGL);
+  let canvas = createCanvas(512, 512, WEBGL);
   canvas.parent('div-sketch');
   sonido[0].loop();
   vid = createVideo("lowres.mp4");
