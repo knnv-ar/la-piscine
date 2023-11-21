@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "se nos limita al margen infinito"
-date: 2023-20-11
+title: "Se nos limita al margen infinito"
+date: 2023-11-15
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
 
 _Mateo Dilluvio_, 2023.
 
-**se nos limita al margen infinito**
+**Se nos limita al margen infinito**
 
 "se nos limita al margen infinito" es una obra en la cual se intenta capturar el sentimiento de lo no conocido que genera el espacio exterior, cómo actúa de "margen" en el sentido de que nos separa de lo que no entendemos, pero sí podemos interpretar, y cómo las posibilidades de lo que podría llegar a ocurrir fuera de nuestra experiencia nos impulsan a ilustrar imágenes a través de pensamientos sobre potenciales entidades, hechos, formas de existencia nos rodean fuera de la atmósfera y apartado de lo que sí conocemos y a veces no interpretamos por nuestra cuenta. 
 
