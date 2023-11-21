@@ -18,7 +18,7 @@ function preload() {
 }
 
 function setup() {
-   let canvas = createcanvas(488, 600);
+   let canvas = createCanvas(488, 600);
   canvas.parent('div-sketch');
   textSize(16);
   textFont('Pixelify Sans');
