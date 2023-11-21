@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bosques"
-date: 2023-20-11
+date: 2023-11-15
 thumbnail: thumbnail.png
 dependencies:
   - p5
