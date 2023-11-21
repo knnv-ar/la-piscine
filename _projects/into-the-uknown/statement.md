@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Into The Uknown"
-date: 2022-10-09
+date: 2023-10-09
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -17,6 +17,7 @@ _Joaquín Fernández_, 2022.
 **Into The Unkown**
 
 DESCRIPCIÓN 150 PALABRAS
+
 En la experiencia de esta obra, nos sumergimos en un lienzo blanco que cobra vida gradualmente con la aparición de esferas negras, acompañadas por la resonancia de una canción que evoca el característico sonido post punk, reminiscente de icónicas bandas como Depeche Mode, New Order y Molchat Doma. Cada esfera que se materializa parece llevar consigo una historia única, como si fuera una nota musical visualizada en el espacio en blanco. La interacción con la obra se vuelve aún más fascinante al hacer clic derecho, revelando el título de la pieza, "Into The Unknown", mientras las esferas y el fondo experimentan una inversión completa, como si estuviéramos dando un salto hacia lo desconocido. Este proceso de transformación invita a reflexionar sobre la naturaleza efímera de la percepción y la constante redefinición de la realidad a través de la intersección entre lo visual y lo musical.
 
 DESARROLLO TÉCNICO
