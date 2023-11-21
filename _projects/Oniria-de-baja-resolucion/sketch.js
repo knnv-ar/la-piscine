@@ -15,7 +15,7 @@ let camZ = 0;
 let step = 10; 
 
 function setup() {
-  let canvas = createcanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512,512,WEBGL);
   canvas.parent('div-sketch');
   sonido[0].loop();
   vid = createVideo("lowres.mp4");
@@ -42,8 +42,6 @@ function draw() {
     camZ -= step;
   }
  
-
-
   let camY = map(mouseY,0,-height/2,0,200,0);
   let camX = map(mouseX, 0, width/2, 0, -100, 0);
   camera(camX, camY, (height / 3.2) / tan(PI / 6), 0, 0, camZ, 0, 1, 0);
@@ -74,8 +72,8 @@ function draw() {
   texture(vid);
   sphere(75,20,20);
   rotateY(frameCount *0.01)
+  pop();
   
   
-
 
 }
