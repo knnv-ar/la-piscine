@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "atmosfera eplosiva"
+title: "Atmosfera Explosiva"
 date: 2023-11-13
 thumbnail: thumbnail.png
 dependencies:
@@ -52,6 +52,4 @@ Like, like, like.
 
 **Bibliografía**
 - Taylor, Diana. (2012). “Los nuevos usos de performance” en Performance. Buenos Aires: Asunto Impreso, pp. 88-110.
-- KAPROW, Allan. ([2015], 2016). “Happenings en la escena newyorkina (1961)”
-en Entre el arte y la vida. Ensayos sobre el happening. Barcelona: Alpha Decay,
-pp. 57-74.
+- KAPROW, Allan. ([2015], 2016). “Happenings en la escena newyorkina (1961)” en Entre el arte y la vida. Ensayos sobre el happening. Barcelona: Alpha Decay, pp. 57-74.
