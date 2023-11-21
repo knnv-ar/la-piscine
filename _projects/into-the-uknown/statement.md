@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Joaquín Fernández_, 2022.
+_Joaquín Fernández_, 2023.
 
 **Into The Unkown**
 
