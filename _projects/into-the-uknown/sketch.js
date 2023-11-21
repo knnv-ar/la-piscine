@@ -7,13 +7,15 @@ let miFuente; // Almacenar la fuente de texto
 
 function preload() {
   // Función de p5.js para cargar recursos antes de iniciar el programa
-  miFuente = loadFont('/fuente.otf'); // Carga la fuente
-  miCancion = loadSound('/videoplayback.m4a'); // Carga el archivo de audio
+  miFuente = loadFont('medios/fuente.otf'); // Carga la fuente
+  miCancion = loadSound('medios/videoplayback.m4a'); // Carga el archivo de audio
 }
 
 function setup() {
-  let canvas = createCanvas(650, 400,WEBGL);
-  canvas.parent('div-sketch');
+  // Función de p5.js llamada al inicio del programa
+  let canvas = createCanvas(650, 400, WEBGL);
+canvas.parent('div-sketch');
+ 
   ambientLight(100, 100, 100); // Establece la luz ambiente
   pointLight(255, 255, 255, 0, 0, 100); // Establece una luz puntual
   specularMaterial(255); // Material especular
