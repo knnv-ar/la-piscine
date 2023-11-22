@@ -12,7 +12,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600, WEBGL);
+  let canvas=createCanvas(600, 600, WEBGL);
+canvas.parent('div-sketch');
+  
   sonido.loop();
 }
 
