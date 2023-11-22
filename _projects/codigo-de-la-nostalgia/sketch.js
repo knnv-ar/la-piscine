@@ -1,12 +1,12 @@
 const video = document.getElementById('camVideo');
-const audioHappy = new Audio('/sonidos/feliz.wav');
-const audioSad = new Audio('/sonidos/triste.wav'); 
+const audioHappy = new Audio('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/feliz.wav');
+const audioSad = new Audio('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/triste.wav'); 
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri('/la-piscine/projects/codigo-de-la-nostalgia/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri('/la-piscine/projects/codigo-de-la-nostalgia/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri('/la-piscine/projects/codigo-de-la-nostalgia/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri('/la-piscine/projects/codigo-de-la-nostalgia/models')
 ]).then(startVideo);
 
 function startVideo() {
