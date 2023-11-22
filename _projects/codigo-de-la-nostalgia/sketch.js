@@ -61,7 +61,7 @@ let audio;
 
 function preload() {
   soundFormats('mp3', 'wav');
-  audio = loadSound('/sonidos/fondo.wav');
+  audio = loadSound('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/fondo.wav');
 }
 function setup() {
   let canvas = createCanvas(500, 500);
