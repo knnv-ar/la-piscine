@@ -4,8 +4,8 @@ title: "El Cuarteto La Caza"
 date: 2023-11-12
 thumbnail: thumbnail.png
 dependencies:
-  - p5
-  - p5.sound
+  - p5.v180
+  - p5.sound.v180
 ---
 
 <div id="div-sketch">
