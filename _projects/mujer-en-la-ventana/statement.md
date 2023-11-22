@@ -1,17 +1,19 @@
+---
+layout: post
+title: "Mujer en la ventana"
+date: 2023-11-15
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
 
+---
 
-"mujer en la ventana"
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
 
-_marcela marcolini_
-
-
-
-
-
-
-
-
-
+_marcela marcolini_, 2023,
 
 
 # Mujer en la ventana
