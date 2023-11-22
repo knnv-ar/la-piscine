@@ -1,8 +1,7 @@
 function setup() {
   let canvas = createCanvas(512, 512);
-  canvas.parent('div.sketch');
+  canvas.parent('div-sketch');
   background(27, 26, 29);
-
   stroke(255);
   line(322, 40, 180, 356);
   fill(28, 28, 28);
