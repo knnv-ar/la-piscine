@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Desoscurezco"
-date: 2023
+date: 2023-11-15
 thumbnail: thumbnail.png
 dependencies:
   - p5
