@@ -3,7 +3,8 @@ let xoff = 0.80;
 let yoff = 0.80;
 
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   //background(0);
 }
 
