@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(800, 500, WEBGL);
+  let canvas = createCanvas(800, 500);
   canvas.parent('div-sketch');
   posX = (50, width / 2);
   posY = (50, height - 90);
