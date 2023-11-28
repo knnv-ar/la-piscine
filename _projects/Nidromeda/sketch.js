@@ -15,14 +15,13 @@ let vid5;
 
 function preload() {
 
-  img = loadImage("imagenes/mumii.jpg");
-  //img2 = loadImage ("imagenes/fondo.jpg");
-  img3 = loadImage('imagenes/tini.jpg');
-  img4 = loadImage("imagenes/floo.jpg");
-  img5 = loadImage ("imagenes/azuul.jpg");
-  img6 = loadImage('imagenes/ventii.jpg');
-  img7 = loadImage('imagenes/gritoo.jpg');
-  img8 = loadImage('imagenes/finn.jpg');
+  img = loadImage("./mumii.jpg");
+  img3 = loadImage('./tini.jpg');
+  img4 = loadImage("./floo.jpg");
+  img5 = loadImage ("./azuul.jpg");
+  img6 = loadImage('./ventii.jpg');
+  img7 = loadImage('./gritoo.jpg');
+  img8 = loadImage('./finn.jpg');
   
 
 
