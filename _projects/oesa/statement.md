@@ -47,12 +47,12 @@ La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispos
 <br>§ Olvidar es aprender sobre lo inentendible.
 <br>
 <br>
-<br>§ En la complejidad habitan todas las formas, nada es por completo asimilable.
+<br>§ En la complejidad habitan todas las formas, nada se asimila por completo.
 <br>§ Ser humano es una restricción con forma de espiral,
 <br>un camino circular, una conjetura incomprobable.
 <br>
 <br>
-<br>§ La realidad desborda todo límite, toda categoría,
+<br>§ La realidad desborda los límites, las categorías,
 <br>no pertenece a nada.
 <br>
 <br>
