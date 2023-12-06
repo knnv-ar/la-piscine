@@ -20,7 +20,7 @@ var questions = [
 function preload() {
   back = loadImage("one.gif");
   cancion = loadSound("vampire.mp3");
-  customFont = loadFont("COMICATE.TTF");
+  customFont = loadFont("comicate.TTF");
 }
 
 function setup() {
