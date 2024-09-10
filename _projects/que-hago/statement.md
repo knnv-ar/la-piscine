@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Candela S. Di Genova_, 2022.
+_Candela S. Di Genova_, 2024.
 
 **¿Qué hago?**
 
