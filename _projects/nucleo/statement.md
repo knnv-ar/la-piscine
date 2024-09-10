@@ -9,7 +9,7 @@ dependecies:
 ---
 
 <div id="div-sketch">
-    <script type="text/javascript" src="skethc.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
 </div>
 
 _Mercedes Maudet_, 2024
