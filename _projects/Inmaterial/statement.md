@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inmaterial"
-date: 2024-11-09
+date: 2024-09-10
 thumbnail: thumbnail.png
 dependencies:
   - p5
