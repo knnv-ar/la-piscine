@@ -4,12 +4,12 @@ title: "Núcleo"
 date: 2024-09-09
 thumbnail: thumbnail.png
 dependecies:
-    - p5
-    - p5.sound
+  - p5
+  - p5.sound
 ---
 
 <div id="div-sketch">
-    <script type="text/javascript" src="sketch.js"></script>
+  <script type="text/javascript" src="sketch.js"></script>
 </div>
 
 _Mercedes Maudet_, 2024
