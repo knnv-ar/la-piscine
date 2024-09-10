@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vibratio"
-date: 2024-10-10
+date: 2024-09-10
 thumbnail: thumbnail.png
 dependencies:
   - p5
