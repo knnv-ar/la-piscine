@@ -3,7 +3,7 @@ layout: post
 title: "Núcleo"
 date: 2024-09-09
 thumbnail: thumbnail.png
-dependecies:
+dependencies:
   - p5
   - p5.sound
 ---
