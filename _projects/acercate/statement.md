@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Acercate"
-date: 2022-10-09
+date: 2024-09-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
