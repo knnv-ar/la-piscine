@@ -29,8 +29,6 @@ Desde este concepto inicial busca ya meterse en un lugar complicado, el autor. S
 Si es que, puede considerarse arte. Hablando mal y pronto, ‘’Ant(i-An)ónimo’’ es para mí “Pixel Art”. Es como un pincel pseudo-futurista que dibuja en cuatro direcciones a la vez. No es mas que una herramienta, un juguete de un ratito, nada que rompa su propio molde y se aventure a ilustrar lo desconocido. No busca, ni quiere (ni puede), ser innovadora. “Y, si acaso, podría pretenderse que el pixel art explora los límites del lenguaje acuarelístico -pero nunca los propios (de los que, por cierto y que se sepa, carece). Luego no considerarlo seriamente.”2. Pero bien, como la intención de esta producción es burlarse y no ser tomada en serio, acepta no ser considerada lo suficientemente digna. Con tan poco como que el usuario al pulsar una vez la pantalla y, aunque sea por reflejo, busque repetirlo, esta producción tiene más que suficiente. Si puede tan solo tranquilizar a un inquieto o intrigar a un aburrido, aunque sea por un segundo, le basta. No busca más que ser divertido. 
 
 **Bibliografía**
-
-Bibliografía:
-1- BREA, José Luis. (2008)._"Redefinición de las prácticas artísticas (s. 21)*"_
-2- BREA, José Luis. (2002)._"Breve (y desordenado) anti glosario -o diccionario de tópicos- sobre el arte electrónico."_
-3- FRANKE, Herbert. (1970) https://collections.vam.ac.uk/item/O239596/kaes-1-algebraic-curves-print-franke-herbert-w/
+1. BREA, José Luis. (2008)._"Redefinición de las prácticas artísticas (s. 21)\*"_
+2. BREA, José Luis. (2002)._"Breve (y desordenado) anti glosario -o diccionario de tópicos- sobre el arte electrónico."_
+3. [FRANKE, Herbert. (1970)](https://collections.vam.ac.uk/item/O239596/kaes-1-algebraic-curves-print-franke-herbert-w/)
