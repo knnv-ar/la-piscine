@@ -1,7 +1,7 @@
 ---
 layaout: "post"
 title: "Ojos"
-date: 2024/09/10
+date: 2024-09-10
 thumbnail: thumbnail-ojos.png
 dependencies:
   - p5
