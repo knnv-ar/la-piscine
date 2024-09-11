@@ -22,14 +22,15 @@ La obra explora la dicotomía entre orden y caos, dos fuerzas aparentemente opue
 
 El código genera una cuadrícula base donde se trazan líneas de manera dinámica, permitiendo que la pieza esté en constante evolución o se replique con ligeras variaciones. Cada línea se posiciona dentro de un marco específico, pero su disposición es aleatoria dentro de ese marco, lo que le otorga una apariencia orgánica y descontrolada, invitando al espectador a perderse en sus detalles.
 
-Vera Molnar no estaba interesada en la perfección, si no en la imperfección, experimentaba con series y variaciones de sus trabajos, siempre permitiendo ‘1% désordre’, el factor del azar para determinar parte de la obra. En el texto "Redefinición de las prácticas artísticas".(2008) José Luis Brea escribe: “Por más de una razón deberíamos asemejar el trabajo del arte al del sueño: es una producción que induce formaciones de superficie que expresan, que traducen aproximadamente, un estado descompensado de energías. Lo esencial en ellas no es la forma o la apariencia que adquieren en un instante dado: sino el campo de intensidades -osea, el diferencial de potenciales- en que se efectúan.”
+Vera Molnar no estaba interesada en la perfección, si no en la imperfección, experimentaba con series y variaciones de sus trabajos, siempre permitiendo ‘1% désordre’, el factor del azar para determinar parte de la obra. En el texto "Redefinición de las prácticas artísticas".(2008) José Luis Brea escribe: 
+>“Por más de una razón deberíamos asemejar el trabajo del arte al del sueño: es una producción que induce formaciones de superficie que expresan, que traducen aproximadamente, un estado descompensado de energías. Lo esencial en ellas no es la forma o la apariencia que adquieren en un instante dado: sino el campo de intensidades -osea, el diferencial de potenciales- en que se efectúan.”[^nota01]
 
-A mi parecer, es este el caso del 'computer art', como lo llama Brea en el texto "Breve (y desordenado) antiglosario -o diccionario de tópicos- sobre
+A mi parecer, es este el caso del 
+"Computer art", como lo llama Brea en el texto "Breve (y desordenado) antiglosario -o diccionario de tópicos- sobre
 el arte electrónico." (2002), la computadora y sus algoritmos nos permiten traer ideas al mundo que quizá solo habíamos imaginado (o soñado), y en el que las posibilidades son infinitas.'Trazos' crea en cada momento una combinación única e irrepetible, persiguiendo el equilibrio entre caos y orden.
 
 **Bibliografía**
 
-BREA, José Luis. (2002). _"Breve (y desordenado) antiglosario -o diccionario de tópicos- sobre
-el arte electrónico"_. La era post media.
+[^nota01]: BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario de tópicos- sobre el arte electrónico” en La era postmedia. Acción comunicativa, prácticas (post)artísticas y dispositivos neomediales. Salamanca: CASA Editorial, pp. 4-8..
 
-BREA, José Luis. (2008). _"Redefinición de las prácticas artísticas (S.21)*"_. El tercer umbral.
+BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
