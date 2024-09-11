@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tiempo Ilusión"
-date: 2024-09-10
+date: 2024-10-09
 thumbnail: thumbnail.png
 dependencies:
   - p5
