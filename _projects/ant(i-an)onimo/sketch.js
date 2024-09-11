@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   background(100);
   //------------------------------------------------------------- el fondo
   let angulo = 0;
