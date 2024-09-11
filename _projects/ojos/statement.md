@@ -8,8 +8,10 @@ dependencies:
   - p5.sound
 ---
 
-<script type="text/javascript" src="sketch.js"></script>
-Maitena Achigar, 2024.
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+_Maitena Achigar_, 2024.
 
 Descripción de la obra “Ojos”
 
