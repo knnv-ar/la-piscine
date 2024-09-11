@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Widerspruch"
-date: 2022-10-09
+date: 2022-09-10
 thumbnail: thumbnail.png
 dependencies:
   - p5
