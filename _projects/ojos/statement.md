@@ -1,5 +1,5 @@
 ---
-layaout: "post"
+layaout: post
 title: "Ojos"
 date: 2024-09-10
 thumbnail: thumbnail-ojos.png
