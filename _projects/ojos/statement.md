@@ -1,10 +1,12 @@
 ---
 layaout: "post"
 title: "Ojos"
-date: 10/9/2024
+date: 2024/09/10
 thumbnail: thumbnail-ojos.png
 dependencies:
-- p5
+  - p5
+  - p5.sound
+---
 
 <script type="text/javascript" src="sketch.js"></script>
 Maitena Achigar, 2024.
