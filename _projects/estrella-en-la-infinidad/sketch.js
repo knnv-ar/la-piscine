@@ -12,7 +12,7 @@ let dist9 = -10;
 let dist10 = 0;
 
 function setup() {
-  let canvas = createCanvas(512,512,WEBGL);
+  let canvas = createCanvas(512,512);
   canvas.parent('div-sketch');
   background(0); //fondo negro. Si lo pongo acá, se agregan estrellas.
 }
