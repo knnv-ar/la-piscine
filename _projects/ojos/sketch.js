@@ -4,7 +4,7 @@ Escrito -> https://docs.google.com/document/d/1DbyJDGfUqFHxvkC7yMLYZnJMfFPHW9Muo
 */
 function setup() {
   let canvas = createCanvas(512, 512);
-  canvas.parent ('div-skecht')
+  canvas.parent('div-sketch');
   background(220);
 }
 
