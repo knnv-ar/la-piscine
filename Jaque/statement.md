@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jaque"
-date: 2024-9-10
+date: 2024-10-9
 thumbnail: thumbnail.png
 dependencies:
   - p5
