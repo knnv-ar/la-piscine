@@ -14,7 +14,8 @@ let colorStroke5 = 25;
 let incremento5 = true;
 
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
 }
 
 function draw() {
