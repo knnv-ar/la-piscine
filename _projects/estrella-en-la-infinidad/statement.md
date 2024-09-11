@@ -1,12 +1,12 @@
 ---
-diseño : publicación
-título : " Estrella en la infinita "
-Fecha : 2024-09-11
-miniatura : miniatura.png
-Dependencias :
-  - pág. 5
-@@ -14,22 +14,18 @@ dependencias:
-
+layout: post
+title: "Estrella en la infinita"
+date: 2024-09-10
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
 _ Sofía Pacheco_ , 2024.
 
 ** Estrella en la infinidad **
