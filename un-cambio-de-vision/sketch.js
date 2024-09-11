@@ -1,7 +1,7 @@
 let spacePressed = false; // Variable para controlar si la barra espaciadora está presionada
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL); // Crea una canva de 512x512 píxeles
+  let canvas = createCanvas(512, 512,); // Crea una canva de 512x512 píxeles
   canvas.parent('div-sketch');
   background(40); // Establece el color de fondo a oscuro
   frameRate(2); // Establece el framerate a 2 FPS
