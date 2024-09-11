@@ -1,5 +1,3 @@
-//Frieder Nake-Achsenparalleler Polygonzug 1965.  
-
 // ETAPA1
 let puntoX = 445;
 let puntoY = 445;
