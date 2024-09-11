@@ -1,5 +1,3 @@
-//Frieder Nake-Achsenparalleler Polygonzug 1965.  
-
 // ETAPA1
 let puntoX = 445;
 let puntoY = 445;
@@ -19,7 +17,7 @@ let velocidad2 = 0.01;
 let lineas = false; 
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
 }
 
