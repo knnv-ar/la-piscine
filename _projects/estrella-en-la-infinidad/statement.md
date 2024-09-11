@@ -7,6 +7,11 @@ dependencies:
   - p5
   - p5.sound
 ---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
 _ Sofía Pacheco_ , 2024.
 
 ** Estrella en la infinidad **
