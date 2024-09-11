@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "EN BLANCO"
-date: 2024-09-10
+date: 2024-09-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
