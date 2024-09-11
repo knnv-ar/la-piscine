@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lineas que danzan: Ecos de Laposky"
-date: 2022-10-09
+date: 2024-09-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Ana Paula Chaparro
+_Ana Paula Chaparro, 2024_
 
 **Lineas que danzan: Ecos de Laposky**
 
