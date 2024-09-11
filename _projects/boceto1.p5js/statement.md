@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "boceto1.p5js"
-date: 2024-11-09
+date: 2024-09-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
