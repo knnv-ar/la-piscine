@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Agustín Castillo Abad_, 2023.
+_Agustín Castillo Abad_, 2024.
 
 **Acercate**
 
