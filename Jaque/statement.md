@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Pamela Carta, 2024._
+_Pamela Carta_ , 2024.
 
 **Jaque**
 
