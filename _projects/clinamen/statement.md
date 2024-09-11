@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Juan Bautista Giménez, 2024.
+_Juan Bautista Giménez_, 2024.
 
 **Clinamen**
 
