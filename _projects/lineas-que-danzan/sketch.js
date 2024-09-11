@@ -4,8 +4,8 @@ let frecuencia = 0.1; // frecuencia de oscilación
 let numPuntos = 60;
 
 function setup() {
-  let canvas =createCanvas(512, 512);
-  parent.canvas= ('div-sketch')
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   angulo = TWO_PI / numLineas;
 }
 
