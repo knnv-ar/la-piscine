@@ -36,7 +36,7 @@ BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario
 
 BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en _El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural_. Murcia: CENDEAC, pp. 106-113.
 
-GUILLERMET, Aline. (2020). _Vera Molnar’s Computer Paintings_ [Pinturas por computadora de Vera Molnar]. _Representations_. 149. 1-30. 10.1525/rep.2020.149.1.1. Recuperado de https://www.researchgate.net/publication/338896073_Vera_Molnar's_Computer_Paintings
+GUILLERMET, Aline. (2020). _Vera Molnar’s Computer Paintings_ [Pinturas por computadora de Vera Molnar]. _Representations_. 149. 1-30. 10.1525/rep.2020.149.1.1. Recuperado de [https://www.researchgate.net/publication/338896073_Vera_Molnar's_Computer_Paintings](https://www.researchgate.net/publication/338896073_Vera_Molnar's_Computer_Paintings)
 
 Thaddaeus Ropac. (2024). _Vera Molnár_. Thaddaeus Ropac. https://ropac.net/artists/231-vera-molnar/
 
