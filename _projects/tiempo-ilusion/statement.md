@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tiempo Ilusión"
-date: 2024-10-09
+date: 2024-09-10
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -25,7 +25,7 @@ La obra comienza con una idea principal, en la investigación de las obras de Ve
 
 “Tiempo Ilusión” comenzó con una idea borrosa y sin una dirección clara. Inicialmente, probé mezclar círculos generados aleatoriamente, pero descarté esta opción por falta de fundamento. Luego, decidí enfocar el proyecto desde una base más sólida, realizando una investigación detallada para definir con claridad su propósito.
 
-“Tiempo Ilusión” toma la idea de variantes y así también las diferentes narrativas que se van a ir sumando en las distintas instancias de experiencia con la obra a través del tiempo. “La utilización de la imagen técnica y la imagen-movimiento, en su capacidad de expandirse en un tiempo-interno de relato, multiplica las posibilidades de generación de narrativas”. (Brea, 2002). Cómo uno como usuario puede ser intérprete, y al mismo tiempo, modificador activo de la obra ante la disponibilidad de manipulación que esta ofrece, con la intención de ir re-descubriendo y formando una conexión aún más personal con la pieza. “... hay productores, sí, pero también ellos (nosotros) mismos son cierta forma de ‘productos’.”(Brea, 2002)
+“Tiempo Ilusión” toma la idea de variantes y así también las diferentes narrativas que se van a ir sumando en las distintas instancias de experiencia con la obra a través del tiempo. “La utilización de la imagen técnica y la imagen-movimiento, en su capacidad de expandirse en un tiempo-interno de relato, multiplica las posibilidades de generación de narrativas”. (Brea, 2008). Cómo uno como usuario puede ser intérprete, y al mismo tiempo, modificador activo de la obra ante la disponibilidad de manipulación que esta ofrece, con la intención de ir re-descubriendo y formando una conexión aún más personal con la pieza. “... hay productores, sí, pero también ellos (nosotros) mismos son cierta forma de ‘productos’.”(Brea, 2008)
 
 Mientras que Molnar discute variantes relacionadas con la escala de una obra y cómo su significado y libertad pueden cambiar según el medio a través del cual se transmite, en mi caso decidí aplicar variantes basadas en el tiempo en lugar de modificar la escala. Esto permitió explorar el impacto de la velocidad y el movimiento sobre la percepción del patrón en lugar de alterar su tamaño o formato.
 
