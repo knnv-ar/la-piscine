@@ -40,4 +40,4 @@ A la hora de producir obras de arte, el foco está puesto fundamentalmente en el
 
 **Bibliografía**
 
-APELLIDO, Nombre. (año). _"Título del libro"_. Ciudad: Editorial.
+ABREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario de tópicos- sobre el arte electrónico” en La era postmedia. Acción comunicativa, prácticas (post)artísticas y dispositivos neomediales. Salamanca: CASA Editorial, pp. 4-8.
