@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Lola Capodanno_, 2024.
+_Lola Capodanno, 2024._
 
 **Reverberación de una máquina de afeitar**
 
