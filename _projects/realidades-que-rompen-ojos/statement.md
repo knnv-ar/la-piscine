@@ -17,9 +17,9 @@ _Santino Iosipescu_, 2024.
 **Realidades que rompen ojos**
 
 ‘’_Realidades que rompen ojos_’’ es una manera de expresar la idea de que, cómo nuestra percepción es tan susceptible al entorno del que formamos parte, si este sufre alguna disrupción que altere su conducta, se nos pueden llegar a _salir los ojos de lugar_.
-<br>Al criarnos y desenvolvernos en ámbitos, que se nos son impuestos, aparentemente como normales, nuestra mirada del mundo, se va amoldando a un sistema de normas morales y ordinarias, que acaba determinando nuestro comportamiento. 
+<br>Al criarnos y desenvolvernos en ámbitos que se nos son impuestos (aparentemente) como normales, nuestra mirada del mundo se va amoldando a un sistema de normas morales y ordinarias, que acaba determinando nuestro comportamiento. 
 Este proceso del cual no solemos ser conscientes, o no queremos serlo, implica la omisión de un montón de aspectos que no dejan de formar parte de nuestra realidad.<br> 
-Basta prestar la suficiente atención, o simplemente ser inoportuno, para entrar en razón y notar los quiebres que contiene nuestro entorno; aparentemente rellenados con ilusiones, aprobadas por la política social de turno, para así olvidarnos de la verdadera forma de nuestra realidad.<br>
+Basta prestar la suficiente atención, o simplemente ser inoportuno, para entrar en razón y notar los quiebres que contiene nuestro entorno; aparentemente rellenados con ilusiones, aprobadas por la política de turno, para así olvidarnos de la verdadera forma de nuestra realidad.<br>
 Estas roturas, a su vez, explican por qué muchas veces nos sentimos incómodos con lo cotidiano; hacen entrever las cosas que quedan por fuera de nuestro órden de vida y, por consiguiente, cuestionarnos a nosotros mismos y a nuestro entorno; entrando así en un estado _liminal_.
 
 **Desarrollo técnico, estético y conceptual**
