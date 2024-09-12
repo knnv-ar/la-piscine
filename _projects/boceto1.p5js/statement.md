@@ -30,8 +30,8 @@ Si esta obra tiene un objetivo, es el de no ser un cuadrado inerte colgado a una
 
 **Bibliografía**
 
-BREA, Jose Luis (2008) “Redefinición de las prácticas artísticas (s. 21)” 
+BREA, Jose Luis (2008) “Redefinición de las prácticas artísticas (s. 21)”.
 
-VALDIVIA, Sandra (S/N). Creación Híbrida. Recuperado de: [https://creacionhibrida.net/vera-molnar-una-pionera-del-arte-generativo-del-algoritmo-a-la-nft/](https://creacionhibrida.net/vera-molnar-una-pionera-del-arte-generativo-del-algoritmo-a-la-nft/){:target="_blank"}
+VALDIVIA, Sandra (S/N). Creación Híbrida. Recuperado de: [https://creacionhibrida.net/vera-molnar-una-pionera-del-arte-generativo-del-algoritmo-a-la-nft/](https://creacionhibrida.net/vera-molnar-una-pionera-del-arte-generativo-del-algoritmo-a-la-nft/){:target="_blank"} .
 
-Anónimo. Art Show Archives (S/N). Recuperado de: [https://digitalartarchive.siggraph.org/artwork/vera-molnar-hypertransformation-19/](https://digitalartarchive.siggraph.org/artwork/vera-molnar-hypertransformation-19/{:target="_blank"}
+Anónimo. Art Show Archives (S/N). Recuperado de: [https://digitalartarchive.siggraph.org/artwork/vera-molnar-hypertransformation-19/](https://digitalartarchive.siggraph.org/artwork/vera-molnar-hypertransformation-19/{:target="_blank"} .
