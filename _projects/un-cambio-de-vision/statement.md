@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "un cambio de vision"
-date: 2024/9/10
+date: 2024-09-10
 thumbnail: thumbnail.png
 dependencies:
   - p5
