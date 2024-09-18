@@ -1,5 +1,5 @@
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   noLoop();
 }
