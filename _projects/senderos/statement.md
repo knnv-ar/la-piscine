@@ -30,7 +30,11 @@ César AIRA, en Sobre el arte contemporáneo destaca un articulo escrito por Mar
 
 > _El cuadro de Poussin, en su factura exquisita, en su intemporalidad de museo, es el documento, escrito en clave, de una historiade experiencia, nostalgia, alucinación_
 
-Este momento del escrito fue fundamental y me sirvió como ancla para el tema de mi trabajo, ya que este, a través de la narración oral y acompañada con ejemplos fotográficos, comenta la experiencia que he vivido en este año como estudiante universitario, la importancia de tener presente al tu que fuiste de niño, el recuerdo de un ser querido, y una serie de comentarios reflexivos y motivacionales para aquellos que atraviesan un momento de incertidumbre en sus vidas y no saben que camino tomar en vista a su futuro.
+Además, en *el principio de la creación permanente* de **Nuevos Medios** de **Christiane Fricke** se comenta que:
+
+> _Filliou (Poeta y artista francés, involucrado con el grupo Fluxus, un movimiento artístico internacional desarrollado en 1961), cuyo lema era la creación permanente, veía en la creación un proceso de evolución en el cuál todo el mundo podía participar, para ello nos ofrecía las herramientas indispensables, la imaginación y la inocencia._
+
+Estos momentos de los escritos fueron fundamentales y me sirvieron como ancla para el tema de mi trabajo, ya que este, a través de la narración oral y acompañada con ejemplos fotográficos, comenta la experiencia que he vivido en este año como estudiante universitario, la importancia de tener presente al tu que fuiste de niño, el recuerdo de un ser querido, y una serie de comentarios reflexivos y motivacionales para aquellos que atraviesan un momento de incertidumbre en sus vidas y no saben que camino tomar en vista a su futuro.
 
 En general, este trabajo combina pasado-presente, y aquí entra una parte muy importante del escrito de César AIRA en Sobre el arte contemporáneo, señala:
 
@@ -43,6 +47,8 @@ para su realización, utilicé tres audios en los que comento una experiencia di
 
 **Bibliografía**
 
+**Nuevos Medios de Christiane Fricke**: https://drive.google.com/file/d/1aQUSt9URiLYdohIWeVA6CNaYEjqHYKu-/view
+
 **El arte y las emociones**: https://www.mundoarti.com/magazine/noticia/el-arte-y-las-emociones/
 
-**Sobre el arte contemporáneo de César AIRA**:  https://drive.google.com/file/d/1seZjx5FkiPtPRa2KyaBJCnhSsOdvSBal/view
+**Sobre el arte contemporáneo de César AIRA**: https://drive.google.com/file/d/1seZjx5FkiPtPRa2KyaBJCnhSsOdvSBal/view
