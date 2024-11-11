@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bola de fetiche"
+title: "Confrontación & Proseguir"
 date: 2024-11-10
 thumbnail: thumbnail.png
 dependencies:
