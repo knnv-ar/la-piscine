@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Olvidados"
-date: 2022-10-09
+date: 2024-11-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
