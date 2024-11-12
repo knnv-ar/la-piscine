@@ -1,20 +1,3 @@
-/*Título de la Obra: UNO ES UNO
-Año: 2024
-Autor/a: Lucas Milton Dario Burgos
-Enlace a la obra:
-Breve descripción: 
- 
- En la era de la reproducción, donde lo que veo aca, lo veo allá y lo vi mil veces, todo se duplica y transforma sucesivamente, creando cada vez un nuevo "algo" que puede ser en una mejor versión o una, tal vez, decadente y pobre. 
-
- Al fin y al cabo la réplica en sus diferentes versiones pasa a ser una partícula mas dentro de una idea general, donde cada partícula toma de otra lo que no tiene una. 
-
- Entonces, que pasa si pudiera tomar de lo que no tengo en otra versión imaginaria ideal de mi? podría intentar buscar la mejor versión de mi hasta lograrlo, pero se que seria un juego ilusorio infinito, porque de eso se trata la reproducción, querer ponerle un fin a la transformación es como intentar frenar una máquina en automático. Incontables escenarios ficticios de lo que podria haber sido y lo que ahora seria si hubiera intervenido un minimo movimiento de aguja. Pero aun asi somos esto, esto que puede ser un privilegio por serlo, deja en la deriva el cuestionamiento de si se trata de la mejor version.
- 
-Atravesando diferentes etapas de desarrollo podemos describir Uno es Uno como una obra progresiva, el compuesto de unidades simbolicas generan una conexion esencial entre sí.
-
-
-Desarrollo técnico, estético y conceptual (describa en un mínimo de 200 y un máximo de 500 palabras las características técnicas, estéticas, conceptuales, referentes artísticos y bibliografía utilizada):*/
-
 let sustance = 750;
 let activatorText;
 let activatorWhite;
@@ -90,7 +73,8 @@ function preload() {
   activatorBlack = loadImage("img/activatorBlack.png");
 }
 function setup() {
-  createCanvas(1000, 650);
+let canvas = createCanvas(1000, 650);
+canvas.parent('div-sketch'););
 }
 
 function draw() {
