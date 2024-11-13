@@ -30,7 +30,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(735, 622);
+  let canvas = createCanvas(735, 622);
+  canvas.parent('div-sketch');
 
   // posiciones, tamaños, colores y estado de desbloqueo de los rects
   rects = [
