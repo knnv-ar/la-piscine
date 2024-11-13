@@ -33,7 +33,7 @@ function setup() {
   
   // Creo el video inicial
   video = createVideo(videos[videoContador], videoLoaded);  
-  video.size(videoWidth, videoHeight); 
+  //video.size(videoWidth, videoHeight); 
   video.hide(); // Ocultar el video en el DOM
   video.loop(); // Iniciar el primer video
   
