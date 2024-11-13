@@ -19,8 +19,7 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(640, 480);
-  canvas.parent('div-sketch');
+  createCanvas(640, 480);
   colorpincel = color("#FFFFFF");
 
   video = createCapture(VIDEO);
@@ -132,11 +131,15 @@ function keyPressed() {
 
   // Con las flechas aumenta o disminuye el tamaño del pincel
   if (keyCode == RIGHT_ARROW) {
+    puntosactive = false; // Desactiva puntillismo
+    pixeladoactive = false; // Desactiva pixelado
     if (tamanioStroke <= 30) {
       tamanioStroke += 1;
     }
   }
   if (keyCode == LEFT_ARROW) {
+    puntosactive = false; // Desactiva puntillismo
+    pixeladoactive = false; // Desactiva pixelado
     if (tamanioStroke >= 2) {
       tamanioStroke -= 1;
     }
@@ -146,6 +149,7 @@ function keyPressed() {
   if (key == "z" || key == "Z") {
     zoomallowed = true; // Activa pincel de zoom
     brushactive = false; // Desactiva pincel normal
+    pixeladoactive = false; // Desactiva pixelado
   }
 
   //Con rgbwk cambia los colores
@@ -154,30 +158,35 @@ function keyPressed() {
     colorpincel = color("#ff0000");
     borrador = false;
     zoomallowed = false;
+    pixeladoactive = false; // Desactiva pixelado
   }
   if (key == "g" || key == "G") {
     brushactive = true; // Activa dibujo con pincel
     colorpincel = color("#008000");
     borrador = false;
     zoomallowed = false;
+    pixeladoactive = false; // Desactiva pixelado
   }
   if (key == "b" || key == "B") {
     brushactive = true; // Activa dibujo con pincel
     colorpincel = color("#000080");
     borrador = false;
     zoomallowed = false;
+    pixeladoactive = false; // Desactiva pixelado
   }
   if (key == "w" || key == "W") {
     brushactive = true; // Activa dibujo con pincel
     colorpincel = color("#FFFFFF");
     borrador = false;
     zoomallowed = false;
+    pixeladoactive = false; // Desactiva pixelado
   }
   if (key == "k" || key == "K") {
     brushactive = true; // Activa dibujo con pincel
     colorpincel = color("#000000");
     borrador = false;
     zoomallowed = false;
+    pixeladoactive = false; // Desactiva pixelado
   }
 
   //Con e cambia al borrador
@@ -185,6 +194,8 @@ function keyPressed() {
     brushactive = true; // Activa dibujo con pincel
     borrador = true;
     zoomallowed = false;
+    puntosactive = false; // Desactiva puntillismo
+    pixeladoactive = false; // Desactiva pixelado
   }
 
   // Con p activa el filtro de posterización
@@ -192,6 +203,8 @@ function keyPressed() {
     zoomallowed = false; // Desactiva pincel de zoom
     filter(POSTERIZE, 3);
     brushactive = true; // Activa dibujo con pincel
+    puntosactive = false; // Desactiva puntillismo
+    pixeladoactive = false; // Desactiva pixelado
   }
 
   // Con i activa el filtro de inversión
@@ -199,8 +212,10 @@ function keyPressed() {
     zoomallowed = false; // Desactiva pincel de zoom
     filter(INVERT);
     brushactive = true; // Activa dibujo con pincel
+    puntosactive = false; // Desactiva puntillismo
+    pixeladoactive = false; // Desactiva pixelado
   }
-  
+
   // Con a activa efecto de puntillismo automático
   if (key == "a" || key == "A") {
     zoomallowed = false; // Desactiva pincel de zoom
@@ -212,8 +227,8 @@ function keyPressed() {
       puntosactive = true;
     }
   }
-  
-  if (key == 'x' || key == 'X') {
+
+  if (key == "x" || key == "X") {
     if (pixeladoactive) {
       pixeladoactive = false;
     } else if (pixeladoactive == false) {
