@@ -20,9 +20,9 @@ function preload() {
   
   // Inicializo las rutas de los videos
   videos = [
-    'videos/trillis.mp4',
-    'videos/caprichosa.mp4',
-    'videos/tele.mp4'
+    'video/trillis.mp4',
+    'video/caprichosa.mp4',
+    'video/tele.mp4'
   ];
 }
 
@@ -68,11 +68,12 @@ textAlign(CENTER, CENTER);
 text(textoActual, width / 2, height - 50); 
 push();
 fill(255,0,0);
-rect(435,110,20,20);
+rect(375,155,20,20);
 pop();
 }
 function mousePressed(){
- if(mouseX>425 && mouseX<435 && mouseY>110 && mouseY <120 ){
+
+ if(mouseX>375 && mouseX<395 && mouseY>155 && mouseY <175 ){
   cambioVideo();
 
  }
