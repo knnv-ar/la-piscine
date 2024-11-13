@@ -36,14 +36,7 @@ function setup() {
   video.hide(); // Ocultar el video en el DOM
   video.loop(); // Iniciar el primer video
   
-  let button = createButton('O');  
-  button.style('border-radius', '50%');  
-  button.style('width', '30px');  
-  button.style('height', '30px'); 
-  button.style('background-color', '#888787');  
-  button.style('border', 'none');  
-  button.position(374,157); 
-  button.mousePressed(cambioVideo);  
+  
 }
 
 // Función que se llama cuando el video está listo para reproducirse
@@ -53,7 +46,7 @@ function videoLoaded() {
 
 function draw() {
   let videoX = 110;
-  let videoY = 48;
+  let videoY = 0;
 
   
   image(video, videoX, videoY, videoWidth, videoHeight);
