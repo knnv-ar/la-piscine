@@ -46,7 +46,7 @@ function videoLoaded() {
 
 function draw() {
   let videoX = 110;
-  let videoY = 0;
+  let videoY = -70;
 
   
   image(video, videoX, videoY, videoWidth, videoHeight);
@@ -59,14 +59,17 @@ textSize(15)
 fill(255);
 textAlign(CENTER, CENTER);
 text(textoActual, width / 2, height - 50); 
+/*
 push();
 fill(255,0,0);
 rect(375,155,20,20);
-pop();
+pop();*/
+
+
 }
 function mousePressed(){
 
- if(mouseX>375 && mouseX<395 && mouseY>155 && mouseY <175 ){
+ if(mouseX>375 && mouseX<400 && mouseY>155 && mouseY <180 ){
   cambioVideo();
 
  }
