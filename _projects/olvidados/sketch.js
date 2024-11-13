@@ -2,7 +2,7 @@ let fondoTV;
 let tvPrendida = false;
 let video1, video2, video3, video4, video5;
 let indiceVideoActual = 0;
-let botonX = 560, botonY = 310, botonAncho = 100, botonAlto = 185;
+let botonX = 627, botonY = 445, botonAncho = 64, botonAlto = 195;
 
 function preload() {
   fondoTV = loadImage("fondo/tele.jpg");
@@ -47,6 +47,9 @@ function draw() {
     textAlign(RIGHT);
     text("La televisión está apagada", 465, 50);
   }
+  // boton para prender la tele
+  fill(190, 50, 90, 90);
+  circle(botonX, botonY, botonAncho, botonAlto);
 }
 
 function mostrarVideo(indice) {
