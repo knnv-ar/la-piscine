@@ -54,7 +54,6 @@ function setup() {
   let canvas = createCanvas(600, 400, WEBGL);
   canvas.parent('div-sketch');
   angleMode(DEGREES);
-  rectMode(CENTER);
 
   // input de micrófono!
   mic = new p5.AudioIn();
@@ -94,6 +93,7 @@ function draw() {
   espectro = fft.analyze(); // obtengo el análisis del espectro
 
   textFont(fuente);
+  textAlign(CENTER);
   text("Expresate.", 0, height / 2 - 30); // dibuja el texto
 
   for (let i = 0; i < particulas.length; i++) {
