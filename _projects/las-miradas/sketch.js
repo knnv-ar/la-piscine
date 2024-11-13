@@ -5,12 +5,11 @@ let cancion;
 
 
 function preload() {
-  cancion = loadSound("musica/emocional.wav");
+  cancion = loadSound("emocional.mp3");
 }
 
 function setup() {
-  let canvas = createCanvas(800, 800);
-  canvas.parent('div-sketch');
+  createCanvas(800, 800);
   cancion.loop();
 }
 
