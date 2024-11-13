@@ -1,7 +1,6 @@
 //parte del juego
 let patio;
 let corre;
-let nene;
 let vigiDere;
 let vigiIzq;
 let dialogo;
@@ -20,6 +19,8 @@ let estaCorriendo = false; // nueva variable para controlar la imagen
 let cam;
 let transparencia = 0;
 let cantTransparencia = 1;
+
+let font
 
 let tiempo = 675;
 let imagenes = [];
@@ -50,9 +51,9 @@ let diapo1T = 0;
 let diapo1CT = 1;
 
 function preload() {
+  font= loadFont("./fonts/GloriaHallelujah-Regular.ttf")
   patio = loadImage("./img/patio.jpg");
   corre = loadImage("./img/corre.gif");
-  nene = loadImage("./img/nene.png");
   vigiDere = loadImage("./img/vigi-dere.png");
   vigiIzq = loadImage("./img/vigi-izq.png");
   dialogo = loadImage("./img/dialogo.png");
@@ -299,7 +300,7 @@ function draw() {
 
   //imagenes museooooo
   push();
-  textFont("Gloria Hallelujah");
+  textFont("font");
   textAlign(CENTER);
   // Renderizar cada diapositiva
   for (let i = 0; i < textos.length; i++) {
