@@ -48,8 +48,8 @@ function draw() {
     text("La televisión está apagada", 465, 50);
   }
   // boton para prender la tele
-  fill(190, 50, 90, 90);
-  circle(botonX, botonY, botonAncho, botonAlto);
+  //fill(190, 50, 90, 90);
+  //circle(botonX, botonY, botonAncho, botonAlto);
 }
 
 function mostrarVideo(indice) {
