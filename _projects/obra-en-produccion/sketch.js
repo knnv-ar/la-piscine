@@ -86,7 +86,7 @@ function draw() {
     }
   }
 
-  // Con más de 1 minuto sin interactuar, resetea todo
+  // Con más de 2 minutos sin interactuar, resetea todo
   if (frameCount > 7200) {
     muestravideo = true;
     photoallowed = true;
