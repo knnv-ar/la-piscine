@@ -48,4 +48,6 @@ Muchas gracias.
 
 Aira, C. (2010). *Sobre el arte contemporáneo*. \[Editorial Grijalbo-Mondadori\].
 
+ARNS, Inke. (2005). *El código como acto de habla performativo*.\[Revista Artnodes\].
+
 v
