@@ -78,7 +78,7 @@ function updateButtons() {
      altEndingButton2.mousePressed(() => changeSlide(8)); // Ir al segundo final alternativo
 
      let altEndingButton3 = createButton("Cocinar al lobo");
-     altEndingButton3.position(520, 650);
+     altEndingButton3.position(520, 850);
      altEndingButton3.mousePressed(() => changeSlide(9)); // Ir al tercer final alternativo
   } else if (cambiar === 7 || cambiar === 8 || cambiar === 9) {
     // Finales alternativos
