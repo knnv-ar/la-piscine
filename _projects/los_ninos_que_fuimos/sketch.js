@@ -66,6 +66,17 @@ textSize(15)
 fill(255);
 textAlign(CENTER, CENTER);
 text(textoActual, width / 2, height - 50); 
+push();
+fill(255,0,0);
+rect(435,110,20,20);
+pop();
+}
+function mousePressed{
+ if(mouseX>425 && mouseX<435 && mouseY>110 && mouseY <120 ){
+  cambioVideo();
+
+ }
+
 }
 
 // Función para cambiar el video y el texto
