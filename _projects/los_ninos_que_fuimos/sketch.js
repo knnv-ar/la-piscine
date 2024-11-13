@@ -27,6 +27,7 @@ function preload() {
 }
 
 function setup() {
+  
   let canvas = createCanvas(500, 600);
   canvas.parent('div-sketch');
   
@@ -46,25 +47,22 @@ function videoLoaded() {
 
 function draw() {
   let videoX = 110;
-  let videoY = -70;
+  let videoY = 40;
 
-  
+ print(video.width)
+ print(video.height)
   image(video, videoX, videoY, videoWidth, videoHeight);
 
   // Dibujo la imagen de fondo
   image(img, 0, 0, width, height);
 
   // Muestro el texto actual en la pantalla
+  push();
 textSize(15)
 fill(255);
 textAlign(CENTER, CENTER);
 text(textoActual, width / 2, height - 50); 
-/*
-push();
-fill(255,0,0);
-rect(375,155,20,20);
-pop();*/
-
+pop();
 
 }
 function mousePressed(){
