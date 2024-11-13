@@ -85,7 +85,7 @@ function cambioVideo() {
   
   // Creo un nuevo video con la nueva fuente
   video = createVideo(videos[videoContador], videoLoaded); //  se llama a videoLoaded cuando esté listo
-  video.size(videoWidth, videoHeight); 
+ // video.size(videoWidth, videoHeight); 
   video.hide(); 
 
   // Cambio l texto al siguiente en la lista
