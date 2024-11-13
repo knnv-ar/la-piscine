@@ -17,7 +17,9 @@ _Celina Naomi Hara_, 2024.
 **Obra en producción**
 
 Buen día, qué tal. ¿Cómo le va? ¿Le podría hacer una pregunta? ¿Por qué se detuvo ante esta obra? Como se podrá observar, esta obra aún está incompleta. ¿Quiere echarle una mano para completarla? Presione la tecla “F” para comenzar.
+
 La obra “Obra en producción”, como su nombre lo indica, es un trabajo en construcción, esperando la interacción de cada persona para seguir desarrollándose. Recién cuando el usuario interactúa con ella, se podría avanzar en su construcción, con procesos irrepetibles, únicos y permanentes que evocan la naturaleza cambiante de la vida misma. O bien, puede que para el usuario la pieza ya esté completa así como se ve, y decida dejarla como está. 
+
 Este proyecto lo invita a reflexionar sobre el valor del proceso creativo, cuestionando si lo importante es el resultado final o el acto de creación en sí. Al final, ¿en qué momento consideramos que algo está "terminado"? ¿Qué lo lleva a decidir? ¿Le gustaría contribuir?
 
 **Instrucciones**
@@ -28,8 +30,8 @@ Este proyecto lo invita a reflexionar sobre el valor del proceso creativo, cuest
 * Teclas R/G/B/W/K: cambio de los colores del pincel a rojo, verde, azul, blanco y negro respectivamente
 * Tecla E: borrador
 * Tecla P/I: filtros de posterización e inversión de colores
-* Tecla A: activa el efecto de puntillismo
-* Tecla X: activa el efecto de pixelado
+* Tecla A: activar y desactivar el efecto de puntillismo
+* Tecla X: pixelar la imagen
 * Tecla S: guardar la imagen
 * Tecla N: comenzar de nuevo
 
