@@ -19,7 +19,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 480);
+  let canvas = createCanvas(640, 480);
+  canvas.parent('div-sketch');
   colorpincel = color("#FFFFFF");
 
   video = createCapture(VIDEO);
