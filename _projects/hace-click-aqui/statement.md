@@ -3,7 +3,7 @@ layout: post
 title: "Hace click aquí"
 date: 2024-11-09
 thumbnail: thumbnail.png
-dependecies:
+dependencies:
   - p5
   - p5.sound
 ---
