@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Acercate"
-date: 2022-10-09
+date: 2024-09-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Agustín Castillo Abad_, 2023.
+_Agustín Castillo Abad_, 2024.
 
 **Acercate**
 

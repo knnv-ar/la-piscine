@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Captura"
-date: 2024-12-11
+date: 2024-11-11
 thumbnail: thumbnail.png
 dependencies:
   - p5

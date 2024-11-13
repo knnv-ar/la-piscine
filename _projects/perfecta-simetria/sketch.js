@@ -1,7 +1,7 @@
 //TP1- AM1 - "Perfecta simetría" - Florencia Pennella
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   frameRate(25);
 }
