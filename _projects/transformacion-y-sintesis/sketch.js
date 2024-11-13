@@ -65,7 +65,8 @@ function preload(){
 }
 
 function draw() {
-  createCanvas(960, 540);
+  let canvas = createCanvas(960, 540);
+  canvas.parent('div-sketch');
   background(0);
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
