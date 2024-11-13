@@ -68,7 +68,8 @@ sound = loadSound("img/bichitos.mp3");
 }
 
 function setup() {
-  createCanvas(400, 534);
+  let canvas = createCanvas(400, 534);
+  canvas.parent('div-sketch');
   background(117, 170, 174);
   sound.loop();
 }
