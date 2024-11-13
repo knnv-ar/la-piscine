@@ -145,7 +145,7 @@ function keyPressed() {
     }
   }
 
-  // Con z activa el pincel de zool
+  // Con z activa el pincel de zoom
   if (key == "z" || key == "Z") {
     zoomallowed = true; // Activa pincel de zoom
     brushactive = false; // Desactiva pincel normal
