@@ -1,0 +1,4 @@
+Started render process: C:/Users/aldim/AppData/Local/Programs/kdenlive/bin/melt.exe -progress C:/Users/aldim/AppData/Local/Temp/kdenlive-LTNyrO-1.mlt
+[image2 @ 00000188226ce2c0] The specified filename 'C:/Users/aldim/Desktop/Codigo/AM1/tp2/IMG/flash.png' does not contain an image sequence pattern or a pattern is invalid. [image2 @ 00000188226ce2c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.[image2 @ 00000188226ce2c0] Cannot write more than one file with the same name. Are you missing the -update option or a sequence pattern?[consumer avformat] error writing video frame: -22101	10	12
+13, percentage: 15Rendering of C:/Users/aldim/Desktop/Codigo/AM1/tp2/IMG/flash.png aborted, resulting video will probably be corrupted.
+Frame: 10
