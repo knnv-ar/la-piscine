@@ -71,7 +71,7 @@ fill(255,0,0);
 rect(435,110,20,20);
 pop();
 }
-function mousePressed{
+function mousePressed(){
  if(mouseX>425 && mouseX<435 && mouseY>110 && mouseY <120 ){
   cambioVideo();
 
