@@ -12,7 +12,7 @@ let textura = false;
 let transparencia = 50;
 //------------------------------------------------------PRELOAD
 function preload() {
-  cristal = loadImage("imagenes/broken.png");
+  cristal = loadImage("broken.png");
 }
 //------------------------------------------------------SETUP
 function setup() {

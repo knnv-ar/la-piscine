@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Confrontación & Proseguir"
-date: 2024-11-10
+date: 2024-11-11
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -40,4 +40,4 @@ La configuración de la obra, consta de la figura central: una esfera verde que 
 
 - ARNS, Inke. (2005). "El código como acto de habla performativo". En Revista Artnodes, Julio de 2005, ISSN 1695-5951
 
-- TRLab. (2021, diciembre 1). 10 Questions with Joshua Davis / Praystation | TRLab x AI 2041 [Video]. YouTube. https://www.youtube.com/watch?v=RBLXyYVgeps
+- TRLab. (2021, diciembre 1). 10 Questions with Joshua Davis / Praystation. TRLab x AI 2041 [Video]. YouTube. (https://www.youtube.com/watch?v=RBLXyYVgeps)
