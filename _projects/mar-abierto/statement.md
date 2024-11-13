@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mar Abierto"
-date: 2024-12-11
+date: 2024-11-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
