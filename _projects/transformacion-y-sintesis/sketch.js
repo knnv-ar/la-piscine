@@ -117,6 +117,7 @@ function keyPressed(){
  
   }
   if(keyCode === ENTER || keyCode == 32){
+    event.preventDefault();
     let img = captura.get(rectX, rectY, rectW, rectH);
     
     
