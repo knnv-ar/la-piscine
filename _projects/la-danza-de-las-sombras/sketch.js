@@ -59,16 +59,17 @@ function preload() {
   musicaCF = loadSound("musica_carafeliz.mp3");
   musicaT = loadSound("musica_triste.mp3");
   musicaDC = loadSound("musica_doscaras.mp3");
+  musicaE = loadSound("musica_escapar.mp3");
   
   musicaC.setVolume(volumenMusica);
   musicaCF.setVolume(volumenMusica);
   musicaT.setVolume(volumenMusica);
   musicaDC.setVolume(volumenMusica);
+  musicaE.setVolume(volumenMusica);
 }
 
 function setup() {
-  let canvas = createCanvas(600, 500, WEBGL);
-  canvas.parent('div-sketch');
+  createCanvas(600, 500, WEBGL);
   musicaC.play();
 }
 
@@ -136,35 +137,42 @@ function draw() {
 }
 
 function mousePressed() {
-  // Secuencia de cambio de imágenes
+  // Detener toda la música antes de iniciar la siguiente
+  detenerMusica();
+
+  // Secuencia de cambio de imágenes y reproducción de música instantánea con loop
   if (imagenActual === corazón) {
     imagenActual = feliz;
-    musicaC.stop();
-    musicaCF.play();
+    musicaCF.play(); // Reproduce de inmediato
+    musicaCF.loop(); // Asegura que siga en bucle
+    musicaCF.setVolume(volumenMusica);
   } else if (imagenActual === feliz) {
     imagenActual = triste;
-    musicaCF.stop();
     musicaT.play();
+    musicaT.loop();
+    musicaT.setVolume(volumenMusica);
   } else if (imagenActual === triste) {
     imagenActual = doscaras;
-    musicaT.stop();
     musicaDC.play();
+    musicaDC.loop();
+    musicaDC.setVolume(volumenMusica);
   } else if (imagenActual === doscaras) {
     imagenActual = escapar;
-  //  
-  // } else if (imagenActual === pesadez) {
-  //   imagenActual = consuelo;
-  } else if (imagenActual === consuelo) {
-    imagenActual = sufrimiento;
+    musicaE.play();
+    musicaE.loop();
+    musicaE.setVolume(volumenMusica);
   } else {
     imagenActual = corazón; // Volver al principio
-    musicaC.play();  
+    musicaC.play();
+    musicaC.loop();
+    musicaC.setVolume(volumenMusica);
   }
-  
-  function detenerMusica() {
+}
+
+function detenerMusica() {
   musicaC.stop();
   musicaCF.stop();
   musicaT.stop();
   musicaDC.stop();
-}
+  musicaE.stop();
 }
