@@ -3,15 +3,15 @@
 // Autor: Avila Micaela
 // Año: 2024
 
-// DECLARO VARIABLES
+// declaró variables
 let img;
 let minimo = 1;
 let maximo = 10;
 let sonido;
 
 function preload() {
-  img = loadImage("imagen/foto1.jpg");
-  sonido = loadSound("sonido/sonido.mp3");
+  img = loadImage("foto1.jpg");
+  sonido = loadSound("sonido.mp3");
 }
 
 function setup() {
