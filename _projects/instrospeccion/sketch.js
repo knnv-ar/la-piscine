@@ -1,7 +1,7 @@
 var cancion; 
 
   function preload() {
-  cancion = loadSound("sound");
+  cancion = loadSound("sound.mp3");
   }
 
   function mouseClicked() {
