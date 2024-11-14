@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Ana Paula Chaparro, 2024.
+_Ana Paula Chaparro, 2024_
 
 **Contacto visual con uno mismo (sin espejo)**
 
@@ -28,6 +28,6 @@ Conceptualmente, la pieza toma como base ideas de César Aira en su ensayo “So
 
 **Bibliografía**
 
-Aira, César. ([2013], 2016). Sobre el arte contemporáneo. En Sobre el arte contemporáneo. 
+_Aira, César_. ([2013], 2016). Sobre el arte contemporáneo. En Sobre el arte contemporáneo.
 
-Benjamin, Walter. (1936). La obra de arte en la era de su reproductibilidad técnica.
+_Benjamin, Walter_. (1936). La obra de arte en la era de su reproductibilidad técnica.
