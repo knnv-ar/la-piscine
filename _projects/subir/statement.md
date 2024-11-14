@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Espacios internos"
-date: 2024
+date: 2024-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
