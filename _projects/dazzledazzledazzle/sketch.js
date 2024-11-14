@@ -12,7 +12,9 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1100, 800);
+  let canvas = createCanvas(1100, 800);
+  canvas.parent('div-sketch');
+  
  
   shapes.push({ type: 'ellipse', x:560, y: 450, w: 50, h: 50 });
   shapes.push({ type: 'triangle', x1: 600, y1: 300, x2: 650, y2: 250, x3: 700, y3: 300 });
