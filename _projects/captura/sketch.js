@@ -9,10 +9,10 @@ let flash, ruido;
 
 //--------CARGA DE IMAGENES---------//
 function preload(){ 
-  cabeza = loadModel('/IMG/sin_nombre.obj', true);
-  c1= loadImage('/IMG/camara1.png');
-  c2= loadImage('/IMG/camara2.png');
-  c3= loadImage('/IMG/camara3.png');
+  cabeza = loadModel('/img/sin_nombre.obj', true);
+  c1= loadImage('/img/camara1.png');
+  c2= loadImage('/img/camara2.png');
+  c3= loadImage('/img/camara3.png');
 
   flash= loadSound('audio-video/flash.mp3');
   ruido= loadSound('audio-video/ruidodefondo.mp3');

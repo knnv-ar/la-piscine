@@ -31,3 +31,5 @@ Además, Aira Cesar habla en su texto llamado “Sobre el Arte Contemporaneo” 
 Fricke Christiane. (1999)_"Nuevos Medios"_.
 
 Aira Cesar. (2010). _"Sobre el Arte Contemporáneo"_.
+
+Imágenes https://biblio-cuentos.blogspot.com/2015/01/los-tres-cerditos-autor-anonimo.html?m=1

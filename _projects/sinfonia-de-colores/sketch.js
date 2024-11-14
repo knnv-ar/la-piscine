@@ -31,7 +31,8 @@ function preload() {
   corazones[9] = loadImage("img/rosa.png");
 }
 function setup() {
-  createCanvas(500, 400);
+  let canvas = createCanvas(500, 400);
+  canvas.parent('div-sketch');
 }
 
 function draw() {
