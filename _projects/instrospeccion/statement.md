@@ -15,7 +15,7 @@ dependencies:
 
 _Agustín Nicolás Iglesias_, 2024.
 
-**Instrospeccion|noiccepsrtsni**
+**Instrospeccion | noiccepsrtsni**
 
 No se que decirles para que entiendan mi obra ¿quizás por qué no me interesa? La verdad es que no me interesa dar una respuesta más que el título; me interesa que busquen y reflexionen, que naveguen entre las capas de la obra y, por así decirlo, encontrar ese origen fecundante. 
 Como dijo Aira _“cualquier origen es bueno”_ , y es verdad por algo hay que empezar, y también nos dijo 
