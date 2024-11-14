@@ -36,7 +36,7 @@ Esto refleja la idea planteada por César Aira sobre el arte contemporáneo, que
 sin la necesidad de anticipar un futuro o imponer una narrativa lineal (Aira, 2013). Esta capa de elementos en movimiento permite al espectador descubrir múltiples 
 interpretaciones del entorno sin depender de una estructura fija o de una única visión, dejando abierta la percepción de cada ángulo y posición.
 
-Finalmente, la última capa de la obra presenta un fondo oscuro constante que enmarca las variaciones en el primer plano y refuerza la idea de un entorno que se transforma según el punto de vista del observador. 
+Finalmente, la obra presenta un fondo oscuro constante que enmarca las variaciones en el primer plano y refuerza la idea de un entorno que se transforma según el punto de vista del observador. 
 En lugar de ofrecer una representación fija, la obra permite que cada interacción y perspectiva construya una versión única del entorno visual. 
 Así, esta pieza permite que el código y los elementos generativos actúen como una estructura abierta, capaz de adaptarse a distintas miradas.
 De este modo, la obra plantea cómo la percepción puede construirse desde distintos puntos de vista sin imponer una narrativa particular, permitiendo a cada observador descubrir su propia interpretación dentro del entorno visual.
@@ -45,6 +45,6 @@ De este modo, la obra plantea cómo la percepción puede construirse desde disti
 
 **Bibliografía**
 
-AIRA, César. (2013). Sobre el arte contemporáneo
+AIRA, César. (2013).  _Sobre el arte contemporáneo_
 
-ARNS, Inke. (2005). El código como acto de habla performativo
+ARNS, Inke. (2005).  _El código como acto de habla performativo_
