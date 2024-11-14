@@ -35,59 +35,59 @@ function updateButtons() {
   if (cambiar === 0) {
     // Introducción
     let nextButton = createButton("Continuar");
-    nextButton.position(300, 650);
+    nextButton.position(300, 850);
     nextButton.mousePressed(() => changeSlide(1));
   } else if (cambiar > 0 && cambiar <= 3) {
     // Partes 1, 2, 3
     let backButton = createButton("Atrás");
-    backButton.position(300, 650);
+    backButton.position(300, 850);
     backButton.mousePressed(() => changeSlide(cambiar - 1));
 
     let nextButton = createButton("Continuar");
-    nextButton.position(350, 650);
+    nextButton.position(350, 850);
     nextButton.mousePressed(() => changeSlide(cambiar + 1));
   } else if (cambiar === 4 || cambiar === 5) {
     // Partes 4, 5
     let backButton = createButton("Atrás");
-    backButton.position(300, 650);
+    backButton.position(300, 850);
     backButton.mousePressed(() => changeSlide(cambiar - 1));
 
     let continueButton = createButton("Continuar");
-    continueButton.position(350, 650);
+    continueButton.position(350, 850);
     continueButton.mousePressed(() => changeSlide(cambiar + 1));
 
     let altEndingButton = createButton("Final alternativo");
-    altEndingButton.position(420, 650);
+    altEndingButton.position(420, 850);
     altEndingButton.mousePressed(() => changeSlide(7)); // Ir al primer final alternativo
   } else if (cambiar === 6) {
     // Parte 6
     let backButton = createButton("Atrás");
-    backButton.position(200, 650);
+    backButton.position(200, 850);
     backButton.mousePressed(() => changeSlide(cambiar - 1));
 
     let continueButton = createButton("Continuar");
-    continueButton.position(240, 650);
+    continueButton.position(240, 850);
     continueButton.mousePressed(() => changeSlide(cambiar + 1));
 
      let altEndingButton1 = createButton("Escapar al bosque");
-     altEndingButton1.position(305, 650);
+     altEndingButton1.position(305, 850);
      altEndingButton1.mousePressed(() => changeSlide(7)); // Ir al primer final alternativo
 
      let altEndingButton2 = createButton("Escapar juntos al bosque");
-     altEndingButton2.position(424, 650);
+     altEndingButton2.position(424, 850);
      altEndingButton2.mousePressed(() => changeSlide(8)); // Ir al segundo final alternativo
 
      let altEndingButton3 = createButton("Cocinar al lobo");
-     altEndingButton3.position(520, 650);
+     altEndingButton3.position(520, 850);
      altEndingButton3.mousePressed(() => changeSlide(9)); // Ir al tercer final alternativo
   } else if (cambiar === 7 || cambiar === 8 || cambiar === 9) {
     // Finales alternativos
     let backButton = createButton("Atrás");
-    backButton.position(300, 650);
+    backButton.position(300, 850);
     backButton.mousePressed(() => changeSlide(cambiar - 1));
 
     let classicEndingButton = createButton("Dejarlo ir");
-    classicEndingButton.position(300, 650);
+    classicEndingButton.position(300, 850);
     classicEndingButton.mousePressed(() => changeSlide(10)); // Ir al final clásico
   }
 }
