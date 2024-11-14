@@ -20,6 +20,7 @@ La humanidad como la conocemos está constantemente mutando hacia un nuevo estad
 
 **Desarrollo técnico, estético y conceptual**
 _Iniciar la acción pulsando la tecla "a"_
+
 Transmutación se compone de un cubo tridimensional cuyas caras son imágenes de radiografías. Estas imágenes están integradas en un video que se visualiza en loop en cada una de las caras del cubo, las cuales comienzan su movimiento una vez que el usuario inicia la acción pulsando la tecla "a"; permitiendo con una simple interacción generar distintas perspectivas de la figura. En el plano sonoro la obra está dotada de un efecto de sonido monótono de naturaleza electrónica. La intención de este sonido es de acompañar y contextualizar las imágenes. 
 
 La búsqueda de la obra es generar una nueva perspectiva tridimensional usando imagenes bidimensionales. El uso del código activa una acción que quiebra la bidimensionalidad de la imágen, generando un nuevo significado a través de la tridimensionalidad de la figura.  Inke Arns, en su texto "El código como acto de habla performativo (2005)", describe de esta forma el arte software: 
