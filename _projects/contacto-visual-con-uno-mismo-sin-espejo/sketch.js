@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  letCanvas = createCanvas(500, 500);
+  let canvas = createCanvas(500, 500);
   canvas.parent('div-sketch');
 }
 
