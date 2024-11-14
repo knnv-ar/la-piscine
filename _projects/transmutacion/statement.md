@@ -19,7 +19,7 @@ _Lautaro Sánchez_, 2024.
 La humanidad como la conocemos está constantemente mutando hacia un nuevo estadio. Nuestra naturaleza está siendo atravesada y modificada por las tecnologías que hemos creado como especie; y de las cuales hoy parecieramos ser inseparables.  Los procesos de representación pictóricas, fotográficas o fílmicas (sin contar excepciones como el 3D), conllevan una transmutación del cuerpo humano, el cual pasa a ser una figura bidimensional. Este proceso ha ido modificando nuestra percepción del mundo. La obra propone, a través de la creación de un cuerpo digital, devolverle a las imágenes del cuerpo humano su tridimensionalidad. 
 
 **Desarrollo técnico, estético y conceptual**
-
+_Iniciar la acción pulsando la tecla "a"_
 Transmutación se compone de un cubo tridimensional cuyas caras son imágenes de radiografías. Estas imágenes están integradas en un video que se visualiza en loop en cada una de las caras del cubo, las cuales comienzan su movimiento una vez que el usuario inicia la acción pulsando la tecla "a"; permitiendo con una simple interacción generar distintas perspectivas de la figura. En el plano sonoro la obra está dotada de un efecto de sonido monótono de naturaleza electrónica. La intención de este sonido es de acompañar y contextualizar las imágenes. 
 
 La búsqueda de la obra es generar una nueva perspectiva tridimensional usando imagenes bidimensionales. El uso del código activa una acción que quiebra la bidimensionalidad de la imágen, generando un nuevo significado a través de la tridimensionalidad de la figura.  Inke Arns, en su texto "El código como acto de habla performativo (2005)", describe de esta forma el arte software: 
