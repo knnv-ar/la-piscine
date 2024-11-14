@@ -40,3 +40,5 @@ Quién Es Milo Lockett: Un Recorrido Por Su Arte Para Niños En Argentina
 Claudio Baldrich
 "No hago una pintura social, quiero trasmitir pasión por la vida" Diario La Capital de Mar del Plata
 Por amor al 4rte: Entrevista al Artista Claudio Baldrich
+
+Sonido de Alicia en Pais de las Maravillas creditos a Bob Hilliard, Sammy Hain y Oliver Wallace.

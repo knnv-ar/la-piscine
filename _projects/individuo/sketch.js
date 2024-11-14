@@ -8,7 +8,8 @@ let cycleTime = 15000; // Duración del ciclo completo (15 segundos)
 
 function setup() {
   f = loadFont('NatURl-Mono.ttf'); 
-  createCanvas(700, 700);
+  let canvas = createCanvas(700, 700);
+  canvas.parent('div-sketch');
   captura = createCapture(VIDEO, { flipped: true });
   captura.size(150, 150);
   captura.hide();

@@ -13,10 +13,12 @@ function preload(){
 
 //SETUP--------------------------
 function setup() {
-  createCanvas(600, 480);
+ // createCanvas(600, 480);
+  let canvas = createCanvas(600, 480);
+  canvas.parent('div-sketch');
   
   video = createCapture(VIDEO);
-video.size(600, 480);
+  video.size(600, 480);
   video.hide();
   
   musicaFondo.loop();

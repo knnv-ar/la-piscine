@@ -27,6 +27,8 @@ let mostrarDiapositivas = false;
 
 function setup() {
   
+  let canvas = createCanvas(960, 540);
+  canvas.parent('div-sketch');
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   diapositivas = [
     "PRESIONE CUALQUIER TECLA PARA COMENZAR",
@@ -65,8 +67,7 @@ function preload(){
 }
 
 function draw() {
-  let canvas = createCanvas(960, 540);
-  canvas.parent('div-sketch');
+  createCanvas(960, 540);
   background(0);
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -117,7 +118,6 @@ function keyPressed(){
  
   }
   if(keyCode === ENTER || keyCode == 32){
-    event.preventDefault();
     let img = captura.get(rectX, rectY, rectW, rectH);
     
     
