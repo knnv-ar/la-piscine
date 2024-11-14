@@ -29,6 +29,7 @@ Los corazones que aparecen con cada tecla pulsada simbolizan la vitalidad y la i
 "Sinfonía de Colores" es un espacio donde los usuarios pueden sumergirse, experimentar y dejar que los colores, las formas y los sonidos cuenten una historia que solo se puede vivir en el momento, recordando que el arte es una experiencia que se despliega y desaparece, tal como es la vida.
 
 **Bibliografía**
+
 AIRA, César. (2013). Sobre el arte contemporáneo. Buenos Aires: Literatura Random House.
 
 ARNS, Inke. (2005). "El código como acto de habla performativo". En Revista Artnodes, Julio de 2005, ISSN 1695-5951.
