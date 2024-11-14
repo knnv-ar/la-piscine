@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Raices"
-date: 2022-10-09
+title: "raices"
+date: 2024-11-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -12,9 +12,9 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Micaela Avila_, 2024
+_micaela avila_, 2024
 
-**Raices**
+**raices**
 
 Breve descripción.
 
