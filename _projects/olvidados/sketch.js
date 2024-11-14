@@ -2,38 +2,22 @@ let fondoTV;
 let tvPrendida = false;
 let video1, video2, video3, video4, video5;
 let indiceVideoActual = 0;
-let botonX = 480, botonY = 430, botonAncho = 160, botonAlto = 185;
+let botonX = 627, botonY = 445, botonAncho = 64, botonAlto = 195;
 
 function preload() {
   fondoTV = loadImage("fondo/tele.jpg");
   // videos
-  video1 = createVideo(["videos/Los-Doodlebops.mp4"]);
-  video2 = createVideo(["videos/Los-Imaginadores.mp4"]);
-  video3 = createVideo(["videos/Sid-el-Niño-Científico.mp4"]);
-  video4 = createVideo(["videos/Campamento-Lakebottom.mp4"]);
-  video5 = createVideo(["videos/Tio-Grandpa.mp4"]);
+  video1 = createVideo(["videos/los-doodlebops.mp4"]);
+  video2 = createVideo(["videos/los-imaginadores.mp4"]);
+  video3 = createVideo(["videos/sid-el-nino-cientifico.mp4"]);
+  video4 = createVideo(["videos/campamento-lakebottom.mp4"]);
+  video5 = createVideo(["videos/tio-grandpa.mp4"]);
 }
 
 function setup() {
   //createCanvas(780, 700);
   let canvas = createCanvas(780, 700);
   canvas.parent('div-sketch');
-
-  //tamaño y la posición de los videos
-  video1.size(360, 300);
-  video1.position(145, 160);
-  
-  video2.size(360, 300);
-  video2.position(148, 160);
-  
-  video3.size(365, 300);
-  video3.position(145, 160);
-  
-  video4.size(365, 300);
-  video4.position(145, 160);
-  
-  video5.size(365, 300);
-  video5.position(145, 160);
 
   // Pausa todos los videos al inicio
   video1.pause();
@@ -63,32 +47,24 @@ function draw() {
     textAlign(RIGHT);
     text("La televisión está apagada", 465, 50);
   }
+  // boton para prender la tele
+  //fill(190, 50, 90, 90);
+  //circle(botonX, botonY, botonAncho, botonAlto);
 }
 
 function mostrarVideo(indice) {
-  // Detiene todos los videos
-  video1.hide();
-  video2.hide();
-  video3.hide();
-  video4.hide();
-  video5.hide();
 
   // se repoducira y mostrara el video que corresponda 
   if (indice == 0) {
-    video1.show();
-    video1.play();
+    image(video1,150, 169, 355, 290);
   } else if (indice == 1) {
-    video2.show();
-    video2.play();
+    image(video2,150, 169, 356, 290);
   } else if (indice == 2) {
-    video3.show();
-    video3.play();
+    image(video3,155, 175, 350, 270);
   } else if (indice == 3) {
-    video4.show();
-    video4.play();
+    image(video4,153, 169, 355, 290);
   } else if (indice == 4) {
-    video5.show();
-    video5.play();
+    image(video5,153, 190, 355, 250);
   }
 }
 
@@ -124,29 +100,17 @@ function cambiarCanal() {
 }
 
 function reproducirVideo(indice) {
-  // Detiene y no muestra todos los videos
-  video1.pause();
-  video2.pause();
-  video3.pause();
-  video4.pause();
-  video5.pause();
-
   // Muestra y reproduce el video correspondiente
   if (indice == 0) {
-    video1.play();
-    video1.show();
+     video1.loop();
   } else if (indice == 1) {
-    video2.play();
-    video2.show();
+    video2.loop();
   } else if (indice == 2) {
-    video3.play();
-    video3.show();
+    video3.loop();
   } else if (indice == 3) {
-    video4.play();
-    video4.show();
+    video4.loop();
   } else if (indice == 4) {
-    video5.play();
-    video5.show();
+    video5.loop();
   }
 }
 
