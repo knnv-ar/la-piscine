@@ -2,7 +2,7 @@ let fondoTV;
 let tvPrendida = false;
 let video1, video2, video3, video4, video5;
 let indiceVideoActual = 0;
-let botonX = 627, botonY = 445, botonAncho = 64, botonAlto = 195;
+let botonX = 561, botonY = 310, botonAncho = 100, botonAlto = 180;
 
 function preload() {
   fondoTV = loadImage("fondo/tele.jpg");
