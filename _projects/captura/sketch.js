@@ -13,6 +13,7 @@ function preload(){
   c1= loadImage('/img/camara1.png');
   c2= loadImage('/img/camara2.png');
   c3= loadImage('/img/camara3.png');
+  c4 = loadImage("/img/camara4.png");
 
   flash= loadSound('audio-video/flash.mp3');
   ruido= loadSound('audio-video/ruidodefondo.mp3');
@@ -33,6 +34,9 @@ function setup() {
 
   cam3= createCamera();
   cam3.camera(70,-270,200,0,50,0);
+
+  cam4 = createCamera();
+  cam4.camera( 90, -100,-400, 0,20,0);
 
   setCamera(cam1);
 
@@ -98,6 +102,18 @@ function draw() {
     plane(200,100);
     pop();
     }
+  else if (camara == 4){
+    push();
+    rectMode(CENTER);
+    fill(150, 150, 150, 90);
+    translate(30,-50,-230);
+  rotateX(-0.3);
+    rotateZ(-0.1 );
+    rotateY(-0.1);
+    texture(c4); 
+    plane(200, 100);
+    pop();
+  }
 
 }
 
@@ -140,6 +156,12 @@ function doubleClicked(){
     camara++;
     flash.play();
     directionalLight(250,250,250,0,50,0);
+  }
+  else if (camara == 3) {
+    setCamera(cam4);
+    camara++;
+    flash.play();
+    directionalLight(250, 250, 250, 0, 50, 0);
   }
   else {
     setCamera(cam1);
