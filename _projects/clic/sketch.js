@@ -22,7 +22,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 500);
+  let canvas = createCanvas(400, 500);
+ canvas.parent ('div-sketch');
   
   coordenadas = [
     { x: 50, y: 150 },  
