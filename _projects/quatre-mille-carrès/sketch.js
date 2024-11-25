@@ -1,6 +1,5 @@
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
-  canvas.parent('div-sketch');
+  createCanvas(512, 512);
   noLoop();
 }
 
@@ -16,8 +15,9 @@ function draw() {
   // Calcula el movimiento de las líneas en función de la posición del mouse
   const verticalSpacingFactor = map(mouseY, 0, height, 1, 10);
   const horizontalSpacingFactor = map(mouseX, 0, width, 1, 10);
-  const verticalLineThickness = (spacing - gap) / verticalSpacingFactor;
-  const horizontalLineThickness = (spacing - gap) / horizontalSpacingFactor;
+  // Aca agregué el valor max() para que no se forme el bucle
+  const verticalLineThickness = max((spacing - gap) / verticalSpacingFactor, 1);
+  const horizontalLineThickness = max((spacing - gap) / horizontalSpacingFactor, 1);
 
   for (let x = 0; x < width; x += spacing) {
     for (let y = 0; y < height; y += spacing) {
