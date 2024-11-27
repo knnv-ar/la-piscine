@@ -24,14 +24,7 @@ Al leer el texto de Fricke, algo que me llamo mucho la atencion fue la parte de 
 Al empezar a programar en p5 no tenia idea de que queria hacer, se me ocurrian muchas cosas pero no estaba seguro de que alguna de estas sirviera, fue cuando se me ocurrio tratar de representar el miedo y la incomodidad que me daba despertarme en la madrugada de chico, al leer los textos me di cuenta que mucho de lo que queria hacer en esta obra se relacionaba con ellos en este caso el rol de la television y el video en consecuencia actores importantes en el arte del siglo XX.
 "En el mundo del arte, el video se manifiesta con mayor frecuencia en cintas de video, es decir, como una obra de arte inmaterial dependiente de una pantalla", aunque mi obra no usa cintas de video obviamente por ser diseñado en codigo digital, el video cumple una funcion importante en lo que quiero hacer sentir al expectador cambiando de canales, viendo comerciales, cartoons y documentales hasta que el sueño gane. No estoy seguro si mi trabajo puede ser considerado un happening en toda regla. 
 Creo que mi obra se acerca mas al arte virtual de los 90s, mas cercano al hipertexto "colage de informacion no lineal que el lector puede realizar a partir de una interconexion de textos o de cualquier otro material audiovisual (imagenes, secuencias filmicas, sonoras o de video". 
-Aunque me hubiera gustado tambien adentrarme al arte generativo del que habla Inke Arns en su articulo "el codigo como acto de habla performativo" definiendolo como 
-
-«cualquier práctica artística en la que el artista usa un sistema,
-tal como las reglas de una lengua natural, un programa informá-
-tico, una máquina o cualquier otra invención regida por un deter-
-minado procedimiento, que se inserta en un mecanismo dotado
-de algún grado de autonomía que contribuye a la creación de un
-trabajo artístico completo». Con los elementos que use para hacer este trabajo fue increiblemente dificil hacer que funcionen en el codigo de buena manera, es una pena pues el elemento de la television daba para hacer uso de esto.
+Aunque me hubiera gustado tambien adentrarme al arte generativo del que habla Inke Arns en su articulo "el codigo como acto de habla performativo" definiendolo como -"cualquier práctica artística en la que el artista usa un sistema, tal como las reglas de una lengua natural, un programa informático, una máquina o cualquier otra invención regida por un determinado procedimiento, que se inserta en un mecanismo dotado de algún grado de autonomía que contribuye a la creación de un trabajo artístico completo"-. Con los elementos que use para hacer este trabajo fue increiblemente dificil hacer que funcionen en el codigo de buena manera, es una pena pues el elemento de la television daba para hacer uso de esto.
 
 **Bibliografia**
 - FRICKE, Christiane. (1999). “Nuevos Medios”. En “AAVV. Arte de siglo XX. Vol. II. München: Tasche
