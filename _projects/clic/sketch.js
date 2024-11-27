@@ -14,11 +14,11 @@ let sonidoError
 
 
 function preload() {
-  img1 = loadImage("/ffondo.png");
-  img2 = loadImage("/continuar.png");
-  img3 = loadImage("/seguir.png");
-  img4 = loadImage("/abandonar.png"); 
-  sonidoError = loadSound("/error.mp3");
+  img1 = loadImage("./ffondo.png");
+  img2 = loadImage("./continuar.png");
+  img3 = loadImage("./seguir.png");
+  img4 = loadImage("./abandonar.png"); 
+  sonidoError = loadSound("./error.mp3");
 }
 
 function setup() {
