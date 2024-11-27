@@ -14,17 +14,17 @@ let sonidoError
 
 
 function preload() {
-  img1 = loadImage("img/ffondo.png");
-  img2 = loadImage("img/continuar.png");
-  img3 = loadImage("img/seguir.png");
-  img4 = loadImage("img/abandonar.png"); 
-  sonidoError = loadSound("img/error.mp3");
+  img1 = loadImage("/ffondo.png");
+  img2 = loadImage("/continuar.png");
+  img3 = loadImage("/seguir.png");
+  img4 = loadImage("/abandonar.png"); 
+  sonidoError = loadSound("/error.mp3");
 }
 
 function setup() {
-  let canvas = createCanvas(400, 500);
- canvas.parent ('div-sketch');
   
+  let canvas = createCanvas(400, 500);
+  canvas.parent('div-sketch');
   coordenadas = [
     { x: 50, y: 150 },  
     { x: 150, y: 270 }, 
