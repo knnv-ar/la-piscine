@@ -17,7 +17,7 @@ _Melanie Travaglini_, 2024.
 **Las miradas**
 
 Breve descripción:
-"Las miradas" es una obra interactiva que invita al espectador a participar dinámicamente y, al mismo tiempo, a experimentar una conectarse emocionalmente. Con solo mover el mouse, el espectador puede formar ojos alrededor de la obra, y al hacer clic, hacer caer lágrimas de algunos ojos, otra interacción que tiene es al precionar la "barra espaciadora", se reproduce la música, con la tecla "P" se pausa y con la tecla "S" se para y vuelve al principio. La intención es que el espectador se encuentre consigo mismo y forme un lazo de identificación con la obra.
+"Las miradas" es una obra interactiva que invita al espectador a participar dinámicamente y, al mismo tiempo, a experimentar una conectarse emocionalmente. Con solo mover el mouse, el espectador puede formar ojos alrededor de la obra, y al hacer clic, hacer caer lágrimas de algunos ojos. La intención es que el espectador se encuentre consigo mismo y forme un lazo de identificación con la obra.
 
 Desarrollo Técnico:
 En "Las miradas", la presencia de múltiples ojos representa las comparaciones y diversas perspectivas que surgen a partir de las miradas de las personas, aludiendo al rol del espectador. Cada ojo responde de forma distinta: uno llora de felicidad, otro de tristeza, y otro permanece inmutable, explorando la diversidad de emociones.
