@@ -2,7 +2,7 @@ let alejandose = true; // Variable booleana que controla la dirección del movim
 let velocidad = 0; // Variable que determina la velocidad de movimiento
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);// Crea un lienzo de 512x512 píxeles
+  let canvas = createCanvas(512, 512);// Crea un lienzo de 512x512 píxeles
   canvas.parent('div-sketch');
   angleMode(DEGREES); // Configura el modo de ángulo a grados en lugar de radianes
 }
