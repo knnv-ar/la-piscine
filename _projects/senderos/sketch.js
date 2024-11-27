@@ -91,16 +91,22 @@ function keyPressed() {
     mostrarRinga = false;
     instrumental.stop();
 
-    recorrido.play();
+    if (!recorrido.isPlaying()) {
+      recorrido.play();
+    }
     tu.stop();
     ringa.stop();
   } else if (keyCode == RIGHT_ARROW) {
     recorrido.stop();
     mostrarRecorrido = false;
     mostrarYo = true;
-    tu.play();
     ringa.stop();
     mostrarRinga = false;
+
+    if (!tu.isPlaying()) {
+      tu.play();
+    }
+    ringa.stop();
     instrumental.stop();
   } else if (keyCode === UP_ARROW) {
     recorrido.stop();
@@ -108,7 +114,10 @@ function keyPressed() {
     mostrarRinga = true;
     mostrarRecorrido = false;
     mostrarYo = false;
-    ringa.play();
+
+    if (!ringa.isPlaying()) {
+      ringa.play();
+    }
     instrumental.stop();
   }
 }

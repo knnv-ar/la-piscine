@@ -48,4 +48,3 @@ Muchas gracias.
 
 Aira, C. (2010). *Sobre el arte contemporáneo*. \[Editorial Grijalbo-Mondadori\].
 
-v
