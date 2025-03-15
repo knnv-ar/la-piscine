@@ -9,8 +9,8 @@ function setup() {
 }
 
 function draw() {
-  // Generar color rojo aleatorio
-  let col = color(random(255), 0, 0);
+  let grises = random(250);
+  let col = color(grises, grises, grises);
   stroke(col);
   
   let x1 = map(noise(angulo), 0, 1, 0, width);
