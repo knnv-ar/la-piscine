@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NonStop"
-date: 2023
+date: 2025-03-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
