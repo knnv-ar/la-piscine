@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dejarse Instruír"
-date: 2025
+date: 2025-03-12
 thumbnail: thumbnail.png
 dependencies:
   - p5
