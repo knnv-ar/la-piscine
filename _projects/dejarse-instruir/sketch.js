@@ -63,7 +63,7 @@ function preload() {
 
 function setup() {
   // createCanvas(windowWidth, windowHeight);
-  let canvas = createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(700, 600);
    canvas.parent('div-sketch');
   textSize(18);
   textFont(tipografia);
