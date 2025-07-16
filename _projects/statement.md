@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "barras"
-date: 2022-10-09
+date: 2025-15-07
 thumbnail: thumbnail.png
 dependencies:
   - p5
