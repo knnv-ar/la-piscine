@@ -3,7 +3,8 @@ let rows = 10;
 let espaciado = 51;
 
 function setup() {
-  createCanvas(512, 512);
+let canvas = createCanvas(512, 512);
+canvas.parent('div-sketch');
   noFill();
   rectMode(CENTER);
   frameRate(30);
