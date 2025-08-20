@@ -35,11 +35,3 @@ function draw() {
   //noLoop();
   //}
 }
-
-function keyPressed() {
-  if (key === 'r' || key === 'R') {
-    background(255);
-    tiempo = 0;
-    loop();
-  }
-}
