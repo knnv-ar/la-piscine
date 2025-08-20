@@ -18,7 +18,7 @@ _Ryan Dayha_, 2025.
 Descripción
 
 Tome como inspiración dos trabajos de la artista Grace C. Hertlein: “Womb of water” y “City Painting”. 
-Las obras de Grace Hertlein se centran en objetos orgánicos como los árboles, figuras distinguibles de la naturaleza. Ella mezclaba la programación y el arte clásico, cosa que la distinguía de los demás programadores. Los trazos finos de sus creaciones se asemejan mucho a los de un dibujo tradicional. En base a ello, use muchas líneas para dar forma a los edificios y al arbolito. Para crear darle un efecto de profundidad al espacio en negro, use otras escalas de grises y también jugué con el tamaño, simple, lo más lejano es de color gris y con un grosor más fino, y lo más cercano a nosotros, es de color más claro y con mas grosor. 
+Las obras de Grace Hertlein se centran en objetos orgánicos como los árboles, figuras distinguibles de la naturaleza. Ella mezclaba la programación y el arte clásico, cosa que la distinguía de los demás programadores. Los trazos finos de sus creaciones se asemejan mucho a los de un dibujo tradicional. En base a ello, use muchas líneas para dar forma a los edificios y al arbolito. Para darle un efecto de profundidad al espacio en negro, use otras escalas de grises y también jugué con el tamaño, simple, lo más lejano es de color gris y con un grosor más fino, y lo más cercano a nosotros, es de color más claro y con mas grosor. 
 
 **Desarrollo técnico, estético y conceptual**
 
@@ -29,3 +29,4 @@ Por último, Brea menciona a aquellos que usan el ordenador como pincel y llegan
 
 BREA José Luis. (2002). _"Breve (y desordenado)"_ antiglosario -o diccionario de tópicos- sobre el arte electrónico.
 BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)
+
