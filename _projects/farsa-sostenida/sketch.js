@@ -1,4 +1,4 @@
-// Farsa sostenida -  Álvaro Oxley
+// Uróboro -  Álvaro Oxley
 
 let paso2 = 8;
 let largo = 10;
