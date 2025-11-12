@@ -1,7 +1,8 @@
 let mostrarSol = true;
 
 function setup() {
-  createCanvas(512, 512);
+   let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
 }
 
 function draw() {
