@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Caos + Orden = Vida"
-date: 2025-13-08
+date: 2025-08-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -33,5 +33,6 @@ En síntesis, la obra busca materializar la idea de un orden sensible: una estru
 **Bibliografía**
 
 BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
+
 
 BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario de tópicos- sobre el arte electrónico” en La era postmedia. Acción comunicativa, prácticas (post)artísticas y dispositivos neomediales. Salamanca: CASA Editorial, pp. 4-8.
