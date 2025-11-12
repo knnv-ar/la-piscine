@@ -25,7 +25,7 @@ let cantRect=10;
 
 function setup() {
  let canvas = createCanvas(width,height);
- canvas.parent("index.html");
+ canvas.parent('div-sketch');
  background(255);
  frameRate(fps);
 }
