@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Itinerante sorpresa"
-date: 2025-13-08
+date: 2025-08-13
 thumbnail: thumbnail.png
 dependencies:
   - p5
