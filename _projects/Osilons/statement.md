@@ -7,9 +7,9 @@ dependencies:
   - p5
   - p5.sound
 ---
+
 <div id="div-sketch">
- <script type="text/javascript">
-src="sketch.js"></script>
+  <script type="text/javascript" src="sketch.js"></script>
 </div>
 
 Micaela Monti Rechencq, 2025;
