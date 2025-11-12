@@ -4,7 +4,7 @@
 // TP1 - Multimedia 1 - Catedra Raúl Lacabanne.
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   rectMode(CENTER); // Los rectángulos se dibujan desde su centro.
   noFill(); // Las figuras (cuadrados) no tienen relleno.
