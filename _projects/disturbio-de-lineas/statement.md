@@ -1,6 +1,7 @@
+---
 layout: post
 title: "Disturbio de lineas"
-date: 2025-15-07
+date: 2025-07-15
 Autor: Herbert_W_Franke
 enlace_de_la_obra:https://digitalartarchive.siggraph.org/artwork/herbert-w-franke-grafik-i/
 thumbnail: thumbnail.png
@@ -34,3 +35,4 @@ Técnicamente, su desarrollo implica la programación de líneas controladas por
 **Bibliografía**
 
 https://www.heikewerner.com/franke_en.html
+
