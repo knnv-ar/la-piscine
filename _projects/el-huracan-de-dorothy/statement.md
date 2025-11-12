@@ -28,15 +28,30 @@ La base de “_El Huracán de Dorothy_” son cuatro cuadrados ubicados en cada 
   -Pulsa 0 para restablecer.
 
 **Desarrollo**:
-Se inspira en obras generativas de carácter geométrico, como el arte fractal en este caso. Este movimiento se basa en la repetición de figuras iguales que llegan a formar un todo más complejo, se siente la pérdida del sentido unitario de cada figura y se crea una forma compuesta. 
-Artistas como Jared Tarbell y Lillian Schwartz utilizan mucho arte geométrico, con la filosofía de componer o generar una pieza compleja visualmente usando figuras simples.
+Se inspira en obras generativas de carácter geométrico, como el arte fractal en este caso. Este
+movimiento se basa en la repetición de figuras iguales que llegan a formar un todo más complejo, se
+siente la pérdida del sentido unitario de cada figura y se crea una forma compuesta.
+Artistas como Jared Tarbell y Lillian Schwartz utilizan mucho arte geométrico, con la filosofía de
+componer o generar una pieza compleja visualmente usando figuras simples.
 
-Otro punto a recalcar es el uso de ilusiones ópticas, el movimiento circular de espirales al verlo por un tiempo causa que el cerebro siga viendo este movimiento por un rato y el efecto de la unión de figuras iguales en movimiento con contraste claro-oscuro hace que el cerebro perciba colores donde no hay. Una perspectiva que explora Brea es aprovechar un medio y llevar al límite sus capacidades, de esta manera igualmente se vuelve única la experiencia de cada espectador, que depende de sus acciones y exposición a la obra.
+Otro punto a recalcar es el uso de ilusiones ópticas, el movimiento circular de espirales al verlo por
+un tiempo causa que el cerebro siga viendo este movimiento por un rato. Otro efecto usado es la
+unión de figuras iguales en movimiento con contraste claro-oscuro hace que el cerebro perciba
+colores donde no hay.
 
-Brea describe como new media art a obras que cuentan con este componente generativo, interactivo e iterativo. Fórmulas matemáticas y algoritmos suelen diferir de la idea tradicional de arte, pero al mostrarse como una posibilidad única y lúdica para el espectador la línea se empieza a borrar, en este punto la obra dispone de un lienzo y una figura al espectador, una figura calibrada y calculada que muestra una idea y estética, el espectador deja ser pasivo en la apreciación y se vuelve parte de la consolidación como obra.
+Esta obra es una serie de fórmulas matemáticas, no tiene ningún valor artístico más del que “jugar”
+con la obra pueda tener, o la decisión estética de que escala de gris usé, el punto de la obra es
+disponer de un lienzo y una figura al espectador, una figura calibrada y calculada para que sea
+placentera a la vista. El punto clave es la interacción, volviendo a cada uno un intérprete.
 
-Una obra de carácter generativo como esta no tiene sentido como pieza original o coleccionable, su valor radica en la iteratividad de cada dispositivo. La obra se siente cercana y propia por la relación 1:1 que tenemos con ella, la obra ES por nosotros, y nosotros la apreciamos única. 
-Es diferente a una obra tradicional, que se aprecia por como es constantemente. Una obra neomedial es un proceso abierto y una experiencia que cada uno creará al presenciarla.
+Una obra de carácter generativo como esta no tiene sentido como pieza original o coleccionable
+¿Cómo se apropia de algo que siempre será cambiante?; ¿Qué define a la obra, lo visual o la parte
+textual del código?; ¿Es artística una función matemática? Lo más clave en una obra así es el
+asombro que llega a generar ver un medio al que conocemos actuar de maneras personales. De
+alguna manera la sentimos cercana y nuestra por la relación 1:1 que tenemos con ella, la obra ES
+por nosotros, y nosotros la apreciamos única por sus posibilidades de interacción.
+Es diferente a una canción, que está abierta a la interpretación personal de cada uno, es una
+experiencia que cada uno “creará” al presenciarla.
 
 **Bibliografía**:
 BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
