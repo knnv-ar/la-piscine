@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backroom"
-date: 2022-10-09
+date: 2025-10-09
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -70,4 +70,5 @@ MUN. (2025). Coma [Canción]. Disponible en: https://www.youtube.com/watch?v=k_7
 
 Nees, G. (1968). Ellipsoide 9, Dionys in Apoll [Obra generativa]. DAM Projects. 
 Disponible en: https://www.mutualart.com/galleries/dam-projects/artworks/georg-nees-ellipsoide-9-dionys-in-apoll-1 
+
 
