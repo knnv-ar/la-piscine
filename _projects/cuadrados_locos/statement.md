@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "cuadrados locos"
+title: "Cuadrados Locos"
 date: 2025-10-15
 thumbnail: thumbnail.png
 dependencies:
