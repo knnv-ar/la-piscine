@@ -69,7 +69,7 @@ let x64, y64, velocidadX64, direccionX64, velocidadY64, direccionY64;
 let velocidad = 2;
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   stroke(255);
   strokeWeight(2);
