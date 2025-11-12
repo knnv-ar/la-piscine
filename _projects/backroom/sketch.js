@@ -2,7 +2,8 @@ let flash = false;
 
 
 function setup() {
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   ellipseMode(CENTER);
   noFill();
   stroke(0);
