@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Triángeles"
-date: 2025-07-09-15
-thumbnail: thumbnail.png
+date: 2025-07-09
+thumbnail: triangeles.png
 dependencies:
   - p5
   - p5.sound
@@ -34,4 +34,5 @@ BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario
 BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
 (“La máquina tenía que seguirme el ritmo, al mismo tiempo que yo aprendía a crecer junto a ella.”)
 Schwartz, L. (1992). The Computer Artist’s Handbook: Concepts, Techniques and Applications. W. W. Norton & Company. (citado en Chernick, K. (2024). Women Who Pioneered Computer Art. Artnet News. https://news.artnet.com/art-world/women-who-pioneered-computer-art-2570283)
+
 
