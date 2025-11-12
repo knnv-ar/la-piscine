@@ -4,8 +4,8 @@ title: "Oscillons"
 date: 2025-7-15
 thumbnail: thumbnail.png
 dependencies:
- -p5
- -p5.sound
+  - p5
+  - p5.sound
 ---
 <div id="div-sketch">
  <script type="text/javascript">
