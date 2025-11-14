@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Calma Eufórica"
-date: 2022-10-09
+date: 2025-10-09
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -36,4 +36,5 @@ En una definición clave “una libre y limitada calma eufórica”.
 **Bibliografía**
 
 José Luis Brea. (2002). _"Breve y desordenado antiglosario" _ pág. 6._
+
 José Luis Brea. (2002)._"Redefinición de las prácticas artísticas" _ pág. 107, punto 5._
