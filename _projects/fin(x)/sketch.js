@@ -72,7 +72,6 @@ function setup() {
 
   song1.loop();
   song1.setVolume(1);
-  song1.play();
   
   song2.loop();
   song2.setVolume(0);
