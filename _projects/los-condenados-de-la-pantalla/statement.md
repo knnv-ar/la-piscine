@@ -12,7 +12,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Ludmila Amade_, 2025.
+_Álvaro Oxley_, 2025.
 
 ### **Descripción de la Obra**
 
@@ -36,4 +36,5 @@ Conceptualmente, me interesó explorar algunos aspectos dentro de la teoría de 
 
 - ARNS, Inke. (2005). "El código como acto de habla performativo". En Revista Artnodes, Julio de 2005, ISSN 1695-5951  
     
+
 - AIRA, César. (\[2013\], 2016). “Sobre el arte contemporáneo” en Sobre el arte contemporáneo. Buenos Aires: Literatura Random House, pp. 11-56.
