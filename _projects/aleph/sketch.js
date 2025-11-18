@@ -1,5 +1,5 @@
-/*Aleph: Es una obra de arte generativo donde las figuran rebotan por todo el lienzo y dibujan sobre él. Podés mantener el click derecho y a su vez alejar o acercar las figuras mientras se mueven para cambiar su esparcimiento. 
-Y además, para poder visualizarlas en mayor detalle, manetené el click izquierdo para limpar el canvas, así las figuras aún se moverán pero no dejarán la estela de movimiento, mientras mantenes el click izquierdo también  podes acercarte o alejarte de las figuras para apreciarlas.*/
+/*Aleph: Es una obra de arte generativo donde las figuran rebotan por todo el lienzo y dibujan sobre él. Podés mantener el click izquierdo y a su vez alejar o acercar las figuras mientras se mueven para cambiar su esparcimiento. 
+Y además, para poder visualizarlas en mayor detalle, manetené el click derecho para limpar el canvas, así las figuras aún se moverán pero no dejarán la estela de movimiento, mientras mantenes el click derecho también  podes acercarte o alejarte de las figuras para apreciarlas.*/
 
 let esferas = [];
 let textures = [];
