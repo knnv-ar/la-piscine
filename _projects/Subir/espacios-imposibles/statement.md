@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mejor no"
+title: "Espacios imposibles"
 date: 2025-11-18
 thumbnail: thumbnail.png
 dependencies:
@@ -12,31 +12,25 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Silvina Hippler, 2025._
+_Silvina Hippler, 2025.
 
-**Mejor no**
+**Espacios imposibles**
 
-Tomando a la censura como el mecanismo activo que se encarga de vigilar, establecer y hacer cumplir el límite dinámico de "lo decible y lo visible", se observa que, a lo largo de la historia, este mecanismo ha ofrecido al erotismo elementos más o menos sugerentes sobre los cuales manifestarse y presentarse ante la sociedad. Estos elementos incluyen imágenes, representaciones simbólicas y puestas en escena concretas.
-
-La censura actúa revisando continuamente los nuevos "indecibles", es decir, aquellos temas o formas que la moralidad actual considera problemáticas o tabú. Al hacerlo, fuerza el desplazamiento del erotismo hacia otras formas de representación que intentan eludir temporalmente la restricción.
-
-Esta obra, por lo tanto, trabaja con aquellos elementos y simbolismos cargados de sugestión erótica, pero se autocensura en el proceso. Este acto de autocensura es un reflejo de como aparece en el tiempo y el contexto en el que es situada. Al operar bajo esta mirada restrictiva, la obra expone la pregunta crucial de qué es lo que permite que estos elementos permanezcan en ese espacio de disputa: ¿Son censurados por ser eróticos, o se vuelven eróticos por el simple hecho de ser censurados?
+Desde el inicio figuras divagan de manera aleatoria dentro del marco del lienzo, buscando explorar todas las posibilidades dentro de el, cómo aquel síntoma de un neurótico que no sabe y no puede parar construir espacios imaginarios sin intervención externa
 
 **Desarrollo técnico, estético y conceptual**
 
-En la necesidad de hablar sobre erotismo y caer sobre la propia censura  para abordar la temática como aquella puesta en la obra, esta parte sobre la misma experiencia, tomando como punto de partida su propia experiencia.  
+Como se menciona antes, la neurosis es el tema principal de esta obra, que es producida bajo la búsqueda estética de una generación de ruido sintético y movimiento, con un encauce sobre la percepción visual de como interpretamos la imagen.
 
-> _(Gilman, 2003, citado en Dialnet) dice: “los sentidos de lo erótico se constituyen como tópicos de disputa simbólica cuando lo “decible y lo visible” en relación al mismo sufren mutaciones, resignificando la problemática y redefiniendo lo indecible dentro de la configuración de una época"_
-Para Gilman, el significado del erotismo (lo que se considera "sexy," atrayente o tabú) no es universal ni biológico, sino que se construye social y culturalmente. Es un campo de batalla simbólico luchando por imponer la definición de lo que es un placer aceptable y lo que es una perversión.
+Para su desarrollo y concepto fueron tomados como referentes las obras de “Lilian Schwartz”, y la cita de de Fred Forest en Un teatro de pixeles en pantalla: _"¡Nuestro problema" dice Forest, "no será ya el arte clásico, la contemplación de un objeto, sino la dinámica de la aparición del objeto!"._
 
-Este es el concepto crucial. Cada época histórica tiene su propio conjunto de regímenes semiótico-discursivos, la frontera de "lo decible y lo visible" se mueve, intentando silenciar una sociedad en un momento dado, manteniendo el erotismo en un estado de mutación y disputa.
-Quiero decir, no es nada nueva la búsqueda de nuevos medios y desarrollos de estrategias creativas para sostener tras la sombra de algo, nuestra pornografía mental, como nos han demostrado los emojis en los últimos años.
+A través de la mecánica de un conjunto de formas abstractas, esta concluye su realización de su presentación con una frecuencia y trazo que buscan mostrar los cambios inestables, donde cada una actúa como una espora, dejando huella y creando laberintos cómo pensamientos. A raíz y por consecuencia de sus matices superpuestos traza dibujos que solo con la entrega del imaginario se pueden concebir para su traducción sin correspondencia alguna de sentido, es decir, si es o no aquella ilusión, como excesos de pensamientos que minan la cabeza, así generando imágenes que nunca permanecen iguales, dejando al descubierto solo lo que estamos preparados para asimilar.
 
-Cesar aira dice _“De ahí sale la formula ´cualquier cosa´ puede tomarse tanto como fórmula de libertad como de irresponsabilidad”_ tomando este fragmento como el bache de que algo/elementos/ formas tomen un nuevo sentido en un determinado tiempo rozando casualmente o no lo erótico, su liberación y censura.
-
+Mostrando e invitando a no solo a ver el caos ni proponer solución alguna, sino también de como lo interpretamos. Dejando en paralelo un fragmento de texto de José Luis Brea, que argumenta que: _“Él poder de la imagen visual de la <cultura visual> es casi absoluto“._
 
 **Bibliografía**
 
-AIRA, César. ([2013], 2016). “Sobre el arte contemporáneo” en Sobre el arte contemporáneo. Buenos Aires: Literatura Random House, pp. 11-56.
 
-Schaufler, M. L. (2016). Potencial erótico de la censura mediática. L.I.S. Letra. Imagen. Sonido. Ciudad Mediatizada, 6(12), 29–45.
+Redefinición de las practicas artísticas, José Luis Brea.
+
+FRICKE, Christiane. (1999). “Nuevos Medios”. En AAVV. Arte de siglo XX. Vol. II. München: Taschen, pp. 576-590. 
