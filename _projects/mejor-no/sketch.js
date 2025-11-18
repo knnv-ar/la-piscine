@@ -15,11 +15,11 @@ function draw() {
   
   image(img1, -400, -400, 800, 800);
   
-  //rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
- //push();
+ 
+  push();
   noStroke();
   texture(img2);
-  sphere(70);//Parámetros: radio
-  //pop();
+  sphere(70); //Parámetros: radio
+  pop();
 }
