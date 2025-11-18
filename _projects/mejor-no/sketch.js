@@ -5,7 +5,8 @@ function preload(){
  img2 = loadImage("imagen/emoji.png");
 }
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  let canvas = createCanvas(400, 400, WEBGL);
+  canvas.parent('div-sketch');
   
 }
 
