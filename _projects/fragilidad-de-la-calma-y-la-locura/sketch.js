@@ -24,8 +24,8 @@ let colorIndex = 0;
 let colorActual = [255, 255, 255]; // blanco en calma
 
 function preload() {
-  sonidoCalmo = loadSound('sound/calmo.mp3');
-  sonidoLocura = loadSound('sound/locura.mp3');
+  sonidoCalmo = loadSound('calmo.mp3');
+  sonidoLocura = loadSound('locura.mp3');
 }
 
 function setup() {
