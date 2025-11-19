@@ -14,7 +14,7 @@ function preload() {
 
 function setup() {
   let canvas = createCanvas(600, 655);
-  canvas.parent("div-scketch");
+  canvas.parent("div-sketch");
   img.resize(600, 655);
   background(255);
   textAlign(CENTER, CENTER);
