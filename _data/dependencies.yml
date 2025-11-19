@@ -24,3 +24,6 @@
   
 - name: face-api
   element: <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1/dist/face-api.js"></script>
+
+- name: ml5
+  element: <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
