@@ -40,8 +40,8 @@ function preload() {
     loadImage('gif/niñas.gif'),   // 9
   ];
 
-  song = loadSound('Rhiannon-Fleetwood Mac.mp3');
-  song2 = loadSound('Berghain.mp3');
+  song = loadSound('music/Rhiannon-Fleetwood Mac.mp3');
+  song2 = loadSound('music/Berghain.mp3');
 }
 
 function setup() {
