@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Observado"
-date: 2025-18-11
+date: 2025-11-18
 thumbnail: thumbnail.png
 dependencies:
   - p5

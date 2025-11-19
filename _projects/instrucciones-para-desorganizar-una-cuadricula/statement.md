@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Instrucciones para desorganizar una cuadricula"
-date: 2025-16-07
+date: 2025-07-16
 thumbnail: thumbnail.png
 dependencies:
   - p5
