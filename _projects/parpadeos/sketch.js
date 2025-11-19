@@ -4,7 +4,7 @@ let tamanoCelda;
 let tiempoParpadeo;
 
 function setup() {
-  let cancas = createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
   noFill();
   stroke(0);
