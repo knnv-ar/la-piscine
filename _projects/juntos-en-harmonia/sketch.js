@@ -4,9 +4,9 @@ let audio1, audio2;
 let seguirMouse = false;
 
 function preload() {
-  fondo = loadImage("imagenes/galaxy.jfif"); 
-  audio1 = loadSound("audio/Espacio.mp3");
-  audio2 = loadSound("audio/Brillitos.mp3");
+  fondo = loadImage("galaxy.jfif"); 
+  audio1 = loadSound("Espacio.mp3");
+  audio2 = loadSound("Brillitos.mp3");
 }
 
 function setup() {
