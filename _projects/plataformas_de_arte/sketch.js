@@ -38,7 +38,7 @@ function preload() {
   imgGotico = loadImage("img/estilo_gotico .jpg");
   imgRen = loadImage("img/estilo_renacentista.jpg");
   imgBar =  loadImage("img/estilo_barroco.jpg");
-  imgRoc = loadImage("img/estilo_rococo.png");
+  imgRoc = loadImage("img/estilo_rococo.jpg");
   imgNeo = loadImage("img/estilo_neoclasico.jpg");
   imgRom = loadImage("img/estilo_romantisismo.jpg");
 }
