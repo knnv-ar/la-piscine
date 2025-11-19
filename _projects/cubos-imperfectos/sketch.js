@@ -5,7 +5,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(490, 410, WEBGL);
+  let canvas = createCanvas(490, 410, WEBGL);
+  canvas.parent('div-sketch');
   noStroke();
   background(0);
 }
