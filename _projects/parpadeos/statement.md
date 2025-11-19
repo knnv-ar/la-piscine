@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Parpadeos"
-date: 2025-25-08
+date: 2025-08-25
 thumbnail: thumbnail.png
 dependencies:
   - p5
