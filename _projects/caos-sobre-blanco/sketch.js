@@ -10,7 +10,8 @@ let x5 = 300;
 let y5 = 100;
 
 function setup() {
-  createCanvas(512, 512);
+ let canvas = createCanvas(512, 512);
+canvas.parent('div-sketch');
 }
 
 function draw() {
