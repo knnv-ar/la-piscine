@@ -21,8 +21,8 @@ let enemigoZ = -1000;
 
 function preload() {
   //  Modelos
-  monitor = loadModel("modelos/monitor.obj");
-  enemigo = loadModel("modelos/enemigo.obj");
+  monitor = loadModel("obj/monitor.obj");
+  enemigo = loadModel("obj/enemigo.obj");
 
   //  IMG
   texturamonitor = loadImage("img/texturamonitor.PNG");
