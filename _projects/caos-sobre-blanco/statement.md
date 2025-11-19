@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Caos sobre blanco"
-date: 2022-10-09
+date: 2025-10-09
 thumbnail: thumbnail.png
 dependencies:
   - p5
