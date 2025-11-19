@@ -39,16 +39,16 @@ let delay = 0;
 //_______________________TP1
 
 function preload() {
-  font = loadFont('AvenirLTStd-Medium.otf');
-  mainMenu = loadSound('mainMenu.mp3');
-  mainMenuPerturbador = loadSound('mainMenuPerturbador.mp3');
-  musicChill= loadSound('witsiArañaLoop.mp3');
-  musicHell = loadSound('TimeToDIE.mp3');
-  endSong[1] =loadSound('end_1.mp3');
-  endSong[2] =loadSound('end_2.mp3');
-  endSong[3] =loadSound('end_3.mp3');
-  endSong[4] =loadSound('end_4.mp3');
-  fallo = loadSound('glitch.mp3');
+  font = loadFont('fuentes/AvenirLTStd-Medium.otf');
+  mainMenu = loadSound('audio/mainMenu.mp3');
+  mainMenuPerturbador = loadSound('audio/mainMenuPerturbador.mp3');
+  musicChill= loadSound('audio/witsiArañaLoop.mp3');
+  musicHell = loadSound('audio/TimeToDIE.mp3');
+  endSong[1] =loadSound('audio/end_1.mp3');
+  endSong[2] =loadSound('audio/end_2.mp3');
+  endSong[3] =loadSound('audio/end_3.mp3');
+  endSong[4] =loadSound('audio/end_4.mp3');
+  fallo = loadSound('audio/glitch.mp3');
 }
 
 function setup() {
