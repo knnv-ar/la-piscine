@@ -6,6 +6,7 @@ thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
+  - ml5
 ---
 
 <div id="div-sketch">
