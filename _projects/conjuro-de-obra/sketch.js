@@ -2,7 +2,8 @@ let tiempo = 0;
 let mouse_exploded = false;
 
 function setup() {
-  createCanvas(600, 600);
+   let canvas = createCanvas(600, 600);
+  canvas.parent('div-sketch');
   noFill();
 }
 
