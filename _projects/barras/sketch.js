@@ -3,7 +3,7 @@ let y = 0;
 let espacio = 100;
 
 function setup() {
-let canvas = createCanvas(650, 450)  
+let canvas = createCanvas(512, 512)  
 canvas.parent('div-sketch');
   background(0);
   stroke(255);
