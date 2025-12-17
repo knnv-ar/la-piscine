@@ -44,7 +44,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 640, WEBGL);
+  let canvas=createCanvas(640, 640, WEBGL);
+  canvas.parent('div-sketch');
   noStroke();
   perspective(PI / 3, width / height, 0.1, 2000);
 
