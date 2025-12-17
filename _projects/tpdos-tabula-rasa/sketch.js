@@ -33,14 +33,14 @@ const SOPLIDO_UMBRAL = 0.12;
 const SOPLIDO_SUAVIZ = 0.20;
 
 function preload() {
-  fuenteTexto = loadFont("fuentes/Montserrat-VariableFont_wght.ttf");
+  fuenteTexto = loadFont("./Montserrat-VariableFont_wght.ttf");
 
-  imgCielo = loadImage("imagenes/cielovioleta.png");
-  imgNinio = loadImage("imagenes/ninio.png");
-  IMG_pantallaOjo = loadImage("imagenes/maquina.png");
+  imgCielo = loadImage("./cielovioleta.png");
+  imgNinio = loadImage("./ninio.png");
+  IMG_pantallaOjo = loadImage("./maquina.png");
 
-  sndNotif    = loadSound("sonidos/notificacion.wav");
-  sndAtiendan = loadSound("sonidos/atiendan.wav");
+  sndNotif    = loadSound("./notificacion.wav");
+  sndAtiendan = loadSound("./atiendan.wav");
 }
 
 function setup() {
