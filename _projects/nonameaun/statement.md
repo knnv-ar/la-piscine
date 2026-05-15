@@ -7,6 +7,8 @@ dependencies:
   - p5
   - p5.sound
   - ml5
+year: 2025
+cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">

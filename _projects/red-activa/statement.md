@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Red Activa"
-date: 16/11/2025
+date: 2025-11-16
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
+year: 2025
+cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">

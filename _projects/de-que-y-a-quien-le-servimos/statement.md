@@ -6,6 +6,8 @@ thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
+year: 2022
+cuatrimestre: "segundo cuatrimestre"
 ---
 
 

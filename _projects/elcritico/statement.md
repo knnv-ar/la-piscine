@@ -5,6 +5,8 @@ date: 2025-11-16
 thumbnail: thumbnail.png
 dependencies:
   - p5
+year: 2025
+cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">
