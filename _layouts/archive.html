@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="home">
+    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+        <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: #888;">← Volver al inicio</a>
+        <h2 id="archive-title" style="margin-top: 1rem;">Todos los proyectos</h2>
+    </div>
+
+    <div class="row" id="archive-container">
+        {% assign projects = site.projects | sort: 'date' | reverse %}
+        {% for project in projects %}
+          <div class="col-lg-4 col-md-4 col-sm-6 project-item" 
+               data-year="{{ project.year }}" 
+               data-cuatri="{{ project.cuatrimestre | downcase }}"
+               style="margin-bottom: 30px;">
+              
+              <a href="{{ project.url | relative_url }}">
+                  <div class="img__wrap">
+                  {% if project.thumbnail %}
+                    <img class="img__img" src="{{site.baseurl}}/{{ project.url | replace: '/', ' ' | truncatewords: 2, '' | replace: ' ', '/' }}/{{ project.thumbnail }}"></img>
+                  {% else %}
+                    <img class="img__img" src="{{ 'assets/default_thumbnail.png' | relative_url }}"></img>
+                  {% endif %}
+                    <div class="img__description_layer">
+                        <p class="img__description">{{ project.title }}</p>
+                    </div>
+                </div>
+              </a>
+          </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const params = new URLSearchParams(window.location.search);
+    const targetYear = params.get('year');
+    const targetCuatri = params.get('cuatri') ? params.get('cuatri').toLowerCase() : null;
+    
+    const items = document.querySelectorAll('.project-item');
+    const titleElement = document.getElementById('archive-title');
+    
+    let titleText = "Todos los proyectos";
+    if (targetYear && targetCuatri) {
+        titleText = "Proyectos: " + targetYear + " - " + targetCuatri.charAt(0).toUpperCase() + targetCuatri.slice(1);
+    } else if (targetYear) {
+        titleText = "Proyectos del año " + targetYear;
+    }
+    titleElement.textContent = titleText;
+
+    let hasMatches = false;
+
+    items.forEach(function(item) {
+        const itemYear = item.getAttribute('data-year');
+        const itemCuatri = item.getAttribute('data-cuatri');
+        
+        let matchYear = !targetYear || itemYear === targetYear;
+        let matchCuatri = !targetCuatri || itemCuatri === targetCuatri;
+        
+        if (matchYear && matchCuatri) {
+            item.style.display = 'block';
+            hasMatches = true;
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    if (!hasMatches) {
+        const container = document.getElementById('archive-container');
+        container.innerHTML = '<p style="margin-left:15px; color:#666;">No se encontraron proyectos para esta selección.</p>';
+    }
+});
+</script>

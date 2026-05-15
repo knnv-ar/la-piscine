@@ -4,28 +4,67 @@ layout: default
 
 <div class="home">
 
-    <div class="row">
-
-        {% assign projects = site.projects | sort: 'date' | reverse %}
-        {% for project in projects %}
-          <div class="col-lg-4 col-md-4 col-sm-6">
-              <a href="{{ project.url | relative_url }}">
-                  <div class="img__wrap">
-                  {%if project.thumbnail %}
-                    <img class="img__img" src="{{site.baseurl}}/{{ project.url | replace: "/", " " | truncatewords: 2, "" | replace: " ", "/" }}/{{ project.thumbnail }}"></img>
-                  {% else %}
-                    <img class="img__img" src="{{ "assets/default_thumbnail.png" | relative_url }}"></img>
-                  {% endif %}
-                    <div class="img__description_layer">
-                        <p class="img__description">{{ project.title }}</p>
-                    </div>
+    {% assign all_years = site.projects | map: "year" | uniq | sort | reverse %}
+    
+    {% for year in all_years %}
+      {% assign year_int = year | plus: 0 %}
+      {% if year_int >= 2020 %}
+        <div class="year-section">
+            <h2 style="margin-top: 2rem;">
+                <a href="{{ '/archivo.html' | relative_url }}?year={{ year }}" style="color: inherit; text-decoration: none;">
+                    {{ year }}
+                </a>
+            </h2>
+            
+            {% assign year_projects = site.projects | where: "year", year %}
+            {% assign all_cuatris = year_projects | map: "cuatrimestre" | uniq | sort | reverse %}
+            
+            {% for cuatri in all_cuatris %}
+                <h3 style="margin-top: 1rem; color: #666; font-weight: 300;">
+                    <a href="{{ '/archivo.html' | relative_url }}?year={{ year }}&cuatri={{ cuatri | cgi_escape }}" style="color: inherit; text-decoration: none;">
+                        {{ cuatri | capitalize }}
+                    </a>
+                </h3>
+                <div class="row">
+                
+                {% assign count = 0 %}
+                {% for project in year_projects %}
+                    {% if project.cuatrimestre == cuatri %}
+                        
+                        {% assign is_selected = false %}
+                        {% for sel in page.selected_projects %}
+                            {% if project.url contains sel %}
+                                {% assign is_selected = true %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if is_selected and count < 6 %}
+                            <div class="col-lg-4 col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                                <a href="{{ project.url | relative_url }}">
+                                    <div class="img__wrap">
+                                    {% if project.thumbnail %}
+                                        <img class="img__img" src="{{site.baseurl}}/{{ project.url | replace: '/', ' ' | truncatewords: 2, '' | replace: ' ', '/' }}/{{ project.thumbnail }}"></img>
+                                    {% else %}
+                                        <img class="img__img" src="{{ 'assets/default_thumbnail.png' | relative_url }}"></img>
+                                    {% endif %}
+                                        <div class="img__description_layer">
+                                            <p class="img__description">{{ project.title }}</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% assign count = count | plus: 1 %}
+                        {% endif %}
+                        
+                    {% endif %}
+                {% endfor %}
+                
                 </div>
-              </a>
+            {% endfor %}
         </div>
+      {% endif %}
+    {% endfor %}
 
-        {% endfor %}
-    </div>
-
-    <p class="rss-subscribe">Suscríbete a través de <a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+    <p class="rss-subscribe" style="margin-top: 3rem;">Suscríbete a través de <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
 
 </div>
