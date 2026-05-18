@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Widerspruch"
-date: 2022-09-10
-year: 2022
+date: 2024-09-10
+year: 2024
 cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:

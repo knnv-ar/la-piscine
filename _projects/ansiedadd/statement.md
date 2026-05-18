@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Ansiedad"
-date: 2022-10-09
-year: 2022
-cuatrimestre: segundo cuatrimestre
+date: 2023-10-09
+year: 2023
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Nicolas Buffarini _, 2023.
+_Nicolas Buffarini_, 2023.
 
 **Ansiedad**
 

@@ -3,7 +3,7 @@ layout: post
 title: "El Reflejo de Otra Realidad"
 date: 2022-11-23
 year: 2022
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

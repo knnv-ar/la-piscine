@@ -3,7 +3,7 @@ layout: post
 title: "Perdiendo la cabeza"
 date: 2022-11-02
 year: 2022
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

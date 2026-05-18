@@ -3,7 +3,7 @@ layout: post
 title: "Skele-tons"
 date: 2022-11-10
 year: 2022
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

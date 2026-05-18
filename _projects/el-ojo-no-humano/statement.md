@@ -3,7 +3,7 @@ layout: post
 title: "el ojo no humano"
 date: 2022-11-07
 year: 2022
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

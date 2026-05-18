@@ -3,7 +3,7 @@ layout: post
 title: "Unidad"
 date: 2022-10-09
 year: 2022
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

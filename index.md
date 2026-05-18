@@ -1,18 +1,18 @@
 ---
 layout: home
 selected_projects:
-  - actividad-cuadriforme
-  - al-borde
-  - aleph
-  - ansiedad
-  - arbitrio-sistemico
-  - autoboicot
-  - red-activa
-  - oleaje
-  - backroom
-  - barras
-  - bellatrix
-  - bucle
+  - teatralidad-abstracta
+  - paredes-frustradas
+  - osciloscopios_agujeros_negros_y_nuevas_poeticas
+  - bugeado
+  - crear-o-consumir
+  - berrinche-ceropuntotres
+  - otra
+  - rules
+  - mi-area-de-trabajo-es-mi-mente
+  - imagen-idea
+  - afan-simbolico
+  - riot
 ---
 
 <!-- 
