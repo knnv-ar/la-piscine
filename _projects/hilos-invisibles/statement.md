@@ -3,7 +3,7 @@ layout: post
 title: "Hilos invisibles"
 date: 2024-11-09
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

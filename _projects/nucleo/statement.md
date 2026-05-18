@@ -3,7 +3,7 @@ layout: post
 title: "Núcleo"
 date: 2024-09-09
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

@@ -3,7 +3,7 @@ layout: post
 title: "acromatico"
 date: 2024-11-22
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

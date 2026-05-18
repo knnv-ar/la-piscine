@@ -16,11 +16,9 @@ dependencies:
 
 _Aldana Gerpe_, 2024.
 
-
 Mi obra, “Captura”, es resultado de la mezcolanza entre código, audio, escultura 3D, y el texto de Cesar Aira “Sobre el arte contemporáneo”. Busco transmitir con esta parte de lo que afirma el autor y generar con ello alguna que otra reflexion. 
 
->"La fotografía da una
-idea sólo parcial de la instalación, y hasta algo menos que parcial, ya que la pone en el mismo plano de las ilustraciones de una revista de decoración de interiores." 
+>"La fotografía da una idea sólo parcial de la instalación, y hasta algo menos que parcial, ya que la pone en el mismo plano de las ilustraciones de una revista de decoración de interiores." 
 *AIRA, César. (2013). Sobre el arte contemporáneo.*
 
 Como podran haber leido, Aira se refiere a las instalaciones artisticas que no pueden ser captadas en su totalidad mediante una fotografía, pero, a mi punto de vista, esto no se limita únicamente a las instalaciones. La reproduccion de la imagen de una obra (ya sea una escultura, una pintura, una intalacion, etc.) va a depender de quien la capture y los medios que tiene para hacerlo. Y aun siendo el/la mejor fotograd@ del mundo con los mejores equipos, la reproduccion seguira sin ser como la original, no tendra el mismo sentido que le dio el autor.

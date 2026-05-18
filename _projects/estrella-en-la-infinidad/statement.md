@@ -3,7 +3,7 @@ layout: post
 title: "Estrella en la infinita"
 date: 2024-09-10
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_ Sofía Pacheco_ , 2024.
+_Sofía Pacheco_ , 2024.
 
 ** Estrella en la infinidad **
 La creación artística presentada se basa en las obras de la artista Grace Hertlein, quien comenzó su trayectoria como artista a mediados del 1940 y fue líder de la segunda ola de artistas programáticos. Una de sus frases más representativas fue que "La enseñanza del arte informático es un puente que une 'el arte y la ciencia”. Dicha artista destacó al esforzarse por recrear la naturaleza oponiéndose a la precisión y formalidad de la computadora, siendo común la inexactitud en sus obras.

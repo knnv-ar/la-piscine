@@ -3,7 +3,7 @@ layout: post
 title: "Des-orden controlado"
 date: 2024-09-10
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

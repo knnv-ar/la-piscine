@@ -3,7 +3,7 @@ layout: post
 title: "Geometria del caos"
 date: 2024-11-24
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

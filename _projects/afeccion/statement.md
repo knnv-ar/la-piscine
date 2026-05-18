@@ -3,7 +3,7 @@ layout: post
 title: "Afeccion"
 date: 2024-11-27
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

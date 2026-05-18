@@ -3,7 +3,7 @@ layout: post
 title: "Pre-positions"
 date: 2024-09-11
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -32,7 +32,6 @@ Cuando el usuario interactúa con la obra está siendo involucrado para que pued
 
 **Bibliografía**
 
-APELLIDO, Nombre. (año). _"Título del libro"_. Ciudad: Editorial.
 BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario de tópicos- sobre el arte electrónico” en La era postmedia.
 BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral.
 Molnár, Vera. Arte Digital. (https://elartedigital.wordpress.com/artistas/vera-molnar/)

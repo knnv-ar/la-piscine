@@ -3,7 +3,7 @@ layout: post
 title: Trazostrazas
 date: 2024-09-10
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
     <script type= "text/javascript" src="sketch.js"></script>
 </div>
 
-_Pilar Gargiulo, 2024.
+_Pilar Gargiulo_, 2024.
 
 **Tratoztrazas**
 

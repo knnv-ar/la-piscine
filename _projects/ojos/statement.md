@@ -3,7 +3,7 @@ layout: post
 title: "Ojos"
 date: 2024-09-10
 year: 2024
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail-ojos.png
 dependencies:
   - p5

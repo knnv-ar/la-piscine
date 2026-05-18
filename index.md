@@ -25,6 +25,18 @@ selected_projects:
   - codigo-de-la-nostalgia
   - technological-extension
   - nonato-y-postumo
+  - entropia
+  - reverberacion
+  - lineas-que-danzan
+  - ojo-del-huracan
+  - tiempo-ilusion
+  - que-hago
+  - la-danza-de-las-sombras
+  - eco-interno
+  - el-arte-del-desvelo
+  - ningun-cuerpo-es-tierra-firme
+  - cigarrillo-43
+  - transmutacion
 ---
 
 <!-- 
