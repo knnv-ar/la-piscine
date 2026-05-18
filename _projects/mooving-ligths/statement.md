@@ -3,7 +3,7 @@ layout: post
 title: "Mooving Lights"
 date: 2023-11-12
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Delgado Zoe, 2022.
+_Delgado Zoe_, 2023.
 
 **Mooving Lights**
 

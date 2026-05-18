@@ -13,6 +13,18 @@ selected_projects:
   - imagen-idea
   - afan-simbolico
   - riot
+  - oesa
+  - soma
+  - fluidez-abstracta
+  - esfuerzos-aleatorios
+  - estrobos
+  - clickeame
+  - como-en-casa
+  - mil-veces
+  - el-cuarteto-de-la-caza
+  - codigo-de-la-nostalgia
+  - technological-extension
+  - nonato-y-postumo
 ---
 
 <!-- 

@@ -3,7 +3,7 @@ layout: post
 title: "Desmaterialización Sensacional"
 date: 2023-10-18
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -13,6 +13,7 @@ dependencies:
 <div id="div-sketch">
   <script type="text/javascript" src="sketch.js"></script>
 </div>
+
 <div id="div-sketch1">
   <script type="text/javascript" src="sketch1.js"></script>
 </div>

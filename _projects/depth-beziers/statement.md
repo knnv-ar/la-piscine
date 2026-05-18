@@ -3,7 +3,7 @@ layout: post
 title: "depth beziers"
 date: 2023-09-04
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

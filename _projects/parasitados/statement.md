@@ -3,7 +3,7 @@ layout: post
 title: "Parasitados"
 date: 2023-10-09
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

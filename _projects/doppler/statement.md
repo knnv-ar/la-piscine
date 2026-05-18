@@ -3,7 +3,7 @@ layout: post
 title: "DOPPLER"
 date: 2023-11-11
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Luana Salazar Bocos, 2023.
+_Luana Salazar Bocos_, 2023.
 
 **DOPPLER**
 

@@ -3,7 +3,7 @@ layout: post
 title: "Monotonía, simetría y sorpresa"
 date: 2023-10-06
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

@@ -3,7 +3,7 @@ layout: post
 title: "A nuestro alcance"
 date: 2023-11-14
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

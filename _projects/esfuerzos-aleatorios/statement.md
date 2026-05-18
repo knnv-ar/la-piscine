@@ -3,7 +3,7 @@ layout: post
 title: "Esfuerzos aleatorios"
 date: 2023-10-18
 year: 2023
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
