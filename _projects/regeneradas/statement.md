@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Regeneradas"
-date: 2025-7-15
+date: 2025-07-15
+year: 2025
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "primer cuatrimestre"
 ---
 
 <div id="div-sketch">

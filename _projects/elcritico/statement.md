@@ -2,11 +2,11 @@
 layout: post
 title: "El Crítico"
 date: 2025-11-16
+year: 2025
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
-year: 2025
-cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">

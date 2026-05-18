@@ -2,12 +2,12 @@
 layout: post
 title: "Triángeles"
 date: 2025-07-09
+year: 2025
+cuatrimestre: primer cuatrimestre
 thumbnail: triangeles.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "primer cuatrimestre"
 ---
 
 <div id="div-sketch">

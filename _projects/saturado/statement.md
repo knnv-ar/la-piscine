@@ -2,12 +2,12 @@
 layout: post
 title: "SATURADO"
 date: 2022-10-09
+year: 2022
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2022
-cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">

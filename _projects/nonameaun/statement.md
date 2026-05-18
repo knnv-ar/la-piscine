@@ -2,13 +2,13 @@
 layout: post
 title: "Pensamiento Creativo I (Sentidos en Contexto)"
 date: 2025-11-16
+year: 2025
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
   - ml5
-year: 2025
-cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">

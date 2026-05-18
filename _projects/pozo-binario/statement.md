@@ -2,14 +2,13 @@
 layout: post
 title: "Pozo binario"
 date: 2025-11-18
+year: 2025
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "segundo cuatrimestre"
 ---
-
 
 <div id="div-sketch">
   <script type="text/javascript" src="sketch.js"></script>

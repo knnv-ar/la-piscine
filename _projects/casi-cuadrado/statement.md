@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Casi Cuadrado"
-date: 2025-8-13
+date: 2025-08-13
+year: 2025
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "primer cuatrimestre"
 ---
 
 <div id="div-sketch">

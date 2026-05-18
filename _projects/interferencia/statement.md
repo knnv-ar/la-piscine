@@ -2,14 +2,13 @@
 layout: post
 title: "Interferencia"
 date: 2025-11-16
+year: 2025
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "segundo cuatrimestre"
 ---
-
 
 <div id="div-sketch">
   <script type="text/javascript" src="sketch.js"></script>

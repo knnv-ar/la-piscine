@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Actividad Cuadriforme"
-date: 2025-7-13
+date: 2025-07-13
+year: 2025
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "primer cuatrimestre"
 ---
 
 <div id="div-sketch">

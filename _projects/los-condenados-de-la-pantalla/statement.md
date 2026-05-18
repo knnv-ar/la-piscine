@@ -2,12 +2,12 @@
 layout: post
 title: "Los condenados de la pantalla"
 date: 2025-11-15
+year: 2025
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2025
-cuatrimestre: "segundo cuatrimestre"
 ---
 
 <div id="div-sketch">

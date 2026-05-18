@@ -2,14 +2,13 @@
 layout: post
 title: "¿De qué y quién le servimos?"
 date: 2022-11-16
+year: 2022
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
   - p5.sound
-year: 2022
-cuatrimestre: "segundo cuatrimestre"
 ---
-
 
 <div id="div-sketch">
   <script type="text/javascript" src="sketch.js"></script>
