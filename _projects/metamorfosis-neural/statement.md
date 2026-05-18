@@ -3,7 +3,7 @@ layout: post
 title: "Metamorfosis neural"
 date: 2025-11-16
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

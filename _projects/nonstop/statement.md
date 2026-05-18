@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "NonStop"
-date: 2025-03-12
-year: 2025
+date: 2024-07-12
+year: 2024
 cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
@@ -14,11 +14,11 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Mercedes Pallotti Miranda_, 2025.
+_Mercedes Pallotti Miranda_, 2024.
 
 **NonStop**
 
-Nonstop surgió del desenroscar el hilo de pensamientos a través de las obras de Valery Paul, Mcluhan Marshall y Heinich Natalie. La ubicuidad, el medio, una obra que va más allá de sí.  El entrelazado de estos textos me llevo a la sensacion de algo que se nos escapa de las manos; asi surgió un código dentro de todo sencillo, que nos pide un solo click para poner a funcionar, de forma aleatoria en cualquier punto del Canvas, una simple linea que, si no la paramos, solo seguirá (y seguira) siendo madre de otras lineas.
+Nonstop surgió del desenroscar el hilo de pensamientos a través de las obras de Valery Paul, Mcluhan Marshall y Heinich Natalie. La ubicuidad, el medio, una obra que va más allá de sí. El entrelazado de estos textos me llevo a la sensacion de algo que se nos escapa de las manos; asi surgió un código dentro de todo sencillo, que nos pide un solo click para poner a funcionar, de forma aleatoria en cualquier punto del Canvas, una simple linea que, si no la paramos, solo seguirá (y seguira) siendo madre de otras lineas.
 viendo así este nonstop de repeticiones de una sola linea/información, que no es controlada por quien da el primer paso para verla.
 
 **Desarrollo técnico, estético y conceptual**

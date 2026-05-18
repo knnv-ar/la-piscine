@@ -3,7 +3,7 @@ layout: post
 title: "FishTron"
 date: 2025-11-26
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

@@ -9,7 +9,7 @@ let x, y;        // Coordenadas de los puntos que se van a dibujar
 
 
 function setup() {
-  let canvas = createCanvas(512, 512, WEBGL);
+  let canvas = createCanvas(512, 512);
   canvas.parent('div-sketch');
 
   background(255); // fondo blanco como un lienzo

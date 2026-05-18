@@ -3,7 +3,7 @@ layout: post
 title: "Espacios imposibles"
 date: 2025-11-18
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Silvina Hippler, 2025.
+_Silvina Hippler_, 2025.
 
 **Espacios imposibles**
 

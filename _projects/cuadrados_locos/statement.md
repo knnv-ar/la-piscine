@@ -3,7 +3,7 @@ layout: post
 title: "Cuadrados Locos"
 date: 2025-10-15
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

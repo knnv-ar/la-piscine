@@ -37,6 +37,18 @@ selected_projects:
   - ningun-cuerpo-es-tierra-firme
   - cigarrillo-43
   - transmutacion
+  - osilons
+  - sol-negro
+  - instrucciones-para-desorganizar-una-cuadricula
+  - uroboro
+  - disturbio-de-lineas
+  - desprogramacion
+  - del-individualismo-al-codigo-como-union
+  - la-anastrofe-de-nsdf
+  - codigo-sobre-codigo
+  - hecate
+  - ultimo-segundo
+  - una-mirada-diferente
 ---
 
 <!-- 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Dejarse Instruír"
-date: 2025-03-12
-year: 2025
-cuatrimestre: primer cuatrimestre
+date: 2024-12-12
+year: 2024
+cuatrimestre: segundo cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Mercedes Pallotti Miranda_, 2025.
+_Mercedes Pallotti Miranda_, 2024.
 
 **Dejarse Instruír**
 

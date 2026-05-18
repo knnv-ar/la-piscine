@@ -3,7 +3,7 @@ layout: post
 title: "Ansiedad"
 date: 2025-11-08
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

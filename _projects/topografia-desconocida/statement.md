@@ -3,7 +3,7 @@ layout: post
 title: "Topografía Desconocida"
 date: 2025-11-18
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

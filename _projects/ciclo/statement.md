@@ -3,7 +3,7 @@ layout: post
 title: "Ciclo"
 date: 2025-11-12
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5

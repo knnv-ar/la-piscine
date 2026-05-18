@@ -3,7 +3,7 @@ layout: post
 title: "Bucle"
 date: 2025-10-16
 year: 2025
-cuatrimestre: segundo cuatrimestre
+cuatrimestre: primer cuatrimestre
 thumbnail: thumbnail.png
 dependencies:
   - p5
@@ -14,7 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
-_Laura Prada,2025.
+_Laura Prada_,2025.
 
 **Bucle**
 
