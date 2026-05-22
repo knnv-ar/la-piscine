@@ -1,0 +1,20 @@
+# Archivo MTL generado - Violeta
+newmtl ToonSkin01
+
+# Color Ambiental (sombras)
+Ka 0.000 0.000 0.000 
+
+# Color Difuso (el color principal, violeta)
+Kd 0.498 0.000 1.000 
+
+# Color Especular (el color del brillo, gris medio)
+Ks 0.500 0.500 0.500 
+
+# Intensidad del brillo (0 a 1000)
+Ns 50.000 
+
+# Opacidad (1.0 = totalmente opaco)
+d 1.0 
+
+# Modelo de iluminación (2 = con brillo)
+illum 2

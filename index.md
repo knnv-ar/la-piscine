@@ -49,6 +49,25 @@ selected_projects:
   - hecate
   - ultimo-segundo
   - una-mirada-diferente
+  - e-fissure
+  - poesia-de-la-nada
+  - quiasma
+  - senal-codigo-verificacion
+  - yard
+  - artesania-cerebro-vincular-2020
+  - representacion-del-aura
+  - la-bandera-negra
+  - festividad
+  - espectro-de-oscilacion
+  - cruz-prima
+  - contame-que-soy
+  - la-voluntad-de-dios
+  - gutai
+  - entre-dos-fuegos
+  - bola-de-fetiche
+  - hypostasis
+  - entrar-al-flujo
+
 ---
 
 <!-- 

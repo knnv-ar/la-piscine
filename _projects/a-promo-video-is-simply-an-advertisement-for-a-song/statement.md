@@ -1,0 +1,36 @@
+---
+layout: post
+title: "A promo video is simply an advertisement for a song"
+date: 2020-12-01
+year: 2020
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Martín Farid Olveira Rial_, 2020.
+
+**A promo video is simply an advertisement for a song**
+
+En mi obra decidí plantear un interrogante sobre la relación entre el arte, los medios de comunicación y la sociedad de consumo en la era del capitalismo de las imágenes; situándome en el eje de la música pop, sus videos musicales y su potencial mercantil. En el marco de una videoescultura/videoinstalación digital, el usuario podrá desmenuzar los distintos puntos culmines de una canción/video pop y observar desde adentro sus fórmulas artísticas, comerciales y masivas incursionando en ambientes visuales y sonoros.
+
+**Instrucciones de uso**
+
+- Click derecho - se abre chapa/puerta inicial y se reproduce el sonido de la apertura. 
+- Teclas del 1 al 7 - al presionarlas cada una presenta nuevas imágenes en cada televisor, cambian el montaje. También, cada una de estas teclas emite un sonido diferente. 
+- Tecla 1 - además de tener la función ya mencionada, deja en loop una música ambiente. 
+- Barra espaciadora - cierra la chapa/puerta inicial y emite el sonido de cierre.
+
+**Biografía**
+
+**Martín Olveira**, de 19 años, nació el 28 de marzo de 2001 en el barrio de Saavedra. Siempre se vio muy interesado por la música, sus diversos modos de comunicar y generar un efecto en la sociedad. Estudió música en la Escuela de Musica Juan Pedro Esnaola, un conservatorio con bachillerato.
+
+A los 16 años empezó un recorrido artístico relacionado con la escritura de canciones y la producción musical con medios electrónicos y analógicos. El resultado fueron tres álbumes conceptuales: 'ANTRO' (2017), 'GUERRA' (2018) y 'NÉMESIS' (2019), todos publicados bajo el seudónimo "Marttein". 
+
+A lo largo de estas producciones se perciben diversas influencias como, por ejemplo, la música concreta, el ambient, la electrónica industrial, el cine, el collage sonoro, entre otras. La conceptualidad está presente en sus LPs, los cuales desarrollan y profundizan acerca de una temática en especial a lo largo de su duración. Sus tres álbumes publicados son una trilogía conceptual, en la que lo urbano, las vivencias de la juventud actual y el momento social/político son una fuente de inspiración tanto a niveles sonoros como poéticos. Estudió teatro físico en el Centro Cultural IMPA La Fábrica, en el que indagó en sus intereses hacia el arte actoral y de performance, un recurso que también utiliza en sus presentaciones musicales.

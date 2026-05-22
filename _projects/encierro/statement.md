@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Encierro"
+date: 2021-12-01
+year: 2021
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Tello Pilar_, 2021.
+
+**Encierro**
+
+Encierro es una obra 3D compuesta en p5js. La obra se sitúa en un cuarto profundo, de cinco paredes con distintas tonalidades rojizas. En el centro se encuentra una mujer teñida de violeta, cuyo cuerpo se mueve en círculos de forma vertical. El lenguaje corporal, postura y actitud de la misma da indicio de una necesidad de escape. La elección de colores tiene como objetivo contextualizar la obra. Los distintos rojos están asociados a la sangre y a la violencia. En cambio, el violeta, hace referencia al movimiento “Ni una menos”.
+
+**Desarrollo técnico, estético y conceptual**
+
+Inspirándome en “ Sobre el arte contemporáneo” por César Aira (2010) y “Artivistas- artistas- activistas” por Taylor Diana (2012) desarrollé una obra exponiendo los sentimientos de las mujeres que se encuentran encerradas en la realidad de un mundo machista. 
+
+Mi intención fue representar el movimiento “Ni una menos” a través del color violeta, el hecho de que la mujer se encuentre expuesta únicamente de ese color hace referencia a la relevancia que tiene el movimiento en la misma. Los tonos rojizos, los cuales se asocian a la sangre, y la profundidad del cuarto en el que se encuentra la ubican en un contexto hostil y violento, similar a la realidad causado por los femicidios y el machismo que sufren muchas mujeres en el día a día.
+
+Los movimientos expresados por la mujer se relacionan con su necesidad de escapar de ese cuarto, en otras palabras, de esa realidad que la encierra. El hecho de que sean de manera circular se asocia con la ausencia de un final y la lucha constante. 
+
+El arte es una forma de militar y visualizar realidades ubicandolas en un lugar de exposición y muchas veces concientización para el espectador. Muchas veces este activismo tiene que ser acompañado de una explicación, como dice César Aira (2010) en “ Sobre el arte contemporáneo” “no hay nada que hable visualmente por si mismo”.

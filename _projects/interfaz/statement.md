@@ -1,0 +1,67 @@
+---
+layout: post
+title: "Interfaz"
+date: 2021-12-01
+year: 2021
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Romina Troncoso_, 2021.
+
+**Interfaz**
+
+Gracias a los espacios que abrieron de ejercicios de lectura y reflexión, mi campo perceptivo se amplió, fue muy enriquecedor el camino, asique principalmente agradecerles por ello. Es claro que mi curiosidad me trajo acá, por eso me expande encontrar en los libros tanto conocimiento. Poder comprender el proceso artístico desde otra perspectiva, no simplemente enfocarme en la obra como expresión visual, sonora. Etc. Si no desde una mirada conceptual, comprender que lo bello es una norma impuesta… desde la modernidad (podríamos decir). El arte es una vía de manifestación, por la que se transmiten valores, ideologías, siempre interpelados por lo socio-político.
+
+Cada arte/artista forma parte de este universo, más allá de su expresión “artística”, sino, creo yo, porque encontró una vía por dónde manifestar, lo que muchos callan, o simplemente no se involucran. Pude darme cuenta que ese es el modo anti-sistema más sano que se puede encontrar, un modo pacífico de mostrar a la sociedad a través de expresiones artísticas lo que los medios intentan dibujar, o muchas veces, siendo cómplices de los sistemas de poder (que son quienes lo manejar). Los grandes monopolios, como lo son los canales de televisión, controlan y adoctrinan a través de sus noticias para que la sociedad cree una realidad ficticia, utilizando técnicas, estímulos sensoriales y visuales, para que permanezca en una posición pacífica. Así de ese modo nuestro campo perceptivo se va disminuyendo al punto de no ser capaces de pensar o analizar por nuestros propios medios lo que pasa a nuestro alrededor, y aceptar pacíficamente condicionamientos, y de a poco ir perdiendo el contacto con lo real, con el presente, el aquí y ahora.
+
+**Desarrollo técnico, estético y conceptual**
+
+De este modo es que resueno tanto con géneros artísticos como lo es la performance, y sus medios para hacer llegar información con múltiples métodos a los espectadores. Simón Marchan Fiz, las denomino los “nuevos comportamientos artísticos”. 
+
+“Desde el punto de vista conceptual, una performance es un “medio sin medio” que comunica directamente su mensaje sin necesidad de recurrir a un intermedio” Fricke, Christiane. 
+
+Siempre existe la otra cara de la moneda, y hay que estar consiente de ello, como bien lo expresa Taylor Diana “Mientras que solemos pensar en performance como cuerpo en acción, también hay que aceptar que a menudo el performance funciona dentro de un sistema de poder subyacente en el que el cuerpo es un producto más”.
+
+Los artistas que lo llevan a cabo ponen sus cuerpos como medio de expresión y transmisión, montando la obra en cualquier espacio, no siendo una condición la clase social a la que el/la artista pertenezca, de modo que solo llegué a colgar una obra en un museo quien cuente con dinero para financiar la misma. Confrontan y cuestionan la idea de producción de obras de arte tradicional. 
+
+El desarrollo de la performance, los happenings, la instalación o arte conceptual a lo largo del siglo pasado son elementos esenciales que provocan la desmaterialización del objeto artístico. 
+
+El movimiento Artivistas, desarrolla un lenguaje de libertad y autonomía que se mueve fuera de las normas culturales fijas, de la estética, y de la tendencia mayoritaria, es una de las razones por la cual me hace amar más está carrera, y el arte, estos movimientos no se quedan en el molde, no tienen miedo, hacen frente a cualquier imposición del poder, mostrando, a través de distintas estrategias, lo que el poder es capaz de hacer, y que muchas veces ni nos enteramos, por mantener la TV prendida, y creer en la ficción que nos relatan día a día, vivir la realidad de los medios, es permanecer dormidos/as, vivir la realidad del arte, es despertar, ampliar nuestro campo, y poder de ese modo estar abiertos a distintos métodos de dominación, detectar que peli nos están queriendo contar.
+
+A través de métodos como la performance, es que se pudo hacer frente a genocidas en la época de la dictadura, se mostró sus rostros, de una manera pacífica se salió a la calle a pedir justicia, a pedir por los desaparecidos. Que ilusos fuimos, que justo en esa época se ganó un mundial, ¿y que hicieron con eso? ¡Cubrir! ¡Ocultar lo que realmente estaba sucediendo, entretenernos con un partido de fútbol, mientras que en las calles se vivía una tortura militar! Los medios hablaban del mundial, y nosotros, saliendo a festejar.
+
+Pienso y luego existo, decía Descartes, cuánta razón en su análisis, prefiero pensar, dudar, y cuestionarme todo lo que haya como norma impuesta. 
+
+Gracias al ejercicio que me otorga la duda es que pude replantearme todo lo aprendido hasta este momento. Gracias a esta materia puedo reconfirmar mi camino, y es por acá, está es la carrera que elijo, el arte es quien hace visible, lo que muchos quieren ocultar. Los medios por los cuales se manifiesta el arte son infinitos... Me encantaría hacer un recorrido por los textos, que tejieron un conocimiento temporario sobre los distintos acontecimientos artísticos, pero será muy extenso, y ya bastante me extendí.
+
+Siento que el arte es quien expresa la anarquía a los sistemas de poder, con mayor dominio en nuestro sistema perceptivo.
+Siempre reparó en lo mismo, día a día puedo notar lo adormecido que esta el ser humano, ante estímulos externos. El arte es quien se convierte en un medio de comunicación enfocado al cambio y a la transformación.
+“El verdadero artista ayuda al mundo revelando las verdades místicas”. Nauman Bruce.
+
+Principalmente lo que intento representar con mi obra es una performance, pero quedo más bien una instalación mega virtualizada, dónde el espectador es parte fundamental de la misma. Su principal función es la interactividad, simulando varias atmósferas, con diferentes escenarios en los que se experimenta la combinación de sonidos, imágenes y videos. Un viaje a través de un espacio virtual en tres dimensiones. Por eso llamo a la obra “interfaz” por qué a través de la interacción del teclado o mouse se crea un encuentro entre la Pc y el usuario “interfaz entre el hombre y la tecnología”. El resultado final dependerá totalmente de la intervención y las decisiones del usuario, jugando con los medios puestos a su disposición. 
+
+La idea es que a través de los movimientos del mouse ingresen las pantallas, dónde se están transmitiendo distintos videos de Ikeda Ryoji, luego, haciendo click podemos cambiar las imágenes, que las mismas son de Ben Laposki, y con la combinación de las teclas podemos dar play a los sonidos disponibles.
+
+La “ruptura” de todo lo visual se da cuando se mantiene apretada una tecla, ahí se encuentra un vídeo-arte que realice yo, dónde lo que intento transmitir es lo atravesados que estamos por la televisión, que lo único que hace es intoxicar nuestra mente, estimular nuestros sentidos, pensares, y que nuestra forma de actuar, se guíe por la información que ellos tienen para darnos, están encargados de mal-informarnos… Pero… luego del recorrido por los distintos textos, puedo observar que no debo limitarme a pensar este medio simplemente desde una mirada televisiva, sino que al mismo tiempo puedo pensarlo, cómo sucedió en sus comienzos, desde una forma de manifestación artística, utilizándolo como una herramienta del arte, antes de que la evolución de estos medios electrónicos se centralice bajo el control del estado.
+
+Me gusta la idea de montar una instalación y que dentro de la misma haya diferentes espacios para ser descubiertos por cada espectador, la intervención en la obra es fundamental. El espectador es un partícipe activo que da sentido a la obra. Fluir, y recrear la instalación, realizar un recorrido, sumergirse en el sinfín de complementos que se pueden obtener con las distintas interacciones dadas por la posición del mouse, opresión del teclado, o bien, haciendo clicks... Y del mismo modo cada uno que intervenga, siendo “chivo espiatorio” como bien describía Sotag Susan sobre los espectadores del happening, puedan ser atravesados de diferentes maneras, desde cada perspectiva y movimientos de interés propio, logrando así, un recorrido distinto en cada participante, siendo ambiguo cada resultado, al mismo tiempo, adquiriendo una nueva identidad estética. “Naturalmente, la aportación del arte se define sobre todo por su capacidad para entregarse a la reflexión, a la crítica, a la búsqueda de criterios estéticos y sus posibles aplicaciones” Fricke.
+
+Mi reflexión tiene que ver sobre los medios, pero ya desde otra postura... Los medios son hoy en día una herramienta tecnológica que nos ayudó a seguir conectados durante una pandemia mundial, no dejo de pensar en lo influenciados que estamos por la TV como medio de comunicación, pero los textos “me ha hecho adoptar una postura crítica ante la televisión” Klaus Vom Bruch. Creo también en la herramienta que nos otorga la misma, teniendo su lado positivo y negativo, dependiendo el uso, y la industrialización del mismo.
+
+Cierro con un fragmento del texto de Fricke, citando a Peter Weibel, con el cual me sentí muy identificada “En mi trabajo no me gustaría limitarme a un solo soporte, a un profesionalismo de género, en el que éste se defina como pintor y aquel como escritor. Todo es poesía, ese es mi lema”.
+
+**Biografía**
+
+- SONTAG, Susan. (1996], 2005). “Los happenings: un arte de yuxtaposición radical (1962)”
+- Taylor, Diana. (2012). “¿Cuáles son los antecedentes del arte de performance?
+- Taylor, Diana. (2012). “Los nuevos usos de performance”
+- Taylor, Diana. (2012). “Artivistas (artistas/activistas)”
+- Fricke, Christiane. (1999). “Nuevos Medios”

@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Torus Espacial"
+date: 2021-12-01
+year: 2021
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Oswaldo Alexander Reina Espinoza_, 2021.
+
+**Torus Espacial**
+
+En este trabajo, la dona o (torus) usado en p5js, usándola de referencia con ayudada de tu cámara web para crear una interactividad.
+Lo realicé por el motivo que vi algo novedoso y distinto que te puedes ver reflejado en la pantalla con tu cámara web en diferentes planos.
+Existe una nueva estética que es tan amplia que todo el mundo se puede sentir identificado con ella, ya que lo aborda todo.
+
+Hablamos de aesthetic, un nuevo estilo de vida donde el postureo de las redes sociales.
+
+Crea una variedad de perspectivas y escenas, inmersas en el fondo. Acompañado de una relajante música de fondo.
+
+Basándome en BISHOP, Claire y en su libro “El arte de la instalación y su herencia” Las características de mi proyecto.
+
+Razones que explican el deseo del artista por autorretratarse, el deseo de conocerse a sí mismo y de mostrarse al público en sus distintas facetas y con infinidad de matices.
+
+Poseen una belleza que no es la de la hermosura, sino la de la perspectiva psicológica del retratado. 
+
+Y guiado por GROYS, Boris. (2010, 2014) en su libro. “Política de la instalación.
+
+Es una presentación de la personalidad y de la vanidad del individuo”, añadiríamos, incluso, un deseo narcisista de trascender en el tiempo para lograr la inmortalidad.
+
+La esencia de lo bello y de la percepción de la belleza del arte.
+El sistema en el que opera el arte en la cultura occidental contemporánea se considera generalmente como un sistema que otorga libertad artística. 
+
+Pero el significado de la libertad artística es diferente para el público y el artista
+

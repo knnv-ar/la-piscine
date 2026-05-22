@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Primer díptico"
+date: 2020-12-01
+year: 2020
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Agustina Blumetti_, 2020.
+
+**Primer díptico**
+
+**Instrucciones de uso**
+
+Pasar con el mouse por encima de la imagen para ver más cambios. Hacer click con botón derecho o izquierdo para cambiar color.
+
+**Biografía**
+
+**Agustina Blumetti** nace en Buenos Aires, Argentina en 1980. Desde edad temprana comienza su formación en dibujo y pintura asistiendo a diversos talleres y centros culturales. Se formó en la Escuela Nacional de Bellas Artes Prilidiano Pueyrredón y en el Instituto Superior de Arte del Teatro Colón. Se desarrolló en distintas áreas de las artes visuales, incursionando en el diseño de estampas textiles, accesorios, complementos de moda y maquillando para desfiles y producciones editoriales.

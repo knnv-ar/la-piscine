@@ -1,0 +1,41 @@
+---
+layout: post
+title: "El aleteo de un Colibrí"
+date: 2021-07-01
+year: 2021
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Samanta Berberian_, 2021.
+
+**El aleteo de un Colibrí**
+
+Para llevar a cabo el presente trabajo tome como referencia la obra: Hummingbird, la cual es una de las primeras películas animadas en computadora. Para hacer dicha animación, se dibujaron más de 30.000 imágenes individuales utilizando un trazador de microfilmes. Cada cuadro fue programado usando una tarjeta perforada, un ejemplo de las operaciones complejas y laboriosas requeridas por las primeras animaciones por computadora.
+
+**Desarrollo técnico, estético y conceptual**
+
+“La obra de arte ya no está en el objeto propuesto por el artista”.
+El relato es el punto en común de estas múltiples formas de proyectar la obra más allá del objeto.
+
+El objeto es tan solo un pretexto, como un activador que inducirá acciones.
+
+...pues nada son esos objetos fuera del contexto del arte contemporáneo,... que le dan sentido y condición.
+“el concepto de la obra es la obra”, pues “Las ideas se consideran como obras y se reivindican como tales por los artistas”. ”Necesitan venir acompañados de explicaciones, declaraciones o instrucciones dadas por él”.
+
+“el arte contemporáneo se ha convertido, esencialmente, en un arte de contar”
+
+**Biografía**
+
+- BREA, José Luis. (2002). Breve -y desordenado- antiglosario-o diccionario de tópicos-sobre el arte electrónico.
+- MCLUHAN, Marshall. (1964). El medio es el mensaje:
+- HEINICH, Nathalie. (2014). La obra más allá del objeto.pdf
+- https://www.moma.org/calendar/exhibitions/3903
+- https://csuriproject.osu.edu/index.php/Detail/objects/775

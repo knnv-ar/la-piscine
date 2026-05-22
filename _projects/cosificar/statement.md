@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Cosificar"
+date: 2020-12-01
+year: 2020
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Jacqueline Gómez Castellanos_, 2020.
+
+**Cosificar**
+
+Convertir en cosa el pensamiento: Cosificar. Abre al ojo y oído espectador, situaciones y sensaciones que en el cuerpo confluyen, solo un puñado de estas.
+
+Los recuerdos de un pasado y un vivir presente, que tejen la configuración de un posible después.
+
+**Instrucciones de uso**
+
+Agudice los sentidos. Click en play.
+
+**Biografía**
+
+La colombiana ** Jacqueline Gómez Castellanos** realiza exploración artística desde la imagen, el sonido, la naturaleza y las herramientas digitales de código abierto.
