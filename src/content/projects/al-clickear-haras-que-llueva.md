@@ -1,0 +1,29 @@
+---
+title: "Al clickear harás que llueva."
+date: 2021-07-01
+year: 2021
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Jésica López Chanienko_, 2021.
+
+**Al clickear harás que llueva.**
+
+- Al presionar la tecla “L” harás que caiga un rayo y se ilumine el bosque.
+- Al presionar la tecla “G” harás que caiga granizo.
+
+**Desarrollo técnico, estético y conceptual**
+
+Para su desarrollo estético se ha utilizado figuras primitivas 2D y para realizarlas se optó por las siguientes funciones de dibujo: line y ellipse. El modo color es RGB, en escala de grises de 8bit de profundidad, junto a la función alpha en algunos elementos. Su creación está basada en una obra de la autora Grace Hertlein, “Womb of Water”, 1972 y sus afirmaciones; “ Vale la pena señalar que no todo el arte por computadora debe considerarse arte 'duradero'. Algunos trabajos pueden ser experimentos breves, con objetivos específicos.”
+
+“Nuestro propósito es crear formas de arte para un público más amplio, no solo para los científicos, sino para otros seres humanos. Nuestro mundo actual necesita la visión de un arte que simbolice una simbiosis positiva de tecnología y expresión humana”.1980/81.
+
+Así mismo, también se tuvo en cuenta las palabras que el autor Camnitzer escribió en su libro “Arte conceptualista latinoamericano”, 2008; en cuanto a la desmaterialización de ideas y la falta de originalidad de los artistas, en sus obras, pero el amor por las mismas por parte del público. Alone, with th crows, es un ejemplo de esto mismo, ya que, se optó por realizar algo que a la mayoría le guste y también pueda comprender.

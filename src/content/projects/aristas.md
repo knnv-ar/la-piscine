@@ -1,0 +1,29 @@
+---
+title: "Aristas"
+date: 2020-12-01
+year: 2020
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Yofrel Andrés Rojas Osorio_, 2020.
+
+**Aristas**
+
+Es una obra multimedia e interactiva con finalidad de simular varias atmósferas, contiene diferentes escenarios en los cuales se experimenta la combinación de sonido, imágenes estáticas/dinámicas e iconos.
+ En los escenarios 3D usó las imágenes para imitar un ambiente determinado, incluyendo sonidos para completar el sentido de las imágenes, en los espacios 2D implementando la animación de frames se generaron diferentes tipos de animación.
+
+**Instrucciones de uso**
+
+Después de que los seis dados están en la pagina inicial, haciendo click sobre cada uno de ellos se mostraran los diferentes escenarios.
+
+**Biografía**
+
+Oriundo de Colombia, vivo hace 6 años en Buenos Aires descubriendo lo que realmente me apasiona, por lo cual he pasado por tres carreras universitarias y después de tantos idas y vueltas termine estudiando artes multimediales, una carrera en la que mis conceptos artísticos los puedo aplicar de manera mas fluida y día a día voy sintiendo que este es el camino que quiero seguir.

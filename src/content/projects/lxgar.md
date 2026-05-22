@@ -1,0 +1,24 @@
+---
+title: "Lxgar"
+date: 2020-12-01
+year: 2020
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Mayra Azul Ramos_, 2020.
+
+**Lxgar**
+
+En “Lxgar” lo primero que se puede ver es la construcción del fondo mediante la repetición de dos imágenes en forma de espiral sumado a dos imágenes estáticas, al mover el mouse se comienza a acumular otra imagen que sigue completando el fondo que contiene la presencia de de una silueta en forma de persona, que al hacer click se va imprimiendo otra copia de esta silueta, liberado un sonido semejante a un golpe, sumado al sonido constante y repetitivo del sonido de una “ciudad glictcheada”. Mientras avanza el tiempo van apareciendo palabras en movimiento.
+
+**Biografía**
+
+**Mayra Ramos** nació en 1998, en la zona norte de Buenos Aires. Sus primeros acercamientos al mundo del arte multimedia se remontan al 2017, año en el que participa de un taller de experimentación audiovisual. A raíz de diversas inquietudes sociopolíticas, ese año también comienza su militancia en la Facultad de Ciencias Sociales de la UBA, lo que influye en su producción artística.

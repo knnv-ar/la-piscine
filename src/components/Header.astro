@@ -1,0 +1,196 @@
+---
+import { useTranslations, type Locale } from '../utils/translations';
+
+const locale = (Astro.currentLocale || 'es') as Locale;
+const t = useTranslations(locale);
+
+const base = '/la-piscine';
+const pathname = Astro.url.pathname;
+
+// Helper to check if a link is active
+const isActive = (path: string) => {
+  // Normalize both paths for comparison
+  const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  const targetPath = `${base}${path}`.endsWith('/') ? `${base}${path}` : `${base}${path}/`;
+  return normalizedPath === targetPath;
+};
+
+// Robust calculation of the target URL for the other language
+let targetLink = '';
+if (locale === 'es') {
+  // Spanish to English: insert '/en' after the base path
+  if (pathname.startsWith(base)) {
+    const remaining = pathname.substring(base.length);
+    targetLink = `${base}/en${remaining.startsWith('/') ? remaining : '/' + remaining}`;
+  } else {
+    targetLink = `/en${pathname}`;
+  }
+} else {
+  // English to Spanish: remove '/en' from the pathname
+  const enPrefix = `${base}/en`;
+  if (pathname.startsWith(enPrefix)) {
+    const remaining = pathname.substring(enPrefix.length);
+    targetLink = `${base}${remaining.startsWith('/') ? remaining : '/' + remaining}`;
+  } else if (pathname.startsWith('/en')) {
+    targetLink = pathname.substring(3) || '/';
+  } else {
+    targetLink = pathname;
+  }
+}
+
+// Clean duplicate slashes
+targetLink = targetLink.replace(/\/+/g, '/');
+// Fix case of protocol prefixing if any, but these are absolute pathnames starting with /
+---
+
+<header class="site-header">
+  <div class="container header-container">
+    <a href={`${base}/${locale === 'en' ? 'en/' : ''}`} class="brand">
+      <span class="brand-bracket">&lt;</span><span class="brand-text">la-piscine</span><span class="brand-bracket">&gt;</span>
+      <span class="brand-badge">UNA</span>
+    </a>
+
+    <nav class="main-nav glass-panel">
+      <a href={`${base}/${locale === 'en' ? 'en/' : ''}`} class:list={['nav-link', { active: pathname === `${base}/` || pathname === `${base}` || pathname === `${base}/en/` || pathname === `${base}/en` }]}>
+        {t('nav.home')}
+      </a>
+      <a href={`${base}/${locale === 'en' ? 'en/' : ''}archivo/`} class:list={['nav-link', { active: pathname.includes('/archivo') }]}>
+        {t('nav.archive')}
+      </a>
+      <a href={`${base}/${locale === 'en' ? 'en/' : ''}acerca-de/`} class:list={['nav-link', { active: pathname.includes('/acerca-de') }]}>
+        {t('nav.about')}
+      </a>
+    </nav>
+
+    <div class="lang-switch-container">
+      <a href={targetLink} class="lang-switch glass-panel" title={t('language.label')}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <span class="lang-code">{t('language.targetName')}</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(5, 8, 14, 0.7);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0;
+    transition: var(--transition-smooth);
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .brand-bracket {
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent-glow);
+    font-weight: 300;
+  }
+
+  .brand-text {
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .brand-badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    background: var(--bg-tertiary);
+    color: var(--accent-purple);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    letter-spacing: 0.05em;
+  }
+
+  .main-nav {
+    display: flex;
+    padding: 0.35rem;
+    border-radius: 30px;
+    background: rgba(12, 18, 30, 0.5);
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    transition: var(--transition-smooth);
+  }
+
+  .nav-link:hover {
+    color: var(--text-primary);
+  }
+
+  .nav-link.active {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: rgba(12, 18, 30, 0.4);
+    cursor: pointer;
+  }
+
+  .lang-switch:hover {
+    color: var(--accent);
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 0 10px var(--accent-glow);
+  }
+
+  .globe-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .header-container {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .site-header {
+      padding: 0.75rem 0;
+    }
+    
+    .main-nav {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

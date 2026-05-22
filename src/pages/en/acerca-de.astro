@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations, type Locale } from '../../utils/translations';
+
+const locale = (Astro.currentLocale || 'es') as Locale;
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t('nav.about')} description="Exhibition space of the Lacabanne Chair (UNA) - Multimedia Arts">
+  <div class="about-container">
+    <header class="about-header">
+      <h1 class="about-title">{t('nav.about')}</h1>
+      <p class="about-subtitle">Multimedia Arts 1 & 4 — Lacabanne Chair</p>
+    </header>
+
+    <div class="about-content-grid">
+      <!-- Main Text Block -->
+      <section class="info-section glass-panel">
+        <h2>The Project</h2>
+        <p>
+          This is a digital art exhibition gallery showcasing interactive works made by students who attended <strong>Multimedia Arts 1</strong> and <strong>Multimedia Arts 4</strong> courses at the <strong>Universidad Nacional de las Artes (UNA)</strong> in Buenos Aires, Argentina.
+        </p>
+        <p>
+          The gallery documents and showcases the interactive pedagogical path of the students using creative coding in p5.js and other dynamic libraries, creating a sensory space that sits at the intersection of source code, aesthetics, and conceptual art.
+        </p>
+        <p>
+          This website was migrated from its original Jekyll template (originally created by <a href="https://github.com/benjaminhabert" target="_blank" rel="noopener noreferrer">Benjamin Habert</a>) to a cutting-edge, fluid static platform built on Astro. Copyleft 2020-2026.
+        </p>
+        
+        <div class="channel-callout">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="youtube-icon"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          <p>We invite you to visit our official <a href="https://www.youtube.com/channel/UCmXuU1BZVZDfdqraE5s8QiQ" target="_blank" rel="noopener noreferrer">YouTube</a> channel to watch student project defenses and tutorials.</p>
+        </div>
+      </section>
+
+      <!-- Faculty Sidebar -->
+      <aside class="team-section glass-panel">
+        <h2>Faculty Chair Staff</h2>
+        <div class="team-list">
+          <div class="team-member">
+            <div class="member-role">Full Tenured Professor</div>
+            <div class="member-name">Raúl Federico Lacabanne</div>
+            <p class="member-bio">Full Professor at the Transdepartmental Area of Multimedia Arts of the UNA. Associate Professor at the National University of Quilmes (UNQ).</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-role">Adjunct Professor</div>
+            <div class="member-name">Mauricio Gutiérrez</div>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-role">Assistant Professor (JTP)</div>
+            <div class="member-name">Mirna Barreiro</div>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-role">Teaching Assistant</div>
+            <div class="member-name">Candela Corradin Tessa</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3.5rem 1.5rem 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--text-primary) 40%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .about-subtitle {
+    font-size: 1.15rem;
+    color: var(--accent-purple);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .about-content-grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .glass-panel {
+    background: rgba(12, 18, 30, 0.45);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-panel h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.75rem;
+  }
+
+  .info-section {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .info-section strong {
+    color: var(--text-primary);
+  }
+
+  .info-section a {
+    color: var(--accent);
+    border-bottom: 1px dashed var(--accent);
+  }
+
+  .info-section a:hover {
+    color: var(--text-primary);
+    border-bottom-style: solid;
+  }
+
+  .channel-callout {
+    margin-top: 1rem;
+    background: rgba(6, 182, 212, 0.04);
+    border: 1px solid rgba(6, 182, 212, 0.15);
+    padding: 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .youtube-icon {
+    color: #ef4444;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.3));
+  }
+
+  .channel-callout p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Team sidebar style */
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .member-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+  }
+
+  .member-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .member-bio {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin-top: 0.35rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .about-content-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .glass-panel {
+      padding: 1.75rem;
+    }
+  }
+</style>

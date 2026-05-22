@@ -1,0 +1,323 @@
+---
+import { useTranslations, type Locale } from '../utils/translations';
+
+interface Props {
+  years: number[];
+}
+
+const { years } = Astro.props;
+const locale = (Astro.currentLocale || 'es') as Locale;
+const t = useTranslations(locale);
+---
+
+<div class="search-filter-panel glass-panel">
+  <!-- Search Input Row -->
+  <div class="search-input-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder={t('search.placeholder')} 
+      autocomplete="off"
+    />
+    <button id="search-clear-btn" class="clear-btn" style="display: none;" title="Limpiar búsqueda">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <!-- Filters Row -->
+  <div class="filters-row">
+    <!-- Semester Filters -->
+    <div class="filter-group">
+      <span class="filter-label">{t('project.semester')}:</span>
+      <div class="pills-container" id="semester-filters">
+        <button class="pill-btn active" data-semester="all">Todos</button>
+        <button class="pill-btn" data-semester="first">{t('project.first')}</button>
+        <button class="pill-btn" data-semester="second">{t('project.second')}</button>
+      </div>
+    </div>
+
+    <!-- Year Filters -->
+    <div class="filter-group">
+      <span class="filter-label">{t('project.year')}:</span>
+      <div class="pills-container" id="year-filters">
+        <button class="pill-btn active" data-year="all">Todos</button>
+        {years.map(year => (
+          <button class="pill-btn" data-year={year.toString()}>{year}</button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Count -->
+  <div class="search-status">
+    <span class="status-text"><span id="results-count">0</span> proyectos encontrados</span>
+  </div>
+</div>
+
+<script>
+  // Client-side search and filtering logic
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input') as HTMLInputElement;
+    const clearBtn = document.getElementById('search-clear-btn') as HTMLButtonElement;
+    const semesterPills = document.querySelectorAll('#semester-filters .pill-btn');
+    const yearPills = document.querySelectorAll('#year-filters .pill-btn');
+    const cards = document.querySelectorAll('.project-card-wrapper') as NodeListOf<HTMLElement>;
+    const resultsCountEl = document.getElementById('results-count');
+    const noResultsEl = document.getElementById('no-results-message');
+
+    let currentQuery = '';
+    let currentSemester = 'all';
+    let currentYear = 'all';
+
+    // Helper to normalize strings (stripping accents/tildes for search tolerance)
+    const normalizeStr = (str: string) => {
+      return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+    };
+
+    const updateFilters = () => {
+      let count = 0;
+      const normalizedQuery = normalizeStr(currentQuery);
+
+      cards.forEach(card => {
+        const title = normalizeStr(card.dataset.title || '');
+        const author = normalizeStr(card.dataset.author || '');
+        const year = card.dataset.year || '';
+        const semester = card.dataset.semester || '';
+        const slug = card.dataset.slug || '';
+
+        const matchesSearch = 
+          normalizedQuery === '' || 
+          title.includes(normalizedQuery) || 
+          author.includes(normalizedQuery) || 
+          year.includes(normalizedQuery) ||
+          slug.includes(normalizedQuery);
+
+        const matchesSemester = currentSemester === 'all' || semester === currentSemester;
+        const matchesYear = currentYear === 'all' || year === currentYear;
+
+        if (matchesSearch && matchesSemester && matchesYear) {
+          card.style.display = 'block';
+          count++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update count
+      if (resultsCountEl) {
+        resultsCountEl.textContent = count.toString();
+      }
+
+      // Toggle no results message
+      if (noResultsEl) {
+        noResultsEl.style.display = count === 0 ? 'block' : 'none';
+      }
+    };
+
+    // Initialize count
+    if (resultsCountEl) {
+      resultsCountEl.textContent = cards.length.toString();
+    }
+
+    // Input Search Listener
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const target = e.target as HTMLInputElement;
+        currentQuery = target.value;
+        
+        if (clearBtn) {
+          clearBtn.style.display = currentQuery.length > 0 ? 'block' : 'none';
+        }
+        
+        updateFilters();
+      });
+    }
+
+    // Clear Button Listener
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        currentQuery = '';
+        clearBtn.style.display = 'none';
+        searchInput.focus();
+        updateFilters();
+      });
+    }
+
+    // Semester Pills Listeners
+    semesterPills.forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        const btn = e.currentTarget as HTMLButtonElement;
+        semesterPills.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        currentSemester = btn.dataset.semester || 'all';
+        updateFilters();
+      });
+    });
+
+    // Year Pills Listeners
+    yearPills.forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        const btn = e.currentTarget as HTMLButtonElement;
+        yearPills.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        currentYear = btn.dataset.year || 'all';
+        updateFilters();
+      });
+    });
+  });
+</script>
+
+<style>
+  .search-filter-panel {
+    background: rgba(12, 18, 30, 0.45);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 1.25rem;
+    color: var(--text-muted);
+    pointer-events: none;
+    transition: var(--transition-smooth);
+  }
+
+  #search-input {
+    width: 100%;
+    background: rgba(8, 12, 21, 0.6);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    padding: 0.9rem 1.25rem 0.9rem 3rem;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+  }
+
+  #search-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+    background: rgba(8, 12, 21, 0.85);
+  }
+
+  #search-input:focus + .search-icon {
+    color: var(--accent);
+  }
+
+  .clear-btn {
+    position: absolute;
+    right: 1.25rem;
+    background: transparent;
+    border: 0;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: var(--transition-smooth);
+  }
+
+  .clear-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .filters-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    padding-top: 1rem;
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .filter-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-width: 90px;
+  }
+
+  .pills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .pill-btn {
+    background: rgba(19, 27, 44, 0.4);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+  }
+
+  .pill-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--glass-border-hover);
+  }
+
+  .pill-btn.active {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-purple) 100%);
+    color: var(--bg-primary);
+    border-color: transparent;
+    font-weight: 600;
+    box-shadow: 0 4px 12px var(--accent-glow);
+  }
+
+  .search-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  #results-count {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .filter-group {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+</style>

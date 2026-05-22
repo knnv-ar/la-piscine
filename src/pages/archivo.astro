@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import SearchBar from '../components/SearchBar.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations, type Locale } from '../utils/translations';
+
+const locale = (Astro.currentLocale || 'es') as Locale;
+const t = useTranslations(locale);
+
+const projects = await getCollection('projects');
+
+// Sort: Year descending, Semester descending, Title ascending
+const sortedProjects = [...projects].sort((a, b) => {
+  const yearA = a.data.year || (a.data.date ? new Date(a.data.date).getFullYear() : 2020);
+  const yearB = b.data.year || (b.data.date ? new Date(b.data.date).getFullYear() : 2020);
+  if (yearB !== yearA) return yearB - yearA;
+  
+  const semA = a.data.semester || 'first';
+  const semB = b.data.semester || 'first';
+  if (semA !== semB) return semB === 'second' ? 1 : -1;
+  
+  return a.data.title.localeCompare(b.data.title);
+});
+
+// Extract unique years present in the collection, sorted descending
+const uniqueYears = Array.from(
+  new Set(
+    projects.map(p => p.data.year || (p.data.date ? new Date(p.data.date).getFullYear() : 2020))
+  )
+).sort((a, b) => b - a);
+---
+
+<BaseLayout title={t('archive.title')} description={t('site.description')}>
+  <div class="archive-container">
+    <!-- Header Block -->
+    <header class="archive-header">
+      <h1 class="archive-title">{t('archive.title')}</h1>
+      <p class="archive-subtitle">
+        Catálogo completo de obras digitales de los estudiantes de la cátedra Lacabanne (2020 - {new Date().getFullYear()})
+      </p>
+    </header>
+
+    <!-- Search and Filters Component -->
+    <SearchBar years={uniqueYears} />
+
+    <!-- Static Grid of Cards (for SEO and Progressive Enhancement) -->
+    <div class="archive-grid">
+      {sortedProjects.map(project => {
+        const year = project.data.year || (project.data.date ? new Date(project.data.date).getFullYear() : 2020);
+        const semester = project.data.semester || 'first';
+        
+        return (
+          <div 
+            class="project-card-wrapper" 
+            data-title={project.data.title}
+            data-author={project.data.author}
+            data-year={year.toString()}
+            data-semester={semester}
+            data-slug={project.slug}
+          >
+            <ProjectCard project={project} />
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Empty State -->
+    <div id="no-results-message" class="no-results glass-panel" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="empty-icon"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+      <h3>{t('search.noResults')}</h3>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .archive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem 1.5rem 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .archive-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .archive-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--text-primary) 40%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .archive-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .archive-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    transition: var(--transition-smooth);
+  }
+
+  .no-results {
+    background: rgba(12, 18, 30, 0.4);
+    border: 1px solid var(--glass-border);
+    padding: 4rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+  }
+
+  .empty-icon {
+    color: var(--text-muted);
+  }
+
+  /* Responsive breakpoints */
+  @media (max-width: 1024px) {
+    .archive-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .archive-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .archive-title {
+      font-size: 2.25rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .archive-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>

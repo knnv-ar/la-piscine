@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations, type Locale } from '../utils/translations';
+
+const locale = (Astro.currentLocale || 'es') as Locale;
+const t = useTranslations(locale);
+---
+
+<BaseLayout title={t('nav.about')} description="Espacio expositivo de la Cátedra Lacabanne (UNA) - Artes Multimediales">
+  <div class="about-container">
+    <header class="about-header">
+      <h1 class="about-title">{t('nav.about')}</h1>
+      <p class="about-subtitle">Artes Multimediales 1 y 4 — Cátedra Lacabanne</p>
+    </header>
+
+    <div class="about-content-grid">
+      <!-- Main Text Block -->
+      <section class="info-section glass-panel">
+        <h2>El Proyecto</h2>
+        <p>
+          Este es un espacio expositivo de arte digital contemporáneo donde se puede visitar todos los trabajos realizados por los estudiantes que cursaron las asignaturas <strong>Artes Multimediales 1</strong> y <strong>Artes Multimediales 4</strong> pertenecientes a la Licenciatura en Artes Multimediales del Área Transdepartamental de Artes Multimediales de la <strong>Universidad Nacional de las Artes (UNA)</strong>, en Buenos Aires, Argentina.
+        </p>
+        <p>
+          La galería documenta y expone el recorrido pedagógico e interactivo de los estudiantes mediante programación creativa en p5.js y tecnologías asociadas, propiciando un espacio híbrido entre código, estética y experimentación sensorial.
+        </p>
+        <p>
+          Este sitio fue migrado de su versión original en Jekyll (basada en la plantilla portfolio de <a href="https://github.com/benjaminhabert" target="_blank" rel="noopener noreferrer">Benjamin Habert</a>) a una plataforma moderna y fluida desarrollada en Astro. Copyleft 2020-2026.
+        </p>
+        
+        <div class="channel-callout">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="youtube-icon"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          <p>Los invitamos a visitar también nuestro canal oficial de <a href="https://www.youtube.com/channel/UCmXuU1BZVZDfdqraE5s8QiQ" target="_blank" rel="noopener noreferrer">YouTube</a> para ver defensas de proyectos y tutoriales de la cátedra.</p>
+        </div>
+      </section>
+
+      <!-- Faculty Sidebar -->
+      <aside class="team-section glass-panel">
+        <h2>Equipo Docente</h2>
+        <div class="team-list">
+          <div class="team-member">
+            <div class="member-role">Profesor Titular Ordinario</div>
+            <div class="member-name">Raúl Federico Lacabanne</div>
+            <p class="member-bio">Profesor Titular Ordinario en el Área Transdepartamental de Artes Multimediales de la UNA. Profesor Adjunto Ordinario en la Universidad Nacional de Quilmes (UNQ).</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-role">Profesor Adjunto Ordinario</div>
+            <div class="member-name">Mauricio Gutiérrez</div>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-role">Jefa de Trabajos Prácticos</div>
+            <div class="member-name">Mirna Barreiro</div>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-role">Ayudante de Segunda</div>
+            <div class="member-name">Candela Corradin Tessa</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3.5rem 1.5rem 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--text-primary) 40%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .about-subtitle {
+    font-size: 1.15rem;
+    color: var(--accent-purple);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .about-content-grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .glass-panel {
+    background: rgba(12, 18, 30, 0.45);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-panel h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 0.75rem;
+  }
+
+  .info-section {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .info-section strong {
+    color: var(--text-primary);
+  }
+
+  .info-section a {
+    color: var(--accent);
+    border-bottom: 1px dashed var(--accent);
+  }
+
+  .info-section a:hover {
+    color: var(--text-primary);
+    border-bottom-style: solid;
+  }
+
+  .channel-callout {
+    margin-top: 1rem;
+    background: rgba(6, 182, 212, 0.04);
+    border: 1px solid rgba(6, 182, 212, 0.15);
+    padding: 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .youtube-icon {
+    color: #ef4444;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.3));
+  }
+
+  .channel-callout p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Team sidebar style */
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .member-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+  }
+
+  .member-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .member-bio {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin-top: 0.35rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .about-content-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .glass-panel {
+      padding: 1.75rem;
+    }
+  }
+</style>

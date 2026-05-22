@@ -1,0 +1,15 @@
+---
+import type { Locale } from '../utils/translations';
+
+interface Props {
+  code: Locale;
+}
+
+const { code } = Astro.props;
+const currentLocale = (Astro.currentLocale || 'es') as Locale;
+
+// Render slot only if the code matches the current locale
+const shouldRender = currentLocale === code;
+---
+
+{shouldRender && <slot />}

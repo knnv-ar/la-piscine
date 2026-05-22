@@ -1,0 +1,30 @@
+---
+title: "Artesanía Cerebro Vincular"
+date: 2020-12-01
+year: 2020
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5
+  - p5.sound
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+_Malena Florencia Anaya_, 2020.
+
+**Artesanía Cerebro Vincular**
+
+¿Por qué nos parecen bellas las cosas? ¿Juzgamos con la lógica o con la percepción sensitiva? ¿Qué es la belleza? ¿Qué es la perfección? ¿Es todo lo bello múltiplo de una sucesión de números divina que nos atrae porque, en esencia, de ella estamos hechos?
+
+Podemos ver un cerebro dividido en sus dos hemisferios: el izquierdo (lógico) y el derecho (intuitivo). En el izquierdo tenemos una atmósfera en blanco y negro, textos sobre críticas e información acerca del concepto de “obra de arte” y de “artista”, suena una música clásica, se despliegan cálculos matemáticos. En el derecho tenemos una explosión de colores, un poema de Miguel Ángel y los ojos de David, si nos situamos allí suena música electrónica y los colores comienzan a parpadear. Arriba podemos ver las manos de “La creación de Adán” intentando tocarse. En el centro de la imagen una ilustración de la Sucesión de Fibonacci gira alrededor de ambos hemisferios y podemos ver a la Venus de Sandro Botticelli hecha escultura, si movemos las flechas ésta de desarma mostrando que su interior es de bronce. Si mantenemos el click presionado podemos ver múltiples pinturas en las que aparece la Sucesión de Fibonacci y cómo en la creación de Adán tenemos una referencia cerebral.
+
+**Instrucciones de uso**
+
+Interacciones al mover las flechas izquierda-derecha, al mover el mouse izquierda-derecha del lienzo y al mantener presionado en cualquier parte.
+
+**Biografía**
+
+**Malena Florencia Anaya** (1998) ha realizado cursos de fotografía analógica en el programa de Educación no formal del GBA, tatuaje y dibujo orientado al tatuaje en Buena Vibra Tattoo Studio y ha participado de dos becas de inglés en Cambridge y en el Instituto Cultural Argentino Norteamericano. Feminista abolicionista. Proviene de una familia de artistas, docentes y artesanos. Participa de convenciones de tatuaje como lienzo del egresado y docente de la UNA Mariano Ochoa. Trabajo como acompañante terapéutica utilizando el arteterapia como medio terapéutico expresivo. Estudiante de astrología, herbolaria y tarot. Actualmente realiza y edita vídeos didácticos y realiza un curso de informática básica para docentes adaptando sus contenidos a la virtualidad. Tiene como hobbie realizar proyectos de pintura y carpintería, ecología, huerta y reciclaje, montajes con técnicas de fotomanipulación y poesía.

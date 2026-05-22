@@ -1,0 +1,313 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+import { selectedProjects } from '../utils/selected-projects';
+import { useTranslations, type Locale } from '../utils/translations';
+
+const locale = (Astro.currentLocale || 'es') as Locale;
+const t = useTranslations(locale);
+const base = '/la-piscine';
+
+// Fetch and filter featured projects
+const allProjects = await getCollection('projects');
+const featured = allProjects.filter(p => selectedProjects.includes(p.slug));
+
+// Grouping and sorting logic
+const groupsMap = new Map<number, Map<'first' | 'second', typeof allProjects>>();
+
+for (const project of featured) {
+  const year = project.data.year || (project.data.date ? new Date(project.data.date).getFullYear() : 2020);
+  const sem = project.data.semester || 'first';
+  
+  if (!groupsMap.has(year)) {
+    groupsMap.set(year, new Map());
+  }
+  
+  const yearMap = groupsMap.get(year)!;
+  if (!yearMap.has(sem)) {
+    yearMap.set(sem, []);
+  }
+  
+  yearMap.get(sem)!.push(project);
+}
+
+const sortedGroups = Array.from(groupsMap.keys())
+  .sort((a, b) => b - a) // Years descending
+  .map(year => {
+    const yearMap = groupsMap.get(year)!;
+    const semesters = Array.from(yearMap.keys())
+      .sort((a, b) => (a === 'second' ? -1 : 1)) // 'second' before 'first'
+      .map(sem => {
+        // Sort projects within the semester (latest date first) and slice to max 6
+        const projects = yearMap.get(sem)!
+          .sort((a, b) => {
+            const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+            const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+            return dateB - dateA;
+          })
+          .slice(0, 6);
+          
+        return {
+          semester: sem,
+          projects
+        };
+      });
+      
+    return {
+      year,
+      semesters
+    };
+  });
+---
+
+<BaseLayout>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-glowing-pool"></div>
+    <div class="container hero-content">
+      <div class="subtitle-badge">Universidad Nacional de las Artes</div>
+      <h1 class="hero-title">
+        <span class="bracket">&lt;</span>la-piscine<span class="bracket">&gt;</span>
+      </h1>
+      <p class="hero-subtitle">{t('home.subtitle')}</p>
+      <p class="hero-description">{t('site.description')}</p>
+      
+      <div class="hero-actions">
+        <a href={`${base}/${locale === 'en' ? 'en/' : ''}archivo/`} class="cta-btn primary">
+          <span>{t('home.all')}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Gallery -->
+  <section class="showcase-section">
+    <div class="container">
+      {sortedGroups.map(({ year, semesters }) => (
+        <div class="year-block">
+          <h2 class="year-heading">
+            <span>{year}</span>
+            <div class="heading-line"></div>
+          </h2>
+          
+          {semesters.map(({ semester, projects }) => (
+            <div class="semester-block">
+              <h3 class="semester-heading">
+                {semester === 'first' ? t('project.first') : t('project.second')}
+              </h3>
+              
+              <div class="projects-grid">
+                {projects.map(project => (
+                  <ProjectCard project={project} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero Section styles */
+  .hero-section {
+    position: relative;
+    padding: 7rem 0 5rem 0;
+    text-align: center;
+    overflow: hidden;
+    background: radial-gradient(135deg, rgba(8, 12, 21, 0.4) 0%, rgba(5, 8, 14, 0.8) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .hero-glowing-pool {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 350px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, rgba(6, 182, 212, 0.02) 70%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 800px;
+  }
+
+  .subtitle-badge {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--accent-purple);
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px var(--accent-purple-glow);
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.15));
+  }
+
+  .hero-title .bracket {
+    color: var(--accent);
+    font-weight: 300;
+    -webkit-text-fill-color: var(--accent);
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    max-width: 600px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    margin-top: 1.5rem;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+  }
+
+  .cta-btn.primary {
+    background: linear-gradient(135deg, var(--accent) 0%, #0891b2 100%);
+    color: var(--bg-primary);
+    box-shadow: 0 4px 20px var(--accent-glow);
+  }
+
+  .cta-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(6, 182, 212, 0.4), 0 0 15px var(--accent-glow);
+    filter: brightness(1.1);
+  }
+
+  .cta-icon {
+    transition: var(--transition-smooth);
+  }
+
+  .cta-btn:hover .cta-icon {
+    transform: translateX(4px);
+  }
+
+  /* Showcase Section styles */
+  .showcase-section {
+    padding: 4rem 0 6rem 0;
+    flex: 1;
+  }
+
+  .year-block {
+    margin-bottom: 5rem;
+  }
+
+  .year-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .heading-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+  }
+
+  .heading-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 80px;
+    height: 3px;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent-glow);
+    border-radius: 2px;
+  }
+
+  .semester-block {
+    margin-bottom: 3.5rem;
+  }
+
+  .semester-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--accent-purple);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Responsive styling */
+  @media (max-width: 968px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero-section {
+      padding: 5rem 0 3.5rem 0;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>

@@ -1,4 +1,13 @@
+# Jekyll relics
 .sass-cache
 _site/
-docs/
-Gemfile.lock
+
+# Node & Astro
+node_modules/
+.astro/
+dist/
+public/projects/
+
+# OS specific
+.DS_Store
+Thumbs.db
