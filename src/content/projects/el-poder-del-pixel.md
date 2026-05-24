@@ -3,7 +3,7 @@ title: "El poder del pixel"
 date: 2022-10-09
 year: 2022
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail2.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

@@ -3,7 +3,7 @@ title: "Formar parte"
 date: 2022-10-09
 year: 2022
 cuatrimestre: segundo cuatrimestre
-thumbnail: tumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound
