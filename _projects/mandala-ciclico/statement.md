@@ -4,7 +4,7 @@ title: "Mandala Ciclico"
 date: 2025-10-09
 year: 2025
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

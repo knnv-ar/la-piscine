@@ -4,7 +4,7 @@ title: "Revistas"
 date: 2024-11-11
 year: 2024
 cuatrimestre: segundo cuatrimestre
-thumbnail: miniatura.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

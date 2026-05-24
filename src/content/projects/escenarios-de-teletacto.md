@@ -3,7 +3,7 @@ title: "Escenarios de Teletacto"
 date: 2021-12-01
 year: 2021
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

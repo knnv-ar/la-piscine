@@ -3,7 +3,7 @@ title: "plataformas de arte"
 date: 2025-11-16
 year: 2025
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies: 
 ---
 

@@ -3,7 +3,7 @@ title: "boceto1.p5js"
 date: 2024-09-11
 year: 2024
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

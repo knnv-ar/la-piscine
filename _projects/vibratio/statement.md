@@ -4,7 +4,7 @@ title: "Vibratio"
 date: 2024-09-10
 year: 2024
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
 ---

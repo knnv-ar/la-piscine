@@ -3,7 +3,7 @@ title: "Volviendo al pensamiento a."
 date: 2022-11-11
 year: 2022
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

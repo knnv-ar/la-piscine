@@ -3,7 +3,7 @@ title: "teatralidad-abstracta "
 date: 2022-11-09
 year: 2022
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5.v150
   - p5.sound.v150

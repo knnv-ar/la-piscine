@@ -3,7 +3,7 @@ title: "Typesinger"
 date: 2023-06-06
 year: 2023
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
 ---

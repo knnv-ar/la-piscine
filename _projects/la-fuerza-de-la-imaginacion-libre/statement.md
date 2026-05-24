@@ -4,7 +4,7 @@ title: "La Fuerza de la Imaginación Libre"
 date: 2022-11-23
 year: 2022
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

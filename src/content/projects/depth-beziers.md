@@ -3,7 +3,7 @@ title: "depth beziers"
 date: 2023-09-04
 year: 2023
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

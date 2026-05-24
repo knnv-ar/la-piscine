@@ -4,7 +4,7 @@ title: "Monstruos"
 date: 2022-06-28
 year: 2022
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

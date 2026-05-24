@@ -3,7 +3,7 @@ title: "¿A donde querés estar?"
 date: 2023-07-04
 year: 2023
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

@@ -3,7 +3,7 @@ title: "Oniria de baja resolucion"
 date: 2023-11-08
 year: 2023
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

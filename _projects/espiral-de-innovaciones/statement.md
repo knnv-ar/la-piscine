@@ -4,7 +4,7 @@ title: "Espiral de innovaciones"
 date: 2021-07-01
 year: 2021
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

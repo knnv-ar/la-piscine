@@ -4,7 +4,7 @@ title: "Caer no es callar"
 date: 2025-11-15
 year: 2025
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

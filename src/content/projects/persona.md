@@ -3,7 +3,7 @@ title: "Persona"
 date: 2022-05-29
 year: 2022
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

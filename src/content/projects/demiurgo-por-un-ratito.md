@@ -3,7 +3,7 @@ title: "Demiurgo por un ratito"
 date: 2025-11-16
 year: 2025
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

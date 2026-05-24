@@ -3,7 +3,7 @@ title: "El Cuarteto La Caza"
 date: 2023-11-12
 year: 2023
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5.v180
   - p5.sound.v180

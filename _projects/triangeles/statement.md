@@ -4,7 +4,7 @@ title: "Triángeles"
 date: 2025-07-09
 year: 2025
 cuatrimestre: primer cuatrimestre
-thumbnail: triangeles.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

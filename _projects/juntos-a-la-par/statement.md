@@ -4,7 +4,7 @@ title: "Juntos a la par"
 date: 2023-06-07
 year: 2023
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

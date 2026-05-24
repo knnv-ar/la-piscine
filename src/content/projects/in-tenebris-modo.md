@@ -3,7 +3,7 @@ title: "In tenebris modo"
 date: 2023-11-14
 year: 2023
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

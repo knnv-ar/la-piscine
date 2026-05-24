@@ -3,7 +3,7 @@ title: "Perdiendo la cabeza"
 date: 2022-11-02
 year: 2022
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

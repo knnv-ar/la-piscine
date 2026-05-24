@@ -4,7 +4,7 @@ title: "Tiempo Contemporáneo"
 date: 2020-12-01
 year: 2020
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

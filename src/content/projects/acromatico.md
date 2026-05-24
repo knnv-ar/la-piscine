@@ -3,7 +3,7 @@ title: "acromatico"
 date: 2024-11-22
 year: 2024
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

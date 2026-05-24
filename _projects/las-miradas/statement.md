@@ -4,7 +4,7 @@ title: "Las miradas"
 date: 2024-11-11
 year: 2024
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

@@ -3,7 +3,7 @@ title: "a que suenan las ciudades"
 date: 2023-11-13
 year: 2023
 cuatrimestre: segundo cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound

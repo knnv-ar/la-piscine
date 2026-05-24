@@ -3,7 +3,7 @@ title: "turn on the bright lights"
 date: 2022-10-09
 year: 2022
 cuatrimestre: primer cuatrimestre
-thumbnail: thumbnail.png
+thumbnail: thumbnail.webp
 dependencies:
   - p5
   - p5.sound
