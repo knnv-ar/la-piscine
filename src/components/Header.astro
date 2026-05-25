@@ -47,7 +47,6 @@ targetLink = targetLink.replace(/\/+/g, '/');
   <div class="container header-container">
     <a href={`${base}/${locale === 'en' ? 'en/' : ''}`} class="brand">
       <span class="brand-bracket">&lt;</span><span class="brand-text">la-piscine</span><span class="brand-bracket">&gt;</span>
-      <span class="brand-badge">UNA</span>
     </a>
 
     <nav class="main-nav glass-panel">
@@ -126,17 +125,7 @@ targetLink = targetLink.replace(/\/+/g, '/');
     -webkit-text-fill-color: transparent;
   }
 
-  .brand-badge {
-    font-size: 0.65rem;
-    font-weight: 600;
-    background: var(--bg-tertiary);
-    color: var(--accent-purple);
-    padding: 0.15rem 0.4rem;
-    border-radius: 4px;
-    border: 1px solid rgba(139, 92, 246, 0.2);
-    letter-spacing: 0.05em;
-    transition: var(--theme-transition);
-  }
+
 
   .main-nav {
     display: flex;
