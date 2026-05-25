@@ -1,64 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
-import { selectedProjects } from '../utils/selected-projects';
 import { useTranslations, type Locale } from '../utils/translations';
 
 const locale = (Astro.currentLocale || 'es') as Locale;
 const t = useTranslations(locale);
 const base = '/la-piscine';
 
-// Fetch and filter featured projects
+// Fetch all projects during build time
 const allProjects = await getCollection('projects');
-const featured = allProjects.filter(p => selectedProjects.includes(p.slug));
 
-// Grouping and sorting logic
-const groupsMap = new Map<number, Map<'first' | 'second', typeof allProjects>>();
+// Extract unique years present in the collection, sorted descending
+const uniqueYears = Array.from(
+  new Set(
+    allProjects.map(p => p.data.year || (p.data.date ? new Date(p.data.date).getFullYear() : 2020))
+  )
+).sort((a, b) => b - a);
 
-for (const project of featured) {
-  const year = project.data.year || (project.data.date ? new Date(project.data.date).getFullYear() : 2020);
-  const sem = project.data.semester || 'first';
-  
-  if (!groupsMap.has(year)) {
-    groupsMap.set(year, new Map());
-  }
-  
-  const yearMap = groupsMap.get(year)!;
-  if (!yearMap.has(sem)) {
-    yearMap.set(sem, []);
-  }
-  
-  yearMap.get(sem)!.push(project);
-}
-
-const sortedGroups = Array.from(groupsMap.keys())
-  .sort((a, b) => b - a) // Years descending
-  .map(year => {
-    const yearMap = groupsMap.get(year)!;
-    const semesters = Array.from(yearMap.keys())
-      .sort((a, b) => (a === 'second' ? -1 : 1)) // 'second' before 'first'
-      .map(sem => {
-        // Sort projects within the semester (latest date first) and slice to max 6
-        const projects = yearMap.get(sem)!
-          .sort((a, b) => {
-            const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
-            const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
-            return dateB - dateA;
-          })
-          .slice(0, 6);
-          
-        return {
-          semester: sem,
-          projects
-        };
-      });
-      
-    return {
-      year,
-      semesters
-    };
-  });
+// Lightweight payload of ALL projects for client-side random selection
+const serializedProjects = allProjects.map(p => ({
+  slug: p.slug,
+  title: p.data.title,
+  author: p.data.author,
+  year: p.data.year || (p.data.date ? new Date(p.data.date).getFullYear() : 2020),
+  semester: p.data.semester || 'first',
+  thumbnail: p.data.thumbnail || 'thumbnail.png'
+}));
 ---
 
 <BaseLayout>
@@ -73,34 +40,37 @@ const sortedGroups = Array.from(groupsMap.keys())
       <p class="hero-subtitle">{t('home.subtitle')}</p>
       <p class="hero-description">{t('site.description')}</p>
       
-      <div class="hero-actions">
-        <a href={`${base}/${locale === 'en' ? 'en/' : ''}archivo/`} class="cta-btn primary">
-          <span>{t('home.all')}</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="cta-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
+
     </div>
   </section>
 
   <!-- Showcase Gallery -->
   <section class="showcase-section">
-    <div class="container">
-      {sortedGroups.map(({ year, semesters }) => (
-        <div class="year-block">
+    <div class="container" id="gallery-container">
+      {uniqueYears.map(year => (
+        <div class="year-block" data-year-block={year} style="display: none;">
           <h2 class="year-heading">
             <span>{year}</span>
             <div class="heading-line"></div>
           </h2>
           
-          {semesters.map(({ semester, projects }) => (
-            <div class="semester-block">
+          {['second', 'first'].map(sem => (
+            <div class="semester-block" data-semester-block={`${year}-${sem}`} style="display: none;">
               <h3 class="semester-heading">
-                {semester === 'first' ? t('project.first') : t('project.second')}
+                {sem === 'first' ? t('project.first') : t('project.second')}
               </h3>
               
-              <div class="projects-grid">
-                {projects.map(project => (
-                  <ProjectCard project={project} />
+              <div class="projects-grid" id={`grid-${year}-${sem}`}>
+                {/* CSS Skeletons displayed while JavaScript shuffles/loads */}
+                {Array.from({ length: 3 }).map(() => (
+                  <div class="skeleton-card glass-panel">
+                    <div class="skeleton-thumbnail"></div>
+                    <div class="skeleton-details">
+                      <div class="skeleton-line meta"></div>
+                      <div class="skeleton-line title"></div>
+                      <div class="skeleton-line author"></div>
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
@@ -109,7 +79,113 @@ const sortedGroups = Array.from(groupsMap.keys())
       ))}
     </div>
   </section>
+
+
 </BaseLayout>
+
+<script define:vars={{ serializedProjects, base, locale }} is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Helper to shuffle an array
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function renderRandomGallery() {
+      // Group all projects by year and semester
+      const groups = {};
+      serializedProjects.forEach(project => {
+        const year = project.year;
+        const sem = project.semester;
+        if (!groups[year]) {
+          groups[year] = { first: [], second: [] };
+        }
+        groups[year][sem].push(project);
+      });
+
+      // For each year-block and semester-block
+      Object.keys(groups).forEach(year => {
+        const yearBlock = document.querySelector(`[data-year-block="${year}"]`);
+        if (!yearBlock) return;
+
+        let yearHasProjects = false;
+
+        ['second', 'first'].forEach(sem => {
+          const semBlock = document.querySelector(`[data-semester-block="${year}-${sem}"]`);
+          const grid = document.getElementById(`grid-${year}-${sem}`);
+          if (!semBlock || !grid) return;
+
+          const projectsInSem = groups[year][sem] || [];
+
+          if (projectsInSem.length > 0) {
+            yearHasProjects = true;
+            semBlock.style.display = 'block';
+
+            // Shuffle and choose up to 6 projects
+            const shuffled = shuffleArray([...projectsInSem]);
+            const selected = shuffled.slice(0, 6);
+
+            // Generate HTML for selected projects
+            let html = '';
+            selected.forEach(project => {
+              const projectUrl = `${base}/${locale === 'en' ? 'en/' : ''}projects/${project.slug}/`.replace(/\/+/g, '/');
+              const thumbnailSrc = `${base}/projects/${project.slug}/${project.thumbnail}`;
+              const semLabel = project.semester === 'first' ? '1º' : '2º';
+
+              html += `
+                <a href="${projectUrl}" class="project-card-link fade-in-card">
+                  <article class="project-card glass-panel">
+                    <div class="card-thumbnail-container">
+                      <img 
+                        src="${thumbnailSrc}" 
+                        alt="${project.title}" 
+                        loading="lazy" 
+                        class="card-thumbnail"
+                        onerror="this.src='/la-piscine/assets/default_thumbnail.png'; this.onerror=null;"
+                      />
+                      <div class="thumbnail-overlay">
+                        <span class="overlay-action">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-details">
+                      <span class="card-meta">
+                        <span class="card-year">${project.year}</span>
+                        <span class="card-semester-badge">${semLabel} Sem</span>
+                      </span>
+                      <h3 class="card-title" title="${project.title}">${project.title}</h3>
+                      <p class="card-author">${project.author}</p>
+                    </div>
+                  </article>
+                </a>
+              `;
+            });
+
+            grid.innerHTML = html;
+          } else {
+            semBlock.style.display = 'none';
+          }
+        });
+
+        // If this year has no projects shown at all, hide the whole year block
+        if (yearHasProjects) {
+          yearBlock.style.display = 'block';
+        } else {
+          yearBlock.style.display = 'none';
+        }
+      });
+    }
+
+    // Run initial shuffle render with a short delay for smooth entrance
+    setTimeout(renderRandomGallery, 150);
+
+
+  });
+</script>
 
 <style>
   /* Hero Section styles */
@@ -119,7 +195,12 @@ const sortedGroups = Array.from(groupsMap.keys())
     text-align: center;
     overflow: hidden;
     background: radial-gradient(135deg, rgba(8, 12, 21, 0.4) 0%, rgba(5, 8, 14, 0.8) 100%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--glass-border);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .hero-section {
+    background: radial-gradient(135deg, rgba(241, 245, 249, 0.5) 0%, rgba(255, 255, 255, 0.9) 100%);
   }
 
   .hero-glowing-pool {
@@ -157,6 +238,7 @@ const sortedGroups = Array.from(groupsMap.keys())
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     box-shadow: 0 0 15px var(--accent-purple-glow);
+    transition: var(--theme-transition);
   }
 
   .hero-title {
@@ -168,6 +250,7 @@ const sortedGroups = Array.from(groupsMap.keys())
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.15));
+    transition: var(--theme-transition);
   }
 
   .hero-title .bracket {
@@ -181,6 +264,7 @@ const sortedGroups = Array.from(groupsMap.keys())
     font-weight: 500;
     color: var(--text-secondary);
     max-width: 600px;
+    transition: var(--theme-transition);
   }
 
   .hero-description {
@@ -188,6 +272,7 @@ const sortedGroups = Array.from(groupsMap.keys())
     color: var(--text-muted);
     max-width: 650px;
     line-height: 1.6;
+    transition: var(--theme-transition);
   }
 
   .hero-actions {
@@ -203,7 +288,7 @@ const sortedGroups = Array.from(groupsMap.keys())
     font-weight: 600;
     border-radius: 30px;
     cursor: pointer;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   .cta-btn.primary {
@@ -244,6 +329,7 @@ const sortedGroups = Array.from(groupsMap.keys())
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
+    transition: var(--theme-transition);
   }
 
   .heading-line {
@@ -251,6 +337,11 @@ const sortedGroups = Array.from(groupsMap.keys())
     height: 1px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
     position: relative;
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .heading-line {
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0.08) 0%, rgba(15, 23, 42, 0) 100%);
   }
 
   .heading-line::before {
@@ -276,12 +367,242 @@ const sortedGroups = Array.from(groupsMap.keys())
     margin-bottom: 1.5rem;
     padding-left: 0.5rem;
     border-left: 3px solid var(--accent-purple);
+    transition: var(--theme-transition);
   }
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+
+  /* Skeleton Loading Styles */
+  .skeleton-card {
+    background: rgba(12, 18, 30, 0.25);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1.35;
+    position: relative;
+  }
+
+  :global(html[data-theme="light"]) .skeleton-card {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .skeleton-thumbnail {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.01) 25%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.01) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.5s infinite linear;
+  }
+
+  :global(html[data-theme="light"]) .skeleton-thumbnail {
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0.01) 25%, rgba(15, 23, 42, 0.03) 50%, rgba(15, 23, 42, 0.01) 75%);
+    background-size: 200% 100%;
+  }
+
+  .skeleton-details {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+  }
+
+  .skeleton-line {
+    height: 12px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.01) 25%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.01) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.5s infinite linear;
+  }
+
+  :global(html[data-theme="light"]) .skeleton-line {
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0.01) 25%, rgba(15, 23, 42, 0.03) 50%, rgba(15, 23, 42, 0.01) 75%);
+    background-size: 200% 100%;
+  }
+
+  .skeleton-line.meta { width: 40%; height: 10px; }
+  .skeleton-line.title { width: 85%; height: 14px; }
+  .skeleton-line.author { width: 60%; height: 10px; }
+
+  @keyframes skeleton-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+
+
+  /* Fade-in animation for dynamic cards */
+  .fade-in-card {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fade-in-up 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  @keyframes fade-in-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Scoped styles in index.astro for dynamic cards */
+  .projects-grid :global(.project-card-link) {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .projects-grid :global(.project-card) {
+    background: rgba(12, 18, 30, 0.4);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateZ(0);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .projects-grid :global(.project-card) {
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  }
+
+  .projects-grid :global(.card-thumbnail-container) {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #04060b;
+  }
+
+  .projects-grid :global(.card-thumbnail) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .projects-grid :global(.thumbnail-overlay) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 14, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: var(--transition-smooth);
+  }
+
+  .projects-grid :global(.overlay-action) {
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border-hover);
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    transition: var(--transition-smooth);
+    box-shadow: 0 0 15px var(--accent-glow);
+  }
+
+  .projects-grid :global(.card-details) {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    flex-grow: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    background: linear-gradient(180deg, rgba(12, 18, 30, 0.3) 0%, rgba(5, 8, 14, 0.5) 100%);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .projects-grid :global(.card-details) {
+    border-top: 1px solid rgba(15, 23, 42, 0.03);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.95) 100%);
+  }
+
+  .projects-grid :global(.card-meta) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .projects-grid :global(.card-semester-badge) {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent-purple);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: var(--theme-transition);
+  }
+
+  .projects-grid :global(.card-title) {
+    font-family: var(--font-title);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  .projects-grid :global(.card-author) {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: var(--theme-transition);
+  }
+
+  /* Hover Actions */
+  .projects-grid :global(.project-card-link:hover .project-card) {
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-glow);
+    transform: translateY(-2px);
+  }
+
+  :global(html[data-theme="light"]) .projects-grid :global(.project-card-link:hover .project-card) {
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06), 0 0 20px var(--accent-glow);
+  }
+
+  .projects-grid :global(.project-card-link:hover .card-thumbnail) {
+    transform: scale(1.05);
+  }
+
+  .projects-grid :global(.project-card-link:hover .thumbnail-overlay) {
+    opacity: 1;
+  }
+
+  .projects-grid :global(.project-card-link:hover .overlay-action) {
+    transform: scale(1);
+    background: rgba(6, 182, 212, 0.1);
+  }
+
+  .projects-grid :global(.project-card-link:hover .card-title) {
+    color: var(--accent);
   }
 
   /* Responsive styling */
@@ -309,5 +630,7 @@ const sortedGroups = Array.from(groupsMap.keys())
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
+
   }
 </style>

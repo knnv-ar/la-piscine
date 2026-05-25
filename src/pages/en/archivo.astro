@@ -115,6 +115,19 @@ const uniqueYears = Array.from(
     transition: var(--transition-smooth);
   }
 
+  .project-card-wrapper {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: card-entrance 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  @keyframes card-entrance {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .no-results {
     background: rgba(12, 18, 30, 0.4);
     border: 1px solid var(--glass-border);
@@ -126,6 +139,11 @@ const uniqueYears = Array.from(
     align-items: center;
     gap: 1rem;
     color: var(--text-secondary);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .no-results {
+    background: rgba(255, 255, 255, 0.7);
   }
 
   .empty-icon {

@@ -30,6 +30,19 @@ const base = '/la-piscine';
     <meta name="description" content={pageDescription} />
     <link rel="icon" type="image/png" href={`${base}/assets/favicon.png`} />
 
+    <!-- Blocking script to initialize theme and prevent color flash -->
+    <script is:inline>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else {
+          const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+          document.documentElement.setAttribute('data-theme', prefersLight ? 'light' : 'dark');
+        }
+      })();
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +50,7 @@ const base = '/la-piscine';
 
     <style is:global>
       :root {
+        /* Default Dark Mode (Nocturnal Pool theme) */
         --bg-primary: #05080e;
         --bg-secondary: #0c121e;
         --bg-tertiary: #131b2c;
@@ -44,7 +58,7 @@ const base = '/la-piscine';
         --text-secondary: #94a3b8;
         --text-muted: #64748b;
         
-        /* Neon Accents recalling "La Piscine" pool cian & multimedia violet */
+        /* Neon Accents recalling "La Piscine" pool cyan & multimedia violet */
         --accent: #06b6d4; 
         --accent-hover: #0891b2;
         --accent-glow: rgba(6, 182, 212, 0.15);
@@ -53,12 +67,36 @@ const base = '/la-piscine';
         
         --glass-bg: rgba(12, 18, 30, 0.75);
         --glass-border: rgba(255, 255, 255, 0.05);
-        --glass-border-hover: rgba(6, 182, 212, 0.2);
+        --glass-border-hover: rgba(6, 182, 212, 0.25);
         
         --font-title: 'Outfit', sans-serif;
         --font-body: 'Inter', sans-serif;
         
         --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        --theme-transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                            color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                            border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                            box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      html[data-theme="light"] {
+        /* Premium Light Mode (Minimalist Art Gallery theme) */
+        --bg-primary: #f8fafc;
+        --bg-secondary: #ffffff;
+        --bg-tertiary: #f1f5f9;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --text-muted: #94a3b8;
+        
+        --accent: #0284c7; 
+        --accent-hover: #0369a1;
+        --accent-glow: rgba(2, 132, 199, 0.1);
+        --accent-purple: #7c3aed;
+        --accent-purple-glow: rgba(124, 58, 237, 0.1);
+        
+        --glass-bg: rgba(255, 255, 255, 0.85);
+        --glass-border: rgba(15, 23, 42, 0.08);
+        --glass-border-hover: rgba(2, 132, 199, 0.3);
       }
 
       * {
@@ -77,12 +115,13 @@ const base = '/la-piscine';
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        transition: var(--theme-transition);
       }
 
       a {
         color: var(--accent);
         text-decoration: none;
-        transition: var(--transition-smooth);
+        transition: var(--transition-smooth), var(--theme-transition);
       }
 
       a:hover {
@@ -94,6 +133,7 @@ const base = '/la-piscine';
         font-weight: 500;
         letter-spacing: -0.02em;
         line-height: 1.2;
+        transition: var(--theme-transition);
       }
 
       /* Custom scrollbar */
@@ -104,12 +144,14 @@ const base = '/la-piscine';
 
       ::-webkit-scrollbar-track {
         background: var(--bg-primary);
+        transition: var(--theme-transition);
       }
 
       ::-webkit-scrollbar-thumb {
         background: var(--bg-tertiary);
         border-radius: 4px;
         border: 2px solid var(--bg-primary);
+        transition: var(--theme-transition);
       }
 
       ::-webkit-scrollbar-thumb:hover {
@@ -131,7 +173,7 @@ const base = '/la-piscine';
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid var(--glass-border);
         border-radius: 12px;
-        transition: var(--transition-smooth);
+        transition: var(--transition-smooth), var(--theme-transition);
       }
 
       .glass-panel:hover {

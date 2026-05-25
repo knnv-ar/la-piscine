@@ -51,9 +51,6 @@ targetLink = targetLink.replace(/\/+/g, '/');
     </a>
 
     <nav class="main-nav glass-panel">
-      <a href={`${base}/${locale === 'en' ? 'en/' : ''}`} class:list={['nav-link', { active: pathname === `${base}/` || pathname === `${base}` || pathname === `${base}/en/` || pathname === `${base}/en` }]}>
-        {t('nav.home')}
-      </a>
       <a href={`${base}/${locale === 'en' ? 'en/' : ''}archivo/`} class:list={['nav-link', { active: pathname.includes('/archivo') }]}>
         {t('nav.archive')}
       </a>
@@ -62,7 +59,16 @@ targetLink = targetLink.replace(/\/+/g, '/');
       </a>
     </nav>
 
-    <div class="lang-switch-container">
+    <div class="actions-container">
+      <!-- Theme Switcher Button -->
+      <button id="theme-toggle" class="theme-toggle glass-panel" aria-label="Cambiar tema" title="Cambiar tema">
+        <!-- Sun Icon (visible in Dark Mode) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <!-- Moon Icon (visible in Light Mode) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+
+      <!-- Language Switcher -->
       <a href={targetLink} class="lang-switch glass-panel" title={t('language.label')}>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
         <span class="lang-code">{t('language.targetName')}</span>
@@ -81,7 +87,12 @@ targetLink = targetLink.replace(/\/+/g, '/');
     background: rgba(5, 8, 14, 0.7);
     border-bottom: 1px solid var(--glass-border);
     padding: 1rem 0;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  /* Adjust header background dynamically for light mode */
+  :global(html[data-theme="light"]) .site-header {
+    background: rgba(248, 250, 252, 0.8);
   }
 
   .header-container {
@@ -124,6 +135,7 @@ targetLink = targetLink.replace(/\/+/g, '/');
     border-radius: 4px;
     border: 1px solid rgba(139, 92, 246, 0.2);
     letter-spacing: 0.05em;
+    transition: var(--theme-transition);
   }
 
   .main-nav {
@@ -133,13 +145,18 @@ targetLink = targetLink.replace(/\/+/g, '/');
     background: rgba(12, 18, 30, 0.5);
   }
 
+  /* Support light-theme main-nav background */
+  :global(html[data-theme="light"]) .main-nav {
+    background: rgba(15, 23, 42, 0.04);
+  }
+
   .nav-link {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-secondary);
     padding: 0.4rem 1.2rem;
     border-radius: 20px;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   .nav-link:hover {
@@ -153,6 +170,73 @@ targetLink = targetLink.replace(/\/+/g, '/');
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
+  :global(html[data-theme="light"]) .nav-link.active {
+    background: rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(15, 23, 42, 0.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .actions-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    background: rgba(12, 18, 30, 0.4);
+    cursor: pointer;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .theme-toggle {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 0 10px var(--accent-glow);
+    transform: scale(1.05);
+  }
+
+  /* Sun/Moon visibility depending on data-theme */
+  :global(html[data-theme="dark"]) .moon-icon {
+    display: none;
+  }
+  :global(html[data-theme="dark"]) .sun-icon {
+    display: block;
+  }
+
+  :global(html[data-theme="light"]) .sun-icon {
+    display: none;
+  }
+  :global(html[data-theme="light"]) .moon-icon {
+    display: block;
+  }
+
+  .sun-icon, .moon-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .theme-toggle:hover .sun-icon {
+    transform: rotate(45deg);
+  }
+
+  .theme-toggle:hover .moon-icon {
+    transform: rotate(-15deg);
+  }
+
   .lang-switch {
     display: flex;
     align-items: center;
@@ -164,6 +248,11 @@ targetLink = targetLink.replace(/\/+/g, '/');
     color: var(--text-secondary);
     background: rgba(12, 18, 30, 0.4);
     cursor: pointer;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .lang-switch {
+    background: rgba(255, 255, 255, 0.8);
   }
 
   .lang-switch:hover {
@@ -194,3 +283,34 @@ targetLink = targetLink.replace(/\/+/g, '/');
     }
   }
 </style>
+
+<script>
+  function setupTheme() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn) return;
+
+    // Use a flag to prevent rapid double-clicks causing transition issues
+    let isToggling = false;
+
+    toggleBtn.addEventListener('click', () => {
+      if (isToggling) return;
+      isToggling = true;
+
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+
+      setTimeout(() => {
+        isToggling = false;
+      }, 200);
+    });
+  }
+
+  // Run on initial load
+  setupTheme();
+
+  // Run on page transition if Astro transitions are used
+  document.addEventListener('astro:after-swap', setupTheme);
+</script>

@@ -52,6 +52,7 @@ const year = new Date().getFullYear();
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin-top: auto;
+    transition: var(--theme-transition);
   }
 
   .footer-content {
@@ -75,6 +76,7 @@ const year = new Date().getFullYear();
     color: var(--text-primary);
     margin-bottom: 0.75rem;
     font-family: var(--font-title);
+    transition: var(--theme-transition);
   }
 
   .footer-title .bracket {
@@ -85,11 +87,13 @@ const year = new Date().getFullYear();
     font-size: 0.95rem;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
+    transition: var(--theme-transition);
   }
 
   .footer-chair {
     font-size: 0.8rem;
     color: var(--text-muted);
+    transition: var(--theme-transition);
   }
 
   .footer-links {
@@ -114,6 +118,11 @@ const year = new Date().getFullYear();
     border-radius: 50%;
     color: var(--text-secondary);
     background: rgba(255, 255, 255, 0.03);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .social-link {
+    background: rgba(15, 23, 42, 0.03);
   }
 
   .social-link:hover {
@@ -128,7 +137,7 @@ const year = new Date().getFullYear();
     font-size: 0.8rem;
     color: var(--text-muted);
     font-weight: 500;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   .rss-link:hover {
@@ -144,6 +153,11 @@ const year = new Date().getFullYear();
     padding-top: 1.5rem;
     font-size: 0.75rem;
     color: var(--text-muted);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .footer-bottom {
+    border-top: 1px solid rgba(15, 23, 42, 0.04);
   }
 
   .bottom-container {
@@ -161,6 +175,7 @@ const year = new Date().getFullYear();
   .template-credit a {
     color: var(--text-secondary);
     text-decoration: underline;
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   .template-credit a:hover {

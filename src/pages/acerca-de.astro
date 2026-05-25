@@ -88,6 +88,7 @@ const t = useTranslations(locale);
     background: linear-gradient(135deg, var(--text-primary) 40%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: var(--theme-transition);
   }
 
   .about-subtitle {
@@ -96,6 +97,7 @@ const t = useTranslations(locale);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    transition: var(--theme-transition);
   }
 
   .about-content-grid {
@@ -111,6 +113,12 @@ const t = useTranslations(locale);
     border-radius: 16px;
     padding: 2.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  html[data-theme="light"] .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
   }
 
   .glass-panel h2 {
@@ -120,6 +128,11 @@ const t = useTranslations(locale);
     color: var(--text-primary);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding-bottom: 0.75rem;
+    transition: var(--theme-transition);
+  }
+
+  html[data-theme="light"] .glass-panel h2 {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.05);
   }
 
   .info-section {
@@ -129,15 +142,18 @@ const t = useTranslations(locale);
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    transition: var(--theme-transition);
   }
 
   .info-section strong {
     color: var(--text-primary);
+    transition: var(--theme-transition);
   }
 
   .info-section a {
     color: var(--accent);
     border-bottom: 1px dashed var(--accent);
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   .info-section a:hover {
@@ -154,6 +170,12 @@ const t = useTranslations(locale);
     display: flex;
     gap: 1rem;
     align-items: flex-start;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  html[data-theme="light"] .channel-callout {
+    background: rgba(2, 132, 199, 0.04);
+    border: 1px solid rgba(2, 132, 199, 0.15);
   }
 
   .youtube-icon {
@@ -188,12 +210,14 @@ const t = useTranslations(locale);
     text-transform: uppercase;
     color: var(--accent);
     letter-spacing: 0.05em;
+    transition: var(--theme-transition);
   }
 
   .member-name {
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--text-primary);
+    transition: var(--theme-transition);
   }
 
   .member-bio {
@@ -201,6 +225,7 @@ const t = useTranslations(locale);
     line-height: 1.5;
     color: var(--text-muted);
     margin-top: 0.35rem;
+    transition: var(--theme-transition);
   }
 
   /* Responsive Design */

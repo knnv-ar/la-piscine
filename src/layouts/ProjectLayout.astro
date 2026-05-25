@@ -242,6 +242,12 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     position: relative;
     overflow: hidden;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  html[data-theme="light"] .sketch-viewport-container {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
   }
 
   .sketch-viewport-container::before {
@@ -269,6 +275,11 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     gap: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 1rem;
+    transition: var(--theme-transition);
+  }
+
+  html[data-theme="light"] .sketch-controls {
+    border-top: 1px solid rgba(15, 23, 42, 0.05);
   }
 
   .control-btn {
@@ -284,7 +295,12 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  html[data-theme="light"] .control-btn {
+    background: rgba(15, 23, 42, 0.04);
+    border: 1px solid rgba(15, 23, 42, 0.02);
   }
 
   .control-btn:hover {
@@ -332,6 +348,12 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     padding: 2.5rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  html[data-theme="light"] .statement-card {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
   }
 
   .statement-header {
@@ -347,6 +369,7 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     letter-spacing: 0.15em;
     color: var(--accent);
     text-shadow: 0 0 8px var(--accent-glow);
+    transition: var(--theme-transition);
   }
 
   .project-title {
@@ -357,6 +380,7 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     background: linear-gradient(135deg, var(--text-primary) 50%, var(--text-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: var(--theme-transition);
   }
 
   .artist-block {
@@ -369,12 +393,14 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
   .artist-label {
     font-size: 0.95rem;
     color: var(--text-muted);
+    transition: var(--theme-transition);
   }
 
   .artist-name {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-primary);
+    transition: var(--theme-transition);
   }
 
   .metadata-grid {
@@ -386,6 +412,12 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 10px;
     padding: 1rem;
+    transition: var(--theme-transition);
+  }
+
+  html[data-theme="light"] .metadata-grid {
+    background: rgba(15, 23, 42, 0.02);
+    border: 1px solid rgba(15, 23, 42, 0.04);
   }
 
   .meta-item {
@@ -399,12 +431,14 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    transition: var(--theme-transition);
   }
 
   .meta-value {
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-secondary);
+    transition: var(--theme-transition);
   }
 
   .divider {
@@ -412,6 +446,11 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     height: 1px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 25%, rgba(255, 255, 255, 0.08) 75%, rgba(255, 255, 255, 0) 100%);
     margin: 2rem 0;
+    transition: var(--theme-transition);
+  }
+
+  html[data-theme="light"] .divider {
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.08) 25%, rgba(15, 23, 42, 0.08) 75%, rgba(15, 23, 42, 0) 100%);
   }
 
   /* Markdown Content styling */

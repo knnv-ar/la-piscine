@@ -56,7 +56,7 @@ const t = useTranslations(locale);
 </div>
 
 <script>
-  // Client-side search and filtering logic
+  // Client-side search, filtering, and progressive rendering (lazy load) logic
   document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input') as HTMLInputElement;
     const clearBtn = document.getElementById('search-clear-btn') as HTMLButtonElement;
@@ -69,6 +69,7 @@ const t = useTranslations(locale);
     let currentQuery = '';
     let currentSemester = 'all';
     let currentYear = 'all';
+    let visibleLimit = 24; // Start with 24 visible cards
 
     // Helper to normalize strings (stripping accents/tildes for search tolerance)
     const normalizeStr = (str: string) => {
@@ -78,8 +79,13 @@ const t = useTranslations(locale);
         .replace(/[\u0300-\u036f]/g, '');
     };
 
-    const updateFilters = () => {
-      let count = 0;
+    const updateFilters = (resetLimit = true) => {
+      if (resetLimit) {
+        visibleLimit = 24;
+      }
+
+      let matchCount = 0;
+      let renderCount = 0;
       const normalizedQuery = normalizeStr(currentQuery);
 
       cards.forEach(card => {
@@ -100,8 +106,14 @@ const t = useTranslations(locale);
         const matchesYear = currentYear === 'all' || year === currentYear;
 
         if (matchesSearch && matchesSemester && matchesYear) {
-          card.style.display = 'block';
-          count++;
+          matchCount++;
+          // Only show card if it fits within the current page's rendering limit
+          if (renderCount < visibleLimit) {
+            card.style.display = 'block';
+            renderCount++;
+          } else {
+            card.style.display = 'none';
+          }
         } else {
           card.style.display = 'none';
         }
@@ -109,19 +121,67 @@ const t = useTranslations(locale);
 
       // Update count
       if (resultsCountEl) {
-        resultsCountEl.textContent = count.toString();
+        resultsCountEl.textContent = matchCount.toString();
       }
 
       // Toggle no results message
       if (noResultsEl) {
-        noResultsEl.style.display = count === 0 ? 'block' : 'none';
+        noResultsEl.style.display = matchCount === 0 ? 'block' : 'none';
       }
     };
 
-    // Initialize count
-    if (resultsCountEl) {
-      resultsCountEl.textContent = cards.length.toString();
-    }
+    // Scroll handler for loading more cards dynamically
+    const handleScroll = () => {
+      const scrollPos = window.innerHeight + window.scrollY;
+      const docHeight = document.documentElement.scrollHeight || document.documentElement.offsetHeight;
+      const threshold = 350; // Load more when within 350px of bottom
+
+      if (docHeight - scrollPos < threshold) {
+        // Calculate the total matching count for current filters
+        let totalMatches = 0;
+        const normalizedQuery = normalizeStr(currentQuery);
+
+        cards.forEach(card => {
+          const title = normalizeStr(card.dataset.title || '');
+          const author = normalizeStr(card.dataset.author || '');
+          const year = card.dataset.year || '';
+          const semester = card.dataset.semester || '';
+          const slug = card.dataset.slug || '';
+
+          const matchesSearch = 
+            normalizedQuery === '' || 
+            title.includes(normalizedQuery) || 
+            author.includes(normalizedQuery) || 
+            year.includes(normalizedQuery) ||
+            slug.includes(normalizedQuery);
+
+          const matchesSemester = currentSemester === 'all' || semester === currentSemester;
+          const matchesYear = currentYear === 'all' || year === currentYear;
+
+          if (matchesSearch && matchesSemester && matchesYear) {
+            totalMatches++;
+          }
+        });
+
+        // If we have more matches not currently rendered, increase limit and update
+        if (visibleLimit < totalMatches) {
+          visibleLimit += 24;
+          updateFilters(false);
+        }
+      }
+    };
+
+    // Throttle scroll triggers using requestAnimationFrame
+    let activeFrame = 0;
+    window.addEventListener('scroll', () => {
+      if (activeFrame) {
+        window.cancelAnimationFrame(activeFrame);
+      }
+      activeFrame = window.requestAnimationFrame(handleScroll);
+    });
+
+    // Run initial rendering
+    updateFilters(true);
 
     // Input Search Listener
     if (searchInput) {
@@ -133,7 +193,7 @@ const t = useTranslations(locale);
           clearBtn.style.display = currentQuery.length > 0 ? 'block' : 'none';
         }
         
-        updateFilters();
+        updateFilters(true);
       });
     }
 
@@ -144,7 +204,7 @@ const t = useTranslations(locale);
         currentQuery = '';
         clearBtn.style.display = 'none';
         searchInput.focus();
-        updateFilters();
+        updateFilters(true);
       });
     }
 
@@ -155,7 +215,7 @@ const t = useTranslations(locale);
         semesterPills.forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
         currentSemester = btn.dataset.semester || 'all';
-        updateFilters();
+        updateFilters(true);
       });
     });
 
@@ -166,7 +226,7 @@ const t = useTranslations(locale);
         yearPills.forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
         currentYear = btn.dataset.year || 'all';
-        updateFilters();
+        updateFilters(true);
       });
     });
   });
@@ -182,6 +242,12 @@ const t = useTranslations(locale);
     flex-direction: column;
     gap: 1.25rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .search-filter-panel {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05);
   }
 
   .search-input-wrapper {
@@ -196,7 +262,7 @@ const t = useTranslations(locale);
     left: 1.25rem;
     color: var(--text-muted);
     pointer-events: none;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   #search-input {
@@ -208,7 +274,12 @@ const t = useTranslations(locale);
     border-radius: 12px;
     font-family: var(--font-body);
     font-size: 1rem;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) #search-input {
+    background: rgba(255, 255, 255, 0.85);
+    color: var(--text-primary);
   }
 
   #search-input:focus {
@@ -216,6 +287,10 @@ const t = useTranslations(locale);
     border-color: var(--accent);
     box-shadow: 0 0 15px var(--accent-glow);
     background: rgba(8, 12, 21, 0.85);
+  }
+
+  :global(html[data-theme="light"]) #search-input:focus {
+    background: #ffffff;
   }
 
   #search-input:focus + .search-icon {
@@ -234,12 +309,16 @@ const t = useTranslations(locale);
     align-items: center;
     padding: 0.2rem;
     border-radius: 50%;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
   }
 
   .clear-btn:hover {
     color: var(--text-primary);
     background: rgba(255, 255, 255, 0.05);
+  }
+
+  :global(html[data-theme="light"]) .clear-btn:hover {
+    background: rgba(15, 23, 42, 0.05);
   }
 
   .filters-row {
@@ -248,6 +327,11 @@ const t = useTranslations(locale);
     gap: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.04);
     padding-top: 1rem;
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .filters-row {
+    border-top: 1px solid rgba(15, 23, 42, 0.04);
   }
 
   .filter-group {
@@ -263,6 +347,7 @@ const t = useTranslations(locale);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     min-width: 90px;
+    transition: var(--theme-transition);
   }
 
   .pills-container {
@@ -281,7 +366,12 @@ const t = useTranslations(locale);
     font-size: 0.85rem;
     font-weight: 500;
     cursor: pointer;
-    transition: var(--transition-smooth);
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .pill-btn {
+    background: rgba(15, 23, 42, 0.03);
+    color: var(--text-secondary);
   }
 
   .pill-btn:hover {
@@ -297,6 +387,10 @@ const t = useTranslations(locale);
     box-shadow: 0 4px 12px var(--accent-glow);
   }
 
+  :global(html[data-theme="light"]) .pill-btn.active {
+    color: #ffffff;
+  }
+
   .search-status {
     display: flex;
     justify-content: space-between;
@@ -305,11 +399,17 @@ const t = useTranslations(locale);
     padding-top: 1rem;
     font-size: 0.85rem;
     color: var(--text-muted);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .search-status {
+    border-top: 1px solid rgba(15, 23, 42, 0.04);
   }
 
   #results-count {
     color: var(--accent);
     font-weight: 600;
+    transition: var(--theme-transition);
   }
 
   /* Responsive styling */
