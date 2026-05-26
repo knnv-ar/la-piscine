@@ -32,7 +32,22 @@ function copyDirRecursive(src, dest) {
         console.log(`  ⚠️ Saltando archivo con '#' en el nombre para evitar fallos de compilación: ${entry.name}`);
         continue;
       }
-      fs.copyFileSync(srcPath, destPath);
+
+      let shouldCopy = true;
+      if (fs.existsSync(destPath)) {
+        const srcStat = fs.statSync(srcPath);
+        const destStat = fs.statSync(destPath);
+        if (srcStat.size === destStat.size && srcStat.mtimeMs === destStat.mtimeMs) {
+          shouldCopy = false;
+        }
+      }
+
+      if (shouldCopy) {
+        fs.copyFileSync(srcPath, destPath);
+        // Sincronizar marcas de tiempo para que la siguiente comparación funcione
+        const srcStat = fs.statSync(srcPath);
+        fs.utimesSync(destPath, srcStat.atime, srcStat.mtime);
+      }
     }
   }
 }
@@ -224,20 +239,16 @@ ${fixedContent}${bodySuffix}`;
 }
 
 function main() {
-  console.log('🔄 Sincronizando recursos de los estudiantes de p5.js...');
+  console.log('🔄 Sincronizando recursos de forma incremental...');
   const startTime = Date.now();
 
-  // Create or clean src/content/projects
-  if (fs.existsSync(astroContentProjectsDir)) {
-    fs.rmSync(astroContentProjectsDir, { recursive: true, force: true });
+  // Asegurar que los directorios destino existen sin borrarlos
+  if (!fs.existsSync(astroContentProjectsDir)) {
+    fs.mkdirSync(astroContentProjectsDir, { recursive: true });
   }
-  fs.mkdirSync(astroContentProjectsDir, { recursive: true });
-
-  // Create or clean public/projects
-  if (fs.existsSync(publicProjectsDir)) {
-    fs.rmSync(publicProjectsDir, { recursive: true, force: true });
+  if (!fs.existsSync(publicProjectsDir)) {
+    fs.mkdirSync(publicProjectsDir, { recursive: true });
   }
-  fs.mkdirSync(publicProjectsDir, { recursive: true });
 
   if (!fs.existsSync(rawProjectsDir)) {
     console.error(`❌ Directorio de origen _projects no encontrado.`);
@@ -246,11 +257,13 @@ function main() {
 
   // Scan all project folders in _projects
   const projects = fs.readdirSync(rawProjectsDir, { withFileTypes: true });
+  const activeSlugs = new Set();
 
   let count = 0;
   for (const project of projects) {
     if (project.isDirectory()) {
       const slug = project.name;
+      activeSlugs.add(slug);
       const projectSrcDir = path.join(rawProjectsDir, slug);
 
       // Find any markdown file in the root of this project folder
@@ -260,19 +273,22 @@ function main() {
         return ext === '.md' || ext === '.mdx';
       });
 
+      let processedContent = '';
+      let mdDestPath = '';
+
       if (mdFile) {
         const mdSrcPath = path.join(projectSrcDir, mdFile);
-        const mdDestPath = path.join(astroContentProjectsDir, `${slug}${path.extname(mdFile)}`);
+        mdDestPath = path.join(astroContentProjectsDir, `${slug}${path.extname(mdFile)}`);
         
-        // Read file content, run processing heuristics, and write back
+        // Read file content, run processing heuristics
         const rawContent = fs.readFileSync(mdSrcPath, 'utf-8');
-        let processedContent = fixFrontMatter(rawContent, slug);
+        processedContent = fixFrontMatter(rawContent, slug);
         processedContent = fixRelativeAssetPaths(processedContent, slug);
         processedContent = makeHtmlTagsJsxCompliant(processedContent);
-        fs.writeFileSync(mdDestPath, processedContent, 'utf-8');
       } else {
         // Fallback placeholder markdown if no statement file is found
-        const fallbackContent = `---
+        mdDestPath = path.join(astroContentProjectsDir, `${slug}.md`);
+        processedContent = `---
 title: "${slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}"
 author: "Estudiante Cátedra Lacabanne"
 year: 2020
@@ -285,13 +301,46 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 `;
-        fs.writeFileSync(path.join(astroContentProjectsDir, `${slug}.md`), fallbackContent, 'utf-8');
+      }
+
+      // Escritura condicional: solo escribir si el contenido cambia
+      let shouldWrite = true;
+      if (fs.existsSync(mdDestPath)) {
+        const existingContent = fs.readFileSync(mdDestPath, 'utf-8');
+        if (existingContent === processedContent) {
+          shouldWrite = false;
+        }
+      }
+
+      if (shouldWrite) {
+        fs.writeFileSync(mdDestPath, processedContent, 'utf-8');
       }
 
       // Copy non-markdown files and subfolders to public/projects/[slug]
       const projectDestDir = path.join(publicProjectsDir, slug);
       copyDirRecursive(projectSrcDir, projectDestDir);
       count++;
+    }
+  }
+
+  // --- Limpieza quirúrgica de proyectos eliminados ---
+
+  // 1. Eliminar archivos markdown huérfanos
+  const generatedMds = fs.readdirSync(astroContentProjectsDir);
+  for (const file of generatedMds) {
+    const slug = path.basename(file, path.extname(file));
+    if (!activeSlugs.has(slug)) {
+      console.log(`  🗑️ Eliminando archivo markdown huérfano: ${file}`);
+      fs.rmSync(path.join(astroContentProjectsDir, file), { force: true });
+    }
+  }
+
+  // 2. Eliminar directorios de recursos huérfanos
+  const generatedAssetDirs = fs.readdirSync(publicProjectsDir);
+  for (const dirName of generatedAssetDirs) {
+    if (dirName !== 'assets' && !activeSlugs.has(dirName)) {
+      console.log(`  🗑️ Eliminando recursos huérfanos del proyecto: ${dirName}`);
+      fs.rmSync(path.join(publicProjectsDir, dirName), { recursive: true, force: true });
     }
   }
 
@@ -307,14 +356,26 @@ dependencies:
       const srcAssetPath = path.join(globalSrcDir, asset);
       const destAssetPath = path.join(globalDestDir, asset);
       if (fs.existsSync(srcAssetPath)) {
-        fs.copyFileSync(srcAssetPath, destAssetPath);
+        let shouldCopyGlobal = true;
+        if (fs.existsSync(destAssetPath)) {
+          const srcStat = fs.statSync(srcAssetPath);
+          const destStat = fs.statSync(destAssetPath);
+          if (srcStat.size === destStat.size && srcStat.mtimeMs === destStat.mtimeMs) {
+            shouldCopyGlobal = false;
+          }
+        }
+        if (shouldCopyGlobal) {
+          fs.copyFileSync(srcAssetPath, destAssetPath);
+          const srcStat = fs.statSync(srcAssetPath);
+          fs.utimesSync(destAssetPath, srcStat.atime, srcStat.mtime);
+        }
       }
     }
-    console.log('✨ Recursos globales del tema sincronizados con éxito.');
+    console.log('✨ Recursos globales del tema sincronizados de forma incremental.');
   }
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(2);
-  console.log(`✅ ¡Recursos sincronizados con éxito! ${count} carpetas de proyectos procesadas en ${elapsed}s.`);
+  console.log(`✅ ¡Recursos sincronizados incrementalmente! ${count} carpetas de proyectos procesadas en ${elapsed}s.`);
 }
 
 main();
