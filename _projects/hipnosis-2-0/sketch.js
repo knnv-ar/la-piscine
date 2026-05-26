@@ -4,9 +4,9 @@ var f;
 
 function preload(){
  hipnosis = loadStrings("hipnosis.txt");
-  cel = loadImage ("celular-con-brazos.png");
-  celu = loadImage("celu.png");
-  braN = loadImage ("solobrazosnegativo.png");
+  cel = loadImage ("celular-con-brazos.webp");
+  celu = loadImage("celu.webp");
+  braN = loadImage ("solobrazosnegativo.webp");
   
 }
 

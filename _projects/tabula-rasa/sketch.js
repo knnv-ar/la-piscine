@@ -35,9 +35,9 @@ const SOPLIDO_SUAVIZ = 0.20;
 function preload() {
   fuenteTexto = loadFont("./Montserrat-VariableFont_wght.ttf");
 
-  imgCielo = loadImage("./cielovioleta.png");
-  imgNinio = loadImage("./ninio.png");
-  IMG_pantallaOjo = loadImage("./maquina.png");
+  imgCielo = loadImage("./cielovioleta.webp");
+  imgNinio = loadImage("./ninio.webp");
+  IMG_pantallaOjo = loadImage("./maquina.webp");
 
   sndNotif    = loadSound("./notificacion.mp3");
   sndAtiendan = loadSound("./atiendan.mp3");

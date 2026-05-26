@@ -3,8 +3,8 @@ let sonido = [];
 let video = [];
 
 function preload() {
-  img[0] = loadImage("textura1.jpg"); 
-  img[1] = loadImage("textura2.jpg")
+  img[0] = loadImage("textura1.webp"); 
+  img[1] = loadImage("textura2.webp")
   sonido[0] = loadSound("mistico.mp3")
  
 }

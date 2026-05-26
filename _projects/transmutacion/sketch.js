@@ -8,7 +8,7 @@ let img;
 let playingVideo = false; 
 
 function preload() {
-  img = loadImage("foto.jpg");
+  img = loadImage("foto.webp");
   sonido = loadSound("audio2.mp3");
 }
 

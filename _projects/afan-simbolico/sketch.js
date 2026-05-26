@@ -13,7 +13,7 @@ let w = 0; //Angulo de la imagen de fondo
 let dw = 0; //Velocidad angular de la imagen de fondo
 
 function preload() {
-  img = loadImage("autorreflejo.jpg");
+  img = loadImage("autorreflejo.webp");
 }//                                        ║
 //                                         ║ 
 function setup() {//              ═══════GIRA════════        ║

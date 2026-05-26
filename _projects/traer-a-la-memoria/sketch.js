@@ -7,7 +7,7 @@ let brushSize = 3;
 
 // Carga de media
 function preload() {
-  photo = loadImage("aa_main_img.jpg");
+  photo = loadImage("aa-main-img.webp");
   lullaby = loadSound("bb_humming_woman.mp3");
   tvEffect = createVideo("cc_old_tv.mp4");
 }

@@ -4,10 +4,10 @@ let fondo, pelota, sonido, gol, grito;
 let posZ;
 
 function preload() {
-  fondo = loadImage("cesped.jpeg");
-  pelota = loadImage("textura1.png");
+  fondo = loadImage("cesped.webp");
+  pelota = loadImage("textura1.webp");
   sonido = loadSound("gente.mp3");
-  gol = loadImage("gool.png");
+  gol = loadImage("gool.webp");
   grito = loadSound("gol.mp3");
 }
 

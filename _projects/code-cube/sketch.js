@@ -7,8 +7,8 @@ let camX, camY, camZ;
 let fondo, codigo2;
 
 function preload() {
-  fondo = loadImage("fondo.png");
-  codigo2 = loadImage("codigoo.png");
+  fondo = loadImage("fondo.webp");
+  codigo2 = loadImage("codigoo.webp");
   synth = loadSound("synth.mp3");
 }
 

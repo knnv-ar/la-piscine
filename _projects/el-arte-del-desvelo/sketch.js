@@ -15,7 +15,7 @@ let aleatorioMax = 40, aleatorioMin = 20;
 let reinicioCada = 60 * 60;  // Reinicia cada 60 segundos (60s * 60 FPS)
 
 function preload() {
-  tela = loadImage('tela.jpg');
+  tela = loadImage('tela.webp');
   sonido = loadSound("sonido.mp3");
   lapiz = loadSound("sonido2.mp3");
 }

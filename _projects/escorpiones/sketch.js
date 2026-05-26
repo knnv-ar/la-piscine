@@ -11,12 +11,12 @@ let Valor5 = 5;
 
 
 function preload() {
-  frame1 = loadImage("datest3.png");
-  frame2 = loadImage("iatest2.jpg");
-  frame3 = loadImage("datest2.png");
-  frame4 = loadImage("datest1.png");
-  frame5 = loadImage("datest8.png");
-  frame6 = loadImage("datest7.png");
+  frame1 = loadImage("datest3.webp");
+  frame2 = loadImage("iatest2.webp");
+  frame3 = loadImage("datest2.webp");
+  frame4 = loadImage("datest1.webp");
+  frame5 = loadImage("datest8.webp");
+  frame6 = loadImage("datest7.webp");
 
 }
 function setup() {

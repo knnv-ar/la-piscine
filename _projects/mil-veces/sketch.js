@@ -6,8 +6,8 @@ let centroX, centroY;
 let mostrarElementos = true;
 
 function preload() {
-  img = loadImage("arte.jpg");
-  img2 = loadImage("différance.jpg");
+  img = loadImage("arte.webp");
+  img2 = loadImage("diffrance.webp");
 }
 
 function setup() {

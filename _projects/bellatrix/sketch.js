@@ -22,8 +22,8 @@ let sonido;
 
 // cargo las imagenes y sonido
 function preload() {
-  texCielo = loadImage("clouds-3422258.jpg");
-  imgOjo = loadImage("download (18).jpg");
+  texCielo = loadImage("clouds-3422258.webp");
+  imgOjo = loadImage("download-18.webp");
   sonido = loadSound("bellatrix (1).mp3");
 }
 

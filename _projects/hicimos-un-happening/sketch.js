@@ -13,7 +13,7 @@ var contador = 0;
 var total;
 
 function preload() {
-  img = loadImage("brillo-01.jpg");
+  img = loadImage("brillo-01.webp");
   audio = loadSound("audio.mp3");
 }
 

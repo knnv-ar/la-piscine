@@ -12,8 +12,8 @@ let song;
 function preload() {
   //imagenes
   
-  img1 = loadImage('nota2.png');
-  img2 = loadImage('color.jpg');
+  img1 = loadImage('nota2.webp');
+  img2 = loadImage('color.webp');
   
 }
 

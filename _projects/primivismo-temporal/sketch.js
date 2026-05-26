@@ -11,7 +11,7 @@ var angle = 0;
 var audioContextStarted = false;
 
 function preload() {
-  img = loadImage("eye1.jpg");
+  img = loadImage("eye1.webp");
  // img2 = loadImage("background.jpg");
  mp3 = loadSound("clip.mp3");
 }

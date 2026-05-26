@@ -17,13 +17,13 @@ var anguloRotacion = 150;
 
 //cargar archivos
 function preload() {
-  img = loadImage('marshal.jpg');
+  img = loadImage('marshal.webp');
   glitch = loadImage('ttv.gif');
-  cara = loadImage('face.png');
+  cara = loadImage('face.webp');
   ambiente = loadSound('ambiente.mp3');
   mar = loadSound('tres.mp3');
-  mars = loadImage('marshald.jpg');
-  onda = loadImage('fq.png');
+  mars = loadImage('marshald.webp');
+  onda = loadImage('fq.webp');
 
 }
 

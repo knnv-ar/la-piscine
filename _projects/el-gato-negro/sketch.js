@@ -11,18 +11,18 @@ function preload(){
  murmullo= loadSound("murmullo.mp3");
   golpe=loadSound("golpe.mp3")
   sangre=loadSound("sangre.mp3");
-  //img1=loadImage("imagen0.png");
+  //img1=loadImage("imagen0.webp");
   //img2=loadImage("00.jpg");
   img3=loadImage("animacion.gif");
   img4=loadImage("ojos.gif");
   img5=loadImage("ojos1.gif");
-  cable=loadImage("cable.png");
-  cable1=loadImage("cables1.png");
+  cable=loadImage("cable.webp");
+  cable1=loadImage("cables1.webp");
   //cable2=loadImage("cable4.jpg");
-  cable4=loadImage("cable4-2.png");
-  cable3= loadImage("cables3.png");
-  body=loadImage("body3.png");
-  muro=loadImage("muro.jpg");
+  cable4=loadImage("cable4-2.webp");
+  cable3= loadImage("cables3.webp");
+  body=loadImage("body3.webp");
+  muro=loadImage("muro.webp");
   
 }
 function setup() {

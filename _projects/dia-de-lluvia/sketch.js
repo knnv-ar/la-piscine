@@ -12,8 +12,8 @@ let gotas = []
 
 function preload() { 
   img = loadImage("fondo.jpg") 
-  img1 = loadImage("nena.png") 
-  img2 = loadImage("barquito.png") 
+  img1 = loadImage("nena.webp") 
+  img2 = loadImage("barquito.webp") 
   lluvia= loadSound("lluvia.mp3") 
   risa = loadSound("risa.mp3")
   }

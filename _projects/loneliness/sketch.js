@@ -4,12 +4,12 @@ var img1, img2, img3, img4, img5;
 let angulo = 0;
 
 function preload() {
-  img1 = loadImage("fondo3.jpeg");
-  img2 = loadImage("fondo5.jpg");
-  img3 = loadImage("foto.jpeg");
-  img4 = loadImage("fotosi.jpg");
-  img5 = loadImage("planeta.jpg");
-  img6 = loadImage("ballena.png");
+  img1 = loadImage("fondo3.webp");
+  img2 = loadImage("fondo5.webp");
+  img3 = loadImage("foto.webp");
+  img4 = loadImage("fotosi.webp");
+  img5 = loadImage("planeta.webp");
+  img6 = loadImage("ballena.webp");
   canto = loadSound("canto.mp3");
 }
 

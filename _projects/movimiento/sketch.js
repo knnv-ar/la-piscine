@@ -12,7 +12,7 @@ let op = 255;
 
 
 function preload(){
-  bebe = loadImage ("bebe.png")
+  bebe = loadImage ("bebe.webp")
   
   audio1 = loadSound("audio1.mp3")
   audio2 = loadSound("audio2.mp3")

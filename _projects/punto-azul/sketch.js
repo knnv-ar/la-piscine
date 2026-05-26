@@ -4,12 +4,12 @@ let video;
 let luna
 
 function preload() {
-  god = loadImage('R.jpeg');
-  dia = loadImage('planeta.png');
-    luna = loadImage('LUNA.png');
-    venus = loadImage('venus.jpeg');
-     mercurio = loadImage('mercurio.jpg');
-   marte = loadImage('marte.jpg');
+  god = loadImage('r.webp');
+  dia = loadImage('planeta.webp');
+    luna = loadImage('luna.webp');
+    venus = loadImage('venus.webp');
+     mercurio = loadImage('mercurio.webp');
+   marte = loadImage('marte.webp');
 }
 
 function setup() {

@@ -10,7 +10,7 @@ let maximo = 10;
 let sonido;
 
 function preload() {
-  img = loadImage("foto1.jpg");
+  img = loadImage("foto1.webp");
   sonido = loadSound("sonido.mp3");
 }
 

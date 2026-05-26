@@ -13,17 +13,17 @@ var r = 50;
 
 function preload (){
   cancion = loadSound ("multimedia-cabeza.mp3");
-  img = loadImage ("fondo-a.png");
-  img1= loadImage("cabeza-1.png");
-  img2= loadImage("cabeza-2.png");
-   img3= loadImage("cabeza-3.png");
-   img4= loadImage("cabeza-4.png");
-   img5= loadImage("cabeza-5.png");
-   img6= loadImage("cabeza-6.png");
-   img7= loadImage("volumne-1.png");
-   img8= loadImage("volumen-2.png");
-  img9= loadImage("piedra.png");
-  img10= loadImage("pago.jpg");
+  img = loadImage ("fondo-a.webp");
+  img1= loadImage("cabeza-1.webp");
+  img2= loadImage("cabeza-2.webp");
+   img3= loadImage("cabeza-3.webp");
+   img4= loadImage("cabeza-4.webp");
+   img5= loadImage("cabeza-5.webp");
+   img6= loadImage("cabeza-6.webp");
+   img7= loadImage("volumne-1.webp");
+   img8= loadImage("volumen-2.webp");
+  img9= loadImage("piedra.webp");
+  img10= loadImage("pago.webp");
 
   
 }

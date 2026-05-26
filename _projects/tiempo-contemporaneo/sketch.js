@@ -116,11 +116,11 @@ function IniciarVariables() { //DECLARO VARIABLES
   rect2Y = 30;
   rectX = 50;  
   rectY = 30;
-  imgVerde = loadImage ("manzanaverde.png");
-  imgRoja = loadImage ("manzanaroja.png");
-  img1 = loadImage ("manzana1.jpeg");
-  img2 = loadImage ("manzana2.jpeg");
-  img3 = loadImage ("manzana3.jpeg");
+  imgVerde = loadImage ("manzanaverde.webp");
+  imgRoja = loadImage ("manzanaroja.webp");
+  img1 = loadImage ("manzana1.webp");
+  img2 = loadImage ("manzana2.webp");
+  img3 = loadImage ("manzana3.webp");
 }
 function Inicio () {
   background (0);

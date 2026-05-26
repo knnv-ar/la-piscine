@@ -7,8 +7,8 @@ let isShowingImg1 = true;
 
 function preload() {
 
-  img1 = loadImage('epoca1.jpg');
-  img2 = loadImage('epoca2.jpg');
+  img1 = loadImage('epoca1.webp');
+  img2 = loadImage('epoca2.webp');
 
 
   //WHEN DOVES CRY
