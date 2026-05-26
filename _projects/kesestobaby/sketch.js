@@ -9,18 +9,18 @@
 
 //SONIDOS E IMAGENES CARGADAS
 function preload() {
-  k = loadSound("sonidos/k.wav");
-  E = loadSound("sonidos/E.wav");
-  s = loadSound("sonidos/s2.wav");
-  e = loadSound("sonidos/e2.wav");
-  S = loadSound("sonidos/S.wav");
-  T = loadSound("sonidos/T.wav");
-  o = loadSound("sonidos/0.wav");
-  B = loadSound("sonidos/B.wav");
-  a = loadSound("sonidos/a.wav");
-  b = loadSound("sonidos/b2.wav");
-  Y = loadSound("sonidos/Y.wav");
-  y = loadSound("sonidos/y2.wav");
+  k = loadSound("sonidos/k.mp3");
+  E = loadSound("sonidos/e.mp3");
+  s = loadSound("sonidos/s-2.mp3");
+  e = loadSound("sonidos/e-2.mp3");
+  S = loadSound("sonidos/s.mp3");
+  T = loadSound("sonidos/t.mp3");
+  o = loadSound("sonidos/0.mp3");
+  B = loadSound("sonidos/b.mp3");
+  a = loadSound("sonidos/a.mp3");
+  b = loadSound("sonidos/b-2.mp3");
+  Y = loadSound("sonidos/y.mp3");
+  y = loadSound("sonidos/y-2.mp3");
   fondo = loadImage("imagenes/1.png");
   dos = loadImage("imagenes/2.png");
   tres = loadImage("imagenes/3.png");

@@ -7,7 +7,7 @@ let topHeight, bottomHeight; // altura para las mitades superior e inferior
 function preload() {
   // apara cargar la imagen y los sonidos
   img = loadImage('roma/soledad.jpg'); //  ruta de la imagen
-  risa = loadSound('sonidos/risa.wav'); // ruta del sonido1
+  risa = loadSound('sonidos/risa.mp3'); // ruta del sonido1
   llanto = loadSound('sonidos/llanto.mp3'); // ruta del sonido2
 }
 

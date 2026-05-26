@@ -73,7 +73,7 @@ function preload() {
   maullido1 = loadSound("sonidos/maullido1.mp3");
   maullido2 = loadSound("sonidos/maullido2.mp3");
   auugh = loadSound("sonidos/auugh.mp3");
-  fallo = loadSound("sonidos/glitch_sound.wav");
+  fallo = loadSound("sonidos/glitch-sound.mp3");
   musica = loadSound("sonidos/musica_fondo.ogg");
   
 }

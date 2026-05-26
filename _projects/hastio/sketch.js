@@ -6,8 +6,8 @@ let g = 0;
 let b = 0;
 
 function preload() {
-  fondo = loadSound("fonfoSonido2.wav");
-  cambio = loadSound("pip.wav");
+  fondo = loadSound("fonfo-sonido-2.mp3");
+  cambio = loadSound("pip.mp3");
 }
 
 function prim() {

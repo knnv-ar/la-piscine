@@ -39,7 +39,7 @@ let offset1 = 0,
 function preload() {
   img = loadImage("./img.jpg");
   molnar = loadImage("./molnar.webp");
-  lovecry = loadSound("./lovecry.wav");
+  lovecry = loadSound("./lovecry.mp3");
 }
 
 function setup() {

@@ -16,7 +16,7 @@ let appleFont, beep, shephard;
 
 function preload() {
   appleFont = loadFont("./assets/apple.ttf");
-  beep = loadSound("./assets/beep.wav");
+  beep = loadSound("./assets/beep.mp3");
   shephard = loadSound("./assets/shepard.mp3");
 }
 

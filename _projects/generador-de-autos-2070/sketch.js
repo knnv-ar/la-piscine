@@ -40,7 +40,7 @@ let arrancon;
 
 function preload(){
   font=loadFont('PressStart2P-Regular.ttf')
-  music=loadSound('beat marciano 1.wav')
+  music=loadSound('beat-marciano-1.mp3')
   music2=loadSound('code.mp3')
   humo=loadImage('scr/planetas1.gif');
   humo2=loadImage('scr/fx1.gif');
@@ -393,7 +393,7 @@ function mousePressed(){
   if(mouseX>475 && mouseX<575 && mouseY>25 && mouseY<50){
     pressEscenario=0.8;
   
-  //music=loadSound('beat marciano 1.wav')
+  //music=loadSound('beat-marciano-1.mp3')
   //en esta cambio el volumen una por otra.
    if(tintOn) {
      arrancon.setVolume(0.15)
