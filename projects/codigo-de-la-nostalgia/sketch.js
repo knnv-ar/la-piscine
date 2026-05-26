@@ -1,6 +1,6 @@
 const video = document.getElementById('camVideo');
-const audioHappy = new Audio('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/feliz.wav');
-const audioSad = new Audio('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/triste.wav'); 
+const audioHappy = new Audio('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/feliz.mp3');
+const audioSad = new Audio('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/triste.mp3'); 
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/la-piscine/projects/codigo-de-la-nostalgia/models'),
@@ -61,7 +61,7 @@ let audio;
 
 function preload() {
   soundFormats('mp3', 'wav');
-  audio = loadSound('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/fondo.wav');
+  audio = loadSound('/la-piscine/projects/codigo-de-la-nostalgia/sonidos/fondo.mp3');
 }
 function setup() {
   let canvas = createCanvas(500, 500);

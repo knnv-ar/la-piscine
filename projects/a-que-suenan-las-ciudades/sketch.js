@@ -20,19 +20,19 @@ let lowPassFilter;
 let highPassFilter;
 
 function preload() {
-  kick = loadSound('sonido/kick.wav');
-  sonidoDeA = loadSound('sonido/A.wav');
- sonidoDeW = loadSound('sonido/Pad 2.wav');
-   sonidoDeS = loadSound('sonido/Pad 3.wav');
-   sonidoDeE = loadSound('sonido/Pad 4.wav');
-   sonidoDeD = loadSound('sonido/Pad 5.wav');
-   sonidoDeF = loadSound('sonido/Pad 6.wav');
- sonidoDeT = loadSound('sonido/Pad 7.wav');
- sonidoDeG = loadSound('sonido/Pad 8.wav');
- sonidoDeY = loadSound('sonido/Pad 9.wav');
-  sonidoDeH = loadSound('sonido/Pad 10.wav');
-  sonidoDeU = loadSound('sonido/Pad 11.wav');
-  sonidoDeJ = loadSound('sonido/Pad 1.wav');
+  kick = loadSound('sonido/kick.mp3');
+  sonidoDeA = loadSound('sonido/a.mp3');
+ sonidoDeW = loadSound('sonido/pad-2.mp3');
+   sonidoDeS = loadSound('sonido/pad-3.mp3');
+   sonidoDeE = loadSound('sonido/pad-4.mp3');
+   sonidoDeD = loadSound('sonido/pad-5.mp3');
+   sonidoDeF = loadSound('sonido/pad-6.mp3');
+ sonidoDeT = loadSound('sonido/pad-7.mp3');
+ sonidoDeG = loadSound('sonido/pad-8.mp3');
+ sonidoDeY = loadSound('sonido/pad-9.mp3');
+  sonidoDeH = loadSound('sonido/pad-10.mp3');
+  sonidoDeU = loadSound('sonido/pad-11.mp3');
+  sonidoDeJ = loadSound('sonido/pad-1.mp3');
 }
 
 function setup() {

@@ -39,8 +39,8 @@ function preload() {
   imgNinio = loadImage("./ninio.png");
   IMG_pantallaOjo = loadImage("./maquina.png");
 
-  sndNotif    = loadSound("./notificacion.wav");
-  sndAtiendan = loadSound("./atiendan.wav");
+  sndNotif    = loadSound("./notificacion.mp3");
+  sndAtiendan = loadSound("./atiendan.mp3");
 }
 
 function setup() {

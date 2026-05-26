@@ -57,9 +57,9 @@ function preload() {
   vigiDere = loadImage("./img/vigi-dere.png");
   vigiIzq = loadImage("./img/vigi-izq.png");
   dialogo = loadImage("./img/dialogo.png");
-  unoDosTres = loadSound("./sound/123.wav");
-  teVi = loadSound("./sound/tevi.wav");
-  ganaste = loadSound("./sound/ganaste.wav");
+  unoDosTres = loadSound("./sound/123.mp3");
+  teVi = loadSound("./sound/tevi.mp3");
+  ganaste = loadSound("./sound/ganaste.mp3");
   timbre = loadSound("./sound/timbre.mp3");
   chicos = loadSound("./sound/chicos.mp3");
   //fotos poses yo

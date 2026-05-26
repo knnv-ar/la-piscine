@@ -45,11 +45,11 @@ function preload() {
   font1 = loadFont("fonts/barcade.ttf");
   font2 = loadFont("fonts/pixel.ttf");
   font3 = loadFont("fonts/gaming.ttf");
-  sonstart = loadSound("sonidos/start.wav");
+  sonstart = loadSound("sonidos/start.mp3");
   imgBloqueSeleccionada = imgBloque
-  sonprik = loadSound("sonidos/prik.wav");
-  soncharge = loadSound("sonidos/charge.wav");
-  sonerrrro = loadSound("sonidos/errrro.wav");
+  sonprik = loadSound("sonidos/prik.mp3");
+  soncharge = loadSound("sonidos/charge.mp3");
+  sonerrrro = loadSound("sonidos/errrro.mp3");
 }
 function keyPressed(){
   if(key ==" "){

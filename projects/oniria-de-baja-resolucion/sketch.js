@@ -5,7 +5,7 @@ let video = [];
 function preload() {
   img[0] = loadImage("textura1.jpg"); 
   img[1] = loadImage("textura2.jpg")
-  sonido[0] = loadSound("mistico.wav")
+  sonido[0] = loadSound("mistico.mp3")
  
 }
 

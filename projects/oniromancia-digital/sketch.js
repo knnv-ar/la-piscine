@@ -28,10 +28,10 @@ var t=0 ,a ,b ,c ,d ;
 var kick, snare, track, bienvenida ;
 
 function preload() {
-  kick = loadSound("kick.wav");
-  snare = loadSound("snare.wav");
-  track = loadSound("oniromancia.wav");
-  bienvenida = loadSound("bienvenida.wav")
+  kick = loadSound("kick.mp3");
+  snare = loadSound("snare.mp3");
+  track = loadSound("oniromancia.mp3");
+  bienvenida = loadSound("bienvenida.mp3")
 }
 
 //estas dos funciones sirven para ejecutar los samples percusivos //una sola vez a traves de variables bandera o 'flags'

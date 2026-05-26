@@ -6,7 +6,7 @@ let inactivityThreshold = 30000;
 
 function preload() {
   // Carga el archivo de sonido
-  agua = loadSound('sonidos/agua.wav');
+  agua = loadSound('sonidos/agua.mp3');
  }
 function setup() {
   let canvas = createCanvas(1000,1000, WEBGL);

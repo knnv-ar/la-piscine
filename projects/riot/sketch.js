@@ -34,7 +34,7 @@ let imgs = [];
 function preload() {
     riot = loadSound("assets/ambiente/riots.mp3");
     gun = loadModel("assets/gun.obj");
-    shot = loadSound("assets/gunshot.wav");
+    shot = loadSound("assets/gunshot.mp3");
     wall = loadImage("assets/ambiente/pared.png");
     pisos = loadImage("assets/ambiente/piso.png");
     fondo = loadImage("assets/ambiente/fondo.png");

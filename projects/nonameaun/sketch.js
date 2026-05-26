@@ -115,8 +115,8 @@ let fraseCompletaReproducida = false;
 ///////////////////////////////////////////////////// PRELOAD
 function preload() {
   manoPos = ml5.handPose({ flipped: true });
-  sonidoInicio = loadSound("inicio.wav");
-  sonidoFraseCompleta = loadSound("fraseCompleta.wav");
+  sonidoInicio = loadSound("inicio.mp3");
+  sonidoFraseCompleta = loadSound("frase-completa.mp3");
 }
 
 ///////////////////////////////////////////////////// SETUP

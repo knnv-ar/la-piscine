@@ -20,7 +20,7 @@ function preload() {
   img = loadImage('marshal.jpg');
   glitch = loadImage('ttv.gif');
   cara = loadImage('face.png');
-  ambiente = loadSound('ambiente.wav');
+  ambiente = loadSound('ambiente.mp3');
   mar = loadSound('tres.mp3');
   mars = loadImage('marshald.jpg');
   onda = loadImage('fq.png');

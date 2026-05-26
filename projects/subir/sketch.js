@@ -7,7 +7,7 @@ let sonidoVoz, fondo, textura, reverb;
 let colores;
 
 function preload() {
-  sonidoVoz = loadSound("voz.wav"); //  voz 
+  sonidoVoz = loadSound("voz.mp3"); //  voz 
   textura = loadImage("textura.jpg"); // la textura del cubo exterior
   fondo = loadImage("fondo.jpg"); //  fondo 
 }

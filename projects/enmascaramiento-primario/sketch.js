@@ -9,7 +9,7 @@ let contador = 0;
 //cargar imagen y sonido
 function preload() {
   mascara = loadImage("rr.png");
-  sonido = loadSound("white.wav");
+  sonido = loadSound("white.mp3");
 }
 
 function setup() {

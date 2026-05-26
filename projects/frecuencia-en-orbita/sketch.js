@@ -2,7 +2,7 @@ let notas = [15, 21, 23, 25, 29, 34, 39, 42];
 let osc, env;
 
 function preload() {
-  base1 = loadSound("160.wav");
+  base1 = loadSound("160.mp3");
   base2 = loadSound("120.mp3");
   base3 = loadSound("drum.mp3");
 }

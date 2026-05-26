@@ -10,10 +10,10 @@ let reproduciendo = true; // Estado de reproducción
 
 function preload() {
   gify = loadImage('3c.gif');
-  canciones.push(loadSound("ab1.wav"));
-  canciones.push(loadSound("ab2.wav"));
-  canciones.push(loadSound("ab3.wav"));
-  canciones.push(loadSound("ab4.wav"));
+  canciones.push(loadSound("ab-1.mp3"));
+  canciones.push(loadSound("ab-2.mp3"));
+  canciones.push(loadSound("ab-3.mp3"));
+  canciones.push(loadSound("ab-4.mp3"));
   
 }
 
