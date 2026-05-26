@@ -62,6 +62,64 @@ function fixRelativeAssetPaths(content, slug) {
   return fixedContent;
 }
 
+// Helper to make HTML tags JSX/MDX compliant by ensuring they are self-closing
+function makeHtmlTagsJsxCompliant(content) {
+  let result = content;
+
+  // Replace << and >> with HTML entities to prevent MDX compiler crashes on double angle brackets
+  result = result.replace(/<</g, '&lt;&lt;').replace(/>>/g, '&gt;&gt;');
+
+  // Escape any angle brackets (<...>) that are not valid HTML tags to prevent MDX parser crashes
+  const allowedTags = new Set([
+    'div', 'script', 'video', 'img', 'p', 'br', 'hr', 'sup', 'sub', 'a', 'ul', 'li', 'ol',
+    'blockquote', 'span', 'code', 'iframe', 'style', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+    'strong', 'em', 'b', 'i', 'u', 'pre'
+  ]);
+
+  result = result.replace(/<([^>]+)>/g, (match, bodyText) => {
+    const firstWord = bodyText.trim().split(/\s+/)[0];
+    const cleanTagName = firstWord.replace(/^\/|\/$/g, '').trim().toLowerCase();
+    
+    if (allowedTags.has(cleanTagName)) {
+      let spaceIndex = bodyText.trim().indexOf(' ');
+      if (spaceIndex === -1) {
+        return match;
+      }
+      let tagNameAndSlash = bodyText.trim().substring(0, spaceIndex);
+      let attrsBody = bodyText.trim().substring(spaceIndex);
+      
+      attrsBody = attrsBody.replace(/([a-zA-Z0-9_\-]+)\s*=\s*([^"'{>\s\/]+)/g, (m, name, val) => {
+        return `${name}="${val}"`;
+      });
+      
+      return `<${tagNameAndSlash}${attrsBody}>`;
+    }
+    return `&lt;${bodyText}&gt;`;
+  });
+
+  // Replace <br> and <br\s*> (not already self-closed) with <br />
+  result = result.replace(/<br\s*(?!\/|(?:\s*\/))>|<br\s*\/?>/gi, '<br />');
+  
+  // Replace </br> with <br />
+  result = result.replace(/<\/br>/gi, '<br />');
+
+  // Replace <hr> (not already self-closed) with <hr />
+  result = result.replace(/<hr\s*(?!\/|(?:\s*\/))>|<hr\s*\/?>/gi, '<hr />');
+
+  // Ensure <img ...> tags are self-closing
+  result = result.replace(/<img\s+([^>]*?)(?!\/)>/gi, (match, body) => {
+    if (body.trim().endsWith('/')) {
+      return match;
+    }
+    return `<img ${body.trim()} />`;
+  });
+
+  // Strip Kramdown attributes like {:target="_blank"} or {:class="..."} that break MDX
+  result = result.replace(/\{\s*:[^\}]*\}/g, '');
+
+  return result;
+}
+
 // Helper to fix malformed historical front-matter blocks
 function fixFrontMatter(content, slug) {
   let fixedContent = content;
@@ -210,6 +268,7 @@ function main() {
         const rawContent = fs.readFileSync(mdSrcPath, 'utf-8');
         let processedContent = fixFrontMatter(rawContent, slug);
         processedContent = fixRelativeAssetPaths(processedContent, slug);
+        processedContent = makeHtmlTagsJsxCompliant(processedContent);
         fs.writeFileSync(mdDestPath, processedContent, 'utf-8');
       } else {
         // Fallback placeholder markdown if no statement file is found
