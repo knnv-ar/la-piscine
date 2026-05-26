@@ -357,7 +357,7 @@ const serializedProjects = allProjects.map(p => ({
 
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
   }
 
@@ -438,9 +438,14 @@ const serializedProjects = allProjects.map(p => ({
 
   /* Scoped styles in index.astro for dynamic cards */
   .projects-grid :global(.project-card-link) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     color: inherit;
     text-decoration: none;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .projects-grid :global(.project-card) {
@@ -449,11 +454,15 @@ const serializedProjects = allProjects.map(p => ({
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateZ(0);
     transition: var(--transition-smooth), var(--theme-transition);
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   :global(html[data-theme="light"]) .projects-grid :global(.project-card) {
@@ -464,12 +473,17 @@ const serializedProjects = allProjects.map(p => ({
   .projects-grid :global(.card-thumbnail-container) {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 0;
+    padding-bottom: 100%; /* Perfect cross-browser 1:1 aspect ratio */
     overflow: hidden;
     background: #04060b;
+    flex-shrink: 0; /* Prevents container from shrinking when card expands */
   }
 
   .projects-grid :global(.card-thumbnail) {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -593,7 +607,7 @@ const serializedProjects = allProjects.map(p => ({
   /* Responsive styling */
   @media (max-width: 968px) {
     .projects-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.5rem;
     }
   }
@@ -612,7 +626,7 @@ const serializedProjects = allProjects.map(p => ({
     }
 
     .projects-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1.5rem;
     }
 

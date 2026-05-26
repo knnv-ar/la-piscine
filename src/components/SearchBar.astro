@@ -109,7 +109,7 @@ const t = useTranslations(locale);
           matchCount++;
           // Only show card if it fits within the current page's rendering limit
           if (renderCount < visibleLimit) {
-            card.style.display = 'block';
+            card.style.display = '';
             renderCount++;
           } else {
             card.style.display = 'none';

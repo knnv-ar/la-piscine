@@ -56,9 +56,15 @@ const thumbnailSrc = `${base}/projects/${slug}/${thumbnail || 'thumbnail.png'}`;
 
 <style>
   .project-card-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     color: inherit;
     text-decoration: none;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 0; /* Enable proper shrinking in flex/grid */
   }
 
   .project-card {
@@ -67,11 +73,16 @@ const thumbnailSrc = `${base}/projects/${slug}/${thumbnail || 'thumbnail.png'}`;
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateZ(0); /* Hardware acceleration */
     transition: var(--transition-smooth), var(--theme-transition);
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 0; /* Enable proper shrinking in flex/grid */
   }
 
   html[data-theme="light"] .project-card {
@@ -82,12 +93,17 @@ const thumbnailSrc = `${base}/projects/${slug}/${thumbnail || 'thumbnail.png'}`;
   .card-thumbnail-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 0;
+    padding-bottom: 100%; /* Perfect cross-browser 1:1 aspect ratio */
     overflow: hidden;
     background: #04060b;
+    flex-shrink: 0; /* Prevents container from shrinking when card expands */
   }
 
   .card-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;

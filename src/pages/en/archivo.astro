@@ -32,7 +32,7 @@ const uniqueYears = Array.from(
 ---
 
 <BaseLayout title={t('archive.title')} description={t('site.description')}>
-  <div class="archive-container">
+  <div class="container archive-container">
     <!-- Header Block -->
     <header class="archive-header">
       <h1 class="archive-title">{t('archive.title')}</h1>
@@ -110,7 +110,7 @@ const uniqueYears = Array.from(
 
   .archive-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     transition: var(--transition-smooth);
   }
@@ -119,6 +119,13 @@ const uniqueYears = Array.from(
     opacity: 0;
     transform: translateY(15px);
     animation: card-entrance 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 0; /* Enable proper shrinking */
   }
 
   @keyframes card-entrance {
@@ -151,27 +158,22 @@ const uniqueYears = Array.from(
   }
 
   /* Responsive breakpoints */
-  @media (max-width: 1024px) {
+  @media (max-width: 968px) {
     .archive-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 1.5rem;
     }
   }
 
   @media (max-width: 768px) {
-    .archive-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-    }
-    
     .archive-title {
       font-size: 2.25rem;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .archive-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1.5rem;
     }
   }
