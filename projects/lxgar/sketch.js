@@ -28,7 +28,7 @@ function preload() {
   img4 = loadImage("imagenes/ima4.png");
   img5 = loadImage("imagenes/ima5.png");
   img6 = loadImage("imagenes/ima6.png");
-  img8 = loadImage("per2.png");
+  img8 = loadImage("per2.webp");
   ruido = loadSound("ruido.mp3");
   golpe = loadSound("golpe.mp3");
 

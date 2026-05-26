@@ -7,10 +7,10 @@ let music = [];
 let inicio = 1;
 
 function preload() {
-  img[0] = loadImage("infancia.jpg");
-  img[1] = loadImage("adol.jpg");
-  img[2] = loadImage("adulto.jpg");
-  img[3] = loadImage("vejez.jpg");
+  img[0] = loadImage("infancia.webp");
+  img[1] = loadImage("adol.webp");
+  img[2] = loadImage("adulto.webp");
+  img[3] = loadImage("vejez.webp");
 
   music[0] = loadSound("inf_1.mp3");
   music[1] = loadSound("adol_2.mp3");

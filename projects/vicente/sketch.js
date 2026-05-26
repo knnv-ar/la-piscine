@@ -9,11 +9,11 @@ let cuadro;
 let cancion
 
 function preload() {
-  maceta = loadImage("maceta.jpg");
-  centro = loadImage("centro.jpg");
-  petalo = loadImage("petalo.jpg");
-  tallo = loadImage("tallo.jpg");
-  cuadro = loadImage("cuadro.jpg");
+  maceta = loadImage("maceta.webp");
+  centro = loadImage("centro.webp");
+  petalo = loadImage("petalo.webp");
+  tallo = loadImage("tallo.webp");
+  cuadro = loadImage("cuadro.webp");
   cancion = loadSound("audio_girasol.mp3");
 }
 

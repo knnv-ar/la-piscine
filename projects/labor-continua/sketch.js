@@ -31,22 +31,22 @@
 
 function preload() {
   //HABITACIÓN
-  carton = loadImage("carton.jpg");
+  carton = loadImage("carton.webp");
   //OBJETOS
-  lamp = loadImage("lampara.png");
-  ventana = loadImage("ventana.png");
-  cortina = loadImage("cortinas.png");
-  cama = loadImage("cama.png");
-  textcama = loadImage("textcama.jpg");
-  poster = loadImage("poster.png");
-  enchufe = loadImage("enchufe.png");
-  pizarra = loadImage("pizarra.png");
-  velador = loadImage("velador.png");
-  portalapiz = loadImage("portalapiz.png");
+  lamp = loadImage("lampara.webp");
+  ventana = loadImage("ventana.webp");
+  cortina = loadImage("cortinas.webp");
+  cama = loadImage("cama.webp");
+  textcama = loadImage("textcama.webp");
+  poster = loadImage("poster.webp");
+  enchufe = loadImage("enchufe.webp");
+  pizarra = loadImage("pizarra.webp");
+  velador = loadImage("velador.webp");
+  portalapiz = loadImage("portalapiz.webp");
   //PERSONAJE
-  pjParado = loadImage("pjp.png");
+  pjParado = loadImage("pjp.webp");
   pjCaminando = loadImage("pjwalk.gif");
-  pjSentado1 = loadImage("pjsit.png");
+  pjSentado1 = loadImage("pjsit.webp");
   pjSentado2 = loadImage("laburando.gif");
 }
 

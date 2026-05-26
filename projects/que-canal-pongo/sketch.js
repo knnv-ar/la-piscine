@@ -15,18 +15,18 @@ let sound;
 
 function preload() {
   sound = loadSound("sound.mp3");
-  textureImg = loadImage("telep5js.jpg");
-  textureImgConfusion = loadImage("confusion.jpg");
-  textureCenterConfusion = loadImage ("confusion.png");
-  cabeza = loadImage ("cabeza.jpg");
-  randon = loadImage ("random1.jpg");
-  tentaculo = loadImage ("tentaculo.jpg");
-  arte1 = loadImage ("arte1.png");
-  arte2 = loadImage ("arte2.png");
-  arte3 = loadImage ("arte3.png");
-  arte4 = loadImage ("arte4.png");
-  arte5 = loadImage ("arte5.png");
-  arte6 = loadImage ("arte6.png");
+  textureImg = loadImage("telep5js.webp");
+  textureImgConfusion = loadImage("confusion.webp");
+  textureCenterConfusion = loadImage ("confusion-1.webp");
+  cabeza = loadImage ("cabeza.webp");
+  randon = loadImage ("random1.webp");
+  tentaculo = loadImage ("tentaculo.webp");
+  arte1 = loadImage ("arte1.webp");
+  arte2 = loadImage ("arte2.webp");
+  arte3 = loadImage ("arte3.webp");
+  arte4 = loadImage ("arte4.webp");
+  arte5 = loadImage ("arte5.webp");
+  arte6 = loadImage ("arte6.webp");
   fuente = loadFont("Permanent.ttf");
 }
 

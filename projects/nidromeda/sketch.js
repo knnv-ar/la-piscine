@@ -17,10 +17,10 @@ function preload() {
 
   img = loadImage("./mumii.jpg");
   img3 = loadImage('./tini.jpg');
-  img4 = loadImage("./floo.jpg");
-  img5 = loadImage ("./azuul.jpg");
-  img6 = loadImage('./ventii.jpg');
-  img7 = loadImage('./gritoo.jpg');
+  img4 = loadImage("./floo.webp");
+  img5 = loadImage ("./azuul.webp");
+  img6 = loadImage('./ventii.webp');
+  img7 = loadImage('./gritoo.webp');
   img8 = loadImage('./finn.jpg');
   
 

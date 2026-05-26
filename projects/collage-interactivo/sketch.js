@@ -8,15 +8,15 @@ var x = 0;
 
 function preload(){
   
-  img = loadImage ('el-grito.png');
+  img = loadImage ('el-grito.webp');
 
-  img2 = loadImage ('munch.jpg');
+  img2 = loadImage ('munch.webp');
   
-  img3 = loadImage ('atardecer-en-el-paseo.jpg');
+  img3 = loadImage ('atardecer-en-el-paseo.webp');
 
-  img4 = loadImage ('august.jpeg');
+  img4 = loadImage ('august.webp');
   
-  img5 = loadImage('anxiety.jpg');
+  img5 = loadImage('anxiety.webp');
   
 }
 

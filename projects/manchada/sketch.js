@@ -9,7 +9,7 @@ var minimo = 1
 var maximo = 600;
 
 function preload() {
-  foto = loadImage("maria-2.jpg");
+  foto = loadImage("maria-2.webp");
 }
 
 function setup() {

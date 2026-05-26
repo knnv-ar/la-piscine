@@ -6,11 +6,11 @@ let clic;
 let fin;
 
 function preload() {
-  imageH = loadImage('humanos.png');
-  imaR = loadImage('humano.r.png');
-  inter = loadImage('inter.png');
-  clic = loadImage('clic.png');
-  fin = loadImage('fin.png');
+  imageH = loadImage('humanos.webp');
+  imaR = loadImage('humanor.webp');
+  inter = loadImage('inter.webp');
+  clic = loadImage('clic.webp');
+  fin = loadImage('fin.webp');
 }
 
 function setup() {

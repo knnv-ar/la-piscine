@@ -9,9 +9,9 @@ let time = 0;
 let gota = 0;
 
 function preload() {
-  img = loadImage("amarillo.jpg");
+  img = loadImage("amarillo.webp");
   ambiente = loadSound("sonidoplaya.mp3");
-  tiempo = loadImage("rojo1.jpg");
+  tiempo = loadImage("rojo1.webp");
   pink = loadSound("pink.mp3");
   gif = loadImage("tiempo1.gif");
   gif2 = loadImage("tiempo2.gif");

@@ -22,22 +22,22 @@ var img2= [];
 var info;
 var intro;
 function preload(){
-img[0] = loadImage ("kiosco.jpg");
-  img[1]= loadImage ("g-c.jpg");
-  img[2]= loadImage("s-j.jpg");
-  img[3]= loadImage ("v-p.jpg");
-img2[0]= loadImage("f-e.png");
-  img2[1]= loadImage ("s-b.png");
-  info= loadImage ("info.jpg");
-  intro = loadImage ("intro.jpg");
-  inst= loadImage("inst.jpg")
+img[0] = loadImage ("kiosco.webp");
+  img[1]= loadImage ("g-c.webp");
+  img[2]= loadImage("s-j.webp");
+  img[3]= loadImage ("v-p.webp");
+img2[0]= loadImage("f-e.webp");
+  img2[1]= loadImage ("s-b.webp");
+  info= loadImage ("info.webp");
+  intro = loadImage ("intro.webp");
+  inst= loadImage("inst.webp")
   Cumbia= loadSound("cumbia.mp3");
   Dolor= loadSound("dolor.mp3");
   Risa= loadSound("risa.mp3");
-  boleta=  loadImage ("boleta.png");
+  boleta=  loadImage ("boleta.webp");
   manifestacion= loadSound("manifestacion.mp3");
-  go1= loadImage("go1.jpg");
-  go2= loadImage ("go2.jpg");
+  go1= loadImage("go1.webp");
+  go2= loadImage ("go2.webp");
 }
 
 function juego(){var xp = desplazamiento + sin(angulo) * escalar;

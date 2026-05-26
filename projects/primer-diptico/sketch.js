@@ -5,7 +5,7 @@ var maximo = 20;
 
 
 function preload() {
-  img1 = loadImage("home-ohii.jpg");
+  img1 = loadImage("home-ohii.webp");
 }
 
 function setup() {

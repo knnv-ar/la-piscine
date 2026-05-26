@@ -11,13 +11,13 @@ let flors = [];
 let florNum = 10;
 
 function preload() {
-skyImg = loadImage('sky.jpg');
+skyImg = loadImage('sky.webp');
 }
 
 function setup() {
   let canvas = createCanvas(400, 400);
   canvas.parent('div-sketch');
-  florImg = loadImage('flor.png');
+  florImg = loadImage('flor.webp');
   angleMode(DEGREES);
   for (let i = 0; i < florNum; i++) {
     flors.push(new flor(random(width), random(height)));

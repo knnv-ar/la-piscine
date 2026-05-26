@@ -14,7 +14,7 @@ function preload() {
   ruido = loadSound("cuarto.mp3");
   tacos = loadSound("tacos.mp3");
   muniecas = loadSound("muniecas.mp3")
-  txt= loadImage("texto.jpeg");
+  txt= loadImage("texto.webp");
 }
 
 function setup() {

@@ -4,7 +4,7 @@ let audio1, audio2;
 let seguirMouse = false;
 
 function preload() {
-  fondo = loadImage("galaxy.jfif"); 
+  fondo = loadImage("galaxy.webp"); 
   audio1 = loadSound("Espacio.mp3");
   audio2 = loadSound("Brillitos.mp3");
 }

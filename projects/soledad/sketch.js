@@ -18,15 +18,15 @@ function preload() {
   musica3 = loadSound("musica3.mp3");
   musica4 = loadSound("musica4.mp3");
   musica5 = loadSound("musica5.mp3");
-  fondo = loadImage("fondo.png");
-  fondo1 = loadImage("fondo.png");
-  fondo2 = loadImage("fondo2.jpg");
-  fondo3 = loadImage("fondo3.jpg");
-  fondo4 = loadImage("fondo4.jpg");
-  fondo5 = loadImage("fondo5.png");
-  fondo6 = loadImage("fondo6.jpg");
-  fondo7 = loadImage("fondo7.jpg");
-  fondo8 = loadImage("fondo8.jpg");
+  fondo = loadImage("fondo.webp");
+  fondo1 = loadImage("fondo.webp");
+  fondo2 = loadImage("fondo2.webp");
+  fondo3 = loadImage("fondo3.webp");
+  fondo4 = loadImage("fondo4.webp");
+  fondo5 = loadImage("fondo5.webp");
+  fondo6 = loadImage("fondo6.webp");
+  fondo7 = loadImage("fondo7.webp");
+  fondo8 = loadImage("fondo8.webp");
 }
 
 function setup() {

@@ -5,7 +5,7 @@ var img
 
 function preload() {
   musica = loadSound("musicamay.mp3");
-  img = loadImage("plaquetas.jpg");
+  img = loadImage("plaquetas.webp");
 }
 
 function setup() {

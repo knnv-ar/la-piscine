@@ -8,7 +8,7 @@ var bina = [30, 30, 30, 255]; //array para comparacion
 var bonano = [150, 150, 150, 255]; //array para comparacion
 
 function preload() {
-  img = loadImage("nees.jpg"); //carga de la imagen
+  img = loadImage("nees.webp"); //carga de la imagen
 }
 
 function setup() {

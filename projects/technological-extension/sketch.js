@@ -16,14 +16,14 @@ let textVisible = true;
 
 function preload() {
   video = createVideo("redes-sociales.mp4");
-  eye = loadImage("eye.jpg");
-  fondo = loadImage("fondo.png");
-  text1 = loadImage("text1.jpg");
-  text2 = loadImage("text2.jpg");
-  text3 = loadImage("text3.png");
-  text4 = loadImage("text4.png");
-  text5 = loadImage("text5.png");
-  text6 = loadImage("internet.png");
+  eye = loadImage("eye.webp");
+  fondo = loadImage("fondo.webp");
+  text1 = loadImage("text1.webp");
+  text2 = loadImage("text2.webp");
+  text3 = loadImage("text3.webp");
+  text4 = loadImage("text4.webp");
+  text5 = loadImage("text5.webp");
+  text6 = loadImage("internet.webp");
   
   texto = loadFont('RubikMonoOne-Regular.ttf')
 }

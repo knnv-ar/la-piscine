@@ -9,8 +9,8 @@ var img, img1;
 var cancion, cancion2;
 
 function preload() {
-  img = loadImage("ben1.jpg");
-  img1 = loadImage("ben2.jpg");
+  img = loadImage("ben1.webp");
+  img1 = loadImage("ben2.webp");
   cancion = loadSound("dataikeda.mp3");
   cancion2 = loadSound("tvson.mp3");
 }

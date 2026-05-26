@@ -5,9 +5,9 @@ var fft;
 var sonido;
 
 function preload(){
-  img=loadImage("fondo.jpg");
-  grilla=loadImage("grilla1.png");
-  cielo=loadImage("cielo.jpg");
+  img=loadImage("fondo.webp");
+  grilla=loadImage("grilla1.webp");
+  cielo=loadImage("cielo.webp");
   sonido=loadSound("phantom.mp3");  
 }
 

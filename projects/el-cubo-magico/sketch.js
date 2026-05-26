@@ -14,13 +14,13 @@ var i;
 let luzX = 0;
 let luzY = 0;
 function preload() {
-   paredes = loadImage("cuadro1.jpg");
-  paredes1 = loadImage("cuadro2.jpg");
+   paredes = loadImage("cuadro1.webp");
+  paredes1 = loadImage("cuadro2.webp");
   pisos = loadImage("piso.webp");
-  fondo = loadImage("fondo.jpg");
-  img1 = loadImage("psicodelico1.png");
-  cuadro = loadImage("marconeon.png");
-  img2 = loadImage("psicodelico2.jpeg");
+  fondo = loadImage("fondo.webp");
+  img1 = loadImage("psicodelico1.webp");
+  cuadro = loadImage("marconeon.webp");
+  img2 = loadImage("psicodelico2.webp");
  musica = loadSound("musica1.mp3");
 musica2 =loadSound("musica2.mp3");
 

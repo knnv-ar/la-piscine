@@ -38,8 +38,8 @@ function preload() {
     ropa[n] = loadImage("ropa/ropa" + n + ".jpg");
   }
 
-  suelo = loadImage("escenario8.jpg");
-  tras = loadImage("escenario9-1.jpg");
+  suelo = loadImage("escenario8.webp");
+  tras = loadImage("escenario9-1.webp");
   cancion = loadSound("musica/cancion1.mp3");
   cancion2 = loadSound("musica/cancion2.mp3");
   cancion3 = loadSound("musica/cancion3.mp3");

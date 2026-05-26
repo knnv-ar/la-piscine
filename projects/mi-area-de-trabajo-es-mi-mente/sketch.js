@@ -16,7 +16,7 @@ function preload() {
   video = createVideo("video.mp4");
   audio = loadSound("INTRO.mp3");
   img1 = loadImage("img1/cabeza.png");
-  img2 = loadImage("cuerpo.png");
+  img2 = loadImage("cuerpo.webp");
 }
 
 function setup() {

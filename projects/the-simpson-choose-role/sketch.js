@@ -74,45 +74,45 @@ function setup() {
 function preload() {
   t = loadImage("estrellas.gif");
   tr = loadImage("estrella1.gif");
-  mjt = loadImage("lisa.png");
-  ht = loadImage("h.png");
-  ah = loadImage("barthp.png");
-  am = loadImage("lisaart.png");
-  ojo = loadImage("ojo.png");
-  ojo2 = loadImage("ojo-c.png");
-  edificio = loadImage("paisaje.png");
-  puerta = loadImage("puerta.jpeg");
-  graf = loadImage("graff.jpeg");
-  graf1 = loadImage("graff2.png");
-  ojoro = loadImage("ojo-ro.png");
+  mjt = loadImage("lisa.webp");
+  ht = loadImage("h.webp");
+  ah = loadImage("barthp.webp");
+  am = loadImage("lisaart.webp");
+  ojo = loadImage("ojo.webp");
+  ojo2 = loadImage("ojo-c.webp");
+  edificio = loadImage("paisaje.webp");
+  puerta = loadImage("puerta.webp");
+  graf = loadImage("graff.webp");
+  graf1 = loadImage("graff2.webp");
+  ojoro = loadImage("ojo-ro.webp");
 
-  fon = loadImage("2.jpg");
-  ojor = loadImage("ojor.png");
+  fon = loadImage("2.webp");
+  ojor = loadImage("ojor.webp");
 
-  p = loadImage("play.png");
-  n = loadImage("sp.jpg");
-  ali = loadImage("al.png");
-  per = loadImage("per.png");
-  d = loadImage("d-e-n-t-r-o.jpg");
-  ar = loadImage("armario.png");
-  mu1 = loadImage("lisai.png");
-  ho = loadImage("barthi.png");
-  c = loadImage("cc.png");
-  fn = loadImage("fn.jpg");
+  p = loadImage("play.webp");
+  n = loadImage("sp.webp");
+  ali = loadImage("al.webp");
+  per = loadImage("per.webp");
+  d = loadImage("d-e-n-t-r-o.webp");
+  ar = loadImage("armario.webp");
+  mu1 = loadImage("lisai.webp");
+  ho = loadImage("barthi.webp");
+  c = loadImage("cc.webp");
+  fn = loadImage("fn.webp");
 
-  alc = loadImage("sali.png");
-  ter = loadImage("traje1.png");
-  tern = loadImage("traje2.png");
-  ternm = loadImage("lisa.png");
-  piz = loadImage("e-s-c-o-g-e.jpg");
-  cua = loadImage("cua.png");
-  art = loadImage("barthp.png");
-  artm = loadImage("lisaart.png");
+  alc = loadImage("sali.webp");
+  ter = loadImage("traje1.webp");
+  tern = loadImage("traje2.webp");
+  ternm = loadImage("lisa.webp");
+  piz = loadImage("e-s-c-o-g-e.webp");
+  cua = loadImage("cua.webp");
+  art = loadImage("barthp.webp");
+  artm = loadImage("lisaart.webp");
   g = loadImage("fin.gif");
   m = loadSound("musica.mp3");
-  mu = loadImage("musica1.png");
+  mu = loadImage("musica1.webp");
 
-  hym = loadImage("hym.jpg");
+  hym = loadImage("hym.webp");
 }
 function draw() {
   m.setVolume(0.1);

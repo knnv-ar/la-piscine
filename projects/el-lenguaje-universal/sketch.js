@@ -16,7 +16,7 @@ var img6;
 function preload() {
   img = loadImage ("tierra.gif");
   img1 = loadImage ("notas-musicales.gif")
-  img2 = loadImage ("radio.jpg");
+  img2 = loadImage ("radio.webp");
   img3= loadImage ("ondas.gif")
   img4= loadImage("notas-musicales.gif")
   img5= loadImage("tierra.gif")

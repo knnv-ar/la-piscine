@@ -9,12 +9,12 @@ var cancion;
 
 
 function preload() {
- img1 = loadImage("foto1.jpg");
- img2 = loadImage("foto2.jpg");
- img3 = loadImage("foto6.jpg");
- img4 = loadImage("foto5.jpg");
- img5 = loadImage("foto8.jpg");
- img6 = loadImage("foto7.jpg");
+ img1 = loadImage("foto1.webp");
+ img2 = loadImage("foto2.webp");
+ img3 = loadImage("foto6.webp");
+ img4 = loadImage("foto5.webp");
+ img5 = loadImage("foto8.webp");
+ img6 = loadImage("foto7.webp");
   
  cancion = loadSound("viento.mp3"); 
 }

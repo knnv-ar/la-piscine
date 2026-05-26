@@ -7,10 +7,10 @@ let songs = [];
 let currentSongIndex = 0; 
 
 function preload() {
-  fondo = loadImage("vault-tres.png");
-  moth = loadImage("skykid.png");
-  mantita = loadImage("manta.png");
-  jellyImages = [loadImage("jelly.png"), loadImage("jelly.png")];
+  fondo = loadImage("vault-tres.webp");
+  moth = loadImage("skykid.webp");
+  mantita = loadImage("manta.webp");
+  jellyImages = [loadImage("jelly.webp"), loadImage("jelly.webp")];
 
   
   songs.push(loadSound("tranquility.mp3"));

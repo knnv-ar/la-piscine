@@ -30,7 +30,7 @@ let sint2;
 let tenido;
 
 function preload() {
-  galaxiaFondo = loadImage("galaxiaFondo.jpg");
+  galaxiaFondo = loadImage("galaxiafondo.webp");
 
   pizz = loadSound("sounds/E_pizz.mp3");
   e_piano = loadSound("sounds/E_piano.mp3");

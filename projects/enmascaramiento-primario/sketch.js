@@ -8,7 +8,7 @@ let contador = 0;
 
 //cargar imagen y sonido
 function preload() {
-  mascara = loadImage("rr.png");
+  mascara = loadImage("rr.webp");
   sonido = loadSound("white.mp3");
 }
 

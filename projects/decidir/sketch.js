@@ -24,9 +24,9 @@ function preload() {
   heartbeat = loadSound("heartbeat.mp3");
   song = loadSound("audio.mp3");
   song2 = loadSound("audio2.mp3");
-  img1 = loadImage("img2.png");
-  img2 = loadImage("img3.png");
-  img3 = loadImage("t.png");
+  img1 = loadImage("img2.webp");
+  img2 = loadImage("img3.webp");
+  img3 = loadImage("t.webp");
 }
 
 function setup() {

@@ -19,7 +19,7 @@ let puntosSangre = {
 };
 
 function preload() {
-  kitty = loadImage('kitty.png');
+  kitty = loadImage('kitty.webp');
   musica = loadSound('musica.mp3');
 }
 

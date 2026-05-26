@@ -7,7 +7,7 @@ let modoActual = 0; // 0 = palabras, 1 = nombres
 let funcionesDibujo = [dibujarTandaDePalabras, dibujarTandaDeNombres];
 
 function preload() {
-    img0 = loadImage("juanito-laguna1.png");
+    img0 = loadImage("juanito-laguna1.webp");
 }
 
 function setup() {

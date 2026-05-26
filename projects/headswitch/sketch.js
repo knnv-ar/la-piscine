@@ -10,7 +10,7 @@ let sonido;
 function preload() {
   imgOff = loadImage("noface.gif");
   imgOn = loadImage("face.gif");
-  imgCadena = loadImage("cadena.png");
+  imgCadena = loadImage("cadena.webp");
   modelo = loadModel("face3d.obj", true);
   modeloCadena = loadModel("cadena.obj", true);
   sonido = loadSound("lamp.mp3");

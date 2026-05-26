@@ -36,8 +36,8 @@ function preload() {
   img6 = loadImage("montanas-fr/6.png");
   img7 = loadImage("montanas-fr/7.png");
   img8 = loadImage("montanas-fr/8.png");
-  img9 = loadImage("sol.png");
-  img10 = loadImage("luna.jpg");
+  img9 = loadImage("sol.webp");
+  img10 = loadImage("luna.webp");
 }
 
 function draw() {

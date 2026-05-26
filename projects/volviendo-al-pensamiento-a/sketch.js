@@ -7,7 +7,7 @@ let img1;
 let seleccion;
 
 function preload() {
-  img1 = loadImage("en-torno-al-pensamiento-a.jpg");
+  img1 = loadImage("en-torno-al-pensamiento-a.webp");
 }
 
 function setup() {

@@ -8,7 +8,7 @@ let frameCounter = 0;
 let currentArray = 0; 
 
 function preload() {
-  imagen = loadImage("persona.jpg");
+  imagen = loadImage("persona.webp");
 }
 
 function setup() {

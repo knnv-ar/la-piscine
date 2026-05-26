@@ -8,8 +8,8 @@ var fondo;
 var calle;
 function preload() {
   img = loadImage("rueda.gif");
-  fondo = loadImage("fondo.jpg");
-  calle = loadImage("calle.jpg");
+  fondo = loadImage("fondo.webp");
+  calle = loadImage("calle.webp");
   musiquita = loadSound("tp2am1.mp3");
 }
 function setup() {
