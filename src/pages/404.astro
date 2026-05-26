@@ -1,0 +1,522 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../utils/translations';
+
+const tEs = useTranslations('es');
+const tEn = useTranslations('en');
+const base = '/la-piscine';
+---
+
+<BaseLayout title={tEs('404.title')} description={tEs('404.message')}>
+  <div class="pool-404-container" data-lang="es">
+    <!-- Animated Aquatic/Pool Background Effects -->
+    <div class="pool-bg-effects">
+      <div class="pool-glow-1"></div>
+      <div class="pool-glow-2"></div>
+      <div class="pool-ripples"></div>
+      
+      <!-- Floating bubbles for water ambiance -->
+      <div class="bubble bubble-1"></div>
+      <div class="bubble bubble-2"></div>
+      <div class="bubble bubble-3"></div>
+      <div class="bubble bubble-4"></div>
+      <div class="bubble bubble-5"></div>
+    </div>
+
+    <!-- Main Glassmorphic Error Card -->
+    <div class="error-card glass-panel fade-in-card">
+      <div class="card-wave-bar"></div>
+      
+      <h1 class="error-heading" aria-label="404">
+        {tEs('404.heading')}
+      </h1>
+      
+      <h2 class="error-subtitle">
+        <span class="lang-es">{tEs('404.subheading')}</span>
+        <span class="lang-en">{tEn('404.subheading')}</span>
+      </h2>
+      
+      <p class="error-text">
+        <span class="lang-es">{tEs('404.message')}</span>
+        <span class="lang-en">{tEn('404.message')}</span>
+      </p>
+      
+      <a href={`${base}/`} class="back-home-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span class="lang-es">{tEs('404.cta')}</span>
+        <span class="lang-en">{tEn('404.cta')}</span>
+      </a>
+
+      <!-- Smart Suggestions Section -->
+      <div class="suggested-section">
+        <span class="suggested-title">
+          <span class="lang-es">{tEs('404.suggest')}</span>
+          <span class="lang-en">{tEn('404.suggest')}</span>
+        </span>
+        <div class="suggested-links">
+          <a href={`${base}/archivo/`} class="suggested-link glass-panel">
+            <span class="lang-es">{tEs('nav.archive')}</span>
+            <span class="lang-en">{tEn('nav.archive')}</span>
+          </a>
+          <a href={`${base}/acerca-de/`} class="suggested-link glass-panel">
+            <span class="lang-es">{tEs('nav.about')}</span>
+            <span class="lang-en">{tEn('nav.about')}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  // Bilingual dynamic handler for 404 static hosting
+  document.addEventListener('DOMContentLoaded', () => {
+    const clientTranslations = {
+      es: {
+        title: '404: Fuera de la-piscine | <la-piscine> galería de arte',
+        metaDesc: 'La página o la obra que buscas no existe o ha sido trasladada a otro rincón de la piscina.',
+        navArchive: 'Archivo',
+        navAbout: 'Acerca de',
+        headerLangCode: 'EN',
+        headerLangLabel: 'English Version',
+        footerDesc: 'Espacio expositivo de arte digital contemporáneo de la cátedra Lacabanne (UNA)',
+        footerChair: 'Artes Multimediales, cátedra Lacabanne | Universidad Nacional de las Artes',
+        footerRss: ' Suscribirse a través de RSS'
+      },
+      en: {
+        title: '404: Out of la-piscine | <la-piscine> art gallery',
+        metaDesc: 'The page or artwork you are looking for does not exist or has been moved to another corner of the pool.',
+        navArchive: 'Archive',
+        navAbout: 'About',
+        headerLangCode: 'ES',
+        headerLangLabel: 'Versión en Español',
+        footerDesc: 'Contemporary digital art exhibition space by the Lacabanne chair (UNA)',
+        footerChair: 'Multimedia Arts, Lacabanne chair | Universidad Nacional de las Artes',
+        footerRss: ' Subscribe via RSS'
+      }
+    };
+
+    function applyLocale(locale) {
+      // Toggle CSS visibility
+      const container = document.querySelector('.pool-404-container');
+      if (container) {
+        container.setAttribute('data-lang', locale);
+      }
+
+      const dict = clientTranslations[locale];
+
+      // Update Page Title and Meta Description
+      document.title = dict.title;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', dict.metaDesc);
+      }
+
+      // Update Header Navigation links
+      const archiveLinks = document.querySelectorAll('a[href*="/archivo/"]');
+      archiveLinks.forEach(el => {
+        if (el.closest('.site-header') || el.closest('.site-footer')) {
+          el.textContent = dict.navArchive;
+        }
+      });
+
+      const aboutLinks = document.querySelectorAll('a[href*="/acerca-de/"]');
+      aboutLinks.forEach(el => {
+        if (el.closest('.site-header') || el.closest('.site-footer')) {
+          el.textContent = dict.navAbout;
+        }
+      });
+
+      // Update Header Language Switcher
+      const langSwitch = document.querySelector('.lang-switch');
+      if (langSwitch) {
+        langSwitch.setAttribute('title', dict.headerLangLabel);
+        const langCodeEl = langSwitch.querySelector('.lang-code');
+        if (langCodeEl) {
+          langCodeEl.textContent = dict.headerLangCode;
+        }
+      }
+
+      // Update Page CTA and Suggested Links relative destinations
+      const ctaBtn = document.querySelector('.back-home-btn');
+      if (ctaBtn) {
+        ctaBtn.setAttribute('href', locale === 'en' ? '/la-piscine/en/' : '/la-piscine/');
+      }
+
+      const archiveBtn = document.querySelector('.suggested-link[href*="/archivo/"]');
+      if (archiveBtn) {
+        archiveBtn.setAttribute('href', locale === 'en' ? '/la-piscine/en/archivo/' : '/la-piscine/archivo/');
+      }
+
+      const aboutBtn = document.querySelector('.suggested-link[href*="/acerca-de/"]');
+      if (aboutBtn) {
+        aboutBtn.setAttribute('href', locale === 'en' ? '/la-piscine/en/acerca-de/' : '/la-piscine/acerca-de/');
+      }
+
+      // Update Footer Description & Subtitle
+      const footerDesc = document.querySelector('.footer-description');
+      if (footerDesc) footerDesc.textContent = dict.footerDesc;
+
+      const footerChair = document.querySelector('.footer-chair');
+      if (footerChair) footerChair.textContent = dict.footerChair;
+
+      const rssLink = document.querySelector('.rss-link');
+      if (rssLink) {
+        const svgHtml = rssLink.querySelector('svg')?.outerHTML || '';
+        rssLink.innerHTML = svgHtml + dict.footerRss;
+      }
+    }
+
+    // Auto-detect locale from the URL route
+    const currentPath = window.location.pathname;
+    const isEnglishRoute = currentPath.includes('/la-piscine/en/') || currentPath.includes('/en/');
+    const initialLocale = isEnglishRoute ? 'en' : 'es';
+    
+    // Apply detected locale
+    applyLocale(initialLocale);
+
+    // Intercept Header Language Switcher click to prevent loading broken pages and toggle dynamically
+    const langSwitch = document.querySelector('.lang-switch');
+    if (langSwitch) {
+      langSwitch.addEventListener('click', (e) => {
+        e.preventDefault();
+        const currentContainer = document.querySelector('.pool-404-container');
+        if (currentContainer) {
+          const currentLang = currentContainer.getAttribute('data-lang') || 'es';
+          const nextLang = currentLang === 'es' ? 'en' : 'es';
+          applyLocale(nextLang);
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Immersive Deep Pool 404 Container */
+  .pool-404-container {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 1.5rem;
+    overflow: hidden;
+    background: radial-gradient(135deg, rgba(8, 12, 21, 0.4) 0%, rgba(5, 8, 14, 0.8) 100%);
+    border-bottom: 1px solid var(--glass-border);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .pool-404-container {
+    background: radial-gradient(135deg, rgba(241, 245, 249, 0.5) 0%, rgba(255, 255, 255, 0.9) 100%);
+  }
+
+  .pool-bg-effects {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  /* Shimmering pool glowing light sources */
+  .pool-glow-1 {
+    position: absolute;
+    top: -50px;
+    left: 15%;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, rgba(6, 182, 212, 0.01) 70%, transparent 100%);
+    filter: blur(80px);
+    border-radius: 50%;
+    animation: float-slow 18s infinite ease-in-out alternate;
+  }
+
+  .pool-glow-2 {
+    position: absolute;
+    bottom: -100px;
+    right: 15%;
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, var(--accent-purple-glow) 0%, rgba(139, 92, 246, 0.01) 70%, transparent 100%);
+    filter: blur(90px);
+    border-radius: 50%;
+    animation: float-slow 22s infinite ease-in-out alternate-reverse;
+  }
+
+  /* Caustic fluid waves simulation */
+  .pool-ripples {
+    position: absolute;
+    inset: 0;
+    opacity: 0.15;
+    background: 
+      radial-gradient(circle at 35% 25%, transparent 40%, rgba(6, 182, 212, 0.25) 42%, transparent 45%),
+      radial-gradient(circle at 75% 65%, transparent 45%, rgba(139, 92, 246, 0.25) 47%, transparent 50%),
+      repeating-linear-gradient(45deg, rgba(6, 182, 212, 0.02) 0px, rgba(6, 182, 212, 0.02) 10px, transparent 10px, transparent 20px),
+      repeating-linear-gradient(-45deg, rgba(139, 92, 246, 0.02) 0px, rgba(139, 92, 246, 0.02) 10px, transparent 10px, transparent 20px);
+    filter: blur(2px);
+    animation: water-waves 25s infinite linear;
+  }
+
+  :global(html[data-theme="light"]) .pool-ripples {
+    opacity: 0.35;
+  }
+
+  /* GPU-Accelerated floats */
+  @keyframes float-slow {
+    0% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(60px, -40px, 0) scale(1.15); }
+    100% { transform: translate3d(-40px, 50px, 0) scale(0.9); }
+  }
+
+  @keyframes water-waves {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px; }
+    100% { background-position: 250px 125px, -125px 250px, 100px 100px, -100px 100px; }
+  }
+
+  /* Animated floating pool bubbles */
+  .bubble {
+    position: absolute;
+    bottom: -80px;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.01) 70%, rgba(6, 182, 212, 0.18) 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(0.5px);
+    box-shadow: inset 0 0 12px rgba(6, 182, 212, 0.08);
+    animation: float-bubble 15s infinite linear;
+    will-change: transform, opacity;
+  }
+
+  :global(html[data-theme="light"]) .bubble {
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.52) 0%, rgba(255, 255, 255, 0.08) 70%, rgba(2, 132, 199, 0.12) 100%);
+  }
+
+  .bubble-1 { width: 36px; height: 36px; left: 12%; animation-duration: 11s; animation-delay: 0s; }
+  .bubble-2 { width: 54px; height: 54px; left: 42%; animation-duration: 17s; animation-delay: 2.5s; }
+  .bubble-3 { width: 28px; height: 28px; left: 72%; animation-duration: 13s; animation-delay: 4.5s; }
+  .bubble-4 { width: 46px; height: 46px; left: 24%; animation-duration: 15s; animation-delay: 6s; }
+  .bubble-5 { width: 32px; height: 32px; left: 88%; animation-duration: 14s; animation-delay: 1.2s; }
+
+  @keyframes float-bubble {
+    0% {
+      transform: translate3d(0, 0, 0) scale(0.8);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translate3d(20px, -110vh, 0) scale(1.15);
+      opacity: 0;
+    }
+  }
+
+  /* Glassmorphic card styling */
+  .error-card {
+    max-width: 580px;
+    width: 100%;
+    padding: 3.5rem 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(12, 18, 30, 0.55);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    overflow: hidden;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .error-card {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.05);
+  }
+
+  .card-wave-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-purple));
+  }
+
+  /* Glowing reflective 404 title */
+  .error-heading {
+    font-size: 8rem;
+    font-weight: 850;
+    line-height: 0.9;
+    margin: 0 0 0.5rem 0;
+    font-family: var(--font-title);
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 70%, var(--accent-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px var(--accent-glow));
+    animation: text-glow 4s infinite alternate ease-in-out;
+  }
+
+  @keyframes text-glow {
+    0% { filter: drop-shadow(0 0 10px var(--accent-glow)); }
+    100% { filter: drop-shadow(0 0 25px rgba(6, 182, 212, 0.45)) drop-shadow(0 0 12px var(--accent-purple-glow)); }
+  }
+
+  .error-subtitle {
+    font-family: var(--font-title);
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .error-text {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 440px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Premium interactive action button */
+  .back-home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.9rem 2.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--accent) 0%, #0891b2 100%);
+    color: var(--bg-primary);
+    box-shadow: 0 4px 20px var(--accent-glow);
+    transition: var(--transition-smooth);
+    margin-top: 0.5rem;
+  }
+
+  .back-home-btn:hover {
+    transform: translate3d(0, -3px, 0);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.45), 0 0 18px var(--accent-glow);
+    filter: brightness(1.1);
+  }
+
+  .btn-icon {
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .back-home-btn:hover .btn-icon {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  /* Smart suggestions grid and layout */
+  .suggested-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1.75rem;
+  }
+
+  html[data-theme="light"] .suggested-section {
+    border-top: 1px solid rgba(15, 23, 42, 0.05);
+  }
+
+  .suggested-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  .suggested-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .suggested-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 0.55rem 1.4rem;
+    border-radius: 25px;
+    background: rgba(12, 18, 30, 0.3);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth);
+  }
+
+  :global(html[data-theme="light"]) .suggested-link {
+    background: rgba(15, 23, 42, 0.02);
+  }
+
+  .suggested-link:hover {
+    color: var(--accent);
+    border-color: var(--glass-border-hover);
+    background: rgba(6, 182, 212, 0.08);
+    box-shadow: 0 4px 15px var(--accent-glow);
+    transform: translate3d(0, -2px, 0);
+  }
+
+  /* Localized CSS toggle classes controlled by script data attribute */
+  .pool-404-container[data-lang="es"] .lang-en { display: none !important; }
+  .pool-404-container[data-lang="es"] .lang-es { display: inline !important; }
+  .pool-404-container[data-lang="en"] .lang-es { display: none !important; }
+  .pool-404-container[data-lang="en"] .lang-en { display: inline !important; }
+
+  /* Fade-in card entrance animation */
+  .fade-in-card {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+    animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  @keyframes fade-in-up {
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Responsive tuning */
+  @media (max-width: 640px) {
+    .pool-404-container {
+      padding: 4rem 1rem;
+    }
+
+    .error-card {
+      padding: 2.5rem 1.75rem;
+    }
+
+    .error-heading {
+      font-size: 6rem;
+    }
+
+    .error-subtitle {
+      font-size: 1.5rem;
+    }
+
+    .suggested-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .suggested-link {
+      width: 100%;
+    }
+  }
+</style>
