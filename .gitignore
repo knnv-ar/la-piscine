@@ -11,3 +11,9 @@ public/projects/
 # OS specific
 .DS_Store
 Thumbs.db
+
+# Agent specific
+.antigravitycli/
+**/ .antigravitycli/
+**/.antigravitycli/
+
