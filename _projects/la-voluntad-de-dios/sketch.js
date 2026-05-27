@@ -15,13 +15,13 @@ var mfrandom = 0;
 var error = 3;
 
 function preload() {
-    fondo = loadImage('img/habitacion.jpg');
-    cuerpo = loadImage('img/cuerpo.png');
-    diarios = loadImage('img/diarios.jpg');
-    inodoro = loadImage('img/inodoro.png');
-    mfarray[0] = loadImage('img/pera.png');
-    mfarray[1] = loadImage('img/manzana.png');
-    mfarray[2] = loadImage('img/naranja.png');
+    fondo = loadImage('img/habitacion.webp');
+    cuerpo = loadImage('img/cuerpo.webp');
+    diarios = loadImage('img/diarios.webp');
+    inodoro = loadImage('img/inodoro.webp');
+    mfarray[0] = loadImage('img/pera.webp');
+    mfarray[1] = loadImage('img/manzana.webp');
+    mfarray[2] = loadImage('img/naranja.webp');
     musica = loadSound('musica.mp3');
   }
 

@@ -5,7 +5,7 @@ function preload() {
   ego = loadImage('modelos/ego.gif')
   sombra = loadImage('modelos/shadow.gif')
   animus = loadImage('modelos/animus.gif')
-  test = loadImage('modelos/yo.png')
+  test = loadImage('modelos/yo.webp')
 }
 
 function setup() {

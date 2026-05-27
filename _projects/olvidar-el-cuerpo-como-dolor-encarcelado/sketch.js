@@ -4,7 +4,7 @@ var button;
 var activaSonido=true;
 
 function preload() {
-  img = loadImage("hola/saekitoshio2.jpg");
+  img = loadImage("hola/saekitoshio2.webp");
   
   cancion = loadSound("holy-ground.mp3");
 

@@ -3,7 +3,7 @@ let gif;
 
 function preload() {
   musica = loadSound("undertale.mp3");
-  gif = loadImage("inter.gif");
+  gif = loadImage("inter.webp");
   
 }
 

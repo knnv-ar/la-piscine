@@ -25,8 +25,8 @@ function preload(){
   for (i=0; i<3; i++){
     pelvis[i]= loadImage('img/pelvis'+ i + '.jpg');
   }
-  tripas= loadImage('img/tripas0.jpg');
-  orgia = loadImage('img/orgiass.gif');
+  tripas= loadImage('img/tripas0.webp');
+  orgia = loadImage('img/orgiass.webp');
 }
 
 function setup() {

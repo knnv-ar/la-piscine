@@ -22,12 +22,12 @@ var x = 70;
 
 function preload() {
 
-  img1 = loadImage("imagenes/ima1.png");
-  img2 = loadImage("imagenes/ima2.png");
-  img3 = loadImage("imagenes/ima3.png");
-  img4 = loadImage("imagenes/ima4.png");
-  img5 = loadImage("imagenes/ima5.png");
-  img6 = loadImage("imagenes/ima6.png");
+  img1 = loadImage("imagenes/ima1.webp");
+  img2 = loadImage("imagenes/ima2.webp");
+  img3 = loadImage("imagenes/ima3.webp");
+  img4 = loadImage("imagenes/ima4.webp");
+  img5 = loadImage("imagenes/ima5.webp");
+  img6 = loadImage("imagenes/ima6.webp");
   img8 = loadImage("per2.webp");
   ruido = loadSound("ruido.mp3");
   golpe = loadSound("golpe.mp3");

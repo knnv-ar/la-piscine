@@ -18,7 +18,7 @@ var anguloRotacion = 150;
 //cargar archivos
 function preload() {
   img = loadImage('marshal.webp');
-  glitch = loadImage('ttv.gif');
+  glitch = loadImage('ttv.webp');
   cara = loadImage('face.webp');
   ambiente = loadSound('ambiente.mp3');
   mar = loadSound('tres.mp3');

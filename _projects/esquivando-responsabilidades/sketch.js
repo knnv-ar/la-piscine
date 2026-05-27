@@ -30,13 +30,13 @@ let sonidoGameOver; // Efecto de sonido que suena al perder.
 
 // BLOQUE 2: PRELOAD
 function preload() {
-  fondo = loadImage("album1/fondo.png"); // Carga del fondo.
-  cara = loadImage("album1/cara.png"); // Carga del personaje principal.
+  fondo = loadImage("album1/fondo.webp"); // Carga del fondo.
+  cara = loadImage("album1/cara.webp"); // Carga del personaje principal.
 
   // Carga de los tres enemigos con los que alterna el juego.
-  elementos[0] = loadImage("album1/elemento.png");
-  elementos[1] = loadImage("album1/elemento2.png");
-  elementos[2] = loadImage("album1/elemento3.png");
+  elementos[0] = loadImage("album1/elemento.webp");
+  elementos[1] = loadImage("album1/elemento2.webp");
+  elementos[2] = loadImage("album1/elemento3.webp");
 
   // Carga de los archivos de sonido.
   musicaFondo = loadSound("album1/skrillex-theme.mp3");

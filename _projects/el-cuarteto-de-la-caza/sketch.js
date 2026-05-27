@@ -16,7 +16,7 @@ function preload() {
 function setup() {
  let canvas= createCanvas(1000, 1000);
   canvas.parent('div-sketch');
-  video = createVideo("MVI_7884.mp4");
+  video = createVideo("mvi-7884.mp4");
   video.size(width, height);
   video.hide();
   video.loop();

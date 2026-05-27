@@ -12,7 +12,7 @@ let voces3;
 let voces4;
 
 function preload() {
-  ruido = loadImage('ruido.gif');
+  ruido = loadImage('ruido.webp');
   blanco = loadSound('audios/blanco.mp3');
   voces1 = loadSound('audios/voces1.mp3');
   voces2 = loadSound('audios/voces2.mp3');

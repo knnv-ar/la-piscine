@@ -23,7 +23,7 @@ function preload() {
     inicio[i] = loadImage("inicio/dados" + i + ".png");
   }
   for (j = 0; j < 8; j++) {
-    escenario[j] = loadImage("escenario/escenario" + j + ".jpg");
+    escenario[j] = loadImage("musica/escenario.mp3" + j + ".jpg");
   }
   for (k = 0; k < 9; k++) {
     instalacion[k] = loadImage("instalacion/instalacion" + k + ".png");

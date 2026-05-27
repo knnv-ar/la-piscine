@@ -14,7 +14,7 @@ var cam_y = 0;
 var cam_z = 0;
 
 function preload() {
-  img = loadImage("img/ojo.png");
+  img = loadImage("img/ojo.webp");
   video = createCapture(VIDEO);
   video.hide();
   sonido = loadSound("sonido/sonido.mp3");

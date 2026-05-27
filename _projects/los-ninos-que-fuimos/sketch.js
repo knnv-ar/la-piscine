@@ -16,7 +16,7 @@ let textos = [
 ];
 
 function preload() {
-  img = loadImage('fondo/pantalla.png');
+  img = loadImage('fondo/pantalla.webp');
   
   // Inicializo las rutas de los videos
   videos = [

@@ -13,7 +13,7 @@ function preload() {
   videos[1] = createVideo("video/noticias.mp4");
   videos[2] = createVideo("video/computadora.mp4");
   videos[3] = createVideo("video/propaganda.mp4");
-  videos[4] = createVideo("video/recuerdo.mp4");
+  videos[4] = createVideo("video/espiral.mp4");
   videos[5] = createVideo("video/plata.mp4");
   videos[6] = createVideo("video/mundo.mp4");
   videos[7] = createVideo("video/error.mp4");

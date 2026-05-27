@@ -9,8 +9,8 @@ let imagen_Mar;
 let b_1;
 function preload() {
   sonido = loadSound("sonido/s_Mar.mp3");
-  imagen_Mar = createVideo("video/cielo_Mar.mp4");
-  b_1 = createVideo("video/b_1.mp4");
+  imagen_Mar = createVideo("video/cielo-mar.mp4");
+  b_1 = createVideo("video/b-1.mp4");
   imagen_Mar.size(220, 349);
   imagen_Mar.hide();
   b_1.size(320, 349);

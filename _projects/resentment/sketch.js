@@ -19,22 +19,22 @@ var img, img2, img3, img4, luna, saturn, lapida1, lapida2, men, men2, lucy, rock
 let angle = 0;
 
 function preload() {
-    song = loadSound("./assets/kissTheGoGoat.mp3");
-    song2 = loadSound("./assets/danceMacabre.mp3");
-    song3 = loadSound("./assets/conClaviConDio.mp3");
-    myFont = loadFont("./assets/greenLondon.ttf");
-    img = loadImage("./assets/fondosfera.png");
-    img2 = loadImage("./assets/saturno.png");
-    img3 = loadImage("./assets/love.png");
-    img4 = loadImage("./assets/dance.png");
-    luna = loadImage("./assets/luna.jpg");
-    saturn = loadImage("./assets/saturn.png");
-    lapida1 = loadImage("./assets/lapida1.png");
-    lapida2 = loadImage("./assets/lapida2.png");
-    men = loadImage("./assets/men.png");
-    men2 = loadImage("./assets/men2.png");
-    lucy = loadImage("./assets/lucy.png");
-    rock = loadImage("./assets/rock.png");
+    song = loadSound("assets/kissTheGoGoat.mp3");
+    song2 = loadSound("assets/danceMacabre.mp3");
+    song3 = loadSound("assets/conClaviConDio.mp3");
+    myFont = loadFont("assets/greenLondon.ttf");
+    img = loadImage("assets/fondosfera.webp");
+    img2 = loadImage("assets/saturno.webp");
+    img3 = loadImage("assets/love.webp");
+    img4 = loadImage("assets/dance.webp");
+    luna = loadImage("assets/luna.webp");
+    saturn = loadImage("assets/saturn.webp");
+    lapida1 = loadImage("assets/lapida1.webp");
+    lapida2 = loadImage("assets/lapida2.webp");
+    men = loadImage("assets/men.webp");
+    men2 = loadImage("assets/men2.webp");
+    lucy = loadImage("assets/lucy.webp");
+    rock = loadImage("assets/rock.webp");
 }
 
 function setup() {

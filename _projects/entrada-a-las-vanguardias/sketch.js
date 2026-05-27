@@ -17,36 +17,36 @@ var img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img
 
 
 function preload() {
-  img = loadImage("1/cubismo.png");
-  img1 = loadImage("1/abstraccionismo.png");
-  img2 = loadImage("1/expresionismo.png");
-  img3 = loadImage("1/futurismo.png");
-  img4 = loadImage("1/impresionismo.png");
-  img5 = loadImage("1/impresionismo/1.jpg");
-  img6 = loadImage("1/impresionismo/2.jpg");
-  img7 = loadImage("1/cubismo/1.jpg");
-  img8 = loadImage("1/cubismo/2.jpg");
-  img9 = loadImage("1/cubismo/3.jpg");
-  img10 = loadImage("1/cubismo/4.jpg");
-  img11 = loadImage("1/cubismo/5.jpg");
-  img12 = loadImage("1/futurismo/1.jpg");
-  img13 = loadImage("1/futurismo/2.jpg");
-  img14 = loadImage("1/expresionismo/1.jpg");
-  img15 = loadImage("1/expresionismo/2.jpg");
-  img16 = loadImage("1/abstraccionismo/1.jpg");
-  img17 = loadImage("1/abstraccionismo/2.jpg");
-  img18 = loadImage("1/abstraccionismo/3.jpg");
-  img19 = loadImage("1/abstraccionismo/4.jpg");
-  img20 = loadImage("1/abstraccionismo/5.jpg");
-  img21 = loadImage("1/fondo.png");
-  img22 = loadImage("1/impresionismo/3.jpg");
-  img23 = loadImage("1/finall1.png");
-  img24 = loadImage("1/fondo1.png");
-  img25 = loadImage("1/cuerdas.png");
-    img26 = loadImage("1/fondofinal.png");
-  img27 = loadImage("1/fondofut.png");
-  img28 = loadImage("1/fondoex.png");
-    img29 = loadImage("1/fondoab.png");
+  img = loadImage("1/cubismo.webp");
+  img1 = loadImage("1/abstraccionismo.webp");
+  img2 = loadImage("1/expresionismo.webp");
+  img3 = loadImage("1/futurismo.webp");
+  img4 = loadImage("1/impresionismo.webp");
+  img5 = loadImage("1/impresionismo/1.webp");
+  img6 = loadImage("1/impresionismo/2.webp");
+  img7 = loadImage("1/cubismo/1.webp");
+  img8 = loadImage("1/cubismo/2.webp");
+  img9 = loadImage("1/cubismo/3.webp");
+  img10 = loadImage("1/cubismo/4.webp");
+  img11 = loadImage("1/cubismo/5.webp");
+  img12 = loadImage("1/futurismo/1.webp");
+  img13 = loadImage("1/futurismo/2.webp");
+  img14 = loadImage("1/expresionismo/1.webp");
+  img15 = loadImage("1/expresionismo/2.webp");
+  img16 = loadImage("1/abstraccionismo/1.webp");
+  img17 = loadImage("1/abstraccionismo/2.webp");
+  img18 = loadImage("1/abstraccionismo/3.webp");
+  img19 = loadImage("1/abstraccionismo/4.webp");
+  img20 = loadImage("1/abstraccionismo/5.webp");
+  img21 = loadImage("1/fondo.webp");
+  img22 = loadImage("1/impresionismo/3.webp");
+  img23 = loadImage("1/finall1.webp");
+  img24 = loadImage("1/fondo1.webp");
+  img25 = loadImage("1/cuerdas.webp");
+    img26 = loadImage("1/fondofinal.webp");
+  img27 = loadImage("1/fondofut.webp");
+  img28 = loadImage("1/fondoex.webp");
+    img29 = loadImage("1/fondoab.webp");
 
 
 

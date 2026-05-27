@@ -6,12 +6,12 @@ var opcion;
 
 
 function preload(){
-  layout =loadImage("media/layout.png");
-  base =loadImage("media/base.png");
-  img1 =loadImage("media/c1.png");
-  img2 =loadImage("media/c2.png");
-  img3 =loadImage("media/c3.png");
-  star =loadImage("media/star.png");
+  layout =loadImage("media/layout.webp");
+  base =loadImage("media/base.webp");
+  img1 =loadImage("media/c1.webp");
+  img2 =loadImage("media/c2.webp");
+  img3 =loadImage("media/c3.webp");
+  star =loadImage("media/star.webp");
 }
 
 function setup() {

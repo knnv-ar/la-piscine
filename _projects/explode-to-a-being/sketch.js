@@ -13,17 +13,17 @@ function setup() {
   posyima2 = height;
 }
 function preload(){
-  ima = loadImage ("imagen/antiglosario1.png");
-  ima11 = loadImage("imagen/antiglosario3.png");
-  ima1 = loadImage("imagen/hombre.png");
-  ima2 = loadImage ("imagen/antiglosario4.png");
-  ima3 = loadImage ("imagen/antiglosario5.png");
-  ima4 = loadImage ("imagen/antiglosario2.png");
-  ima5 = loadImage("imagen/cambio0.png");
-  ima6 = loadImage("imagen/cambio1.png");
-  ima7 = loadImage ("imagen/cambio2.png");
-  ima8 = loadImage ("imagen/cambio3.png");
-  ima9 = loadImage ("imagen/cambio9.jpg")
+  ima = loadImage ("imagen/antiglosario1.webp");
+  ima11 = loadImage("imagen/antiglosario3.webp");
+  ima1 = loadImage("imagen/hombre.webp");
+  ima2 = loadImage ("imagen/antiglosario4.webp");
+  ima3 = loadImage ("imagen/antiglosario5.webp");
+  ima4 = loadImage ("imagen/antiglosario2.webp");
+  ima5 = loadImage("imagen/cambio0.webp");
+  ima6 = loadImage("imagen/cambio1.webp");
+  ima7 = loadImage ("imagen/cambio2.webp");
+  ima8 = loadImage ("imagen/cambio3.webp");
+  ima9 = loadImage ("imagen/cambio9.webp")
   song = loadSound("comfortably.mp3")
 }
 

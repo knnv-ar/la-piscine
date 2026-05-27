@@ -42,13 +42,13 @@ function preload(){
   font=loadFont('PressStart2P-Regular.ttf')
   music=loadSound('beat-marciano-1.mp3')
   music2=loadSound('code.mp3')
-  humo=loadImage('scr/planetas1.gif');
-  humo2=loadImage('scr/fx1.gif');
-  sky=loadImage('scr/sky1.gif')
-  pisovich=loadImage('scr/piso.gif')
+  humo=loadImage('scr/planetas1.webp');
+  humo2=loadImage('scr/fx1.webp');
+  sky=loadImage('scr/sky1.webp')
+  pisovich=loadImage('scr/piso.webp')
   arrancon=loadSound('arranque.mp3')
-  botonE=loadImage('scr/botonE.png')
-  botonA=loadImage('scr/botonA.png')
+  botonE=loadImage('scr/botone.webp')
+  botonA=loadImage('scr/botona.webp')
 }
 
 
@@ -397,20 +397,20 @@ function mousePressed(){
   //en esta cambio el volumen una por otra.
    if(tintOn) {
      arrancon.setVolume(0.15)
-  humo=loadImage('scr/code.png');
-  humo2=loadImage('scr/code.png');
-  sky=loadImage('scr/grilla2d.png')
-  pisovich=loadImage('scr/grilla2d.png')
+  humo=loadImage('scr/code.webp');
+  humo2=loadImage('scr/code.webp');
+  sky=loadImage('scr/grilla2d.webp')
+  pisovich=loadImage('scr/grilla2d.webp')
        music.setVolume(0)
   music2.setVolume(0.3);
     
     tintOn=false;
    }else{
      arrancon.setVolume(0.3)
-       humo=loadImage('scr/planetas1.gif');
-  humo2=loadImage('scr/fx1.gif');
-  sky=loadImage('scr/sky1.gif')
-  pisovich=loadImage('scr/piso.gif')
+       humo=loadImage('scr/planetas1.webp');
+  humo2=loadImage('scr/fx1.webp');
+  sky=loadImage('scr/sky1.webp')
+  pisovich=loadImage('scr/piso.webp')
        music.setVolume(0.6)
   music2.setVolume(0);
      

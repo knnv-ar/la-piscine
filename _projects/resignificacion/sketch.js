@@ -5,15 +5,15 @@ let tS;
 let estado = true;
 
 function preload() {
-  fondo = loadImage("img/estrellas.jpg");
-  texturaUrano = loadImage("img/urano.jpg");
-  texturaMarte = loadImage("img/marte.jpg");
-  texturaJupiter = loadImage("img/jupiter.jpg");
-  texturaSol = loadImage("img/sol.jpg");
-  texturaAdan = loadImage("img/adan.jpg");
-  texturaVenus = loadImage("img/venus.jpg");
-  texturaAnunciacion = loadImage("img/anunciacion.jpg");
-  texturaAtenas = loadImage("img/atenas.jpg");
+  fondo = loadImage("img/estrellas.webp");
+  texturaUrano = loadImage("img/urano.webp");
+  texturaMarte = loadImage("img/marte.webp");
+  texturaJupiter = loadImage("img/jupiter.webp");
+  texturaSol = loadImage("img/sol.webp");
+  texturaAdan = loadImage("img/adan.webp");
+  texturaVenus = loadImage("img/venus.webp");
+  texturaAnunciacion = loadImage("img/anunciacion.webp");
+  texturaAtenas = loadImage("img/atenas.webp");
   sonido = loadSound("audios/sound.mp3");
   sonidoFondo = loadSound("audios/sonidofondo.mp3");
 }

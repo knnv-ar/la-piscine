@@ -25,10 +25,10 @@ var Ancho, Alto;
 
 
 function preload() {
-  img = loadImage("imge/cero.jpg");
-  img1 = loadImage("imge/uno.png");
-  img2 = loadImage("imge/dos.png");
-  img3 = loadImage("imge/tres.png");
+  img = loadImage("imge/cero.webp");
+  img1 = loadImage("imge/uno.webp");
+  img2 = loadImage("imge/dos.webp");
+  img3 = loadImage("imge/tres.webp");
   
   
   
@@ -38,7 +38,7 @@ function preload() {
  function setup() {
   
    
-   img = loadImage("imge/cero.jpg");
+   img = loadImage("imge/cero.webp");
    let canvas = createCanvas(600, 600, WEBGL);
    canvas.parent('div-sketch');
  

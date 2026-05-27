@@ -15,13 +15,13 @@ let song;
 
 function preload() {
   img = 
-    loadImage("img/jardin.jpg");
+    loadImage("img/jardin.webp");
   img1=
-    loadImage("img/persona.png");
+    loadImage("img/persona.webp");
   img2=
-    loadImage("img/tierrafuego.gif");
+    loadImage("img/tierrafuego.webp");
   img3 = 
-    loadImage("img/jardin2.jpg");
+    loadImage("img/jardin2.webp");
   song=loadSound('img/fuego.mp3');
   }
 

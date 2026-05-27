@@ -7,11 +7,11 @@ let espacio = 10;
 let zoom = 600;
 
 function preload() {
-  muerte = loadImage("img/muerte.png");
-  img1 = loadImage("img/img1.png");
-  img2 = loadImage("img/img2.png");
-  img3 = loadImage("img/img3.jpg");
-  img4 = loadImage("img/img4.jpg");
+  muerte = loadImage("img/muerte.webp");
+  img1 = loadImage("img/img1.webp");
+  img2 = loadImage("img/img2.webp");
+  img3 = loadImage("img/img3.webp");
+  img4 = loadImage("img/img4.webp");
   sonido = loadSound("mp3/sonido-limbo.mp3");
   respiracion = loadSound("mp3/respiracion.mp3");
   font = loadFont("font.ttf");

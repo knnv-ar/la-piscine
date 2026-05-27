@@ -14,7 +14,7 @@ let brushactive = false;
 let puntosactive = false;
 
 function preload() {
-  imgmarco = loadImage("imagenes/marco.png");
+  imgmarco = loadImage("imagenes/marco.webp");
 }
 
 function setup() {

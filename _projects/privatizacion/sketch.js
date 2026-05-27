@@ -6,8 +6,8 @@ var minimo = 1;
 var maximo = 5;
 
 function preload() {
-  imgMural = loadImage("img/mural-nicolas-romero.jpg");
-  imgLouvre = loadImage("img/louvre-cambio.jpg");
+  imgMural = loadImage("img/mural-nicolas-romero.webp");
+  imgLouvre = loadImage("img/louvre-cambio.webp");
   sonido = loadSound("musica/rap-yorquesta.mp3");
 }
 

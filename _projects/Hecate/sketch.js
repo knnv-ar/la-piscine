@@ -11,33 +11,33 @@ let pulse = 0;
 function preload() {
 
   img = [
-    loadImage('img/222.jpg'),     // 0 fondo
-    loadImage('img/brujas.png'),  // 1
-    loadImage('img/000.jpg'),     // 2
-    loadImage('img/coppola.png'), // 3
-    loadImage('img/cabra.png'),   // 4
-    loadImage('img/craneo.png'),  // 5
-    loadImage('img/hecate.png'),  // 6
-    loadImage('img/dientes.png'), // 7
-    loadImage('img/luz.png'),     // 8
-    loadImage('img/quema.png'),   // 9
-    loadImage('img/ramas.png'),   // 10
-    loadImage('img/rosario.png'), // 11
-    loadImage('img/women.png'),   // 12
+    loadImage('img/222.webp'),     // 0 fondo
+    loadImage('img/brujas.webp'),  // 1
+    loadImage('img/000.webp'),     // 2
+    loadImage('img/coppola.webp'), // 3
+    loadImage('img/cabra.webp'),   // 4
+    loadImage('img/craneo.webp'),  // 5
+    loadImage('img/hecate.webp'),  // 6
+    loadImage('img/dientes.webp'), // 7
+    loadImage('img/luz.webp'),     // 8
+    loadImage('img/quema.webp'),   // 9
+    loadImage('img/ramas.webp'),   // 10
+    loadImage('img/rosario.webp'), // 11
+    loadImage('img/women.webp'),   // 12
   ];
 
 
   gif = [
-    loadImage('gif/cisne.gif'),   // 0
-    loadImage('gif/flores.gif'),  // 1
-    loadImage('gif/fuego.gif'),   // 2
-    loadImage('gif/labios.gif'),  // 3
-    loadImage('gif/mujer.gif'),   // 4
-    loadImage('gif/velo.gif'),    // 5
-    loadImage('gif/angel.gif'),   // 6
-    loadImage('gif/velo2.gif'),   // 7
-    loadImage('gif/llamas.gif'),  // 8
-    loadImage('gif/niñas.gif'),   // 9
+    loadImage('gif/cisne.webp'),   // 0
+    loadImage('gif/flores.webp'),  // 1
+    loadImage('gif/fuego.webp'),   // 2
+    loadImage('gif/labios.webp'),  // 3
+    loadImage('gif/mujer.webp'),   // 4
+    loadImage('gif/velo.webp'),    // 5
+    loadImage('gif/angel.webp'),   // 6
+    loadImage('gif/velo2.webp'),   // 7
+    loadImage('gif/llamas.webp'),  // 8
+    loadImage('gif/ni-as.webp'),   // 9
   ];
 
   song = loadSound('music/Rhiannon.mp3');

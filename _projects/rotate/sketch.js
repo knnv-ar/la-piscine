@@ -3,8 +3,8 @@ var cantidadEstrellas = 800;
 var estrellasDatos = [];
 
 function preload() {
-   img1 = loadImage("./imagenes/textura.jpg");
-   sonido = loadSound("./musica/rock.m4a");
+   img1 = loadImage("imagenes/textura.webp");
+   sonido = loadSound("musica/rock.m4a");
 }
 
 function setup() {

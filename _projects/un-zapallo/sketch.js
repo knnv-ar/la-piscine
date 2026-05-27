@@ -14,10 +14,10 @@ function setup() {
   
   background(220);
   
-  cielo = loadImage("img/cielo.png");
-  edif = loadImage("img/edif.png");
-  marco = loadImage("img/marco.png");
-  zapallo = loadImage("img/zapallo.png");
+  cielo = loadImage("img/cielo.webp");
+  edif = loadImage("img/edif.webp");
+  marco = loadImage("img/marco.webp");
+  zapallo = loadImage("img/zapallo.webp");
   
   for (let i = 0; i < 13; i++) {
     

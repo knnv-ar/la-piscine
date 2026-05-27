@@ -13,17 +13,17 @@ let img12;
 var cancion;
 
 function preload() {
-  img = loadImage("assets/edificios.jpeg");
-  img2 = loadImage("assets/edificios2.jpeg");
-  img3 = loadImage("assets/edificios3.jpeg");
-  img5 = loadImage("assets/edificios5.jpeg");
-  img5a = loadImage("assets/edificios5a.jpeg");
-  img6 = loadImage("assets/edificios6.jpeg");
-  img7 = loadImage("assets/barrio-1.jpg");
-  img8 = loadImage("assets/barrio-2.jpg");
-  img9 = loadImage("assets/barrio-3.jpg");
-  img10 = loadImage("assets/barrio-4.jpg");
-  img12 = loadImage("assets/edificios9.jpeg.jpg");
+  img = loadImage("assets/edificios.webp");
+  img2 = loadImage("assets/edificios2.webp");
+  img3 = loadImage("assets/edificios3.webp");
+  img5 = loadImage("assets/edificios5.webp");
+  img5a = loadImage("assets/edificios5a.webp");
+  img6 = loadImage("assets/edificios6.webp");
+  img7 = loadImage("assets/barrio-1.webp");
+  img8 = loadImage("assets/barrio-2.webp");
+  img9 = loadImage("assets/barrio-3.webp");
+  img10 = loadImage("assets/barrio-4.webp");
+  img12 = loadImage("assets/edificios9jpeg.webp");
   cancion = loadSound("assets/louuud.m4a");
 }
 

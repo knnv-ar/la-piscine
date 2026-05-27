@@ -13,10 +13,10 @@ function preload() {
   ambiente = loadSound("sonidoplaya.mp3");
   tiempo = loadImage("rojo1.webp");
   pink = loadSound("pink.mp3");
-  gif = loadImage("tiempo1.gif");
-  gif2 = loadImage("tiempo2.gif");
-   time= loadImage("time.gif");
-  gota= loadImage("lagrimas.gif");
+  gif = loadImage("tiempo1.webp");
+  gif2 = loadImage("tiempo2.webp");
+   time= loadImage("time.webp");
+  gota= loadImage("lagrimas.webp");
 }
 
 function setup() {

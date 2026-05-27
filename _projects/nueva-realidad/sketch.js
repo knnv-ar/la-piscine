@@ -1,5 +1,5 @@
 function preload() {
-  img = loadImage("foto/fondo.jpg");
+  img = loadImage("foto/fondo.webp");
   cancion = loadSound("audios/sonido-sahara.mp3");
 }
 function setup() {

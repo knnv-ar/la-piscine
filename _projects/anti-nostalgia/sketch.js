@@ -12,8 +12,8 @@ let calendarioX = 10, calendarioY = 180, calendarioAncho = 170, calendarioAlto =
 //---------------------------------------------------------------------------
 function preload() {
   //imagenes
-  fondo_1 = loadImage("img/fondo-1.png");
-  fondo_2 = loadImage("img/fondo-2.png");
+  fondo_1 = loadImage("img/fondo-1.webp");
+  fondo_2 = loadImage("img/fondo-2.webp");
   //sonidos
   version_1 = loadSound ("version-1.MP3"); 
   version_2 = loadSound ("version-2.MP3"); 

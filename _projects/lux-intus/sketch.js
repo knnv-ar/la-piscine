@@ -3,7 +3,7 @@ var puntero;
 
 function preload() {
   
-  puntero = loadImage ("imagenes/flare.png");
+  puntero = loadImage ("imagenes/flare.webp");
   sonido = loadSound("sound/Spa.mp3");
  
 }

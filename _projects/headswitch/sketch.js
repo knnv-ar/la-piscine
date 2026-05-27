@@ -8,8 +8,8 @@ let bajando = false;
 let sonido;
 
 function preload() {
-  imgOff = loadImage("noface.gif");
-  imgOn = loadImage("face.gif");
+  imgOff = loadImage("noface.webp");
+  imgOn = loadImage("face.webp");
   imgCadena = loadImage("cadena.webp");
   modelo = loadModel("face3d.obj", true);
   modeloCadena = loadModel("cadena.obj", true);

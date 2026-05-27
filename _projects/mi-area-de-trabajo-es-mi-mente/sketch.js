@@ -15,7 +15,7 @@ let audio, reverb, video, dryWet;
 function preload() {
   video = createVideo("video.mp4");
   audio = loadSound("INTRO.mp3");
-  img1 = loadImage("img1/cabeza.png");
+  img1 = loadImage("img1/cabeza.webp");
   img2 = loadImage("cuerpo.webp");
 }
 

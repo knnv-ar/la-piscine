@@ -6,20 +6,20 @@ var texto;
 var sonido;
 
 function preload() {
-  img1 = loadImage("fotos/img0.jpg"); //
-  img2 = loadImage("fotos/foto2.jpg");
+  img1 = loadImage("fotos/img0.webp"); //
+  img2 = loadImage("fotos/foto2.webp");
   img3 =
-    loadImage("fotos/jhoncara.jpg");
+    loadImage("fotos/jhoncara.webp");
   img4 =
-    loadImage("fotos/img4.jpg");
+    loadImage("fotos/img4.webp");
   img5 =
-    loadImage("fotos/img5.jpg");
-  img6 = loadImage("fotos/img6.jpg");
-  img7 = loadImage("fotos/img7.jpg");
-  img8 = loadImage("fotos/img8.jpg");
-  img9 = loadImage("fotos/img9.jpg");
-  img10 = loadImage("fotos/img10.jpg");
-  fond = loadImage("textonegro1.gif");
+    loadImage("fotos/img5.webp");
+  img6 = loadImage("fotos/img6.webp");
+  img7 = loadImage("fotos/img7.webp");
+  img8 = loadImage("fotos/img8.webp");
+  img9 = loadImage("fotos/img9.webp");
+  img10 = loadImage("fotos/img10.webp");
+  fond = loadImage("textonegro1.webp");
   sonido = loadSound("sonidos/sonido.mp3");
 }
 

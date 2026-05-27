@@ -9,12 +9,12 @@ let inicioder = 350; // Posición inicial del círculo de la derecha
 function setup() {
   let canvas = createCanvas(600, 350);
   canvas.parent('div-sketch');
-  lucesvi = createVideo("Video/h_1.mp4");
+  lucesvi = createVideo("Video/h-1.mp4");
   lucesvi.loop();
   lucesvi.hide(); 
   
  
-  lucescom = createVideo("Video/h_2.mp4"); 
+  lucescom = createVideo("Video/h-2.mp4"); 
   lucescom.loop();
   lucescom.hide();
 }

@@ -15,11 +15,11 @@ var img5;
 var sound;
 
 function preload() {
-  img1 = loadImage("img/dock1.jpg");
-  img2 = loadImage("img/dock3.jpg");
-  img3 = loadImage("img/kindof1j.jpg");
-  img4 = loadImage("img/kindof2j.jpg");
-  img5 = loadImage("img/kindof3j.jpg");
+  img1 = loadImage("img/dock1.webp");
+  img2 = loadImage("img/dock3.webp");
+  img3 = loadImage("img/kindof1j.webp");
+  img4 = loadImage("img/kindof2j.webp");
+  img5 = loadImage("img/kindof3j.webp");
   sound =loadSound("img/neon.mp3")
 }
  

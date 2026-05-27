@@ -62,8 +62,8 @@ let derx4 = 253;
 let dery4 = 485;
 
 function preload() {
-  img = loadImage("img/micro.png"); 
-  img2 = loadImage("img/microcito.png"); 
+  img = loadImage("img/micro.webp"); 
+  img2 = loadImage("img/microcito.webp"); 
 sound = loadSound("img/bichitos.mp3");
 }
 

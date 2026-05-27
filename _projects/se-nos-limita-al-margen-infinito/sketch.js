@@ -21,7 +21,7 @@ function setup() {
   vid.hide();
   vid.elt.muted = true;
 
-  fbAzul = createVideo("fbAzul.mp4", fbAzulLoaded);
+  fbAzul = createVideo("fbazul.mp4", fbAzulLoaded);
   fbAzul.size(320, 240);
   fbAzul.hide();
   fbAzul.elt.muted = true;

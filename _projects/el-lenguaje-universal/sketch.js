@@ -14,13 +14,13 @@ var img6;
 
 
 function preload() {
-  img = loadImage ("tierra.gif");
-  img1 = loadImage ("notas-musicales.gif")
+  img = loadImage ("tierra.webp");
+  img1 = loadImage ("notas-musicales.webp")
   img2 = loadImage ("radio.webp");
-  img3= loadImage ("ondas.gif")
-  img4= loadImage("notas-musicales.gif")
-  img5= loadImage("tierra.gif")
-  img6= loadImage ("gif.gif")
+  img3= loadImage ("ondas.webp")
+  img4= loadImage("notas-musicales.webp")
+  img5= loadImage("tierra.webp")
+  img6= loadImage ("gif.webp")
     
   cancion = loadSound ("lenguaje-universal.mp3")
 }

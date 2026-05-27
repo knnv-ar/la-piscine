@@ -29,29 +29,29 @@ let musicaC, musicaCF, musicaT, musicaDC; // Variables para las canciones
 let volumenMusica = 0.5; // Ajusta el volumen
 
 function preload() {
-  fondo = loadImage("img/fondopared.jpg");
-  corazón = loadImage("img/corazon.png");
-  feliz = loadImage("img/cara_feliz.png");
-  triste = loadImage("img/cara_consuelo.png");
-  doscaras = loadImage("img/dos_caras.png");
-  escapar = loadImage("img/cara_escapar.png");
-  pesadez = loadImage("img/cara_pesadez.png");
-  consuelo = loadImage("img/cara_consuelo.png");
-  sufrimiento = loadImage("img/cara_sufrimiento.png");
-  manos = loadImage("img/manos.png");
-  fondoc = loadImage("img/fondoc.jpg");
-  caras = loadImage("img/caras.png");
-  manosPared = loadImage("img/manos_pared.png");
-  luces = loadImage("img/luces.jpg");
-  columna = loadImage("img/columna.png");
-  luz = loadImage("img/luz.png");
-  niebla = loadImage("img/fondoniebla.jpg");
+  fondo = loadImage("img/fondopared.webp");
+  corazón = loadImage("img/corazon.webp");
+  feliz = loadImage("img/cara-feliz.webp");
+  triste = loadImage("img/cara-consuelo.webp");
+  doscaras = loadImage("img/dos-caras.webp");
+  escapar = loadImage("img/cara-escapar.webp");
+  pesadez = loadImage("img/cara-pesadez.webp");
+  consuelo = loadImage("img/cara-consuelo.webp");
+  sufrimiento = loadImage("img/cara-sufrimiento.webp");
+  manos = loadImage("img/manos.webp");
+  fondoc = loadImage("img/fondoc.webp");
+  caras = loadImage("img/caras.webp");
+  manosPared = loadImage("img/manos-pared.webp");
+  luces = loadImage("img/luces.webp");
+  columna = loadImage("img/columna.webp");
+  luz = loadImage("img/luz.webp");
+  niebla = loadImage("img/fondoniebla.webp");
   
   //cargar gifs
-  tormenta = loadImage("img/tormenta.gif")
-  rayos = loadImage("img/rayos_rojos.gif")
-  rayos2 = loadImage("img/rayos2.gif")
-  nubesn = loadImage("img/nubesnegras.gif")
+  tormenta = loadImage("img/tormenta.webp")
+  rayos = loadImage("img/rayos-rojos.webp")
+  rayos2 = loadImage("img/rayos2.webp")
+  nubesn = loadImage("img/nubesnegras.webp")
 
   imagenActual = corazón;
   // cargar música

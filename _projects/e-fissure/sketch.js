@@ -55,10 +55,10 @@ var minimo = 1
 var maximo = 10;
 
 function preload() {
-  img1 = loadImage("img/2.png");
-  img2 = loadImage("img/2e.gif");
-  img3 = loadImage("img/inte.png");
-  img4 = loadImage("img/yesno.gif");
+  img1 = loadImage("img/2.webp");
+  img2 = loadImage("img/2e.webp");
+  img3 = loadImage("img/inte.webp");
+  img4 = loadImage("img/yesno.webp");
   song = loadSound('sound/fondo1.mp3');
   ing = loadSound('sound/ing.mp3');
   frn = loadSound('sound/frn.mp3');

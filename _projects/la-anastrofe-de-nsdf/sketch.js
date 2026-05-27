@@ -43,18 +43,18 @@ let angel;
 
 
 function preload() {
-  NSDF1opaca1 = loadImage ('img/NSDF1opaca1.png');
-  comunismosolar = loadImage ('img/solarcomunismo2.png');
-  bomba1 = loadImage ('img/bomba1.jpeg');
-  estatua1 = loadImage ('img/estatua1b.jpeg');
-  stalingrado = loadImage ('img/stalingrado2.jpeg');
-  buda = loadImage ('img/buda1.jpeg');
-  luces = loadImage ('img/luces1.jpeg');
-     delfin2 = loadImage ('img/delfin2.jpeg');
- humano2= loadImage ('img/humano2.jpeg');
- humano3= loadImage ('img/humano3.jpeg');
- planeta2= loadImage ('img/planeta2.jpeg');
- soldado= loadImage ('img/soldado.jpeg');
+  NSDF1opaca1 = loadImage ('img/nsdf1opaca1.webp');
+  comunismosolar = loadImage ('img/solarcomunismo2.webp');
+  bomba1 = loadImage ('img/bomba1.webp');
+  estatua1 = loadImage ('img/estatua1b.webp');
+  stalingrado = loadImage ('img/stalingrado2.webp');
+  buda = loadImage ('img/buda1.webp');
+  luces = loadImage ('img/luces1.webp');
+     delfin2 = loadImage ('img/delfin2.webp');
+ humano2= loadImage ('img/humano2.webp');
+ humano3= loadImage ('img/humano3.webp');
+ planeta2= loadImage ('img/planeta2.webp');
+ soldado= loadImage ('img/soldado.webp');
   
   
   audioParte1 = loadSound ('audio/parte1.mp3');

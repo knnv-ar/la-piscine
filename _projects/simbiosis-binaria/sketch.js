@@ -19,8 +19,8 @@ let posx = 'x';
 function preload () {
   cielo = createVideo('visual/cielo.mp4');
   pasto = createVideo('visual/pasto.mp4');
-  negro = loadImage('visual/negro.jpg');
-  blanco = loadImage('visual/blanco.png');
+  negro = loadImage('visual/negro.webp');
+  blanco = loadImage('visual/blanco.webp');
   audio = loadSound('audio.mp3');
   audio1 = loadSound('audio1.mp3');
   

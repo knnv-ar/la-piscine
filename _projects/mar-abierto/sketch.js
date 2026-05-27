@@ -2,10 +2,10 @@ let capa;
 let capa2;
 let imagenes = [];
 let nombresImagenes = [
-  "animal1.jpg", "animal2.jpg", "animal3.jpg", "animal4.jpg",
-  "pesca1.jpg", "pesca2.jpg", "pesca3.jpg", "pesca4.jpg",
-  "petroleo1.jpg", "petroleo2.jpg", "petroleo3.jpg", "petroleo4.jpg",
-  "plastico1.jpg", "plastico2.jpg", "plastico3.jpg", "plastico4.jpg"
+  "img/animal1.webp", "img/animal2.webp", "img/animal3.webp", "img/animal4.webp",
+  "img/pesca1.webp", "img/pesca2.webp", "img/pesca3.webp", "img/pesca4.webp",
+  "img/petroleo1.webp", "img/petroleo2.webp", "img/petroleo3.webp", "img/petroleo4.webp",
+  "img/plastico1.webp", "img/plastico2.webp", "img/plastico3.webp", "img/plastico4.webp"
 ];
 let indice = 0;
 let intervalo = 4000;
@@ -42,7 +42,7 @@ let tiempoCambio = 0;
 let duracionCambio = 5000;
 
 function preload() {
-  logo = loadImage("img/logo.png");
+  logo = loadImage("img/logo.webp");
   
   for (let i = 0; i < nombresImagenes.length; i++) {
     imagenes[i] = loadImage("img/" + nombresImagenes[i]);

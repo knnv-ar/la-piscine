@@ -50,11 +50,11 @@ let proximidad = 15;
 
 function preload() {
   //obra 2
-  fondoObra2 = loadImage('obra2/gefi.gif');
+  fondoObra2 = loadImage('obra2/gefi.webp');
   //obra 3
   song = loadSound("obra3/suerte.mp3");
   //obra 4
-  certificado = loadImage('obra4/certificado.png');
+  certificado = loadImage('obra4/certificado.webp');
 }
 
 

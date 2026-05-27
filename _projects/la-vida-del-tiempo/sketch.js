@@ -9,28 +9,28 @@ var img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,imgx,img11,img12,img13,im
 var tik;
 
 function preload(){
-  img1 = loadImage ("imgs/a.jpg");
-  img2 = loadImage ("imgs/b.png");
+  img1 = loadImage ("imgs/a.webp");
+  img2 = loadImage ("imgs/b.webp");
   tik = loadSound("tik.mp3");
-  img3 = loadImage("imgs/3.jpg");
-  img4 = loadImage("imgs/4.jpg");
-  img5 = loadImage("imgs/5.jpg");
-  img6 = loadImage("imgs/6.jpg");
-  img7 = loadImage("imgs/7.jpg");
-  img8 = loadImage("imgs/8.jpg");
-  imgx = loadImage("imgs/1.jpg");
-  img9 = loadImage("imgs/9.jpg");
-  img10 = loadImage("imgs/10.jpg");
-  img11 = loadImage("imgs/11.jpg");
-  img12 = loadImage("imgs/12.jpg");
-  img13 = loadImage("imgs/13.jpg");
-  img14 = loadImage("imgs/14.jpg");
-  img15 = loadImage("imgs/15.jpg");
-  img16 = loadImage("imgs/16.jpg");
-  img17 = loadImage("imgs/17.jpg");
-  img18 = loadImage("imgs/18.jpg");
-  img19 = loadImage("imgs/19.jpg");
-  img20 = loadImage("imgs/20.jpg");
+  img3 = loadImage("imgs/3.webp");
+  img4 = loadImage("imgs/4.webp");
+  img5 = loadImage("imgs/5.webp");
+  img6 = loadImage("imgs/6.webp");
+  img7 = loadImage("imgs/7.webp");
+  img8 = loadImage("imgs/8.webp");
+  imgx = loadImage("imgs/1.webp");
+  img9 = loadImage("imgs/9.webp");
+  img10 = loadImage("imgs/10.webp");
+  img11 = loadImage("imgs/11.webp");
+  img12 = loadImage("imgs/12.webp");
+  img13 = loadImage("imgs/13.webp");
+  img14 = loadImage("imgs/14.webp");
+  img15 = loadImage("imgs/15.webp");
+  img16 = loadImage("imgs/16.webp");
+  img17 = loadImage("imgs/17.webp");
+  img18 = loadImage("imgs/18.webp");
+  img19 = loadImage("imgs/19.webp");
+  img20 = loadImage("imgs/20.webp");
   
   
 }

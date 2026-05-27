@@ -10,12 +10,12 @@ var over;
 var numerobase = 600;
 
 function preload() {
-  img1 = loadImage("fotos/r1.jpg");
-  img2 = loadImage("fotos/r2.jpg");
-  img3 = loadImage("fotos/r3.jpg");
-  img4 = loadImage("fotos/r4.jpg");
-  img5 = loadImage("fotos/r5.jpg");
-  over = loadImage("fotos/o-v-e-r2.jpg");
+  img1 = loadImage("fotos/r1.webp");
+  img2 = loadImage("fotos/r2.webp");
+  img3 = loadImage("fotos/r3.webp");
+  img4 = loadImage("fotos/r4.webp");
+  img5 = loadImage("fotos/r5.webp");
+  over = loadImage("fotos/o-v-e-r2.webp");
 }
 
 function setup() {

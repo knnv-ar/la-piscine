@@ -13,7 +13,7 @@ let gunter;
 let gb = [];
 
 function preload() {
-  gunter = loadImage('gb/gunter.png');
+  gunter = loadImage('gb/gunter.webp');
 }
 
 function setup() {

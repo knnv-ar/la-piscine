@@ -17,11 +17,11 @@ document.oncontextmenu = function() {
 function preload() {
   
   
-  imgExplicit = loadImage("foto/explicit-copy.png");
+  imgExplicit = loadImage("foto/explicit-copy.webp");
   
   
-  imgWeston = loadImage("foto/weston.jpg");
-  imgBlur = loadImage("foto/weston-blur.jpg");
+  imgWeston = loadImage("foto/weston.webp");
+  imgBlur = loadImage("foto/weston-blur.webp");
   font = loadFont("foto/gagalin-regular.ttf");
   alarma = loadSound("yuta.mp3");
 }

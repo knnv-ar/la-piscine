@@ -21,18 +21,18 @@ function preload() {
   b = loadSound("sonidos/b-2.mp3");
   Y = loadSound("sonidos/y.mp3");
   y = loadSound("sonidos/y-2.mp3");
-  fondo = loadImage("imagenes/1.png");
-  dos = loadImage("imagenes/2.png");
-  tres = loadImage("imagenes/3.png");
-  cuatro = loadImage("imagenes/4.png");
-  cinco = loadImage("imagenes/5.png");
-  seis = loadImage("imagenes/6.png");
-  siete = loadImage("imagenes/7.png");
-  ocho = loadImage("imagenes/8.png");
-  nueve = loadImage("imagenes/9.png");
-  diez = loadImage("imagenes/10.png");
-  once = loadImage("imagenes/11.png");
-  doce = loadImage("imagenes/12.png");
+  fondo = loadImage("imagenes/1.webp");
+  dos = loadImage("imagenes/2.webp");
+  tres = loadImage("imagenes/3.webp");
+  cuatro = loadImage("imagenes/4.webp");
+  cinco = loadImage("imagenes/5.webp");
+  seis = loadImage("imagenes/6.webp");
+  siete = loadImage("imagenes/7.webp");
+  ocho = loadImage("imagenes/8.webp");
+  nueve = loadImage("imagenes/9.webp");
+  diez = loadImage("imagenes/10.webp");
+  once = loadImage("imagenes/11.webp");
+  doce = loadImage("imagenes/12.webp");
 }
 
 //FONDO CON DIBUJO ORIGINAL

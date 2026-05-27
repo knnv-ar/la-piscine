@@ -2,8 +2,8 @@ var fotos = ["imagen","ninguna","es","inofensiva","ninguna", "imagen","es","inof
 
 var index = 0;
 function preload(){
-  cabezote = loadImage('import/arriba.png')
-  corazon = loadImage('import/corazon.png')
+  cabezote = loadImage('import/arriba.webp')
+  corazon = loadImage('import/corazon.webp')
 }
 
 function setup(){

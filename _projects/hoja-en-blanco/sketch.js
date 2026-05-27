@@ -20,7 +20,7 @@ let yB = 368;
 let intro = true;
 ///////////////////////PRELOAD////////////////////////////////
 function preload() {
-  fondo = loadImage("imagenes/fondo.jpg");
+  fondo = loadImage("imagenes/fondo.webp");
 
   nota1 = loadSound("sonidos/do.mp3");
   nota2 = loadSound("sonidos/do_.mp3");

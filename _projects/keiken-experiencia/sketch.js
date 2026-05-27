@@ -13,13 +13,13 @@ var numeroImagen=0;
     
 function preload() {
  cancion=loadSound("musica-tradicional-japonesa-shakuhachi.mp3")
-  img1 = loadImage("keiken/calle.jpg");
-  img2=loadImage("keiken/team.jpg");
-  img3=loadImage("keiken/team2.jpg");
-  img4=loadImage("keiken/team3.jpg");
-  img5=loadImage("keiken/team5.jpg");
-  img6=loadImage("keiken/team6.jpg");
-  img7=loadImage("keiken/tokioc.jpg");
+  img1 = loadImage("keiken/calle.webp");
+  img2=loadImage("keiken/team.webp");
+  img3=loadImage("keiken/team2.webp");
+  img4=loadImage("keiken/team3.webp");
+  img5=loadImage("keiken/team5.webp");
+  img6=loadImage("keiken/team6.webp");
+  img7=loadImage("keiken/tokioc.webp");
 
   mouseX= 50;
   mouseY=300;

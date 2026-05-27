@@ -10,11 +10,11 @@ var img, img2, img3, img4, img5;
 var estatica, clack, batucada;
 var cliks = 0;
 function preload() {
-  img1 = loadImage("imagenes/tv.png");
-  img2 = loadImage("imagenes/f100.png");
-  img3 = loadImage("imagenes/glitch.png");
-  img4 = loadImage("imagenes/boton.png");
-  img5 = loadImage("imagenes/multitud.jpg");
+  img1 = loadImage("imagenes/tv.webp");
+  img2 = loadImage("imagenes/f100.webp");
+  img3 = loadImage("imagenes/glitch.webp");
+  img4 = loadImage("imagenes/boton.webp");
+  img5 = loadImage("imagenes/multitud.webp");
   estatica = loadSound("sonidos/pink.mp3");
   clack = loadSound("sonidos/clack.mp3");
   batucada= loadSound("sonidos/batucada.mp3");

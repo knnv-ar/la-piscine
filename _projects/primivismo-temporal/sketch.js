@@ -12,8 +12,7 @@ var audioContextStarted = false;
 
 function preload() {
   img = loadImage("eye1.webp");
- // img2 = loadImage("background.jpg");
- mp3 = loadSound("clip.mp3");
+  mp3 = loadSound("clip.mp3");
 }
 function setup() {
   let canvas = createCanvas(400, 300, WEBGL);

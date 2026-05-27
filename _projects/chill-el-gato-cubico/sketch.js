@@ -36,37 +36,37 @@ let musica;
 function preload() {
   // Cargar imagenes
 
-  img1 = loadImage("imagenes/gatito-sentado.gif");
+  img1 = loadImage("imagenes/gatito-sentado.webp");
 
-  img2 = loadImage("imagenes/gatito-parado.gif");
+  img2 = loadImage("imagenes/gatito-parado.webp");
 
-  img3 = loadImage("imagenes/flor.gif");
+  img3 = loadImage("imagenes/flor.webp");
 
-  img4 = loadImage("imagenes/dialogo.png");
+  img4 = loadImage("imagenes/dialogo.webp");
 
-  img5 = loadImage("imagenes/dialogo2.png");
+  img5 = loadImage("imagenes/dialogo2.webp");
 
-  img6 = loadImage("imagenes/cielo-nubes.gif");
+  img6 = loadImage("imagenes/cielo-nubes.webp");
 
-  img8 = loadImage("imagenes/suelo.png");
+  img8 = loadImage("imagenes/suelo.webp");
 
-  img9 = loadImage("imagenes/gatito_parado_glitch1.gif");
+  img9 = loadImage("imagenes/gatito-parado-glitch1.webp");
 
-  img10 = loadImage("imagenes/gatito_parado_glitch2.gif");
+  img10 = loadImage("imagenes/gatito-parado-glitch2.webp");
 
-  img11 = loadImage("imagenes/gatito_parado_glitch3.gif");
+  img11 = loadImage("imagenes/gatito-parado-glitch3.webp");
 
-  img12 = loadImage("imagenes/gatito_sentado_glitch1.gif");
+  img12 = loadImage("imagenes/gatito-sentado-glitch1.webp");
 
-  img13 = loadImage("imagenes/gatito_sentado_glitch2.gif");
+  img13 = loadImage("imagenes/gatito-sentado-glitch2.webp");
 
-  img14 = loadImage("imagenes/sol_glitch.gif");
+  img14 = loadImage("imagenes/sol-glitch.webp");
 
-  img15 = loadImage("imagenes/flor_glitch.gif");
+  img15 = loadImage("imagenes/flor-glitch.webp");
 
-  img16 = loadImage("imagenes/cielo_glitch.gif");
+  img16 = loadImage("imagenes/cielo-glitch.webp");
 
-  img17 = loadImage("imagenes/suelo_glitch.gif");
+  img17 = loadImage("imagenes/suelo-glitch.webp");
 
   // Cargar audio
 

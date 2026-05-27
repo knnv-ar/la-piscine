@@ -51,23 +51,23 @@ let diapo1T = 0;
 let diapo1CT = 1;
 
 function preload() {
-  font= loadFont("./fonts/GloriaHallelujah-Regular.ttf")
-  patio = loadImage("./img/patio.jpg");
-  corre = loadImage("./img/corre.gif");
-  vigiDere = loadImage("./img/vigi-dere.png");
-  vigiIzq = loadImage("./img/vigi-izq.png");
-  dialogo = loadImage("./img/dialogo.png");
-  unoDosTres = loadSound("./sound/123.mp3");
-  teVi = loadSound("./sound/tevi.mp3");
-  ganaste = loadSound("./sound/ganaste.mp3");
-  timbre = loadSound("./sound/timbre.mp3");
-  chicos = loadSound("./sound/chicos.mp3");
+  font= loadFont("fonts/GloriaHallelujah-Regular.ttf")
+  patio = loadImage("img/patio.webp");
+  corre = loadImage("img/corre.webp");
+  vigiDere = loadImage("img/vigi-dere.webp");
+  vigiIzq = loadImage("img/vigi-izq.webp");
+  dialogo = loadImage("img/dialogo.webp");
+  unoDosTres = loadSound("sound/123.mp3");
+  teVi = loadSound("sound/tevi.mp3");
+  ganaste = loadSound("sound/ganaste.mp3");
+  timbre = loadSound("sound/timbre.mp3");
+  chicos = loadSound("sound/chicos.mp3");
   //fotos poses yo
-  pose1 = loadImage("./img/posesyo/pose1.png");
-  pose2 = loadImage("./img/posesyo/pose2.png");
-  pose3 = loadImage("./img/posesyo/pose3.png");
-  pose4 = loadImage("./img/posesyo/pose4.png");
-  pose5 = loadImage("./img/posesyo/pose5.png");
+  pose1 = loadImage("img/posesyo/pose1.webp");
+  pose2 = loadImage("img/posesyo/pose2.webp");
+  pose3 = loadImage("img/posesyo/pose3.webp");
+  pose4 = loadImage("img/posesyo/pose4.webp");
+  pose5 = loadImage("img/posesyo/pose5.webp");
   //cargar fotos museo
 
   let nombres = [

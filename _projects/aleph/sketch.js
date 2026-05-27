@@ -10,10 +10,10 @@ let sonido;
 
 
 function preload() {
-  textures[0] = loadImage("imagenes/img.1.jpg");
-  textures[1] = loadImage("imagenes/img.2.jpg");
-  textures[2] = loadImage("imagenes/img.3.jpg");
-  textures[3] = loadImage("imagenes/img.4.jpg");
+  textures[0] = loadImage("imagenes/img1.webp");
+  textures[1] = loadImage("imagenes/img2.webp");
+  textures[2] = loadImage("imagenes/img3.webp");
+  textures[3] = loadImage("imagenes/img4.webp");
   sonido = loadSound("sonido/sonido.ambiente_001.mp3");
 }
 

@@ -47,7 +47,7 @@ let paleta = [
 const cantidadBandas = 128;
 
 function preload() {
-  fuente = loadFont("./assets/montserrat.ttf");
+  fuente = loadFont("assets/montserrat.ttf");
 }
 
 function setup() {

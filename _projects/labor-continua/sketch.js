@@ -45,9 +45,9 @@ function preload() {
   portalapiz = loadImage("portalapiz.webp");
   //PERSONAJE
   pjParado = loadImage("pjp.webp");
-  pjCaminando = loadImage("pjwalk.gif");
+  pjCaminando = loadImage("pjwalk.webp");
   pjSentado1 = loadImage("pjsit.webp");
-  pjSentado2 = loadImage("laburando.gif");
+  pjSentado2 = loadImage("laburando.webp");
 }
 
 function setup() {

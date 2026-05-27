@@ -12,10 +12,10 @@ var transparencia = 0;
 var oscurecer = 255;
 
 function preload(){
-  fondo = loadImage('img/fondo_cielo.jpg');
-  gente = loadImage('img/gente.png');
-  globo = loadImage('img/globo_ideas.png');
-  robot = loadImage('img/robot2.png');
+  fondo = loadImage('img/fondo-cielo.webp');
+  gente = loadImage('img/gente.webp');
+  globo = loadImage('img/globo-ideas.webp');
+  robot = loadImage('img/robot2.webp');
   musica = loadSound('musica/yo_robot.mpeg');
 }
 

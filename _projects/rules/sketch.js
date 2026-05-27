@@ -4,11 +4,11 @@
 var fondo, sol, grilla, medusa, circulo;
 
 function preload() {
-  fondo = loadImage("img/fondo.png");
-  sol = loadImage("img/sun.png");
-  grilla = loadImage("img/grid.png");
-  medusa = loadImage("img/glitch.png");
-  rojo = loadImage("img/rojo.png");
+  fondo = loadImage("img/fondo.webp");
+  sol = loadImage("img/sun.webp");
+  grilla = loadImage("img/grid.webp");
+  medusa = loadImage("img/glitch.webp");
+  rojo = loadImage("img/rojo.webp");
 }
 
 function setup() {

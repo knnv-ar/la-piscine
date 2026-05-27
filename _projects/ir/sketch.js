@@ -7,7 +7,7 @@ var img;
 var fondo;
 var calle;
 function preload() {
-  img = loadImage("rueda.gif");
+  img = loadImage("rueda.webp");
   fondo = loadImage("fondo.webp");
   calle = loadImage("calle.webp");
   musiquita = loadSound("tp2am1.mp3");

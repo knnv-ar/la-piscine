@@ -14,8 +14,8 @@ var sonidoreproduciendose = false;
 var offset=30;
 
 function preload(){
-  img1 = loadImage('imagenes/portada-ep2.jpg');
-  img2 = loadImage('imagenes/corazon2.png');
+  img1 = loadImage('imagenes/portada-ep2.webp');
+  img2 = loadImage('imagenes/corazon2.webp');
   soundFormats('mp3');
   sonido1 = loadSound('sonidos/llueve-natalia-lacunza.mp3');
   sonido2 = loadSound('sonidos/ya-te-vas-natalia-lacunza.mp3');

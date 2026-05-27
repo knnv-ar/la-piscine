@@ -7,8 +7,8 @@ var y=[];
 var velocidad =30;
 function preload(){
 
-img1 = loadImage('imagenes/allank.png');
-img2 = loadImage('imagenes/manzana.png');
+img1 = loadImage('imagenes/allank.webp');
+img2 = loadImage('imagenes/manzana.webp');
 }
 
 function setup() {

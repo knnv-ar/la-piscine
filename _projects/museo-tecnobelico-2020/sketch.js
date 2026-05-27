@@ -23,7 +23,7 @@ var numeroCuerpos=40;
 function setup() {
   let canvas = createCanvas(900, 900);
   canvas.parent('div-sketch');
-img2= loadImage("img/cuerpo-saturado.png"); 
+img2= loadImage("img/cuerpo-saturado.webp"); 
  for (let i = 0; i < numeroCuerpos; i++) {
     cuerpo.push(new cuerpx(random(0,500), random(580,900)));
   }
@@ -31,7 +31,7 @@ img2= loadImage("img/cuerpo-saturado.png");
 glaze.loop();}
 
 function preload(){
-img1= loadImage("img/sin-titulo.png");
+img1= loadImage("img/sin-titulo.webp");
 bomb= loadSound("audio/bombita.mp3");
 glaze= loadSound("audio/glaze.mp3");
 }

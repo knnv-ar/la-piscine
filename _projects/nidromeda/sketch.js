@@ -1,6 +1,4 @@
-
 let img;
-let img2;
 let img3;
 let img4;
 let img5;
@@ -15,17 +13,15 @@ let vid5;
 
 function preload() {
 
-  img = loadImage("./mumii.jpg");
-  img3 = loadImage('./tini.jpg');
-  img4 = loadImage("./floo.webp");
-  img5 = loadImage ("./azuul.webp");
-  img6 = loadImage('./ventii.webp');
-  img7 = loadImage('./gritoo.webp');
-  img8 = loadImage('./finn.jpg');
-  
-
-
-
+  //img = loadImage("./mumii.jpg");
+  //img3 = loadImage('./tini.jpg');
+  img = loadImage("fondoo.webp");
+	img3 = loadImage('fondoocuatro.webp');
+  img4 = loadImage("floo.webp");
+  img5 = loadImage ("azuul.webp");
+  img6 = loadImage('ventii.webp');
+  img7 = loadImage('gritoo.webp');
+  img8 = loadImage('ventii.webp');
 }
 function setup() {
   let canvas = createCanvas(512, 512, WEBGL);
@@ -50,7 +46,7 @@ function setup() {
   //vid3.play();
   
    //fondo
-  vid4 = createVideo("videos/lidromeda.mp4");
+  vid4 = createVideo("lidromeda.mp4");
   vid4.size(350, 250);
   vid4.loop();
   
@@ -59,8 +55,6 @@ function setup() {
   vid5 = createVideo("videos/pabletee.mp4");
   vid5.size(250, 250);
   vid5.loop();
-  
- 
 }
 
 function draw() {
@@ -202,7 +196,7 @@ function draw() {
   translate(0, 90, -180);
   sphere(40);
   pop(); 
-       
+
   //Mundo 11 extension de mi
   rotateZ(70);
   push();

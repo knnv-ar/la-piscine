@@ -29,12 +29,12 @@ let pos = [
 ];
 
 function preload() {
-  back = loadImage("img/escaleras.jpg");
-  cuphead = loadImage("img/cups.png");
-  duchamp = loadImage("img/duchamp.png");
+  back = loadImage("img/escaleras.webp");
+  cuphead = loadImage("img/cups.webp");
+  duchamp = loadImage("img/duchamp.webp");
   ode = loadSound("ode.mp3");
-  oswald = loadImage("img/disneys.png");
-  droopy = loadImage("img/droopy.png");
+  oswald = loadImage("img/disneys.webp");
+  droopy = loadImage("img/droopy.webp");
 }
 
 function cups(ejeX, ejeY) {
