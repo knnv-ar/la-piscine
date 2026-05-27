@@ -15,6 +15,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
+<Language code="es">
 Es una obra interactiva realizada en p5.js que adopta la forma de un videojuego sencillo en el que el jugador encarna al propio autor, desplazándose verticalmente mientras esquiva libros y cámaras que avanzan desde la derecha del lienzo. Esta dinámica funciona como una metáfora directa sobre la procrastinación: aun sabiendo que ciertas tareas son necesarias para nuestro desarrollo personal, solemos postergarlas en favor de estímulos más simples e inmediatos.
 
 La obra se inscribe dentro de las prácticas de los nuevos medios, donde la participación activa del espectador es un elemento constitutivo. En línea con lo planteado por Christiane Fricke, el usuario deja de ser un receptor pasivo para convertirse en quien determina el curso de la obra y sitúa al jugador en la posición misma del conflicto entre deber y evasión.
@@ -35,3 +36,26 @@ Conceptualmente, la pieza se sostiene en las reflexiones de Christiane Fricke re
 **Bibliografía**
 
 FRICKE, Christiane. (1999). “Nuevos Medios”. En AAVV. Arte del siglo XX. Vol. II. München: Taschen.
+</Language>
+
+<Language code="en">
+It is an interactive work made in p5.js that takes the form of a simple video game in which the player plays the author himself, moving vertically while avoiding books and cameras that advance from the right of the canvas. This dynamic works as a direct metaphor for procrastination: even knowing that certain tasks are necessary for our personal development, we tend to postpone them in favor of simpler and more immediate stimuli.
+
+The work is part of new media practices, where the active participation of the viewer is a constitutive element. In line with what Christiane Fricke proposed, the user stops being a passive recipient and becomes the one who determines the course of the play and places the player in the very position of the conflict between duty and evasion.
+
+The result is a visually simple but conceptually charged piece, which through humor and self-reference exposes the ease with which we divert our attention in an environment saturated with digital distractions, ironically inviting us to postpone, once again, our responsibilities.
+
+**Technical, aesthetic and conceptual development**
+
+The work is structured through a code organized into blocks that articulate the central interaction. In the preload, the visual elements such as the background, the character and the three variations of “enemies” are loaded, along with the music and sound Fx of "Game over". In the setup, the size of the canvas, the proportional scaling of the avatar and the start of the looped music are defined, thus establishing the initial conditions of the experience. In the draw, the player's movement is coordinated using the arrows, limits are applied with constrain and the horizontal movement of the “enemies” is managed, whose speed increases randomly to intensify the difficulty. Collision detection is performed using a rectangular overlay method that, when activated, pauses the music, plays the defeat sound effect, and displays a final screen.
+
+The "resetElement" function introduces variations in size, position and speed for each enemy, guaranteeing dynamism and avoiding mechanical repetitions, while the "keyPressed" function allows you to restart the game from a controlled initial state.
+
+In aesthetic terms, the work relies on a clear and direct visuality: recognizable images, fluid movement and a sound contrast that differentiates continuity (the looped music) and rupture (the sound of defeat). This formal simplicity does not imply expressive poverty; On the contrary, it focuses attention on the central gesture of the game and the meaning that said action acquires within the conceptual framework. The graphic minimalism recalls certain aesthetics of the independent video game, where the reduction of elements allows the discourse to be emphasized rather than the visual spectacularity.
+
+Conceptually, the piece is based on Christiane Fricke's reflections regarding the functioning of new media art. The author states that “the digital work does not exist only in its support, but in the process that is activated when the user interacts with it”, a description that precisely fits the internal logic of the game. The meaning does not reside in a finished object, but in the relationship between system, user and technical device. The metaphor of procrastination takes on a performative character: the player does what the work criticizes, and it is in that tension where meaning emerges. As Fricke points out, new media allow us to “visualize invisible structures of our contemporary life,” and in this case, the act of avoiding books and cameras represents the evasion strategies so common in an environment saturated with screens, notifications and fast stimuli.
+
+**Literature**
+
+FRICKE, Christiane. (1999). “Nuevos Medios”. En AAVV. Arte del siglo XX. Vol. II. München: Taschen.
+</Language>

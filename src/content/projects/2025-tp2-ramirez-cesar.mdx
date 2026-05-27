@@ -14,6 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
+<Language code="es">
 La obra propone un sistema generativo tridimensional donde una malla poligonal en constante mutación se despliega en el centro de la escena. Cada figura existe solo por unos segundos antes de ser reemplazada por una nueva, mientras que una versión “capturada” aparece simultáneamente en la esquina superior izquierda, funcionando como réplica diferida. Este mecanismo produce una tensión temporal: la figura principal se transforma más rápido que su propia reproducción, generando una relación inestable entre original y copia.
 
 La pieza escenifica la carrera entre obra y reproducción que plantea César Aira, donde ambas entidades se persiguen, se superponen y, en ocasiones, parecen volverse indistinguibles. La obra principal nunca se consolida como un objeto definitivo; su réplica tampoco es un registro fiel, sino otra instancia generada a partir del mismo algoritmo. La percepción del espectador oscila entre ambas, sin que pueda establecer con claridad cuál es la obra y cuál la reproducción.
@@ -31,4 +32,23 @@ Conceptualmente, la obra se construye a partir de las ideas que César Aira desa
 **Bibliografía**
 
 AIRE, César. (2010). _"Sobre el arte contemporaneo"_ Editorial Grijalbo-Mondadori.
+</Language>
 
+<Language code="en">
+The work proposes a three-dimensional generative system where a polygonal mesh in constant mutation is displayed in the center of the scene. Each figure exists for only a few seconds before being replaced by a new one, while a “captured” version appears simultaneously in the upper left corner, functioning as a delayed replica. This mechanism produces a temporal tension: the main figure transforms faster than its own reproduction, generating an unstable relationship between original and copy.
+
+The piece stages the race between work and reproduction that César Aira proposes, where both entities pursue each other, overlap and, at times, seem to become indistinguishable. The main work is never consolidated as a definitive object; Its replica is not a faithful record either, but rather another instance generated from the same algorithm. The viewer's perception oscillates between both, without being able to clearly establish which is the work and which is the reproduction.
+
+
+**Technical, aesthetic and conceptual development**
+
+The work is developed in p5.js using WEBGL to generate a three-dimensional system based on the random creation of polygonal meshes. Technically, the code produces a set of vertices distributed on a sphere and connects them through triangles that make up a constantly mutating figure. A new mesh is generated every five seconds, establishing a regular but unpredictable transformation rate. In parallel, the system produces a replica every three seconds in an independent graphics buffer. This replica is not a photograph, but an autonomous reconstruction of the same algorithm, which reproduces the figure under identical lighting, position and rotation conditions. The simultaneous coexistence of these two scenes—the main one and the buffer scene—introduces two different temporalities within the same visual device.
+
+In aesthetic terms, the work is situated within generative art, where forms emerge from algorithmic processes rather than traditional compositional decisions. The translucent character of the polygons, the continuous rotation and the cold monochrome produce an aesthetic that oscillates between the geometric and the spectral. The figures never become consolidated: they appear, transform and disappear before establishing a stable identity. The small replica located in the upper left corner functions as a visual echo, a secondary presence that sometimes seems to imitate and other times anticipate the central figure. This spatial de-hierarchization contributes to destabilizing the notion of “original.”
+
+Conceptually, the work is built from the ideas that César Aira develops about the relationship between work and reproduction in contemporary art. Aira affirms that every work implies its reproduction and that, in contemporary times, a race has been established between the two. The piece materializes that career through time lag: the main work mutates every five seconds, while its reproduction does so every three. The copy, thus, becomes more dynamic than the original, pursues it and sometimes overtakes it. It does not document, but produces. This tension means that both instances—work and replica—end up being confused, embodying the idea of ​​a reproduction that becomes a work in itself, or of an art without a fixed work. The piece thus proposes a system where the difference between original and copy is no longer relevant, giving rise to a flow of continuous variations that only exist in their future.
+
+**Literature**
+
+AIRE, César. (2010). _"Sobre el arte contemporaneo"_ Editorial Grijalbo-Mondadori.
+</Language>

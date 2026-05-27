@@ -15,6 +15,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
+<Language code="es">
 **Breve Descripción:**  
 En esta obra vemos un fondo negro que lleva en el centro un vórtice formado por líneas en escala de grises, estas mismas se van creando en diferentes lugares del lienzo cada vez que se le aprieta el click izquierdo sobre cualquier parte de la obra, esto va generando un efecto de figuras que me parecía interesante y, por lo tanto, que valia la pena darle tiempo al sujeto de experiencia de apreciar lo que ellx habia creado, así que cuando se toca la barra espaciadora la imagen frena para que se pueda ver la figura armada con las lineas y la rotacion, cuando se vuelve a tocar la barra espaciadora el vortice sigue su movimiento giratorio y se puede volver a generar formas nuevas con las lineas al hacer click en el lienzo de la obra.
 
@@ -30,4 +31,21 @@ Me interesa el concepto de “Sujetos de Experiencia”, quise llevar eso a lo m
 **Bibliografía**
 
 Jose Luis Brea - “Redefinición de las prácticas artísticas s21”
+</Language>
 
+<Language code="en">
+**Brief Description:**  
+In this work we see a black background that has in the center a vortex formed by grayscale lines, these are created in different places on the canvas every time the left click is pressed on any part of the work, this generates an effect of figures that seemed interesting to me and, therefore, that it was worth giving the experimental subject time to appreciate what he had created, so when the space bar is touched the image slows down so that the figure armed with the lines can be seen. rotation, when the space bar is touched again the vortex continues its rotating movement and new shapes can be generated with the lines by clicking on the canvas of the work.
+
+**Technical, aesthetic and conceptual development**
+
+In this work I base myself on the concept of a maelstrom, which can be a tornado or also a mixture of very intense feelings. Using as reference the works of Herbert W. Franke and some of Jared Tarbell, this is why I decided to use lines, creating circular shapes.
+I was always interested in the circle as a geometric shape in general, it has many philosophical analyzes and that seemed useful to me when using them. The fact of wanting to use straight lines to generate circular shapes made me think about how to make it work, so I thought about creating many small lines with two iteration loops, one for the value of the variable 
+When I was able to create the lines on the canvas I thought about how to make them move in a circular way, so I decided to rotate them, and I added a very low value to the rotation (0.0001), but when I rotated them all the lines left the screen, so I had to lower the size of everything that was within the iteration cycle to 0.5 in size, then I moved it to the center of the canvas by dividing the width of the image by 2 and the height of the image by 2, so the vortex created by lines is located in the center of the image.
+When I had already created the figure I thought that the best thing would be to make the user part of the work, as the author Jose Luis Brea mentioned in his text “Redefinition of artistic practices s21”. 
+I am interested in the concept of “Subjects of Experience”, I wanted to take that to the most concrete point, which would be that this subject of experience can really interact with the work and be part of it, and that every time he interacts with it, different things happen, within the world created by the maelstrom. So I created 4 random variables between the numbers 0 and 250, used them in the values ​​of the lines created by the iteration cycle, therefore, each time the work is played they will appear in a “random” place within the numbers 0 and 250 of the x and y axis of the canvas. But for that the subject of experience had to press the play button, and the idea is that he does not leave the world of the maelstrom, so I created a function so that when the subject of experience left clicks on the screen the animation starts again. I found the shapes that were generated with the lines interesting, so I created another cycle that says that everything that is happening inside is animating, then I created a function that makes it so that when the space bar is pressed, it slows down the animation of the work so that the user of the work can see in detail the things that they themselves created.
+
+**Literature**
+
+Jose Luis Brea - “Redefinición de las prácticas artísticas s21”
+</Language>

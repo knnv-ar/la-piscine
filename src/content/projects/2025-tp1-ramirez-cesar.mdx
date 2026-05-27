@@ -14,6 +14,7 @@ dependencies:
   <script type="text/javascript" src="sketch.js"></script>
 </div>
 
+<Language code="es">
 El sistema visual genera una cuadrícula cuyos elementos aparecen y desaparecen de forma aleatoria, reemplazándose constantemente por nuevas configuraciones. Esta mutación continua impide que el espectador pueda fijar por completo un patrón antes de que cambie, evocando la dificultad de asimilar y nombrar fenómenos en un contexto donde la tecnología evoluciona más rápido que la capacidad de la lengua para describirla.
 
 La interacción permite que el espectador influya en las variaciones de tamaño y disposición, aunque siempre dentro de parámetros predefinidos por el artista. Este juego entre control y azar produce una experiencia dinámica en la que las formas no se repiten de manera predecible, reforzando la sensación de inmediatez y volatilidad.
@@ -35,3 +36,28 @@ Los parámetros fijos del código (cuadrícula, monocromía, lógica de parpadeo
 BREA, José Luis. (2008). _"Redefinición de las prácticas artísticas"_ .
 
 BREA, José Luis. (2008). _"Breve (y desordenado) antiglosario"_ .
+</Language>
+
+<Language code="en">
+The visual system generates a grid whose elements appear and disappear randomly, constantly being replaced by new configurations. This continuous mutation prevents the viewer from being able to completely fix a pattern before it changes, evoking the difficulty of assimilating and naming phenomena in a context where technology evolves faster than the ability of language to describe it.
+
+The interaction allows the viewer to influence variations in size and arrangement, although always within parameters predefined by the artist. This play between control and chance produces a dynamic experience in which shapes do not repeat in a predictable manner, reinforcing the sensation of immediacy and volatility.
+
+The aesthetic is inspired by Frieder Nake's generative geometric patterns, translating them into a contemporary and participatory visual language. The monochrome, the grid structure and the use of chance as a compositional engine dialogue with the tradition of algorithmic art, but incorporate an interactive component that transforms the viewer into an active agent of the work.
+
+**Technical, aesthetic and conceptual development**
+
+The work is developed in p5.js, a creative programming environment based on JavaScript. Technically, the code generates a 10 column by 10 row grid, where each cell is drawn based on coordinates calculated from the total size of the canvas. At each animation frame, the program randomly decides whether or not to display a rectangle in a given cell, producing a flickering effect. This decision is controlled with a random value that, in 50% of the cases, hides the figure. When drawn, the rectangle takes on slightly varying dimensions in width and height, determined by the vertical position of the mouse, adding an interactive component. In addition, each rectangle incorporates internal lines drawn according to four possible patterns, also selected randomly. The low frameRate reinforces the slow and perceptible mutation effect of the composition.
+
+Aesthetically, the work takes as a reference the production of Frieder Nake, one of the pioneers of computer art. Its geometric patterns, organization in grids and the use of controlled chance as a generator of visual variation inspire the structure of this piece. The absence of color and the black line on a white background respond to a minimalist aesthetic, focused on form and composition, and seek to maintain the graphic sobriety typical of Nake's algorithmic works from the 1960s.
+
+On a conceptual level, the work explores the relationship between generative aesthetics and the notion of obsolescence and rapid replacement of concepts in contemporary culture, as proposed by José Luis Brea. The flickering of shapes symbolizes the impossibility of establishing a stable image: when the viewer tries to appropriate a figure or pattern, it disappears, replaced by another. A parallel is thus established with Brea's statement: “The evolution of technologies is now faster than that of language: by the time a term is adequately translated, the function or object to which it refers will have already been replaced by another” (Brea, 2002). The work functions as an abstract visualization of this dynamic: the viewer faces a system in constant mutation, where visual configurations fade before being fully assimilated.
+
+The fixed parameters of the code (grid, monochrome, flicker logic) correspond to the “condition” defined by the artist, while the variations in size and internal lines respond to the viewer's interaction, introducing a decision space within a pre-established framework. This reaffirms the position of the artist as a designer of an experiential device, rather than as a creator of a fixed object.
+
+**Literature**
+
+BREA, José Luis. (2008). _"Redefinición de las prácticas artísticas"_ .
+
+BREA, José Luis. (2008). _"Breve (y desordenado) antiglosario"_ .
+</Language>
