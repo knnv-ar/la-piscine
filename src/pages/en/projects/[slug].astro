@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import ProjectLayout from '../../../layouts/ProjectLayout.astro';
+import Language from '../../../components/Language.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('projects');
@@ -15,5 +16,5 @@ const { Content } = await entry.render();
 ---
 
 <ProjectLayout entry={entry}>
-  <Content slot="content" />
+  <Content slot="content" components={{ Language }} />
 </ProjectLayout>

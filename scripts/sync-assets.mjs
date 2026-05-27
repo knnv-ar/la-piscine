@@ -88,7 +88,7 @@ function makeHtmlTagsJsxCompliant(content) {
   const allowedTags = new Set([
     'div', 'script', 'video', 'img', 'p', 'br', 'hr', 'sup', 'sub', 'a', 'ul', 'li', 'ol',
     'blockquote', 'span', 'code', 'iframe', 'style', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-    'strong', 'em', 'b', 'i', 'u', 'pre'
+    'strong', 'em', 'b', 'i', 'u', 'pre', 'language'
   ]);
 
   result = result.replace(/<([^>]+)>/g, (match, bodyText) => {

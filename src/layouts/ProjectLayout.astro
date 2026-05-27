@@ -16,6 +16,10 @@ const locale = (Astro.currentLocale || 'es') as Locale;
 const t = useTranslations(locale);
 const base = '/la-piscine';
 
+// Detect if English version of statement is available in the MDX body
+const hasEnglish = /<Language\s+[^>]*code=["']en["']/i.test(entry.body || '');
+Astro.locals.hasEnglish = hasEnglish;
+
 // Resolve dependencies to script/link tags
 const dependencyTags = getDependencyTags(dependencies);
 

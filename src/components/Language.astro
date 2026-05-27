@@ -7,9 +7,19 @@ interface Props {
 
 const { code } = Astro.props;
 const currentLocale = (Astro.currentLocale || 'es') as Locale;
+const hasEnglish = Astro.locals.hasEnglish;
 
-// Render slot only if the code matches the current locale
-const shouldRender = currentLocale === code;
+let shouldRender = false;
+if (currentLocale === 'es') {
+  shouldRender = (code === 'es');
+} else if (currentLocale === 'en') {
+  if (hasEnglish) {
+    shouldRender = (code === 'en');
+  } else {
+    // Graceful fallback: show Spanish content if English is not available
+    shouldRender = (code === 'es');
+  }
+}
 ---
 
 {shouldRender && <slot />}
