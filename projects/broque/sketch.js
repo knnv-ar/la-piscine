@@ -1,11 +1,11 @@
 var contadorEscenas;
 
 function preload(){
-  chocotextura=loadImage("multimedia/chocolate.jpg");
-  cama=loadImage("multimedia/cama.jpeg");
-  cassette=loadImage("multimedia/vhs.jpg");
-  oro=loadImage("multimedia/oro.jpg");
-  fideos=loadImage("multimedia/fideos.jpg");
+  chocotextura=loadImage("multimedia/chocolate.webp");
+  cama=loadImage("multimedia/cama.webp");
+  cassette=loadImage("multimedia/vhs.webp");
+  oro=loadImage("multimedia/oro.webp");
+  fideos=loadImage("multimedia/fideos.webp");
   intro=createVideo("multimedia/vhs2.mp4");
   
 }

@@ -17,9 +17,9 @@ let aspiradora;
 let efecto = 0;
 
 let canciones = [
-  "bach_badinerie.mp3",
-  "bach_tocata_y_fuga.mp3",
-  "lofi_toybox.mp3"
+  "Musica/bach_badinerie.mp3",
+  "Musica/bach_tocata_y_fuga.mp3",
+  "Musica/lofi_toybox.mp3"
 ]
 
 let fuentes = [
@@ -44,9 +44,9 @@ function preload() {
   
   camara = createCapture(VIDEO);
   camara.hide();
-  galeria = loadImage("Imagenes/galeria.jpg");
-  perfil_inf = loadImage("Imagenes/perfil_inf.png")
-  perfil_sup = loadImage("Imagenes/perfil_sup.png")
+  galeria = loadImage("Imagenes/galeria.webp");
+  perfil_inf = loadImage("Imagenes/perfil-inf.webp")
+  perfil_sup = loadImage("Imagenes/perfil-sup.webp")
   aspiradora = loadSound("Sonidos/aspiradora.mp3")
   ruido_gente = loadSound("Sonidos/ruido_gente.mp3")
   sonido_caida = loadSound("Sonidos/sonido_caida.mp3")

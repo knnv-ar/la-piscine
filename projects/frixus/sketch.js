@@ -18,7 +18,7 @@ var questions = [
 ];
 
 function preload() {
-  back = loadImage("one.gif");
+  back = loadImage("one.webp");
   cancion = loadSound("vampire.mp3");
   customFont = loadFont("comicate.TTF");
 }

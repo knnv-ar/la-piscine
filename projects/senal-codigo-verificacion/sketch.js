@@ -6,21 +6,21 @@ let numfoto = 15;
 
 
    function preload() {
-  foto1 = loadImage("imagenes/1.jpg");
-  foto2 = loadImage("imagenes/2.jpg");
-  foto3 = loadImage("imagenes/3.jpg");
-  foto4 = loadImage("imagenes/4.jpg");
-  foto5 = loadImage("imagenes/x.jpg");
-  foto6 = loadImage("imagenes/5.jpg");
-  foto7 = loadImage("imagenes/6.jpg");
-  foto8 = loadImage("imagenes/7.jpg");
-  foto9 = loadImage("imagenes/8.jpg");
-  foto10 = loadImage("imagenes/9.jpg");
-  foto11 =loadImage("imagenes/10.jpg");
-  foto12 =loadImage("imagenes/11.jpg");
-  foto13 =loadImage("imagenes/12.jpg");
-  foto14 =loadImage("imagenes/13.jpg");
-  foto15 =loadImage("imagenes/14.jpg");
+  foto1 = loadImage("imagenes/1.webp");
+  foto2 = loadImage("imagenes/2.webp");
+  foto3 = loadImage("imagenes/3.webp");
+  foto4 = loadImage("imagenes/4.webp");
+  foto5 = loadImage("imagenes/x.webp");
+  foto6 = loadImage("imagenes/5.webp");
+  foto7 = loadImage("imagenes/6.webp");
+  foto8 = loadImage("imagenes/7.webp");
+  foto9 = loadImage("imagenes/8.webp");
+  foto10 = loadImage("imagenes/9.webp");
+  foto11 =loadImage("imagenes/10.webp");
+  foto12 =loadImage("imagenes/11.webp");
+  foto13 =loadImage("imagenes/12.webp");
+  foto14 =loadImage("imagenes/13.webp");
+  foto15 =loadImage("imagenes/14.webp");
  
   foto = [foto1,foto2,foto3, foto4, foto5, foto6, foto7,foto8, foto9,foto10, foto11,foto12,foto13,foto13,foto14,foto15]
 }

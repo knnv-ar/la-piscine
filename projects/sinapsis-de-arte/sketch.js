@@ -6,8 +6,8 @@ var sonidojan;
 let cam; // Variable para la webcam
 
 function preload() {
-  img1 = loadImage("imagenes/1.jpg");
-  img2 = loadImage("imagenes/2.jpg");
+  img1 = loadImage("imagenes/1.webp");
+  img2 = loadImage("imagenes/2.webp");
   sonidojan = loadSound("sonidojan.mp3");
 }
 

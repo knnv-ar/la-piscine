@@ -12,24 +12,24 @@ let aPresionada = false;
 
 function preload() {
 
-  fondo = loadImage("imagenes/fondo.jpg");
-  fondo2 = loadImage("imagenes/fondo2.jpg");
+  fondo = loadImage("imagenes/fondo.webp");
+  fondo2 = loadImage("imagenes/fondo2.webp");
 
-  recortes[0] = loadImage("imagenes/imagen1.png");
-  recortes[1] = loadImage("imagenes/imagen2.png");
-  recortes[2] = loadImage("imagenes/imagen3.png");
-  recortes[3] = loadImage("imagenes/imagen4.png");
-  recortes[4] = loadImage("imagenes/imagen5.png");
-  recortes[5] = loadImage("imagenes/imagen6.jpg");
-  recortes[6] = loadImage("imagenes/imagen7.png");
-  recortes[7] = loadImage("imagenes/imagen8.jpg");
-  recortes[8] = loadImage("imagenes/imagen9.jpg");
-  recortes[9] = loadImage("imagenes/imagen10.jpg");
-  recortes[10] = loadImage("imagenes/imagen11.png");
-  recortes[11] = loadImage("imagenes/imagen12.png");
-  recortes[12] = loadImage("imagenes/imagen13.png");
-  recortes[13] = loadImage("imagenes/imagen14.png");
-  recortes[14] = loadImage("imagenes/imagen15.png");
+  recortes[0] = loadImage("imagenes/imagen1.webp");
+  recortes[1] = loadImage("imagenes/imagen2.webp");
+  recortes[2] = loadImage("imagenes/imagen3.webp");
+  recortes[3] = loadImage("imagenes/imagen4.webp");
+  recortes[4] = loadImage("imagenes/imagen5.webp");
+  recortes[5] = loadImage("imagenes/imagen6.webp");
+  recortes[6] = loadImage("imagenes/imagen7.webp");
+  recortes[7] = loadImage("imagenes/imagen8.webp");
+  recortes[8] = loadImage("imagenes/imagen9.webp");
+  recortes[9] = loadImage("imagenes/imagen10.webp");
+  recortes[10] = loadImage("imagenes/imagen11.webp");
+  recortes[11] = loadImage("imagenes/imagen12.webp");
+  recortes[12] = loadImage("imagenes/imagen13.webp");
+  recortes[13] = loadImage("imagenes/imagen14.webp");
+  recortes[14] = loadImage("imagenes/imagen15.webp");
 
   sonido1 = loadSound("sonidos/sonido1.mp3");
 }

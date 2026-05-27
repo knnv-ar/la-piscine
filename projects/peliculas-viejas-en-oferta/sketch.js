@@ -29,18 +29,18 @@ let paneo = 0
 
 
 function preload() {
-  img = loadImage("imagenes/ojos1.jpg");
-  img2 = loadImage("imagenes/tele.png");
-  img3 = loadImage("imagenes/cuadros.jpeg");
-  img4 = loadImage("imagenes/milei.jpg");
-  img5 = loadImage("imagenes/nuncamas.jpg");
-  img6 = loadImage("imagenes/militares.jpeg");
-  img7 = loadImage("imagenes/ojos2.jpg");
-  img8 = loadImage("imagenes/ruido.gif");
-  img9 = loadImage("imagenes/ruido2.gif");
-  img10 = loadImage("imagenes/ruido3.gif");
-  img11 = loadImage("imagenes/ruido4.gif");
-  img12 = loadImage("imagenes/ruido5.gif");
+  img = loadImage("imagenes/ojos1.webp");
+  img2 = loadImage("imagenes/tele.webp");
+  img3 = loadImage("imagenes/cuadros.webp");
+  img4 = loadImage("imagenes/milei.webp");
+  img5 = loadImage("imagenes/nuncamas.webp");
+  img6 = loadImage("imagenes/militares.webp");
+  img7 = loadImage("imagenes/ojos2.webp");
+  img8 = loadImage("imagenes/ruido.webp");
+  img9 = loadImage("imagenes/ruido2.webp");
+  img10 = loadImage("imagenes/ruido3.webp");
+  img11 = loadImage("imagenes/ruido4.webp");
+  img12 = loadImage("imagenes/ruido5.webp");
 
   vid = createVideo("videos/gas.mp4");
   vid.hide();

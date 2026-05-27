@@ -37,22 +37,22 @@ let creditButton;
 
 function preload() {
   // Cargar imágenes y sonidos
-  imagesD[0] = loadImage("img/d02.jpg");
-  imagesD[1] = loadImage("img/d03.jpg");
-  imagesD[2] = loadImage("img/d04.jpg");
-  imagesD[3] = loadImage("img/d06.jpg");
-  imagesD[4] = loadImage("img/d08.jpg");
-  imagesD[5] = loadImage("img/d09.jpg");
-  imagesD[6] = loadImage("img/d10.jpg");
+  imagesD[0] = loadImage("img/d02.webp");
+  imagesD[1] = loadImage("img/d03.webp");
+  imagesD[2] = loadImage("img/d04.webp");
+  imagesD[3] = loadImage("img/d06.webp");
+  imagesD[4] = loadImage("img/d08.webp");
+  imagesD[5] = loadImage("img/d09.webp");
+  imagesD[6] = loadImage("img/d10.webp");
 
   soundsD[0] = loadSound("sonidos/trenambiente001.mp3");
 
-  imagesI[0] = loadImage("img/i1.jpg");
-  imagesI[1] = loadImage("img/i2.jpg");
-  imagesI[2] = loadImage("img/i3.jpg");
-  imagesI[3] = loadImage("img/i4.jpg");
-  imagesI[4] = loadImage("img/i5.jpg");
-  imagesI[5] = loadImage("img/i6.jpg");
+  imagesI[0] = loadImage("img/i1.webp");
+  imagesI[1] = loadImage("img/i2.webp");
+  imagesI[2] = loadImage("img/i3.webp");
+  imagesI[3] = loadImage("img/i4.webp");
+  imagesI[4] = loadImage("img/i5.webp");
+  imagesI[5] = loadImage("img/i6.webp");
 
   soundsI[0] = loadSound("sonidos/birds1.mp3");
   soundsI[2] = loadSound("sonidos/birds2.mp3");

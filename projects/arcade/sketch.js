@@ -33,15 +33,15 @@ document.oncontextmenu = function() {
 }
 
 function preload() {
-  img1 = loadImage("imagenes/fondo3.jpg");
-  img2 = loadImage("imagenes/tetrisss.png");
-  imgBloque = loadImage("imagenes/bloque.png");
-  imgBloque_90 = loadImage("imagenes/tetris-bloque-90.png");
-  imgBloque_180 = loadImage("imagenes/tetris-bloque-180.png");
-  imgBloque_270 = loadImage("imagenes/tetris-bloque-270.png");
-  img4 = loadImage("imagenes/snakes.png");
-  imgpacman = loadImage("imagenes/pacman.png");
-  imgcoin =loadImage("imagenes/coin.png");
+  img1 = loadImage("imagenes/fondo3.webp");
+  img2 = loadImage("imagenes/tetrisss.webp");
+  imgBloque = loadImage("imagenes/bloque.webp");
+  imgBloque_90 = loadImage("imagenes/tetris-bloque-90.webp");
+  imgBloque_180 = loadImage("imagenes/tetris-bloque-180.webp");
+  imgBloque_270 = loadImage("imagenes/tetris-bloque-270.webp");
+  img4 = loadImage("imagenes/snakes.webp");
+  imgpacman = loadImage("imagenes/pacman.webp");
+  imgcoin =loadImage("imagenes/coin.webp");
   font1 = loadFont("fonts/barcade.ttf");
   font2 = loadFont("fonts/pixel.ttf");
   font3 = loadFont("fonts/gaming.ttf");

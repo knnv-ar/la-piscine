@@ -3,8 +3,8 @@ var modem;
 
 
 function preload (){
-estatica = loadSound ("./sonido/estatica.mp3");
-modem = loadSound ("./sonido/modem.mp3");  
+estatica = loadSound ("sonido/estatica.mp3");
+modem = loadSound ("sonido/modem.mp3");  
   
 }
 

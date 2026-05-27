@@ -23,9 +23,9 @@ var img1, img2;
 function preload() {
   //imagenes y audio que uso
   sound = loadSound("sonidos/vox_finis.mp3");
-  img1 = loadImage("imagenes/gutai1.jpg");
-  img2 = loadImage("imagenes/gutai2.jpg");
-  img3 = loadImage("imagenes/texto1.png");
+  img1 = loadImage("imagenes/gutai1.webp");
+  img2 = loadImage("imagenes/gutai2.webp");
+  img3 = loadImage("imagenes/texto1.webp");
 }
 
 function setup() {

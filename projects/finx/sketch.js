@@ -53,14 +53,14 @@ function preload() {
     bichoTex.push(loadImage(`sprites/bicho${nf(i)}.png`));
   }
 
-  terreno = loadImage("texturas/terreno.jpg");
-  luna = loadImage("texturas/moon.jpg");
-  estrellas = loadImage("texturas/milky.jpg");
+  terreno = loadImage("texturas/terreno.webp");
+  luna = loadImage("texturas/moon.webp");
+  estrellas = loadImage("texturas/milky.webp");
 
-  sol = loadImage("texturas/sun.jpg");
-  nucleo = loadImage("texturas/montage.jpg");
-  edificio = loadImage("texturas/edificio.jpg");
-  arbol = loadImage("texturas/tree.png");
+  sol = loadImage("texturas/sun.webp");
+  nucleo = loadImage("texturas/montage.webp");
+  edificio = loadImage("texturas/edificio.webp");
+  arbol = loadImage("texturas/tree.webp");
   song1 = loadSound("sonido/ghosts9.mp3");
   song2 = loadSound("sonido/ghosts2.mp3");
   song3 = loadSound("sonido/ghosts10.mp3");

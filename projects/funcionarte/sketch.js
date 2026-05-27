@@ -8,9 +8,9 @@ let img2;
 let img3;
 
 function preload() 
-{img1 = loadImage('imagenes/interchange.jpg');
- img2 = loadImage('imagenes/nafeafaaipoipo.jpg');
- img3 = loadImage('imagenes/losjugadoresdecartas.jpg');}
+{img1 = loadImage('imagenes/interchange.webp');
+ img2 = loadImage('imagenes/nafeafaaipoipo.webp');
+ img3 = loadImage('imagenes/losjugadoresdecartas.webp');}
 
 //lienzo
 function setup() 

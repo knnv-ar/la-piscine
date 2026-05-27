@@ -28,14 +28,14 @@ function setup() {
 function preload() {
 
   musica3 = loadSound("am4.mp3")
-  img1 = loadImage("montanas-fr/1.png");
-  img2= loadImage("montanas-fr/2.png");
-  img3 = loadImage("montanas-fr/3.png");
-  img4 = loadImage("montanas-fr/4.png");
-  img5 = loadImage("montanas-fr/5.png");
-  img6 = loadImage("montanas-fr/6.png");
-  img7 = loadImage("montanas-fr/7.png");
-  img8 = loadImage("montanas-fr/8.png");
+  img1 = loadImage("montanas-fr/1.webp");
+  img2= loadImage("montanas-fr/2.webp");
+  img3 = loadImage("montanas-fr/3.webp");
+  img4 = loadImage("montanas-fr/4.webp");
+  img5 = loadImage("montanas-fr/5.webp");
+  img6 = loadImage("montanas-fr/6.webp");
+  img7 = loadImage("montanas-fr/7.webp");
+  img8 = loadImage("montanas-fr/8.webp");
   img9 = loadImage("sol.webp");
   img10 = loadImage("luna.webp");
 }

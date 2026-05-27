@@ -10,13 +10,13 @@ let velocidadR = 0.01;
 let colorCuadrado = 0;
 
 function preload() {
-  imgOjo = loadImage("AM1TP2/ojo.png");
-  imgOjo2 = loadImage("AM1TP2/ojo1.png");
-  imgOjo3 = loadImage("AM1TP2/ojo33.png");
-  imgOjo4 = loadImage("AM1TP2/ojo4.png");
-  imgOjo5 = loadImage("AM1TP2/ojo44.png");
-  imgOjo6 = loadImage ("AM1TP2/ojo5.png");
-  imgOjo7 =loadImage ("AM1TP2/ojo6.png")
+  imgOjo = loadImage("AM1TP2/ojo.webp");
+  imgOjo2 = loadImage("AM1TP2/ojo1.webp");
+  imgOjo3 = loadImage("AM1TP2/ojo33.webp");
+  imgOjo4 = loadImage("AM1TP2/ojo4.webp");
+  imgOjo5 = loadImage("AM1TP2/ojo44.webp");
+  imgOjo6 = loadImage ("AM1TP2/ojo5.webp");
+  imgOjo7 =loadImage ("AM1TP2/ojo6.webp")
 }
 
 function setup() {

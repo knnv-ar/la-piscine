@@ -3,18 +3,18 @@ var estado = 0
 
 function preload() {
 
-  img2 = loadImage("img/hanuman.png");
-  img3 = loadImage("img/verde.png");
-  img4 = loadImage("img/rojo.png") ;
-  img5 = loadImage("img/montana1.png") ;
-  img6 = loadImage("img/montana2.png") ;
-  img7 = loadImage("img/edificionaranja.png");
-  img8 = loadImage("img/edificioazul.png")
-  img9 = loadImage("img/mantra.png");
-  img10 = loadImage("img/psy1.gif");
-  img11 = loadImage("img/amarillo.png");
-  img12 = loadImage("img/cian.png");
-  img13 = loadImage("img/13.png");
+  img2 = loadImage("img/hanuman.webp");
+  img3 = loadImage("img/verde.webp");
+  img4 = loadImage("img/rojo.webp") ;
+  img5 = loadImage("img/montana1.webp") ;
+  img6 = loadImage("img/montana2.webp") ;
+  img7 = loadImage("img/edificionaranja.webp");
+  img8 = loadImage("img/edificioazul.webp")
+  img9 = loadImage("img/mantra.mp3");
+  img10 = loadImage("img/psy1.webp");
+  img11 = loadImage("img/amarillo.webp");
+  img12 = loadImage("img/cian.webp");
+  img13 = loadImage("img/13.webp");
   cancion= loadSound("img/mantra.mp3")
  
  

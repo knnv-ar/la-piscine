@@ -14,14 +14,14 @@ let anguloMouseY = 0;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 function preload() {
-  lomejor = loadImage("./img/lo-mejor-de-pescado-rabioso.png");
-  megusta = loadSound("./musica/me-gusta-ese-tajo.mp3");
-  viernes = loadSound("./musica/viernes-3am.mp3");
-  grasa = loadImage("./img/la-grasa-de-las-capitales.png");
-  violencia = loadSound("./musica/violencia-en-el-parque.mp3");
-  bruma = loadImage("./img/bruma.png");
-  font = loadFont("./fuente/typewriter.otf");
-  colectivo = loadSound("./musica/inconsciente-colectivo.mp3");
+  lomejor = loadImage("img/lo-mejor-de-pescado-rabioso.webp");
+  megusta = loadSound("musica/me-gusta-ese-tajo.mp3");
+  viernes = loadSound("musica/viernes-3am.mp3");
+  grasa = loadImage("img/la-grasa-de-las-capitales.webp");
+  violencia = loadSound("musica/violencia-en-el-parque.mp3");
+  bruma = loadImage("img/bruma.webp");
+  font = loadFont("fuente/typewriter.otf");
+  colectivo = loadSound("musica/inconsciente-colectivo.mp3");
 }
 ///////////////////////////////////////////SETUP/////////////////////////////////////////////////
 

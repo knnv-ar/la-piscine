@@ -28,41 +28,41 @@ function preload() {
   //IMAGENES Y GIFS
   
   //fondos
-  fond0= loadImage ("archivos/ruidotvgif.gif");
-  texturaclimax= loadImage ("archivos/fondoclimax.gif");
-  fondococacola= loadImage ("archivos/cambiocolor.gif");
-  fondo1= loadImage ("archivos/textures.gif");
-  climaxgif= loadImage("archivos/textures-2.gif");
-  fondopunchline= loadImage("archivos/pinktexture.gif");
-  tvcolor= loadImage("archivos/tv-color.gif");  
-  chapa= loadImage("archivos/chapasinicio.jpg");
+  fond0= loadImage ("archivos/ruidotvgif.webp");
+  texturaclimax= loadImage ("archivos/fondoclimax.webp");
+  fondococacola= loadImage ("archivos/cambiocolor.webp");
+  fondo1= loadImage ("archivos/textures.webp");
+  climaxgif= loadImage("archivos/textures-2.webp");
+  fondopunchline= loadImage("archivos/pinktexture.webp");
+  tvcolor= loadImage("archivos/tv-color.webp");  
+  chapa= loadImage("archivos/chapasinicio.webp");
 
 
   //placas
-  placa1= loadImage ("archivos/apromovideo.png");
-  placa2= loadImage("archivos/theme.png");
-  placa3= loadImage("archivos/chorus.png");
-  placa4= loadImage("archivos/lipsync.png");
-  placa5=loadImage("archivos/punchline.png");
-  placa6= loadImage("archivos/climax.png");
-  placa7= loadImage ("archivos/placa7.png");
-  placa8= loadImage("archivos/apromovideo-2.png");
-  cocacola= loadImage("archivos/cocacola.gif");
+  placa1= loadImage ("archivos/apromovideo.webp");
+  placa2= loadImage("archivos/theme.webp");
+  placa3= loadImage("archivos/chorus.webp");
+  placa4= loadImage("archivos/lipsync.webp");
+  placa5=loadImage("archivos/punchline.webp");
+  placa6= loadImage("archivos/climax.webp");
+  placa7= loadImage ("archivos/placa7.webp");
+  placa8= loadImage("archivos/apromovideo-2.webp");
+  cocacola= loadImage("archivos/cocacola.webp");
 
   //teles
-  tele= loadImage ("archivos/tele-png.png");
-  todasteles= loadImage ("archivos/teles.png");
-  tele1= loadImage ("archivos/suede2.gif");
-  tele2= loadImage ("archivos/suede3.gif");
-  tele3= loadImage("archivos/bowie1.gif");
-  tele6medio = loadImage ("archivos/suede1.gif");
-  tele4= loadImage ("archivos/madonna.gif");
-  tele5= loadImage ("archivos/suede6.gif");
-  tele6medio = loadImage ("archivos/suede1.gif");
-  periodico1= loadImage("archivos/periodico1.gif");
-  periodico2= loadImage("archivos/periodico2.gif");
-  justine= loadImage("archivos/justine.gif");
-  madonna= loadImage("archivos/madonna2.gif");
+  tele= loadImage ("archivos/tele-png.webp");
+  todasteles= loadImage ("archivos/teles.webp");
+  tele1= loadImage ("archivos/suede2.webp");
+  tele2= loadImage ("archivos/suede3.webp");
+  tele3= loadImage("archivos/bowie1.webp");
+  tele6medio = loadImage ("archivos/suede1.webp");
+  tele4= loadImage ("archivos/madonna.webp");
+  tele5= loadImage ("archivos/suede6.webp");
+  tele6medio = loadImage ("archivos/suede1.webp");
+  periodico1= loadImage("archivos/periodico1.webp");
+  periodico2= loadImage("archivos/periodico2.webp");
+  justine= loadImage("archivos/justine.webp");
+  madonna= loadImage("archivos/madonna2.webp");
     
   //SONIDOS
   sonidochapa= loadSound("audio/sonidochapas.mp3");

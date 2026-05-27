@@ -6,9 +6,9 @@ let rotationAngle = 0;
 let cambioFondo = false; // controla si imgfondo debe mostrarse como textura o no
 
 function preload() {
-  piel = loadImage("img/skin.jpg");
-  piel2 = loadImage("img/skin-2.jpg");
-  imgfondo = loadImage("img/brain.jpg");
+  piel = loadImage("img/skin.webp");
+  piel2 = loadImage("img/skin-2.webp");
+  imgfondo = loadImage("img/brain.webp");
 }
 
 function setup() {

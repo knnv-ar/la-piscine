@@ -20,20 +20,20 @@ function preload() {
  
   sound = loadSound("img/thecolorofthefire.mp3")
   
-  madera = loadImage("img/WoodSeemles.jpg");
+  madera = loadImage("img/woodseemles.webp");
 
 
-  imagenes[0] = loadImage("img/dolin1.jpg");
-  imagenes[1] = loadImage("img/dolin2.jpg");
-  imagenes[2] = loadImage("img/dolin4.jpg");
-  imagenes[3] = loadImage("img/dolin5.jpg");
+  imagenes[0] = loadImage("img/dolin1.webp");
+  imagenes[1] = loadImage("img/dolin2.webp");
+  imagenes[2] = loadImage("img/dolin4.webp");
+  imagenes[3] = loadImage("img/dolin5.webp");
 
-  textura_vela = loadImage("img/texture_candle.png");
+  textura_vela = loadImage("img/texture-candle.webp");
   
 
-  cuerpo1 = loadImage("img/cuerpo_1.jpg");
-  cuerpo2 = loadImage("img/cuerpo_2.jpg");
-  cuerpo3 = loadImage("img/cuerpo_3.jpg");
+  cuerpo1 = loadImage("img/cuerpo-1.webp");
+  cuerpo2 = loadImage("img/cuerpo-2.webp");
+  cuerpo3 = loadImage("img/cuerpo-3.webp");
 
   //---------objetos
   tv = loadModel("img/tev.obj");

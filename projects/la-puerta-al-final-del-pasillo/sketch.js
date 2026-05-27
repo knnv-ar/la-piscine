@@ -5,11 +5,11 @@ let volumena = 0;
 let volumenb = 0;
 
 function preload() {
-  p1 = loadImage("img/p1.png");
-  pared = loadImage("img/ladrillo.jpg");
-  galaxia = loadImage("img/galaxia.gif");
-  piso = loadImage("img/cemento.jpg");
-  techo = loadImage("img/techo.jpg");
+  p1 = loadImage("img/p1.webp");
+  pared = loadImage("img/ladrillo.webp");
+  galaxia = loadImage("img/galaxia.webp");
+  piso = loadImage("img/cemento.webp");
+  techo = loadImage("img/techo.webp");
   no = loadSound("sound/no.mp3");
   alarma = loadSound("sound/alarm.mp3");
   paso = loadSound("sound/paso.mp3");

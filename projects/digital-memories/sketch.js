@@ -11,12 +11,12 @@ function preload(){
   mp3 = loadSound("musica/doorbell.mp3");
   
   //imagenes
-  img[0] = loadImage('imagenes/giphy1.gif');
-  img[1] = loadImage('imagenes/giphy2.gif');
-  img[2] = loadImage('imagenes/giphy3.gif');
-  img[3] = loadImage('imagenes/giphy4.gif');
-  img[4] = loadImage('imagenes/giphy5.gif');
-  img[5] = loadImage('imagenes/giphy6.gif');
+  img[0] = loadImage('imagenes/giphy1.webp');
+  img[1] = loadImage('imagenes/giphy2.webp');
+  img[2] = loadImage('imagenes/giphy3.webp');
+  img[3] = loadImage('imagenes/giphy4.webp');
+  img[4] = loadImage('imagenes/giphy5.webp');
+  img[5] = loadImage('imagenes/giphy6.webp');
 }
 
 function setup() {

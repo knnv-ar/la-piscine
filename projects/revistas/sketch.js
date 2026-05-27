@@ -20,13 +20,13 @@ let escenas = 0;
 
 function preload() {
 //Imagenes
-  mesaCompleta = loadImage("Imagenes/Escena1_mesa_completa.png");
-  revistaPagHilde1 = loadImage("Imagenes/paginaHilde1.png");
-  revistaPagHilde2 = loadImage("Imagenes/paginaHilde2.png");
-  revistaPag3Helelil1 = loadImage("Imagenes/paginaHellelil1.png")
-  revistaPag3Helelil2 = loadImage("Imagenes/paginaHellelil2.png")
+  mesaCompleta = loadImage("Imagenes/escena1-mesa-completa.webp");
+  revistaPagHilde1 = loadImage("Imagenes/paginahilde1.webp");
+  revistaPagHilde2 = loadImage("Imagenes/paginahilde2.webp");
+  revistaPag3Helelil1 = loadImage("Imagenes/paginahellelil1.webp")
+  revistaPag3Helelil2 = loadImage("Imagenes/paginahellelil2.webp")
 //sonido
-  aspen1023 = loadSound ("./Musica/audioAspen.mp3")
+  aspen1023 = loadSound ("Musica/audioAspen.mp3")
 }
 
 function setup() {

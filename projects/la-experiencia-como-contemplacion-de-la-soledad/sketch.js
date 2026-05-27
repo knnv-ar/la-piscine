@@ -27,7 +27,7 @@ var velocidad = 0.03;
 var cancion;
 
 function preload() {
-  img = loadImage('assets/night-sky.jpeg');
+  img = loadImage('assets/night-sky.webp');
  cancion= loadSound('assets/capitan-beto.mp3');
  
 }

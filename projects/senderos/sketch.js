@@ -18,17 +18,17 @@ let instrumental;
 
 
 function preload() {
-  cuadro = loadImage("img/cuadro.png");
-  cuadro2 = loadImage("img/cuadro2.png");
-  preciosa = loadImage("img/preciosa.jpeg");
-  yo = loadImage("img/yo.jpg");
+  cuadro = loadImage("img/cuadro.webp");
+  cuadro2 = loadImage("img/cuadro2.webp");
+  preciosa = loadImage("img/preciosa.webp");
+  yo = loadImage("img/yo.webp");
   ringa = loadSound("sound/ringa.mp3");
   recorrido = loadSound("sound/recorrido.mp3");
   tu = loadSound("sound/tu.mp3");
-  efecto1 = loadImage("gif/efecto1.gif");
-  efecto2 = loadImage("gif/efecto2.gif");
-  efecto3 = loadImage("gif/efecto3.gif");
-  efecto4 = loadImage("gif/efecto4.gif");
+  efecto1 = loadImage("gif/efecto1.webp");
+  efecto2 = loadImage("gif/efecto2.webp");
+  efecto3 = loadImage("gif/efecto3.webp");
+  efecto4 = loadImage("gif/efecto4.webp");
   instrumental = loadSound("sound/instrumental.mp3");
 }
 

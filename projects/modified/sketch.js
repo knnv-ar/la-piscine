@@ -25,12 +25,12 @@ document.oncontextmenu = function () {
 function preload() {
   glitch = loadSound("snd/glitch.mp3");
   calle = loadSound("snd/calle.mp3");
-  error = loadImage("img/error.png");
-  mask = loadImage("img/mask.png");
-  gr = loadImage("gif/gr.gif");
-  ry = loadImage("gif/ry.gif");
-  yr = loadImage("gif/yr.gif");
-  rg = loadImage("gif/rg.gif");
+  error = loadImage("img/error.webp");
+  mask = loadImage("img/mask.webp");
+  gr = loadImage("gif/gr.webp");
+  ry = loadImage("gif/ry.webp");
+  yr = loadImage("gif/yr.webp");
+  rg = loadImage("gif/rg.webp");
 }
 
 function setup() {

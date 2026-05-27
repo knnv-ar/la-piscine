@@ -27,7 +27,7 @@ var audio2;
 
 function preload() {
   
-  fondo=loadImage("imagenes/fondo.jpg");
+  fondo=loadImage("imagenes/fondo.webp");
   atardecer1 = createVideo("videos/atardecer1.mp4");
   atardecer1.loop();
   atardecer1.hide();
@@ -76,23 +76,23 @@ function preload() {
   paisaje3.loop();
   paisaje3.hide();
   
-  sueños1 = createVideo("videos/sueños1.mp4");
+  sueños1 = createVideo("videos/sue-os1.mp4");
   sueños1.loop();
   sueños1.hide();
   
-  sueños2 = createVideo("videos/sueños2.mp4");
+  sueños2 = createVideo("videos/sue-os2.mp4");
   sueños2.loop();
   sueños2.hide();
   
-  sueños3 = createVideo("videos/sueños3.mp4");
+  sueños3 = createVideo("videos/sue-os3.mp4");
   sueños3.loop();
   sueños3.hide();
   
-  sueños4 = createVideo("videos/sueños4.mp4");
+  sueños4 = createVideo("videos/sue-os4.mp4");
   sueños4.loop();
   sueños4.hide();
   
-  sueños5 = createVideo("videos/sueños5.mp4");
+  sueños5 = createVideo("videos/sue-os5.mp4");
   sueños5.loop();
   sueños5.hide();
 

@@ -16,10 +16,10 @@ function preload() {
   fuegif2alto = 150;
   fuegif3alto = 150;
 
-  velas = loadImage("multi/velas.png");
-  fuegif1 = createImg("multi/fuegif.gif");
-  fuegif2 = createImg("multi/fuegif.gif");
-  fuegif3 = createImg("multi/fuegif.gif");
+  velas = loadImage("multi/velas.webp");
+  fuegif1 = createImg("multi/fuegif.webp");
+  fuegif2 = createImg("multi/fuegif.webp");
+  fuegif3 = createImg("multi/fuegif.webp");
 
   fuegif1.style("width", "100px")
   fuegif2.style("width", "100px")
@@ -77,15 +77,15 @@ function draw() {
     } else {
               awasound.play();
       
-      gota1 = createImg("multi/drop.gif");
+      gota1 = createImg("multi/drop.webp");
       gota1.style("width", "150px");
       gota1.position(460, 140); // awa3
       
-      gota2 = createImg("multi/drop.gif");
+      gota2 = createImg("multi/drop.webp");
       gota2.style("width", "150px");
       gota2.position(320, 140); // awa2
       
-      gota3 = createImg("multi/drop.gif");
+      gota3 = createImg("multi/drop.webp");
       gota3.style("width", "150px");
       gota3.position(185, 140); // awa1
       

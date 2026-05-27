@@ -9,7 +9,7 @@ let brushSize = 3;
 function preload() {
   photo = loadImage("aa-main-img.webp");
   lullaby = loadSound("bb_humming_woman.mp3");
-  tvEffect = createVideo("cc_old_tv.mp4");
+  tvEffect = createVideo("cc-old-tv.mp4");
 }
 
 function setup() {

@@ -1,8 +1,8 @@
 let img1, img2;
 
 function preload(){
- img1 = loadImage("imagen/piel.png");
- img2 = loadImage("imagen/emoji.png");
+ img1 = loadImage("imagen/piel.webp");
+ img2 = loadImage("imagen/emoji.webp");
 }
 function setup() {
   let canvas = createCanvas(400, 400, WEBGL);

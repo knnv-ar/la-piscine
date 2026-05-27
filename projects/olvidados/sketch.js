@@ -5,7 +5,7 @@ let indiceVideoActual = 0;
 let botonX = 561, botonY = 310, botonAncho = 100, botonAlto = 180;
 
 function preload() {
-  fondoTV = loadImage("fondo/tele.jpg");
+  fondoTV = loadImage("fondo/tele.webp");
   // videos
   video1 = createVideo(["videos/los-doodlebops.mp4"]);
   video2 = createVideo(["videos/los-imaginadores.mp4"]);

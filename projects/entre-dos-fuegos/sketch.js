@@ -23,16 +23,16 @@ var fadeOut;
 var fadeAmount = -5;
 
 function preload() {
-  clima1 = loadImage("clima/cielo.png");
-  clima2 = loadImage("clima/nubes.png");
-  clima3 = loadImage("clima/cielo-lluvia.png");
+  clima1 = loadImage("clima/cielo.webp");
+  clima2 = loadImage("clima/nubes.webp");
+  clima3 = loadImage("clima/cielo-lluvia.webp");
 
-  img1 = loadImage("assets/ventana.png");
-  img2 = loadImage("assets/cielo.png");
-  img3 = loadImage("assets/sol.png");
-  img4 = loadImage("assets/luna.png");
-  img5 = loadImage("assets/cielo-noche.png");
-  img6 = loadImage("assets/estrellas.png");
+  img1 = loadImage("assets/ventana.webp");
+  img2 = loadImage("assets/cielo.webp");
+  img3 = loadImage("assets/sol.webp");
+  img4 = loadImage("assets/luna.webp");
+  img5 = loadImage("assets/cielo-noche.webp");
+  img6 = loadImage("assets/estrellas.webp");
   musica = loadSound("assets/ofrenda.mp3");
 }
 

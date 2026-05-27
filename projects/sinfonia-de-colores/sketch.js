@@ -15,20 +15,20 @@ let mostrarC = false;
 let mostrarS = false;
 
 function preload() {
-  fondo = loadImage("img/fondo.jpeg");
-  personaje = loadImage("img/personaje.png")
-  elefante = loadImage("img/elefante.png")
+  fondo = loadImage("img/fondo.webp");
+  personaje = loadImage("img/personaje.webp")
+  elefante = loadImage("img/elefante.webp")
   sonido = loadSound("sonido/audioA.mp3")
-  burbuja = loadImage("gif/gifburbuja.gif")
-  corazones[1] = loadImage("img/amarillo.png");
-  corazones[2] = loadImage("img/rojo.png");
-  corazones[3] = loadImage("img/azul.png");
-  corazones[4] = loadImage("img/lima.png");
-  corazones[5] = loadImage("img/naranja.png");
-  corazones[6] = loadImage("img/verde.png");
-  corazones[7] = loadImage("img/violeta.png");
-  corazones[8] = loadImage("img/celeste.png");
-  corazones[9] = loadImage("img/rosa.png");
+  burbuja = loadImage("gif/gifburbuja.webp")
+  corazones[1] = loadImage("img/amarillo.webp");
+  corazones[2] = loadImage("img/rojo.webp");
+  corazones[3] = loadImage("img/azul.webp");
+  corazones[4] = loadImage("img/lima.webp");
+  corazones[5] = loadImage("img/naranja.webp");
+  corazones[6] = loadImage("img/verde.webp");
+  corazones[7] = loadImage("img/violeta.webp");
+  corazones[8] = loadImage("img/celeste.webp");
+  corazones[9] = loadImage("img/rosa.webp");
 }
 function setup() {
   let canvas = createCanvas(500, 400);

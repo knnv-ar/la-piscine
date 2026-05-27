@@ -9,7 +9,7 @@ let tiempoTotal = 20;
 let tiempoLimite = tiempoTotal * 60;
 
 function preload() {
-  img = loadImage("imagenes/compu.jpg");
+  img = loadImage("imagenes/compu.webp");
 }
 
 function setup() {

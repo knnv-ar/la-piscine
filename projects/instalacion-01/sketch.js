@@ -59,12 +59,12 @@ let offset = 30;
 
 
 function preload() {
-  img = loadImage("fotos/img1.jpg");
-  img2 = loadImage("imagenes/letra.png");
-  img3 = loadImage("fotos/img3.png");
-  img4 = loadImage("fotos/img4.png");
-  img5 = loadImage("fotos/img5.png");
-  img6 = loadImage("fotos/img6.png");
+  img = loadImage("fotos/img1.webp");
+  img2 = loadImage("imagenes/letra.webp");
+  img3 = loadImage("fotos/img3.webp");
+  img4 = loadImage("fotos/img4.webp");
+  img5 = loadImage("fotos/img5.webp");
+  img6 = loadImage("fotos/img6.webp");
 }
 
 function setup() {

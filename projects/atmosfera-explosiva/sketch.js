@@ -9,7 +9,7 @@ let volumen = 1; // Inicialmente, el volumen es 1
 let reproduciendo = true; // Estado de reproducción
 
 function preload() {
-  gify = loadImage('3c.gif');
+  gify = loadImage('3c.webp');
   canciones.push(loadSound("ab-1.mp3"));
   canciones.push(loadSound("ab-2.mp3"));
   canciones.push(loadSound("ab-3.mp3"));

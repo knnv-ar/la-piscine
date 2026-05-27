@@ -14,12 +14,12 @@ let sonRuido;
 let sonDistorsion;
 
 function preload() {
-  fotos[0] = loadImage("foto/foto0.png");
-  fotosT[0] = loadImage("foto/foto0t.png");
-  fotos[1] = loadImage("foto/foto1.png");
-  fotosT[1] = loadImage("foto/foto1t.png");
-  fotos[2] = loadImage("foto/foto2.png");
-  fotosT[2] = loadImage("foto/foto2t.png");
+  fotos[0] = loadImage("foto/foto0.webp");
+  fotosT[0] = loadImage("foto/foto0t.webp");
+  fotos[1] = loadImage("foto/foto1.webp");
+  fotosT[1] = loadImage("foto/foto1t.webp");
+  fotos[2] = loadImage("foto/foto2.webp");
+  fotosT[2] = loadImage("foto/foto2t.webp");
   sonRuido = loadSound("sonido/ruido.mp3");
   sonDistorsion = loadSound("sonido/distorsion.mp3");
 }

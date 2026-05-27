@@ -6,8 +6,8 @@ var angleBoliche = 0;
 let count = 0;
 
 function preload() {
-  sound = loadSound("./sonidos/aero.mp3");
-  boliche = loadImage("./texturas/textura.jpg");
+  sound = loadSound("sonidos/aero.mp3");
+  boliche = loadImage("texturas/textura.webp");
 }
 
 function setup() {

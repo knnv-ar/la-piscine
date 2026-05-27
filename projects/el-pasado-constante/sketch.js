@@ -13,15 +13,15 @@ var numeroImagen=0;
 
 
 function preload() {
-      img1 = loadImage("fotos/msurrealistas.jpg") ;
-      img2 = loadImage("fotos/martemoderno.jpg");
-      img3 = loadImage("fotos/mcubismo.jpg");
-      img4 = loadImage("fotos/mfovismo.jpg");
-      img5 = loadImage("fotos/mpostimpresionismo.jpg");
-      img6 = loadImage("fotos/mpuntillismo.jpg");
-      img7 = loadImage("fotos/mrealismo.jpg");
-      img8 = loadImage("fotos/caballete.png");
-      imgfondo = loadImage("fotos/galeria.jpg")
+      img1 = loadImage("fotos/msurrealistas.webp") ;
+      img2 = loadImage("fotos/martemoderno.webp");
+      img3 = loadImage("fotos/mcubismo.webp");
+      img4 = loadImage("fotos/mfovismo.webp");
+      img5 = loadImage("fotos/mpostimpresionismo.webp");
+      img6 = loadImage("fotos/mpuntillismo.webp");
+      img7 = loadImage("fotos/mrealismo.webp");
+      img8 = loadImage("fotos/caballete.webp");
+      imgfondo = loadImage("fotos/galeria.webp")
 }
 
 

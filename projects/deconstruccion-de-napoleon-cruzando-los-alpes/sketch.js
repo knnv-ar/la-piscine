@@ -70,7 +70,7 @@ var orden = 1;
 var angulo = 0;
 
 function preload() {
-  img = loadImage('images/03.jpg');
+  img = loadImage('images/03.webp');
 }
 
 function setup() {

@@ -4,7 +4,7 @@ let tiempo = 0;
 let nivelSaturacion = 0;
 
 function preload() {
-  img = loadImage("imagenes/tired.jpg"); // Imagen linda y fachera 🫡
+  img = loadImage("imagenes/tired.webp"); // Imagen linda y fachera 🫡
   audio = loadSound("audio/saturacion.mp3") // Pitido infernal
   
 }

@@ -32,15 +32,15 @@ let imgGotico,imgRen, imgBar, imgRoc, imgNeo, imgRom,fondo;
 
 
 function preload() {
-  fondo = loadImage("img/fondo_principal.jpg");
-  spriteSheet_static = loadImage("img/animation_static.png");
-  spriteSheet = loadImage("img/animation_walk.png");
-  imgGotico = loadImage("img/estilo_gotico .jpg");
-  imgRen = loadImage("img/estilo_renacentista.jpg");
-  imgBar =  loadImage("img/estilo_barroco.jpg");
-  imgRoc = loadImage("img/estilo_rococo.jpg");
-  imgNeo = loadImage("img/estilo_neoclasico.jpg");
-  imgRom = loadImage("img/estilo_romantisismo.jpg");
+  fondo = loadImage("img/fondo-principal.webp");
+  spriteSheet_static = loadImage("img/animation-static.webp");
+  spriteSheet = loadImage("img/animation-walk.webp");
+  imgGotico = loadImage("img/estilo-gotico.webp");
+  imgRen = loadImage("img/estilo-renacentista.webp");
+  imgBar =  loadImage("img/estilo-barroco.webp");
+  imgRoc = loadImage("img/estilo-rococo.webp");
+  imgNeo = loadImage("img/estilo-neoclasico.webp");
+  imgRom = loadImage("img/estilo-romantisismo.webp");
 }
 
 function setup() {

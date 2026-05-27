@@ -4,17 +4,17 @@ let cambiar = 0;
 
 function preload() {
   // Carga todas las imágenes
-  images[0] = loadImage("img/parte1.jpg");
-  images[1] = loadImage("img/parte2.jpg");
-  images[2] = loadImage("img/parte3.jpg");
-  images[3] = loadImage("img/parte4.jpg");
-  images[4] = loadImage("img/parte5.jpg");
-  images[5] = loadImage("img/parte6.jpg");
-  images[6] = loadImage("img/parte7.jpg");
-  images[7] = loadImage("img/final-alternatvo1.jpg");
-  images[8] = loadImage("img/final-alternatvo2.jpg");
-  images[9] = loadImage("img/final-alternatvo3.jpg");
-  images[10] = loadImage("img/parte8.jpg");
+  images[0] = loadImage("img/parte1.webp");
+  images[1] = loadImage("img/parte2.webp");
+  images[2] = loadImage("img/parte3.webp");
+  images[3] = loadImage("img/parte4.webp");
+  images[4] = loadImage("img/parte5.webp");
+  images[5] = loadImage("img/parte6.webp");
+  images[6] = loadImage("img/parte7.webp");
+  images[7] = loadImage("img/final-alternatvo1.webp");
+  images[8] = loadImage("img/final-alternatvo2.webp");
+  images[9] = loadImage("img/final-alternatvo3.webp");
+  images[10] = loadImage("img/parte8.webp");
 }
 
 function setup() {

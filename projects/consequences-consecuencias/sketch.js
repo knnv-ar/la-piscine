@@ -10,10 +10,10 @@ var texto = "Ⱨ₳ⱠⱠɄ₵ł₦₳₮łØ₦";
 var texto2 = "INSTRUCCIONES";
 
 function preload() {
-  imagen = loadImage("archivos/susurro.gif");
-  imagen2 = loadImage("archivos/estrellas.gif");
-  imagen3 = loadImage("archivos/humo.png");
-  imagen4 = loadImage("archivos/manos.gif");
+  imagen = loadImage("archivos/susurro.webp");
+  imagen2 = loadImage("archivos/estrellas.webp");
+  imagen3 = loadImage("archivos/humo.webp");
+  imagen4 = loadImage("archivos/manos.webp");
   voces = loadSound("archivos/voces.mp3");
   
 }

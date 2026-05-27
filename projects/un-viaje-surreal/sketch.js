@@ -13,7 +13,7 @@ var reloj;
 
 function preload() {
   
-  nochestrellada = loadImage("img/nochestrellada.jpg");
+  nochestrellada = loadImage("img/nochestrellada.webp");
    
   for (let i=1 ;i < 7; i++) { 
   estrella[i]=loadImage("img/estrella"+i+".png");
@@ -22,12 +22,12 @@ function preload() {
   for (let i=0 ;i < 5; i++) { 
   torre[i]=loadImage("img/t"+i+".png");
   }
-  edificio=loadImage("img/edificio0.png");
-   edificio1=loadImage("img/edificio1.png");
+  edificio=loadImage("img/edificio0.webp");
+   edificio1=loadImage("img/edificio1.webp");
   
   cancion = loadSound('musica/si-tu-vois-ma-mere-midnight-in-paris-2011.mp3');
 
-  reloj=loadImage("img/reloj.png");
+  reloj=loadImage("img/reloj.webp");
  
   
 }

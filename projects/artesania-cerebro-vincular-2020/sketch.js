@@ -34,21 +34,21 @@ var s2=false; //variable para que solo se reproduzca una vez
 
 
 function preload() {
-  img0 = loadImage("img/05.png");
-  img1 = loadImage("img/01.png");
-  img2 = loadImage("img/02.png");
-  img3 = loadImage("img/03.png");
-  img4 = loadImage("img/04.png");
-  img5 = loadImage("img/05.gif");
-  img6 = loadImage("img/invfondo.png");
-  img7 = loadImage("img/fibonacci.gif");
-  img8 = loadImage("img/spiral.png");
-  img9 = loadImage("img/fondo.png");
-  img10 = loadImage("img/brain.gif");
-  img11 = loadImage("img/mano1.png");
-  img12 = loadImage("img/mano2.png");
-  img13 = loadImage("img/ojos.png");
-  img14 = loadImage("img/math.gif");  
+  img0 = loadImage("img/05.webp");
+  img1 = loadImage("img/01.webp");
+  img2 = loadImage("img/02.webp");
+  img3 = loadImage("img/03.webp");
+  img4 = loadImage("img/04.webp");
+  img5 = loadImage("img/05.webp");
+  img6 = loadImage("img/invfondo.webp");
+  img7 = loadImage("img/fibonacci.webp");
+  img8 = loadImage("img/spiral.webp");
+  img9 = loadImage("img/fondo.webp");
+  img10 = loadImage("img/brain.webp");
+  img11 = loadImage("img/mano1.webp");
+  img12 = loadImage("img/mano2.webp");
+  img13 = loadImage("img/ojos.webp");
+  img14 = loadImage("img/math.webp");  
 
   tex1 = loadStrings('data/agamben.txt')
   tex2 = loadStrings('data/aira.txt')

@@ -6,26 +6,26 @@ let rects = [];
 
 // cargo imagenes y sonido
 function preload() {
-  fondo = loadImage("./img/fondo1.jpg"); // imagen cuadros de fondo
-  mouseClick = loadSound("./audio/mouseClick.mp4");
+  fondo = loadImage("img/fondo1.webp"); // imagen cuadros de fondo
+  mouseClick = loadSound("audio/mouseclick.mp4");
   imagenes = [
-    loadImage("./img/cds.png"),
-    loadImage("./img/telefonito.png"),
-    loadImage("./img/zapatitos.png"),
-    loadImage("./img/disney.png"),
+    loadImage("img/cds.webp"),
+    loadImage("img/telefonito.webp"),
+    loadImage("img/zapatitos.webp"),
+    loadImage("img/disney.webp"),
     null, // cuadro sin imagen
-    loadImage("./img/ps2.png"),
-    loadImage("./img/ned.png"),
-    loadImage("./img/bananitaDolca.png"),
-    loadImage("./img/radio.png"),
-    loadImage("./img/pata.png"),
-    loadImage("./img/mdq.png"),
+    loadImage("img/ps2.webp"),
+    loadImage("img/ned.webp"),
+    loadImage("img/bananitadolca.webp"),
+    loadImage("img/radio.webp"),
+    loadImage("img/pata.webp"),
+    loadImage("img/mdq.webp"),
     null, // cuadro sin imagen
-    loadImage("./img/compu.png"),
-    loadImage("./img/bombuchas.png"),
-    loadImage("./img/walkieTalkie.png"),
-    loadImage("./img/petShop.png"),
-    loadImage("./img/gogos.png"),
+    loadImage("img/compu.webp"),
+    loadImage("img/bombuchas.webp"),
+    loadImage("img/walkietalkie.webp"),
+    loadImage("img/petshop.webp"),
+    loadImage("img/gogos.webp"),
   ];
 }
 

@@ -5,7 +5,7 @@ function setup() {
   let canvas = createCanvas(512, 512, WEBGL);
   canvas.parent('div-sketch');
   background(0);
-  v = createVideo("FUTURE.mp4");
+  v = createVideo("future.mp4");
   v.size(200, 200);
   v.loop();
   v.hide();

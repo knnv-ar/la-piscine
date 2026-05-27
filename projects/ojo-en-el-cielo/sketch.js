@@ -6,10 +6,10 @@ let song;
 
 function preload() {
    //OJO EN COLOR
-  color = loadImage("imagenes/ojocolor.png");
+  color = loadImage("imagenes/ojocolor.webp");
   
   //OJO EN BLANCO Y NEGRO
-  negro = loadImage("imagenes/ojoblancoynegro.png");
+  negro = loadImage("imagenes/ojoblancoynegro.webp");
   
   //AUDIO
   song= loadSound("imagenes/survive-mono.mp3");

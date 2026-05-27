@@ -72,8 +72,8 @@ function setup() {
   canvas.parent('div-sketch');
 }
 function preload() {
-  t = loadImage("estrellas.gif");
-  tr = loadImage("estrella1.gif");
+  t = loadImage("estrellas.webp");
+  tr = loadImage("estrella1.webp");
   mjt = loadImage("lisa.webp");
   ht = loadImage("h.webp");
   ah = loadImage("barthp.webp");
@@ -108,7 +108,7 @@ function preload() {
   cua = loadImage("cua.webp");
   art = loadImage("barthp.webp");
   artm = loadImage("lisaart.webp");
-  g = loadImage("fin.gif");
+  g = loadImage("fin.webp");
   m = loadSound("musica.mp3");
   mu = loadImage("musica1.webp");
 

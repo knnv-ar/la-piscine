@@ -1,6 +1,6 @@
 function preload(){
-  cancion = loadSound("./assets/cancion.mp3");
-  fuente = loadFont("./assets/dogica.ttf");
+  cancion = loadSound("assets/cancion.mp3");
+  fuente = loadFont("assets/dogica.ttf");
 }
 
 function setup() {

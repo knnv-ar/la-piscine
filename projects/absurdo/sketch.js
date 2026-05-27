@@ -13,17 +13,17 @@ function preload() {
   enlab    =  loadSound("audios/enlab.mp3");
   error    =  loadSound("audios/error.mp3");
 
-  imagen[0] = loadImage("imagenes/caja.png");
-  imagen[1] = loadImage("imagenes/chelo.png");
-  imagen[2] = loadImage("imagenes/ladrillo.png");
-  imagen[3] = loadImage("imagenes/lampara.png");
-  imagen[4] = loadImage("imagenes/llaves.png");
-  imagen[5] = loadImage("imagenes/marte.png");
-  imagen[6] = loadImage("imagenes/paleta.png");
-  imagen[7] = loadImage("imagenes/plasticola.png");
-  imagen[8] = loadImage("imagenes/teletubbie.png");
-  imagen[9] = loadImage("imagenes/termometro.png");
-  final= loadImage("imagenes/libertad.png");
+  imagen[0] = loadImage("imagenes/caja.webp");
+  imagen[1] = loadImage("imagenes/chelo.webp");
+  imagen[2] = loadImage("imagenes/ladrillo.webp");
+  imagen[3] = loadImage("imagenes/lampara.webp");
+  imagen[4] = loadImage("imagenes/llaves.webp");
+  imagen[5] = loadImage("imagenes/marte.webp");
+  imagen[6] = loadImage("imagenes/paleta.webp");
+  imagen[7] = loadImage("imagenes/plasticola.webp");
+  imagen[8] = loadImage("imagenes/teletubbie.webp");
+  imagen[9] = loadImage("imagenes/termometro.webp");
+  final= loadImage("imagenes/libertad.webp");
 
 
 }

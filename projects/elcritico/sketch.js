@@ -25,13 +25,13 @@ function preload() {
   enemigo = loadModel("obj/enemigo.obj");
 
   //  IMG
-  texturamonitor = loadImage("img/texturamonitor.PNG");
+  texturamonitor = loadImage("img/texturamonitor.webp");
 
   obras = [
-    loadImage("img/obra0.jpg"),
-    loadImage("img/obra1.jpg"),
-    loadImage("img/obra2.jpg"),
-    loadImage("img/obra3.jpg"),
+    loadImage("img/obra0.webp"),
+    loadImage("img/obra1.webp"),
+    loadImage("img/obra2.webp"),
+    loadImage("img/obra3.webp"),
   ];
 }
 

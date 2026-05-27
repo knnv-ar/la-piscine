@@ -13,7 +13,7 @@ let gotas = [];
 let velocidad = 0;
 
 function preload() {
-  bosque = loadImage("img/forest.jpg");
+  bosque = loadImage("img/forest.webp");
 
   musica = loadSound("sonidos/general.mp3");
 

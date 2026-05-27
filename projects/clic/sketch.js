@@ -14,11 +14,11 @@ let sonidoError
 
 
 function preload() {
-  img1 = loadImage("./ffondo.webp");
-  img2 = loadImage("./continuar.webp");
-  img3 = loadImage("./seguir.webp");
-  img4 = loadImage("./abandonar.webp"); 
-  sonidoError = loadSound("./error.mp3");
+  img1 = loadImage("ffondo.webp");
+  img2 = loadImage("continuar.webp");
+  img3 = loadImage("seguir.webp");
+  img4 = loadImage("abandonar.webp"); 
+  sonidoError = loadSound("error.mp3");
 }
 
 function setup() {

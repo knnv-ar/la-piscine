@@ -2,8 +2,8 @@ let tipos = [];
 let neumáticos = [];
 
 function preload() {
-  fondo = loadImage("imagenes/fondo.jpg");
-  yard = loadImage("imagenes/yard.png");
+  fondo = loadImage("imagenes/fondo.webp");
+  yard = loadImage("imagenes/yard.webp");
   
   for (let i = 0; i < 7; i++) {
     tipos[i] = loadImage("imagenes/neumatico" + i + ".png");

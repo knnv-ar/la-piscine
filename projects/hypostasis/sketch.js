@@ -18,8 +18,8 @@ var fuente2;
 
 function preload() {
   //Ingreso la imagen en la variable textura
-  textura = loadImage("imagenes/textura.png");
-  texturaDistopica = loadImage("imagenes/textura-distopica.png");
+  textura = loadImage("imagenes/textura.webp");
+  texturaDistopica = loadImage("imagenes/textura-distopica.webp");
   //Ingreso el video en la variable, también le digo que el video esté en   constante loop.- (una vez que termine, que se reinicie).
   fondo = createVideo("videos/fondo.mp4");
   fondo.loop();

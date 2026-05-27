@@ -4,14 +4,14 @@ let img1, img2, img3, img4, img5, img6, img7, img8;
 let boton = 0;
 
 function preload() {
-  img1 = loadImage("imagenes/televintage.png");
-  img2 = loadImage("imagenes/tv.gif");
-  img3 = loadImage("imagenes/tvcolores.gif");
-  img4 = loadImage("imagenes/antiguo.jpg");
-  img5 = loadImage("imagenes/actual.jpg");
-  img6 = loadImage("imagenes/3.jpg");
-  img7 = loadImage("imagenes/1.jpg");
-  img8 = loadImage("imagenes/2.jpg");
+  img1 = loadImage("imagenes/televintage.webp");
+  img2 = loadImage("imagenes/tv.webp");
+  img3 = loadImage("imagenes/tvcolores.webp");
+  img4 = loadImage("imagenes/antiguo.webp");
+  img5 = loadImage("imagenes/actual.webp");
+  img6 = loadImage("imagenes/3.webp");
+  img7 = loadImage("imagenes/1.webp");
+  img8 = loadImage("imagenes/2.webp");
 }
 
 function setup() {

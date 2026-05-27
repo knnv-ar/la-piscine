@@ -15,7 +15,7 @@ var resetInterval = 100;
 
 function preload() {
   pixeboy = loadFont("img/pixeboy.ttf");
-  lentes = loadImage("img/lentes.png");
+  lentes = loadImage("img/lentes.webp");
 }
 
 class Star {

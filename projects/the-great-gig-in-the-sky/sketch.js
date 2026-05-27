@@ -106,8 +106,8 @@ let gap = 35;
 let index = 0;
 
 function preload() {
-  musica = loadSound("./assets/multi.mp3");
-  fuente = loadFont("./assets/letra.ttf");
+  musica = loadSound("assets/multi.mp3");
+  fuente = loadFont("assets/letra.ttf");
 
   for (var i = 1; i < 16; i++) {
     imgs[i] = loadImage("./assets/aimagen/" + i + ".png");
