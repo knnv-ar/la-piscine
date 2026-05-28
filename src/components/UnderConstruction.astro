@@ -98,16 +98,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
       <h1 class="main-heading">{content.heading}</h1>
       <p class="description">{content.description}</p>
 
-      <!-- Neon loading progress indicator -->
-      <div class="progress-container">
-        <div class="progress-info">
-          <span class="progress-status">{content.loadingText}</span>
-          <span class="progress-percentage">85%</span>
-        </div>
-        <div class="progress-bar-wrapper">
-          <div class="progress-bar-fill"></div>
-        </div>
-      </div>
 
       <!-- Course & University info inside card -->
       <div class="academic-info">
@@ -435,57 +425,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
     transition: var(--theme-transition);
   }
 
-  /* Progress bar styles */
-  .progress-container {
-    width: 100%;
-    max-width: 420px;
-    margin: 0.75rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .progress-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.78rem;
-    font-weight: 600;
-  }
-
-  .progress-status {
-    color: var(--text-muted);
-  }
-
-  .progress-percentage {
-    color: var(--accent);
-  }
-
-  .progress-bar-wrapper {
-    width: 100%;
-    height: 6px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    transition: var(--theme-transition);
-  }
-
-  :global(html[data-theme="light"]) .progress-bar-wrapper {
-    background: rgba(15, 23, 42, 0.03);
-    border-color: rgba(15, 23, 42, 0.05);
-  }
-
-  .progress-bar-fill {
-    height: 100%;
-    width: 85%;
-    background: linear-gradient(90deg, var(--accent), var(--accent-purple));
-    box-shadow: 0 0 10px var(--accent-glow);
-    border-radius: 10px;
-    position: relative;
-    animation: progress-slide 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-  }
 
   /* Academic info */
   .academic-info {
@@ -604,11 +543,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
     }
   }
 
-  @keyframes progress-slide {
-    from {
-      width: 0%;
-    }
-  }
 
   @keyframes badge-pulse {
     0%, 100% {
@@ -658,9 +592,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
       margin-bottom: 1.5rem;
     }
 
-    .progress-container {
-      max-width: 100%;
-    }
   }
 </style>
 
