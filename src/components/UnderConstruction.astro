@@ -1,0 +1,696 @@
+---
+import { type Locale } from '../utils/translations';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const base = '/la-piscine';
+
+// Text translations specifically for the Under Construction screen
+const content = {
+  es: {
+    status: 'PRÓXIMAMENTE',
+    heading: '<la-piscine> se está llenando',
+    description: 'Estamos preparando el espacio expositivo de arte digital de Artes Multimediales 1, cátedra Lacabanne. Muy pronto nos sumergiremos en una nueva experiencia interactiva.',
+    loadingText: 'Llenando piscina digital...',
+    department: 'Artes Multimediales y Electrónicas',
+    university: 'Universidad Nacional de las Artes',
+    career: 'Licenciatura en Artes Multimediales',
+    linksTitle: 'Enlaces de interés',
+    linkCatedra: 'AMyE',
+    linkUna: 'UNA',
+    langLabel: 'English Version',
+    langTarget: 'en'
+  },
+  en: {
+    status: 'COMING SOON',
+    heading: '<la-piscine> is filling up',
+    description: 'We are preparing the digital art exhibition space for the Multimedia Arts 1, Lacabanne chair. Very soon we will submerge in a brand new interactive experience.',
+    loadingText: 'Filling digital pool...',
+    department: 'Multimedia and Electronic Arts',
+    university: 'Universidad Nacional de las Artes',
+    career: 'Bachelor degree in Multimedia Arts',
+    linksTitle: 'Useful links',
+    linkCatedra: 'M&EA',
+    linkUna: 'UNA',
+    langLabel: 'Versión en Español',
+    langTarget: 'es'
+  }
+}[locale];
+
+// Calculate target URL for language switch
+const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
+---
+
+<div class="construction-container">
+  <!-- Glowing pool background elements -->
+  <div class="pool-backdrop">
+    <div class="pool-glow glow-cyan"></div>
+    <div class="pool-glow glow-purple"></div>
+    <div class="pool-glow glow-blue"></div>
+  </div>
+
+  <!-- Decorative fluid waves in background -->
+  <div class="water-waves">
+    <svg class="editorial-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="50" y="0" fill="rgba(6, 182, 212, 0.05)" />
+        <use xlink:href="#gentle-wave" x="50" y="3" fill="rgba(139, 92, 246, 0.03)" />
+        <use xlink:href="#gentle-wave" x="50" y="6" fill="rgba(6, 182, 212, 0.08)" />
+        <use xlink:href="#gentle-wave" x="50" y="9" fill="rgba(139, 92, 246, 0.05)" />
+      </g>
+    </svg>
+  </div>
+
+  <!-- Utility actions (Theme and Language switches) -->
+  <div class="header-actions">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle-uc" class="action-btn glass-panel" aria-label="Cambiar tema" title="Cambiar tema">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+
+    <!-- Language Toggle -->
+    <a href={targetLink} class="action-btn lang-btn glass-panel" title={content.langLabel}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      <span class="lang-code">{content.langTarget.toUpperCase()}</span>
+    </a>
+  </div>
+
+  <main class="construction-content">
+    <!-- Brand / Logo -->
+    <div class="brand-logo animate-fade-in">
+      <span class="bracket">&lt;</span><span class="logo-text">la-piscine</span><span class="bracket">&gt;</span>
+    </div>
+
+    <!-- Central glassmorphic card -->
+    <div class="status-card glass-panel animate-slide-up">
+      <div class="status-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">{content.status}</span>
+      </div>
+
+      <h1 class="main-heading">{content.heading}</h1>
+      <p class="description">{content.description}</p>
+
+      <!-- Neon loading progress indicator -->
+      <div class="progress-container">
+        <div class="progress-info">
+          <span class="progress-status">{content.loadingText}</span>
+          <span class="progress-percentage">85%</span>
+        </div>
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Course & University info inside card -->
+      <div class="academic-info">
+        <div class="info-block">
+          <span class="info-label">{content.career}</span>
+          <span class="info-value">{content.department}</span>
+          <span class="info-sub">{content.university}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official institution links -->
+    <div class="footer-links animate-fade-in-delayed">
+      <span class="links-title">{content.linksTitle}</span>
+      <div class="links-grid">
+        <a href="https://multimedia.una.edu.ar/" target="_blank" rel="noopener noreferrer" class="link-item glass-panel">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>{content.linkCatedra}</span>
+        </a>
+        <a href="https://una.edu.ar/" target="_blank" rel="noopener noreferrer" class="link-item glass-panel">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>{content.linkUna}</span>
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<style>
+  /* Local layout specifically for the under-construction landing page */
+  .construction-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2.5rem 1.5rem;
+    box-sizing: border-box;
+    background: radial-gradient(135deg, rgba(8, 12, 21, 0.4) 0%, rgba(5, 8, 14, 0.9) 100%);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .construction-container {
+    background: radial-gradient(135deg, rgba(241, 245, 249, 0.6) 0%, rgba(255, 255, 255, 0.95) 100%);
+  }
+
+  /* Water backdrop lights */
+  .pool-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .pool-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    mix-blend-mode: screen;
+    animation: float-glow 15s infinite ease-in-out alternate;
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .pool-glow {
+    opacity: 0.08;
+    mix-blend-mode: multiply;
+    filter: blur(80px);
+  }
+
+  .glow-cyan {
+    top: 10%;
+    left: 15%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+    animation-delay: 0s;
+  }
+
+  .glow-purple {
+    bottom: 15%;
+    right: 10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%);
+    animation-delay: -3s;
+  }
+
+  .glow-blue {
+    top: 50%;
+    left: 60%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #0284c7 0%, transparent 70%);
+    animation-delay: -6s;
+  }
+
+  /* Parallax fluid SVG waves */
+  .water-waves {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 120px;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .editorial-waves {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    min-height: 80px;
+  }
+
+  .parallax > use {
+    animation: wave-motion 12s cubic-bezier(.55,.5,.45,.5) infinite;
+    transition: var(--theme-transition);
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+
+  /* Action buttons (header row) */
+  .header-actions {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 10;
+  }
+
+  .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-width: 36px;
+    padding: 0 0.75rem;
+    border-radius: 20px;
+    color: var(--text-secondary);
+    background: rgba(12, 18, 30, 0.4);
+    cursor: pointer;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth), var(--theme-transition);
+    text-decoration: none;
+  }
+
+  :global(html[data-theme="light"]) .action-btn {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text-secondary);
+  }
+
+  .action-btn:hover {
+    color: var(--accent);
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 0 10px var(--accent-glow);
+    transform: translateY(-1px);
+  }
+
+  /* Theme icon toggle rules */
+  .sun-icon, .moon-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  :global(html[data-theme="dark"]) .moon-icon { display: none; }
+  :global(html[data-theme="dark"]) .sun-icon { display: block; }
+  :global(html[data-theme="light"]) .sun-icon { display: none; }
+  :global(html[data-theme="light"]) .moon-icon { display: block; }
+
+  .lang-btn {
+    font-size: 0.75rem;
+    font-weight: 700;
+    gap: 0.35rem;
+  }
+
+  .lang-code {
+    font-family: var(--font-title);
+  }
+
+  .globe-icon {
+    opacity: 0.8;
+  }
+
+  /* Content area */
+  .construction-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 580px;
+    margin: auto 0;
+  }
+
+  /* Logo branding */
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--font-title);
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  }
+
+  .brand-logo .bracket {
+    color: var(--accent);
+    font-weight: 300;
+  }
+
+  .brand-logo .logo-text {
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Status Card */
+  .status-card {
+    width: 100%;
+    background: rgba(12, 18, 30, 0.5);
+    border: 1px solid var(--glass-border);
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .status-card {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.04);
+  }
+
+  .status-card:hover {
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-glow);
+  }
+
+  :global(html[data-theme="light"]) .status-card:hover {
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06), 0 0 20px var(--accent-glow);
+  }
+
+  /* Badge indicator */
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(6, 182, 212, 0.08);
+    border: 1px solid rgba(6, 182, 212, 0.15);
+    padding: 0.35rem 0.9rem;
+    border-radius: 30px;
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .status-badge {
+    background: rgba(2, 132, 199, 0.06);
+    border: 1px solid rgba(2, 132, 199, 0.15);
+  }
+
+  .badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    animation: badge-pulse 2s infinite ease-in-out;
+  }
+
+  .badge-text {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    font-family: var(--font-title);
+  }
+
+  /* Typography */
+  .main-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    transition: var(--theme-transition);
+  }
+
+  .description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    max-width: 480px;
+    transition: var(--theme-transition);
+  }
+
+  /* Progress bar styles */
+  .progress-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .progress-status {
+    color: var(--text-muted);
+  }
+
+  .progress-percentage {
+    color: var(--accent);
+  }
+
+  .progress-bar-wrapper {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .progress-bar-wrapper {
+    background: rgba(15, 23, 42, 0.03);
+    border-color: rgba(15, 23, 42, 0.05);
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 85%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-purple));
+    box-shadow: 0 0 10px var(--accent-glow);
+    border-radius: 10px;
+    position: relative;
+    animation: progress-slide 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  /* Academic info */
+  .academic-info {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed rgba(255, 255, 255, 0.06);
+    transition: var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .academic-info {
+    border-top-color: rgba(15, 23, 42, 0.06);
+  }
+
+  .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .info-label {
+    font-size: 0.72rem;
+    color: var(--accent-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+  }
+
+  .info-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .info-sub {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  /* External Links Section */
+  .footer-links {
+    margin-top: 2.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .links-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .links-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: rgba(12, 18, 30, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  :global(html[data-theme="light"]) .link-item {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .link-item:hover {
+    color: var(--text-primary);
+    border-color: var(--accent);
+    background: rgba(6, 182, 212, 0.05);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.08);
+  }
+
+  /* Entrance animations */
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(-8px);
+    animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  .animate-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
+  }
+
+  .animate-fade-in-delayed {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
+  }
+
+  /* Keyframes definitions */
+  @keyframes fade-in-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes progress-slide {
+    from {
+      width: 0%;
+    }
+  }
+
+  @keyframes badge-pulse {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.15);
+      box-shadow: 0 0 12px var(--accent);
+    }
+  }
+
+  @keyframes float-glow {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-30px, 20px) scale(1.15);
+    }
+    100% {
+      transform: translate(15px, -15px) scale(0.9);
+    }
+  }
+
+  @keyframes wave-motion {
+    0% {
+      transform: translate3d(-90px,0,0);
+    }
+    100% {
+      transform: translate3d(85px,0,0);
+    }
+  }
+
+  /* Responsiveness */
+  @media (max-width: 580px) {
+    .status-card {
+      padding: 2rem 1.5rem;
+    }
+
+    .main-heading {
+      font-size: 1.85rem;
+    }
+
+    .brand-logo {
+      font-size: 1.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-container {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<script>
+  // Setup theme toggle for Under Construction page
+  function setupThemeUC() {
+    const toggleBtn = document.getElementById('theme-toggle-uc');
+    if (!toggleBtn) return;
+
+    let isToggling = false;
+
+    toggleBtn.addEventListener('click', () => {
+      if (isToggling) return;
+      isToggling = true;
+
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+
+      setTimeout(() => {
+        isToggling = false;
+      }, 200);
+    });
+  }
+
+  // Run initial theme binding
+  setupThemeUC();
+
+  // Support SPA transitions if any
+  document.addEventListener('astro:after-swap', setupThemeUC);
+</script>

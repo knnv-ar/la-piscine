@@ -2,6 +2,8 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { useTranslations, type Locale } from '../utils/translations';
+import { SITE_CONFIG } from '../config';
+import UnderConstruction from '../components/UnderConstruction.astro';
 
 interface Props {
   title?: string;
@@ -17,6 +19,15 @@ const t = useTranslations(locale);
 const pageTitle = title ? `${title} | ${t('site.title')}` : t('site.title');
 const pageDescription = description || t('site.description');
 const base = '/la-piscine';
+
+// Maintenance Mode controls
+const isMaintenance = SITE_CONFIG.maintenanceMode;
+const pathname = Astro.url.pathname;
+const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
+const isSpanishHome = normalizedPath === `${base}/` || normalizedPath === '/' || normalizedPath === '/index.html' || normalizedPath === `${base}/index.html`;
+const isEnglishHome = normalizedPath === `${base}/en/` || normalizedPath === '/en/' || normalizedPath === '/en/index.html' || normalizedPath === `${base}/en/index.html`;
+const isHome = isSpanishHome || isEnglishHome;
+const redirectUrl = locale === 'en' ? `${base}/en/` : `${base}/`;
 ---
 
 <!DOCTYPE html>
@@ -182,12 +193,28 @@ const base = '/la-piscine';
       }
     </style>
     <slot name="head" />
+
+    {isMaintenance && !isHome && (
+      <meta http-equiv="refresh" content={`0; url=${redirectUrl}`} />
+      <style is:inline>
+        body { display: none !important; }
+      </style>
+      <script is:inline define:vars={{ redirectUrl }}>
+        window.location.href = redirectUrl;
+      </script>
+    )}
   </head>
   <body>
-    <Header />
-    <main style="flex: 1; display: flex; flex-direction: column;">
-      <slot />
-    </main>
-    <Footer />
+    {isMaintenance && isHome ? (
+      <UnderConstruction locale={locale} />
+    ) : (
+      <>
+        <Header />
+        <main style="flex: 1; display: flex; flex-direction: column;">
+          <slot />
+        </main>
+        <Footer />
+      </>
+    )}
   </body>
 </html>
