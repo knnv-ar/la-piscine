@@ -109,20 +109,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
       </div>
     </div>
 
-    <!-- Official institution links -->
-    <div class="footer-links animate-fade-in-delayed">
-      <span class="links-title">{content.linksTitle}</span>
-      <div class="links-grid">
-        <a href="https://multimedia.una.edu.ar/" target="_blank" rel="noopener noreferrer" class="link-item glass-panel">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-          <span>{content.linkCatedra}</span>
-        </a>
-        <a href="https://una.edu.ar/" target="_blank" rel="noopener noreferrer" class="link-item glass-panel">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-          <span>{content.linkUna}</span>
-        </a>
-      </div>
-    </div>
   </main>
 </div>
 
@@ -464,57 +450,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
     color: var(--text-muted);
   }
 
-  /* External Links Section */
-  .footer-links {
-    margin-top: 2.25rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .links-title {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text-muted);
-    font-weight: 600;
-  }
-
-  .links-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .link-item {
-    display: flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.45rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-    background: rgba(12, 18, 30, 0.3);
-    border: 1px solid var(--glass-border);
-    border-radius: 20px;
-    text-decoration: none;
-    transition: var(--transition-smooth), var(--theme-transition);
-  }
-
-  :global(html[data-theme="light"]) .link-item {
-    background: rgba(255, 255, 255, 0.6);
-  }
-
-  .link-item:hover {
-    color: var(--text-primary);
-    border-color: var(--accent);
-    background: rgba(6, 182, 212, 0.05);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.08);
-  }
 
   /* Entrance animations */
   .animate-fade-in {
@@ -527,12 +462,6 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
     opacity: 0;
     transform: translateY(20px);
     animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) 0.15s forwards;
-  }
-
-  .animate-fade-in-delayed {
-    opacity: 0;
-    transform: translateY(8px);
-    animation: fade-in-up 0.8s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
   }
 
   /* Keyframes definitions */
