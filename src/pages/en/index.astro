@@ -34,7 +34,7 @@ const serializedProjects = allProjects.map(p => ({
     <div class="hero-glowing-pool"></div>
     <div class="container hero-content">
       <h1 class="hero-title">
-        <span class="bracket">&lt;</span>la-piscine<span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span><span class="hero-logo-text">la-piscine</span><span class="bracket">&gt;</span>
       </h1>
       <p class="hero-subtitle">{t('home.subtitle')}</p>
       <p class="hero-description">{t('site.description')}</p>
@@ -227,21 +227,47 @@ const serializedProjects = allProjects.map(p => ({
   }
 
   .hero-title {
-    font-size: 4.5rem;
-    font-weight: 800;
-    letter-spacing: -0.04em;
+    font-family: var(--font-mono);
+    font-size: 4.3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     line-height: 1.05;
-    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
     filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.15));
     transition: var(--theme-transition);
+    cursor: default;
   }
 
   .hero-title .bracket {
     color: var(--accent);
     font-weight: 300;
-    -webkit-text-fill-color: var(--accent);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease, text-shadow 0.3s ease;
+    display: inline-block;
+  }
+
+  .hero-title:hover .bracket:first-child {
+    transform: translateX(-6px);
+    color: var(--accent-purple);
+    text-shadow: 0 0 15px var(--accent-purple-glow);
+  }
+
+  .hero-title:hover .bracket:last-child {
+    transform: translateX(6px);
+    color: var(--accent-purple);
+    text-shadow: 0 0 15px var(--accent-purple-glow);
+  }
+
+  .hero-logo-text {
+    background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: filter 0.3s ease;
+  }
+
+  .hero-title:hover .hero-logo-text {
+    filter: drop-shadow(0 0 12px var(--accent-glow));
   }
 
   .hero-subtitle {
@@ -618,7 +644,7 @@ const serializedProjects = allProjects.map(p => ({
     }
 
     .hero-title {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
 
     .hero-subtitle {

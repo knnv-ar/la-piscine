@@ -104,25 +104,49 @@ targetLink = targetLink.replace(/\/+/g, '/');
   .brand {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    font-family: var(--font-title);
-    font-size: 1.5rem;
+    gap: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 1.45rem;
     font-weight: 700;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
     color: var(--text-primary);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: var(--transition-smooth);
+  }
+
+  .brand:hover {
+    text-decoration: none;
   }
 
   .brand-bracket {
     color: var(--accent);
     text-shadow: 0 0 8px var(--accent-glow);
     font-weight: 300;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease, text-shadow 0.3s ease;
+    display: inline-block;
+  }
+
+  .brand:hover .brand-bracket:first-child {
+    transform: translateX(-3px);
+    color: var(--accent-purple);
+    text-shadow: 0 0 12px var(--accent-purple-glow);
+  }
+
+  .brand:hover .brand-bracket:last-child {
+    transform: translateX(3px);
+    color: var(--accent-purple);
+    text-shadow: 0 0 12px var(--accent-purple-glow);
   }
 
   .brand-text {
     background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: filter 0.3s ease;
+  }
+
+  .brand:hover .brand-text {
+    filter: drop-shadow(0 0 8px var(--accent-glow));
   }
 
 

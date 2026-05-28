@@ -300,25 +300,46 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
   .brand-logo {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
-    font-family: var(--font-title);
-    font-size: 2.25rem;
-    font-weight: 800;
-    letter-spacing: -0.04em;
+    gap: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     color: var(--text-primary);
     margin-bottom: 2rem;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: var(--transition-smooth);
+    cursor: default;
   }
 
   .brand-logo .bracket {
     color: var(--accent);
     font-weight: 300;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease, text-shadow 0.3s ease;
+    display: inline-block;
+  }
+
+  .brand-logo:hover .bracket:first-of-type {
+    transform: translateX(-4px);
+    color: var(--accent-purple);
+    text-shadow: 0 0 12px var(--accent-purple-glow);
+  }
+
+  .brand-logo:hover .bracket:last-of-type {
+    transform: translateX(4px);
+    color: var(--accent-purple);
+    text-shadow: 0 0 12px var(--accent-purple-glow);
   }
 
   .brand-logo .logo-text {
     background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: filter 0.3s ease;
+  }
+
+  .brand-logo:hover .logo-text {
+    filter: drop-shadow(0 0 10px var(--accent-glow));
   }
 
   /* Status Card */
