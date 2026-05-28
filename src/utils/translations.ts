@@ -1,7 +1,7 @@
 const translations = {
   es: {
-    'site.title': '<la-piscine> galería de arte',
-    'site.description': 'Espacio expositivo de arte digital contemporáneo de la cátedra Lacabanne (UNA)',
+    'site.title': '<la-piscine> galería de arte digital online',
+    'site.description': 'Artes Multimediales y Electrónicas | Universidad Nacional de las Artes',
     'nav.home': 'Inicio',
     'nav.archive': 'Archivo',
     'nav.about': 'Acerca de',
@@ -20,7 +20,7 @@ const translations = {
     'archive.back': '← Volver al inicio',
     'home.rss': 'Suscribirse a través de RSS',
     'home.all': 'Todos los proyectos',
-    'home.subtitle': 'Artes Multimediales, cátedra Lacabanne | Universidad Nacional de las Artes',
+    'home.subtitle': 'Espacio expositivo online de arte digital: trabajos de estudiantes de Artes Multimediales 1 (cátedra Lacabanne)',
     'language.label': 'English Version',
     'language.targetCode': 'en',
     'language.targetName': 'EN',
@@ -32,8 +32,8 @@ const translations = {
     '404.suggest': '¿Buscas algo más?'
   },
   en: {
-    'site.title': '<la-piscine> art gallery',
-    'site.description': 'Contemporary digital art exhibition space by the Lacabanne chair (UNA)',
+    'site.title': '<la-piscine> online digital art gallery',
+    'site.description': 'Electronic and Multimedia Arts | Universidad Nacional de las Artes',
     'nav.home': 'Home',
     'nav.archive': 'Archive',
     'nav.about': 'About',
@@ -52,7 +52,7 @@ const translations = {
     'archive.back': '← Back to home',
     'home.rss': 'Subscribe via RSS',
     'home.all': 'All Projects',
-    'home.subtitle': 'Multimedia Arts, Lacabanne chair | Universidad Nacional de las Artes',
+    'home.subtitle': 'Online digital art exhibition space: student projects from Multimedia Arts 1 (cátedra Lacabanne)',
     'language.label': 'Versión en Español',
     'language.targetCode': 'es',
     'language.targetName': 'ES',
