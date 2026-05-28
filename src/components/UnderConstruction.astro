@@ -61,17 +61,17 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
 
   <!-- Utility actions (Theme and Language switches) -->
   <div class="header-actions">
-    <!-- Theme Toggle -->
-    <button id="theme-toggle-uc" class="action-btn glass-panel" aria-label="Cambiar tema" title="Cambiar tema">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-    </button>
-
     <!-- Language Toggle -->
-    <a href={targetLink} class="action-btn lang-btn glass-panel" title={content.langLabel}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-      <span class="lang-code">{content.langTarget.toUpperCase()}</span>
+    <a href={targetLink} class="lang-btn" title={content.langLabel}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      <span class="lang-code">{content.langTarget.toLowerCase()}</span>
     </a>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle-uc" aria-label="Cambiar tema" title="Cambiar tema">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
   </div>
 
   <main class="construction-content">
@@ -230,32 +230,34 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
     z-index: 10;
   }
 
-  .action-btn {
+  #theme-toggle-uc {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 36px;
-    min-width: 36px;
-    padding: 0 0.75rem;
-    border-radius: 20px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
     color: var(--text-secondary);
-    background: rgba(12, 18, 30, 0.4);
+    background: transparent;
     cursor: pointer;
-    border: 1px solid var(--glass-border);
-    transition: var(--transition-smooth), var(--theme-transition);
-    text-decoration: none;
+    border: 1px solid transparent;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  :global(html[data-theme="light"]) .action-btn {
-    background: rgba(255, 255, 255, 0.8);
-    color: var(--text-secondary);
-  }
-
-  .action-btn:hover {
+  #theme-toggle-uc:hover {
     color: var(--accent);
-    border-color: var(--glass-border-hover);
-    box-shadow: 0 0 10px var(--accent-glow);
-    transform: translateY(-1px);
+    background: rgba(6, 182, 212, 0.08);
+    border-color: rgba(6, 182, 212, 0.15);
+    transform: scale(1.08);
+  }
+
+  :global(html[data-theme="light"]) #theme-toggle-uc:hover {
+    background: rgba(2, 132, 199, 0.08);
+    border-color: rgba(2, 132, 199, 0.15);
   }
 
   /* Theme icon toggle rules */
@@ -270,16 +272,41 @@ const targetLink = locale === 'es' ? `${base}/en/` : `${base}/`;
   :global(html[data-theme="light"]) .moon-icon { display: block; }
 
   .lang-btn {
-    font-size: 0.75rem;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
     gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: var(--transition-smooth), var(--theme-transition);
+    text-decoration: none;
+  }
+
+  .lang-btn:hover {
+    color: var(--accent);
+    background: rgba(6, 182, 212, 0.08);
+    border-color: rgba(6, 182, 212, 0.15);
+    text-decoration: none;
+  }
+
+  :global(html[data-theme="light"]) .lang-btn:hover {
+    background: rgba(2, 132, 199, 0.08);
+    border-color: rgba(2, 132, 199, 0.15);
   }
 
   .lang-code {
-    font-family: var(--font-title);
+    font-family: var(--font-mono);
   }
 
   .globe-icon {
+    width: 13px;
+    height: 13px;
     opacity: 0.8;
   }
 
