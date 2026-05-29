@@ -5,7 +5,7 @@ let esferas = [];
 let textures = [];
 let estrellas = [];
 let figuras = [];
-let limpiando = false; 
+let limpiando = false;
 let sonido;
 
 
@@ -14,14 +14,22 @@ function preload() {
   textures[1] = loadImage("imagenes/img2.webp");
   textures[2] = loadImage("imagenes/img3.webp");
   textures[3] = loadImage("imagenes/img4.webp");
-  sonido = loadSound("sonido/sonido.ambiente_001.mp3");
+  sonido = loadSound("sonido/sonido-ambiente.mp3");
 }
 
 function setup() {
-let canvas = createCanvas(512, 512, WEBGL);
-canvas.parent('div-sketch');
-  sonido.loop();
+  let canvas = createCanvas(512, 512, WEBGL);
+  canvas.parent('div-sketch');
 
+    userStartAudio().then(() => {
+
+    //Canción principal
+    if (!sonido.isPlaying()) {
+      sonido.loop();
+      sonido.setVolume(0.5);
+    }
+  });
+  
   // Esferas rebotantes
   for (let i = 0; i < 4; i++) {
     esferas.push({
