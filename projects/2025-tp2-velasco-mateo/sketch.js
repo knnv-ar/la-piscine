@@ -47,10 +47,10 @@ let infierno=[false,false,false,false,false,false];
 
 function preload() {
   for (let i = 0; i < 4; i++) {
-    zorroTex.push(loadImage(`sprites/zorro${nf(i)}.png`));
+    zorroTex.push(loadImage(`sprites/zorro${nf(i)}.webp`));
   }
   for (let i = 0; i < 4; i++) {
-    bichoTex.push(loadImage(`sprites/bicho${nf(i)}.png`));
+    bichoTex.push(loadImage(`sprites/bicho${nf(i)}.webp`));
   }
 
   terreno = loadImage("texturas/terreno.webp");
