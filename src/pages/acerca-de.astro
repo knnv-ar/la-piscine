@@ -6,11 +6,11 @@ const locale = (Astro.currentLocale || 'es') as Locale;
 const t = useTranslations(locale);
 ---
 
-<BaseLayout title={t('nav.about')} description="Espacio expositivo de la Cátedra Lacabanne (UNA) - Artes Multimediales">
+<BaseLayout title={t('title.about')} description="Espacio expositivo de la Cátedra Lacabanne (UNA) - Artes Multimediales">
   <div class="about-container">
     <header class="about-header">
-      <h1 class="about-title">{t('nav.about')}</h1>
-      <p class="about-subtitle">Artes Multimediales 1 y 4 — Cátedra Lacabanne</p>
+      <h1 class="about-title">{t('title.about')}</h1>
+      <p class="about-subtitle">Proyecto y cátedra</p>
     </header>
 
     <div class="about-content-grid">
@@ -104,12 +104,9 @@ const t = useTranslations(locale);
   }
 
   .about-subtitle {
-    font-size: 1.15rem;
-    color: var(--accent-purple);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: var(--theme-transition);
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
   }
 
   .about-content-grid {
