@@ -38,21 +38,36 @@ const t = useTranslations(locale);
         <h2>Equipo Docente</h2>
         <div class="team-list">
           <div class="team-member">
-            <div class="member-role">Profesor Titular Ordinario</div>
-            <div class="member-name">Raúl Federico Lacabanne</div>
+            <div class="member-header">
+              <img src="/la-piscine/assets/rl-ph.webp" alt="Raúl Federico Lacabanne" class="member-photo" />
+              <div class="member-info">
+                <div class="member-role">Profesor Titular Ordinario</div>
+                <div class="member-name">Raúl Federico Lacabanne</div>
+              </div>
+            </div>
             <p class="member-bio">Profesor Titular Ordinario de la Universidad Nacional de las Artes (UNA). Profesor Adjunto Ordinario de la Universidad Nacional de Quilmes (UNQ) Docente de las unidades curriculares "Artes Multimediales 1", "Artes Multimediales 4" y "Artes y Estéticas del siglo 21". Director del proyecto de investigación UNA-PIACyT-LG 2026-2027 "Relaciones íntimas III: el cuidado como infreestructura crítica en las prácticasartísticas contemporáneas". Magister en Artes Digitales (Universitat Pompeu Fabra). Licenciado en Composición con Medios Electroacústicos (UNQ).</p>
           </div>
           
           <div class="team-member">
-            <div class="member-role">Profesor Adjunto Ordinario</div>
-            <div class="member-name">Mauricio Gutiérrez</div>
+            <div class="member-header">
+              <img src="/la-piscine/assets/mg-ph.webp" alt="Mauricio Gutiérrez" class="member-photo" />
+              <div class="member-info">
+                <div class="member-role">Profesor Adjunto Ordinario</div>
+                <div class="member-name">Mauricio Gutiérrez</div>
+              </div>
+            </div>
             <p class="member-bio">Profesor Adjunto Ordinario de la Universidad Nacional de las Artes (UNA). Licenciado en Artes Multimediales por de la UNA. Produce obras a partir de la experimentación en múltiples disciplinas artísticas, materialidades, soportes y medios, concentrándose en prácticas tanto instalativas como performáticas. Desde 2011 conforma un grupo de arte experimental llamado A.S.M.A Multimedia, junto a los artistas Sebastián Zavatarelli y Adelina Ducos. Ha participado en distintas presentaciones académicas, exposiciones y festivales.</p>
           </div>
           
           <div class="team-member">
-            <div class="member-role">Jefa de Trabajos Prácticos</div>
-            <div class="member-name">Mirna Barreiro</div>
-            <p class="member-name">Jefa de Trabajos Prácticos de la asignatura Artes Multimediales 4 de la carrera Licenciatura en Artes Multimediales de la UNA. Licenciada en Música y Tecnología (UNQ) y Diseñadora de Imagen y Sonido (UBA). Se desempeña profesionalmente en las siguientes áreas: programación y electrónica aplicadas al arte, desarrollo web, postproducción de video, animación en diferentes técnicas (motion graphics, animación por programación, stop motion, 3D), VJing, escenografías virtuales, composición y ejecución musical.</p>
+            <div class="member-header">
+              <img src="/la-piscine/assets/mb-ph.webp" alt="Mirna Barreiro" class="member-photo" />
+              <div class="member-info">
+                <div class="member-role">Jefa de Trabajos Prácticos</div>
+                <div class="member-name">Mirna Barreiro</div>
+              </div>
+            </div>
+            <p class="member-bio">Jefa de Trabajos Prácticos de la asignatura Artes Multimediales 4 de la carrera Licenciatura en Artes Multimediales de la UNA. Licenciada en Música y Tecnología (UNQ) y Diseñadora de Imagen y Sonido (UBA). Se desempeña profesionalmente en las siguientes áreas: programación y electrónica aplicadas al arte, desarrollo web, postproducción de video, animación en diferentes técnicas (motion graphics, animación por programación, stop motion, 3D), VJing, escenografías virtuales, composición y ejecución musical.</p>
           </div>
         </div>
       </aside>
@@ -198,7 +213,35 @@ const t = useTranslations(locale);
   .team-member {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
+  }
+
+  .member-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .member-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--glass-border);
+    transition: transform var(--transition-smooth);
+    flex-shrink: 0;
+  }
+
+  .member-photo:hover {
+    transform: scale(1.08);
+  }
+
+  .member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
   }
 
   .member-role {

@@ -38,20 +38,35 @@ const t = useTranslations(locale);
         <h2>Faculty Chair Staff</h2>
         <div class="team-list">
           <div class="team-member">
-            <div class="member-role">Full Tenured Professor</div>
-            <div class="member-name">Raúl Federico Lacabanne</div>
+            <div class="member-header">
+              <img src="/la-piscine/assets/rl-ph.webp" alt="Raúl Federico Lacabanne" class="member-photo" />
+              <div class="member-info">
+                <div class="member-role">Full Tenured Professor</div>
+                <div class="member-name">Raúl Federico Lacabanne</div>
+              </div>
+            </div>
             <p class="member-bio">Tenured Full Professor at the Universidad Nacional de las Artes (UNA). Tenured Associate Professor at the Universidad Nacional de Quilmes (UNQ). Professor for the courses "Multimedia Arts 1", "Multimedia Arts 4", and "Arts and Aesthetics of the 21st Century". Director of the UNA-PIACyT-LG 2026-2027 research project "Intimate Relations III: Care as a Critical Infrastructure in Contemporary Artistic Practices". Master's in Digital Arts (Universitat Pompeu Fabra). Bachelor's Degree in Electroacoustic Media Composition (UNQ).</p>
           </div>
           
           <div class="team-member">
-            <div class="member-role">Adjunct Professor</div>
-            <div class="member-name">Mauricio Gutiérrez</div>
+            <div class="member-header">
+              <img src="/la-piscine/assets/mg-ph.webp" alt="Mauricio Gutiérrez" class="member-photo" />
+              <div class="member-info">
+                <div class="member-role">Adjunct Professor</div>
+                <div class="member-name">Mauricio Gutiérrez</div>
+              </div>
+            </div>
             <p class="member-bio">Tenured Associate Professor at the Universidad Nacional de las Artes (UNA). Bachelor's Degree in Multimedia Arts from UNA. He produces artworks through experimentation across multiple artistic disciplines, materialities, formats, and media, focusing on both installation and performance practices. Since 2011, he has been part of an experimental art group called A.S.M.A Multimedia, alongside artists Sebastián Zavatarelli and Adelina Ducos. He has participated in various academic presentations, exhibitions, and festivals.</p>
           </div>
           
           <div class="team-member">
-            <div class="member-role">Assistant Professor (JTP)</div>
-            <div class="member-name">Mirna Barreiro</div>
+            <div class="member-header">
+              <img src="/la-piscine/assets/mb-ph.webp" alt="Mirna Barreiro" class="member-photo" />
+              <div class="member-info">
+                <div class="member-role">Assistant Professor (JTP)</div>
+                <div class="member-name">Mirna Barreiro</div>
+              </div>
+            </div>
             <p class="member-bio">Head of Practical Works for the course Multimedia Arts 4 in the Bachelor's in Multimedia Arts program at UNA. Bachelor's Degree in Music and Technology (UNQ) and Image and Sound Designer (UBA). She works professionally in the following areas: programming and electronics applied to art, web development, video post-production, animation using various techniques (motion graphics, programmed animation, stop motion, 3D), VJing, virtual set design, and musical composition and performance.</p>
           </div>
         </div>
@@ -198,7 +213,35 @@ const t = useTranslations(locale);
   .team-member {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
+  }
+
+  .member-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .member-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--glass-border);
+    transition: transform var(--transition-smooth);
+    flex-shrink: 0;
+  }
+
+  .member-photo:hover {
+    transform: scale(1.08);
+  }
+
+  .member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
   }
 
   .member-role {
