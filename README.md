@@ -1,155 +1,262 @@
 # `<la-piscine>` galería de arte
 
-Este proyecto está basado en una plantilla-portfolio de imágenes y bocetos de p5.js llevado a cabo por [Benjamin Habert](https://github.com/benjaminhabert).
+> Tercera versión de la galería en línea de sketches de [p5.js](https://p5js.org/) realizados por estudiantes de **Artes Multimediales 1, cátedra Lacabanne** — [Universidad Nacional de las Artes (UNA)](https://una.edu.ar).
 
-## Arrival site
-
-https://knnv-ar.github.io/la-piscine/
-
-## Departure site
-
-https://am1-lacabanne.atamvirtual.com.ar
-
-## Features
-
-- free hosting using [github-pages](https://pages.github.com/)
-- homepage with all your projects represented as thumbnails
-- simple file structure: each project has is own directory in `_projects` containing
-all the files for this project.
-- simple galleries of pictures
-- easy to manage list of dependencies if you want to create projects using other
-libraries than `p5.js`.
-- live-reload activated in development environment (just run `jekyll serve`, modify a file
-    and the browser auto-realoads to take into acount the changed).
-
-## Using this template for you own portfolio
-
-### Step 1: github
-
-Assuming that you already have a github account:
-
-- fork this repository. This will create a copy of all the code in a new repository
-`https://github.com/<your_username>/jekyll-p5-portfolio/settings`
-- go to the settings of your newly created repository.
-
-  - at the top of the page change the name of the repository: `jekyll-p5-portfolio` -> `<cool_name>` and hit **rename**
-  - In the **Github Pages** section select `master branch` as the source and hit **save**.
-
-- the website is now available at https://<your_username>.github.io/<cool_name>/
- (this might take a minute).
-
-
-### Step 2: customization
-
-You might want to change the website name or add a link to your twitter account.
-
-Edit the `_config.yml` file. You can do this either using github interface or by cloning
-the repository on your machine and pushing the changes back to the master branch. The following
-fields can be edited:
-
-```
-title: Your awesome title
-email: your-email@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/jekyll-p5-portfolio" # replace with "/<cool_name" : the name of your repository
-twitter_username: jekyllrb
-github_username:  <your_username>
-```
-
-You can change the content of the file `aboud.md` to give info about yourself or your project.
-
-You can replace the content of `README.md` (this file). In particular you should link to your own
-repository in the **Live Demo** section.
-
-### Step 3: create your first sketch
-
-The easiest point to start is to create a copy of the directory `simple_sketch` in the folder `_projects` with a new directory name.
-
-- replace the content of `simple_sketch.js` with a new code that you wrote.
-- create a thumbnail picture for you sketch (advice: use only square pictures as thumbnails) and
-save it in `simple_sketch/<my_thumbnail.png>`
-- edit the content of `simple_sketch/p5project.md`, especially the beginning of the file (front-matter).
-Do not remove `p5` from the list of dependencies.
-
-```
----
-layout: post
-title:  "<title of the post>"
-date:   <today's date with format 2017-07-25>
-thumbnail: <my_thumbnail.png>
-dependencies:
-    - p5
----
-```
-
-**Warning**: make sure that your p5 script is properly linked to a `div` element in your post. See
- [here](https://benjaminhabert.github.io/jekyll-p5-portfolio/projects/simple_sketch/p5project.html)
- for more info.
-
-Once you are done modifying the project, commit your changes. Github will automatically update
-the home page to include your new project. The home page shows the projetcs' thumbnails and lists them
-by date from most to least recent.
-
-### Going further
-
-Each post in the template project explains a simple feature of this portfolio. Browse the live website for more infos.
-
-
-## Local development using jekyll
-
-This portfolio website was build using jekyll (see [here](https://jekyllrb.com/docs/installation/)
-for installation). The easiest way to add new content to your portfolio is to download
-the website, edit locally and send the updated version to github. In the terminal:
-
-```
-$ git clone https://github.com/<your_username>/<cool_name>.git
-$ cd <cool_name>
-$ jekyll serve  # this will serve the website locally at http://localhost:4000/<cool_name>/
-```
-
-You can modify the files in `_projects/`; your browser should update to reflect the changes.
-Once you are done modifying files and want to update the actual website:
-
-```
-$ git add .
-$ git commit -m "new p5 project added on the website"
-$ git push
-```
-
-Once you push changes to the remote repository (on the `master` branch), github will update
-the actual website.
+[![Deploy to GitHub Pages](https://github.com/knnv-ar/la-piscine/actions/workflows/deploy.yml/badge.svg)](https://github.com/knnv-ar/la-piscine/actions/workflows/deploy.yml)
+![Astro](https://img.shields.io/badge/Astro-4-FF5D01?logo=astro&logoColor=white)
+![Node](https://img.shields.io/badge/Node-≥24-339933?logo=node.js&logoColor=white)
+![p5.js](https://img.shields.io/badge/p5.js-1.10-ED225D?logo=p5dotjs&logoColor=white)
+![i18n](https://img.shields.io/badge/i18n-es%20%7C%20en-blue)
+![Versión](https://img.shields.io/badge/versión-v3-blue)
 
 ---
 
-## _data/dependencies.yml
+## Tabla de contenidos
 
-### v1.4.2 original
+- [Sitio en producción](#sitio-en-producción)
+- [Características](#características)
+- [Requisitos previos](#requisitos-previos)
+- [Instalación](#instalación)
+- [Desarrollo local](#desarrollo-local)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Crear una nueva obra](#crear-una-nueva-obra)
+- [Dependencias de sketches](#dependencias-de-sketches)
+- [Modo mantenimiento](#modo-mantenimiento)
+- [Deploy](#deploy)
+- [Créditos](#créditos)
 
-- name: p5
-  element: <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js" integrity="sha512-rCZdHNB0AePry6kAnKAVFMRfWPmUXSo+/vlGtrOUvhsxD0Punm/xWbEh+8vppPIOzKB9xnk42yCRZ5MD/jvvjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+---
 
-- name: p5.sound
-  element: <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+## Sitio en producción
 
-- name: flexbox
-  element: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
+| Sitio | URL |
+|---|---|
+| **Galería (GitHub Pages)** | <https://knnv-ar.github.io/la-piscine/> |
+| **Cátedra** | <https://am1-lacabanne.atamvirtual.com.ar> |
 
-- name: live
-  element: <script type="text/javascript" src="http://livejs.com/live.js"></script>
+---
 
-### v1.5.0 new
+## Características
 
-- name: p5
-  element: <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+- 🖼️ Galería de thumbnails con búsqueda en tiempo real y filtro por año/cuatrimestre.
+- 🎨 Páginas individuales que renderizan cada sketch de p5.js con su statement descriptivo.
+- 🌐 Internacionalización (i18n) integrada: español (por defecto) e inglés.
+- ⚡ Build estático ultra-rápido con [Astro](https://astro.build/).
+- 📦 Sincronización automática de assets desde `_projects/` hacia `public/projects/` vía script de pre-build.
+- 🔄 Redirecciones legacy automáticas (`statement.html`) para compatibilidad con URLs históricas.
+- 🚧 Modo mantenimiento / "En construcción" activable con un único flag.
+- 🚀 CI/CD automático con GitHub Actions: push a `main` → deploy a GitHub Pages.
 
-- name: p5.sound
-  element: <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+---
 
-- name: flexbox
-  element: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
+## Requisitos previos
 
-- name: live
-  element: <script type="text/javascript" src="http://livejs.com/live.js"></script>
+| Herramienta | Versión mínima |
+|---|---|
+| [Node.js](https://nodejs.org/) | 24 |
+| [npm](https://www.npmjs.com/) | 10 |
+| [Git](https://git-scm.com/) | 2.x |
+
+---
+
+## Instalación
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/knnv-ar/la-piscine.git
+cd la-piscine
+
+# 2. Instalar dependencias
+npm install
+```
+
+---
+
+## Desarrollo local
+
+```bash
+npm run dev
+```
+
+El servidor de desarrollo se inicia en **`http://localhost:4321/la-piscine/`** con recarga en vivo (HMR).
+
+### Scripts disponibles
+
+| Comando | Descripción |
+|---|---|
+| `npm run dev` | Servidor de desarrollo con HMR |
+| `npm run build` | Build de producción estático (salida en `dist/`) |
+| `npm run preview` | Previsualización del build de producción |
+| `npm run sync-assets` | Sincroniza assets de `_projects/` → `public/projects/` |
+
+> **Nota:** `sync-assets` se ejecuta automáticamente antes de `dev` y `build` gracias a los scripts `predev` y `prebuild`.
+
+---
+
+## Estructura del proyecto
+
+```
+la-piscine/
+├── _projects/                  # Obras de estudiantes (fuente de verdad)
+│   └── <año>-tp<n>-<nombre>/
+│       ├── statement.mdx       # Frontmatter + contenido bilingüe
+│       ├── sketch.js           # Sketch de p5.js
+│       └── thumbnail.webp      # Miniatura cuadrada
+├── src/
+│   ├── components/             # Componentes Astro reutilizables
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
+│   │   ├── ProjectCard.astro
+│   │   ├── SearchBar.astro
+│   │   ├── Language.astro
+│   │   └── UnderConstruction.astro
+│   ├── config.ts               # Configuración global (modo mantenimiento)
+│   ├── content/
+│   │   └── config.ts           # Schema de colecciones (Zod)
+│   ├── layouts/
+│   │   ├── BaseLayout.astro    # Layout base del sitio
+│   │   └── ProjectLayout.astro # Layout de página de obra
+│   ├── pages/
+│   │   ├── index.astro         # Página principal (ES)
+│   │   ├── archivo.astro       # Archivo completo (ES)
+│   │   ├── acerca-de.astro     # Acerca de (ES)
+│   │   ├── 404.astro           # Página de error
+│   │   ├── search-index.json.ts
+│   │   ├── projects/           # Rutas dinámicas de obras
+│   │   └── en/                 # Páginas en inglés
+│   └── utils/
+│       ├── dependencies.ts     # Mapa de dependencias CDN
+│       ├── selected-projects.ts
+│       └── translations.ts     # Diccionario i18n
+├── public/
+│   └── assets/                 # Favicon, fotos, etc.
+├── scripts/
+│   ├── sync-assets.mjs         # Sincronización de assets al build
+│   └── rename-projects.mjs     # Utilidad para renombrar carpetas
+├── astro.config.mjs            # Configuración de Astro
+├── package.json
+├── tsconfig.json
+└── .github/
+    └── workflows/
+        └── deploy.yml          # CI/CD: build & deploy a GitHub Pages
+```
+
+---
+
+## Crear una nueva obra
+
+1. **Crear la carpeta** del proyecto dentro de `_projects/` siguiendo la convención de nombres:
+
+   ```
+   _projects/<año>-tp<n>-<apellido>-<nombre>/
+   ```
+
+   Ejemplo: `_projects/2026-tp1-garcia-maria/`
+
+2. **Agregar `sketch.js`** con el código de p5.js. El canvas debe vincularse al div contenedor:
+
+   ```js
+   function setup() {
+     let canvas = createCanvas(400, 400);
+     canvas.parent('div-sketch');
+   }
+   ```
+
+3. **Agregar `statement.mdx`** con el frontmatter y el contenido bilingüe:
+
+   ```yaml
+   ---
+   layout: post
+   author: María García
+   title: Mi obra
+   date: 2026-05-15
+   year: 2026
+   cuatrimestre: primer cuatrimestre
+   thumbnail: thumbnail.webp
+   dependencies:
+     - p5
+     - p5.sound
+   ---
+   ```
+
+   Debajo del frontmatter, incluir el sketch y los bloques `<Language>`:
+
+   ```html
+   <div id="div-sketch">
+     <script type="text/javascript" src="sketch.js"></script>
+   </div>
+
+   <Language code="es">
+   Descripción en español...
+   </Language>
+
+   <Language code="en">
+   Description in English...
+   </Language>
+   ```
+
+4. **Agregar una miniatura cuadrada** (`thumbnail.webp` o `thumbnail.png`) en la carpeta del proyecto.
+
+5. **Verificar localmente** con `npm run dev` y navegar al proyecto.
+
+---
+
+## Dependencias de sketches
+
+Las dependencias externas se declaran en el frontmatter del `statement.mdx` y se resuelven automáticamente desde CDN. Las disponibles están definidas en [`src/utils/dependencies.ts`](src/utils/dependencies.ts):
+
+| Clave | Librería |
+|---|---|
+| `p5` | p5.js 1.10.0 |
+| `p5.sound` | p5.sound 1.10.0 |
+| `p5.v150` | p5.js 1.5.0 (legacy) |
+| `p5.v180` | p5.js 1.8.0 (legacy) |
+| `p5.sound.v150` | p5.sound 1.5.0 (legacy) |
+| `p5.sound.v180` | p5.sound 1.8.0 (legacy) |
+| `ml5` | ml5.js 1.x |
+| `face-api` | face-api.js |
+| `flexbox` | Flexbox Grid |
+
+> Si no se declara ninguna dependencia `p5*`, el sistema incluye `p5` automáticamente.
+
+---
+
+## Modo mantenimiento
+
+Para activar la página "En construcción", editar [`src/config.ts`](src/config.ts):
+
+```ts
+export const SITE_CONFIG = {
+  maintenanceMode: true, // Cambiar a false para publicar el sitio
+};
+```
+
+Hacer commit, push, y el sitio mostrará automáticamente la pantalla de mantenimiento.
+
+---
+
+## Deploy
+
+El deploy se gestiona automáticamente mediante **GitHub Actions**. El workflow (`.github/workflows/deploy.yml`) se activa con cada push a la rama `main`:
+
+1. Checkout del repositorio.
+2. Instalación de Node.js 24 y dependencias (con caché).
+3. Build estático con `npm run build`.
+4. Publicación del directorio `dist/` a la rama `gh-pages`.
+
+No se requiere intervención manual. Para desplegar cambios, simplemente:
+
+```bash
+git add .
+git commit -m "Agrega nueva obra"
+git push origin main
+```
+
+---
+
+## Créditos
+
+- **Proyecto original**: plantilla portfolio de p5.js creada por [Benjamin Habert](https://github.com/benjaminhabert).
+- **Cátedra**: Artes Multimediales 1 y 4, cátedra Lacabanne — [UNA](https://una.edu.ar).
+- **Diseño y desarrollo del proyecto**: Raúl Federico Lacabanne (alias [knnv-ar](https://github.com/knnv-ar)).
+- **Framework**: [Astro](https://astro.build/) · [p5.js](https://p5js.org/) · [MDX](https://mdxjs.com/).
