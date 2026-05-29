@@ -69,7 +69,7 @@ function preload() {
 function setup() {
   let canvas = createCanvas(750, 500, WEBGL);
   canvas.parent('div-sketch');
-
+  getAudioContext().suspend();
   song1.loop();
   song1.setVolume(1);
   
@@ -698,6 +698,9 @@ function keyPressed() {
   if (keyCode == 69) shiftCam=!shiftCam;
 }
 
+function mousePressed() {
+  userStartAudio();
+}
 /*
 música de NINE INCH NAILS
 Ghosts I-IV (2008)
