@@ -13,7 +13,7 @@ let pasos = 0;
 // =================================================================
 function preload() {
  for (let i = 0; i <= 4; i++) {
-  img.push(loadImage("imagenes/imagen" + i + ".png"));
+  img.push(loadImage("imagenes/imagen" + i + ".webp"));
 }
 }
 
