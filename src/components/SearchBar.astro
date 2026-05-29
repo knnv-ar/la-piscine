@@ -19,6 +19,7 @@ const t = useTranslations(locale);
       id="search-input" 
       placeholder={t('search.placeholder')} 
       autocomplete="off"
+      autofocus
     />
     <button id="search-clear-btn" class="clear-btn" style="display: none;" title="Limpiar búsqueda">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -59,6 +60,9 @@ const t = useTranslations(locale);
   // Client-side search, filtering, and progressive rendering (lazy load) logic
   document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input') as HTMLInputElement;
+    if (searchInput) {
+      searchInput.focus();
+    }
     const clearBtn = document.getElementById('search-clear-btn') as HTMLButtonElement;
     const semesterPills = document.querySelectorAll('#semester-filters .pill-btn');
     const yearPills = document.querySelectorAll('#year-filters .pill-btn');
