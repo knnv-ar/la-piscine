@@ -26,20 +26,12 @@ const year = new Date().getFullYear();
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
         </a>
       </div>
-      
-      <p class="rss-subscribe">
-        <a href={`${base}/feed.xml`} class="rss-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="rss-icon"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
-          {t('home.rss')}
-        </a>
-      </p>
     </div>
   </div>
   
   <div class="footer-bottom">
     <div class="container bottom-container">
       <p class="copyleft">&copy; 2020 - {year} Artes Multimediales 1, cátedra Lacabanne. Copyleft - Material libre con fines educativos.</p>
-      <p class="template-credit">Template original por <a href="https://github.com/benjaminhabert" target="_blank" rel="noopener noreferrer">Benjamin Habert</a></p>
     </div>
   </div>
 </footer>
@@ -159,23 +151,6 @@ const year = new Date().getFullYear();
     transform: translateY(-2px);
   }
 
-  .rss-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    transition: var(--transition-smooth), var(--theme-transition);
-  }
-
-  .rss-link:hover {
-    color: var(--accent);
-  }
-
-  .rss-icon {
-    color: var(--accent-purple);
-  }
 
   .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.03);
@@ -201,15 +176,6 @@ const year = new Date().getFullYear();
     letter-spacing: 0.01em;
   }
 
-  .template-credit a {
-    color: var(--text-secondary);
-    text-decoration: underline;
-    transition: var(--transition-smooth), var(--theme-transition);
-  }
-
-  .template-credit a:hover {
-    color: var(--accent);
-  }
 
   /* Responsive Design */
   @media (max-width: 768px) {
