@@ -32,6 +32,13 @@ const year = new Date().getFullYear();
   <div class="footer-bottom">
     <div class="container bottom-container">
       <p class="copyleft">&copy; 2020-{year} Artes Multimediales 1, cátedra Lacabanne. Copyleft - Material libre con fines educativos.</p>
+      <p class="created-by">
+        {locale === 'es' ? (
+          <>Hecho con ❤️ por <a href="https://knnv-ar.github.io/resume/" target="_blank" rel="noopener noreferrer">Raúl Federico Lacabanne</a></>
+        ) : (
+          <>Made with ❤️ by <a href="https://knnv-ar.github.io/resume/" target="_blank" rel="noopener noreferrer">Raúl Federico Lacabanne</a></>
+        )}
+      </p>
     </div>
   </div>
 </footer>
@@ -174,6 +181,22 @@ const year = new Date().getFullYear();
 
   .copyleft {
     letter-spacing: 0.01em;
+  }
+
+  .created-by {
+    letter-spacing: 0.01em;
+  }
+
+  .created-by a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-smooth), var(--theme-transition);
+  }
+
+  .created-by a:hover {
+    color: var(--accent);
+    text-decoration: underline;
   }
 
 
