@@ -6,11 +6,9 @@ Trabajo Practico N°1
 "Simpoiesis" (2026)
 Catedra: Lacabanne
 Turno: Mañana
-Escrito (.txt) disponible en Sketch Files
 
 GUIA:
-Desplamiento de personaje con teclas de formato flecha 
-"Arriba, abajo, izquierda y derecha"
+Arrow Keys "Arriba, abajo, izquierda y derecha"
 --------------------------------------------------------
 */
 
