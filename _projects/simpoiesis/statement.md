@@ -27,13 +27,13 @@ Solo de esta manera el movimiento es posible, incluso si salimos de esta ubicaci
 **Desarrollo técnico, estético y conceptual**
 
 Esta produccion de new-media art **(.1)** nació de un impulso: Buscar el antonimo de "Autopoiesis." un termino que menciono una docente durante en una clase. Encontre entonces a Donna Jeanne Haraway, su increible trabajo y recorrido. 
-Llevandome a su libro "Staying with the Trouble: Making Kin in the Chthulucene" **(.2)** donde despues de replantearnos nuestra relacion con la naturaleza, el daño irreversible al medio ambiente y el fuerte problema de la logica hetero-normativa y la familia nuclear en la manera social de poblar la Tierra, llega al Capitulo 3 y entonces explora, argumenta y denomina la "Simpoiesis". Citando de su propio trabajo:
+Llevandome a su libro "Staying with the Trouble: Making Kin in the Chthulucene" (2016) **(.2)** donde despues de replantearnos nuestra relacion con la naturaleza, el daño irreversible al medio ambiente y el fuerte problema de la logica hetero-normativa y la familia nuclear en la manera social de poblar la Tierra, llega al Capitulo 3 y entonces explora, argumenta y denomina la "Simpoiesis". Citando de su propio trabajo:
 
-**_"Simpoiesis es una palabra sencilla; significa "hacer-con". Nada se hace a sí mismo; nada es realmente autopoyético ni se autoorganiza"._**
+**_"Simpoiesis es una palabra sencilla; significa "hacer-con". Nada se hace a sí mismo; nada es realmente autopoyético ni se autoorganiza" (Haraway, 2016)._**
 
 Teniendo presente el significado de este termino, entendi que estaba decidido mi paradigma de produccion. Desde un principio pense una disposicion de personajes en ronda, y fue casi instantaneo buscar un efecto de rotacion, la idea de engranajes vino despues y visualmente los trabajos de Jared Tarbell:
 "Sand Dollar" **(.3)** e "Invader Fractal" **(.4)** fueron muy utiles en materia creativa.
-Aun asi sentia que la idea de simpoiesis no estaba sintetizada de la manera en que me exigia, entonces recurri a "Redefinicion de las practicas artisticas" de Jose Luis Brea para construir una critica mas fuerte sobre la mentira de la autopoiesis, siendo que en su enumerado dice: 
+Aun asi sentia que la idea de simpoiesis no estaba sintetizada de la manera en que me exigia, entonces recurri a "Redefinicion de las practicas artisticas" de Jose Luis Brea para construir una critica mas fuerte sobre la mentira de la autopoiesis, siendo que Brea (2008) dice: 
 
 **_"Los mecanismos sociales de reconocimiento y diferenciacion de socializacion y subjetivacion, de pertenencia a un grupo social y distinticion dentro de el, se hacen reposar por encima de todo en el valor estetizado, y es la carga de este que el nuevo capitalismo añade a objetos y relaciones, materiales o inmateriales, la que determina su nuevo valor social. Tanto mas en un mundo globalizado, en el que la circulacion de bienes, formas y mercancias trasciende cualquier frontera y entorno GEO-BIO-POLITICO de identificacion especifico: en este mundo globalizado de señas de identidad extraviadas, las necesidades de implementar esos mecanismos de produccion de identidad y diferenciacion crecen exponencialmente."_** **(.5)**
 
