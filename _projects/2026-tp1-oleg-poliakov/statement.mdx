@@ -1,0 +1,60 @@
+---
+author: Oleg Poliakov
+title: 1% de desorden (Homenaje a Vera Molnár)
+date: 2026-09-16
+year: 2026
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.webp
+dependencies:
+  - p5.v1.11.13
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+<Language code="es">
+Obra generativa inspirada en los pioneros del arte computacional. Explora la tensión entre la retícula perfecta y la entropía mediante una estructura modular de 25 celdas con variaciones aleatorias.
+
+**Desarrollo técnico, estético y conceptual**
+
+**Técnico:** La imagen se generó en un lienzo de 512x512 píxeles, utilizando una profundidad de color de 8 bits (escala de grises). Estructuralmente, se emplearon bucles `for` anidados para crear una grilla de 5x5 y, dentro de cada celda, otro ciclo para dibujar 12 cuadrados concéntricos. Se utilizó la función `translate()` para situar el origen en el centro de cada módulo, aislando las transformaciones con `push()` y `pop()`. La "falla" algorítmica se implementó con un condicional `if` y la función `random()`, que con una probabilidad del 15% aplica rotaciones y desplazamientos a las figuras.
+
+**Estético:** Sigue la línea del arte concreto y algorítmico de Vera Molnár, específicamente su serie de 1976. La estética minimalista busca evocar los trazados mecánicos de los primeros plotters, donde el "error" no es una equivocación humana, sino una decisión del sistema.
+
+**Conceptual:** La obra se apoya en la teoría de Philip Galanter, quien define el arte generativo como un sistema con autonomía. Acá, el autor no dibuja cada línea, sino que establece las reglas de un proceso que se auto-organiza. Asimismo, se vincula con el concepto de código performativo de Inke Arns: la obra no es el resultado estático, sino el acto de ejecución del algoritmo en tiempo real, donde "lo dicho" en el código coincide con "lo hecho" en la pantalla.
+
+**Bibliografía**
+
+- ARNS, Inke. (2005). _"El código como acto de habla performativo"_. Barcelona: Revista Artnodes.
+- GALANTER, Philip. (2011). _"Entre dos fuegos: el arte-ciencia y la guerra entre ciencia y humanidades"_. Barcelona: Revista Artnodes.
+
+**Breve biografía**
+
+**Sobre la autora (Vera Molnár):** Vera Molnár (1924–2023) fue una artista húngara pionera en el uso de computadoras para el arte visual. Creó el método de la “machine imaginaire” antes de tener acceso a hardware real, sentando las bases de la estética generativa contemporánea.
+
+**Sobre el estudiante:** Oleg Poliakov es estudiante de la Licenciatura en Artes Multimediales en la Universidad Nacional de las Artes (UNA).
+</Language>
+
+<Language code="en">
+Generative artwork inspired by computer art pioneers. It explores the tension between the perfect grid and entropy through a modular 25-cell structure with random variations.
+
+**Technical, aesthetic, and conceptual development**
+
+**Technical:** Generated on a 512x512 pixel canvas using an 8-bit grayscale color depth. Structurally, nested `for` loops were used to create a 5x5 grid, with an inner loop drawing 12 concentric squares inside each cell. The `translate()` function was used to position the origin at the center of each module, isolating transformations with `push()` and `pop()`. Algorithmic "error" was implemented with an `if` conditional and `random()`, applying rotations and offsets with a 15% probability.
+
+**Aesthetic:** Follows the line of Vera Molnár's concrete and algorithmic art, specifically her 1976 series. The minimalist aesthetic seeks to evoke the mechanical drawings of early plotters, where "error" is not a human mistake but a system decision.
+
+**Conceptual:** Grounded in Philip Galanter's theory defining generative art as an autonomous system. The author does not draw every line, but establishes rules for a self-organizing process. It connects with Inke Arns' concept of performative code: the artwork is not a static result, but the real-time execution of the algorithm, where what is "said" in the code matches what is "done" on screen.
+
+**Bibliography**
+
+- ARNS, Inke. (2005). _"Code as performative speech act"_. Barcelona: Artnodes Journal.
+- GALANTER, Philip. (2011). _"Shot by both sides: Art-science and the war between science and humanities"_. Barcelona: Artnodes Journal.
+
+**Brief resume**
+
+**About the artist (Vera Molnár):** Vera Molnár (1924–2023) was a Hungarian pioneer in computer art who developed the "machine imaginaire" method before having access to real hardware.
+
+**About the student:** Oleg Poliakov is a Multimedia Arts student at Universidad Nacional de las Artes (UNA).
+</Language>
