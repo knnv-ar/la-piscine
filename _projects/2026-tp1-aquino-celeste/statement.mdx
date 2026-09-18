@@ -1,0 +1,58 @@
+---
+author: Celeste Aquino
+title: Perturbación del orden
+date: 2026-09-18
+year: 2026
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.webp
+dependencies:
+  - p5.v1.11.13
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+<Language code="es">
+Imagen generativa formada por una estructura regular de formas cuadrangulares. Parte de una organización geométrica basada en la repetición y presenta un movimiento tranquilo inicial. Al acercar el mouse se produce una perturbación localizada: solo los cuadrados cercanos al cursor se alteran, mientras el resto mantiene su comportamiento.
+
+**Desarrollo técnico, estético y conceptual**
+
+Tomé como referencia a Vera Molnar, pionera del arte computacional y generativo. Utilicé una cuadrícula de 16 x 16 cuadrados en un lienzo de 512 x 512 píxeles. La repetición se construye con ciclos `for`. Incorporé movimiento mediante `sin()` y `cos()`, que generan pequeños desplazamientos, y transformaciones como `translate()` y `rotate()`. La interacción con el mouse modifica el comportamiento de los elementos cercanos: cuando el cursor entra en su zona de influencia, los cuadrados reciben desplazamientos y rotaciones más intensos a través de `random()`. La escala de grises varía según la posición vertical de cada cuadrado.
+
+No busqué una imagen fija, sino un sistema de reglas que determine el comportamiento de los cuadrados. La estructura se mantiene ordenada mediante la repetición y un movimiento leve preestablecido. El mouse introduce una alteración puntual: los cuadrados cercanos se desplazan y rotan con mayor intensidad. Me interesó la relación entre un sistema preestablecido y la posibilidad de alterarlo momentáneamente mediante la intervención del usuario. El código funciona como el conjunto de reglas que define el comportamiento de la obra.
+
+Relaciono la obra con lo planteado por José Luis Brea en _Redefinición de las prácticas artísticas (s. 21)_, donde define la producción artística como "un operador que se introduce con eficacia en algún sistema dado, desestabilizando la ecuación de equilibrio que lo gobierna" (Brea, 2008). La grilla funciona como sistema ordenado y el mouse introduce una perturbación localizada. También retomo lo señalado en _Breve (y desordenado) antiglosario sobre el arte electrónico_: "no parece que nunca ninguna especificación técnica del soporte debiera considerarse como rasgo pertinente para una categorización estética" (Brea, 2002). El código y p5.js no definen por sí mismos la propuesta, sino las operaciones de repetición, movimiento, transformación y perturbación.
+
+**Bibliografía**
+
+- BREA, José Luis. (2002). _"Breve (y desordenado) antiglosario –o diccionario de tópicos– sobre el arte electrónico"_. En _La era postmedia_. Salamanca: CASA Editorial, pp. 4-8.
+- BREA, José Luis. (2008). _"Redefinición de las prácticas artísticas (s. 21)"_. En _El tercer umbral_. Murcia: CENDEAC, pp. 106-113.
+- MOLNAR, Vera. Referencia artística.
+
+**Breve biografía**
+
+Celeste Aquino (2004) es artista digital y musical, orientada al dibujo. Estudia Artes Multimediales, donde desarrolla su interés por la imagen, la animación, la programación y los medios digitales.
+</Language>
+
+<Language code="en">
+Generative image made up of a regular structure of square shapes. It starts from a geometric organization based on repetition and shows a calm initial movement. When the mouse gets close, a localized disturbance occurs: only the squares near the cursor are altered, while the rest keep their original behavior.
+
+**Technical, aesthetic, and conceptual development**
+
+I took Vera Molnar, a pioneer of computational and generative art, as a reference. I used a 16 x 16 grid of squares on a 512 x 512 pixel canvas. The repetition is built with `for` loops. I added movement through `sin()` and `cos()`, which generate small displacements, and transformations such as `translate()` and `rotate()`. Mouse interaction changes the behavior of nearby elements: when the cursor enters their zone of influence, the squares receive stronger displacements and rotations through `random()`. The grayscale value varies according to each square's vertical position.
+
+I was not looking for a fixed image, but a system of rules that determines the squares' behavior. The structure stays ordered through repetition and a slight, pre-established movement. The mouse introduces a specific disturbance: nearby squares shift and rotate more intensely. I was interested in the relationship between a pre-established system and the possibility of momentarily altering it through user intervention. The code works as the set of rules that defines the piece's behavior.
+
+I relate the piece to José Luis Brea's ideas in _Redefinición de las prácticas artísticas (s. 21)_, where he defines artistic production as "an operator that effectively inserts itself into a given system, destabilizing the balance equation that governs it" (Brea, 2008). The grid works as an ordered system, and the mouse introduces a localized disturbance. I also draw on _Breve (y desordenado) antiglosario sobre el arte electrónico_: "no technical specification of the medium should ever be considered a relevant feature for an aesthetic categorization" (Brea, 2002). The code and p5.js do not define the piece by themselves, but rather the operations of repetition, movement, transformation, and disturbance.
+
+**Bibliography**
+
+- BREA, José Luis. (2002). _"Breve (y desordenado) antiglosario –o diccionario de tópicos– sobre el arte electrónico"_. In _La era postmedia_. Salamanca: CASA Editorial, pp. 4-8.
+- BREA, José Luis. (2008). _"Redefinición de las prácticas artísticas (s. 21)"_. In _El tercer umbral_. Murcia: CENDEAC, pp. 106-113.
+- MOLNAR, Vera. Artistic reference.
+
+**Brief resume**
+
+Celeste Aquino (2004) is a digital and musical artist with a focus on drawing. She studies Multimedia Arts, where she develops her interest in image, animation, programming, and digital media.
+</Language>
