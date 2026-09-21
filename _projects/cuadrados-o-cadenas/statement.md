@@ -28,10 +28,6 @@ La obra propone así una relación entre estructura y transformación, donde una
 
 Esta transformación plantea la pregunta que da nombre a la obra: ¿Cuadrados o cadenas?
 
-**Bibliografía**
+**Biografia**
 
-FRICKE, Christiane. (1999). _"Nuevos Medios"_ en AAVV. Arte de siglo XX. Vol. II. München: Taschen.
-
-GROYS, Boris. (2016). _"Arte en flujo. Ensayos sobre la evanescencia del presente"_. Buenos Aires: Caja Negra.
-
-TAYLOR, Diana. (2012). _"¿Cuáles son los antecedentes del arte de performance?"_ en Performance. Buenos Aires: Asunto Impreso.
+Antonella Rivas es estudiante de Artes Multimediales en la Universidad Nacional de las Artes (UNA). Su formación e intereses abarcan distintas áreas vinculadas al arte y los medios digitales, como el cine, la fotografía, el sonido y el diseño.
