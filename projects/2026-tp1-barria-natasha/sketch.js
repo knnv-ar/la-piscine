@@ -37,7 +37,7 @@ let contador=0;
 
 
 function setup() {
-createCanvas(512, 512);
+let canvas=createCanvas(512, 512);
 canvas.parent('div-sketch'); // ESTA LÍNEA ES OBLIGATORIA
 
 frameRate (60);
