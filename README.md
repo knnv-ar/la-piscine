@@ -174,8 +174,8 @@ la-piscine/
    cuatrimestre: primer cuatrimestre
    thumbnail: thumbnail.webp
    dependencies:
-     - p5
-     - p5.sound
+     - p5.v2.3.3
+     - p5.sound.v2.3.3
    ---
    ```
 
@@ -207,12 +207,10 @@ Las dependencias externas se declaran en el frontmatter del `statement.mdx` y se
 
 | Clave | Librería |
 |---|---|
-| `p5` | p5.js 1.10.0 |
-| `p5.sound` | p5.sound 1.10.0 |
-| `p5.v150` | p5.js 1.5.0 (legacy) |
-| `p5.v180` | p5.js 1.8.0 (legacy) |
-| `p5.sound.v150` | p5.sound 1.5.0 (legacy) |
-| `p5.sound.v180` | p5.sound 1.8.0 (legacy) |
+| `p5.v2.3.3` | p5.js 2.3.3 |
+| `p5.sound.v2.3.3` | p5.sound 2.3.3 |
+| `p5.v1.11.13` | p5.js 1.11.13 |
+| `p5.sound.v1.11.13` | p5.sound 1.10.0 |
 | `ml5` | ml5.js 1.x |
 | `face-api` | face-api.js |
 | `flexbox` | Flexbox Grid |
