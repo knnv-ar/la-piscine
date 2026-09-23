@@ -3,8 +3,8 @@ let tIris = 0;
 let tPupila = 0;
 
 function setup() {
- let canvas =  createCanvas(512, 512);
-canvas.parent('div-skecth');
+let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
 }
 
 let angulo = 0.0;
