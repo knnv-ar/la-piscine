@@ -11,6 +11,8 @@ export const dependenciesMap: Record<string, string> = {
   'p5.sound.v1.11.13': '<script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js"></script>',
   'p5.v2.2.3': '<script src="https://cdn.jsdelivr.net/npm/p5@2.2.3/lib/p5.js"></script>',
   'p5.sound.v2.2.3': '<script src="https://cdn.jsdelivr.net/npm/p5.sound@0.2.0/dist/p5.sound.min.js"></script>',
+  'p5.v2.3.3': '<script src="https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.js"></script>',
+  'p5.sound.v2.3.3': '<script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>',
   flexbox: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />',
   live: '<script type="text/javascript" src="http://livejs.com/live.js"></script>',
   'face-api': '<script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1/dist/face-api.js"></script>',
