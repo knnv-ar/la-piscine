@@ -3,15 +3,14 @@
 // true = pantalla de monitor cardíaco, false = corazón
 let modoMonitor = false;
 
-function setup() {}
-
-// Método de entrada: al presionar cualquier tecla, alterno entre las dos pantallas
-function keyPressed() {
-  modoMonitor = !modoMonitor;
+function setup() {
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
 }
 
+
+
 function draw() {
-  createCanvas(512, 512);
 
   if (modoMonitor) {
     dibujarMonitor();
@@ -271,4 +270,10 @@ function dibujarCorazon() {
 
   pop();
   pop();
+}
+
+
+// Método de entrada: al presionar cualquier tecla, alterno entre las dos pantallas
+function keyPressed() {
+  modoMonitor = !modoMonitor;
 }
