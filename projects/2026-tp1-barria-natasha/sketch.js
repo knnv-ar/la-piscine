@@ -37,8 +37,8 @@ let contador=0;
 
 
 function setup() {
-let canvas=createCanvas(512, 512);
-canvas.parent('div-sketch'); // ESTA LÍNEA ES OBLIGATORIA
+let canvas = createCanvas(512, 512); // Reemplazá con tus dimensiones
+  canvas.parent('div-sketch'); // ESTA LÍNEA ES OBLIGATORIA
 
 frameRate (60);
 }
