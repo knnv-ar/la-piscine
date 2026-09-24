@@ -7,7 +7,8 @@ let t = 0;
  
 function setup() {
    
-  createCanvas(512, 512);
+  let canvas = createCanvas(512, 512);
+  canvas.parent('div-sketch');
   colorMode(RGB, 255);
   cx = width / 2;
   cy = height / 2;
