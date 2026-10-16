@@ -1,0 +1,74 @@
+
+
+---
+author: Lola Urquiaga
+title: "Sin título"
+date: 2026-09-17
+year: 2026
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.webp
+dependencies:
+  - p5.v1.11.13
+  - p5.sound.v1.11.13
+  - https://editor.p5js.org/lolaurquiaga/sketches/ylyPnia3F
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+<Language code="es">
+
+Esta obra visual está construida mediante una repetición de líneas que conectan el lado izquierdo con el lado derecho de la pantalla. Al principio, cada línea nace en un punto fijo y avanza de forma recta y uniforme, siguiendo una regla muy rígida. A medida que descendemos por la composición, los tonos cambian gradualmente desde un negro intenso hasta un gris claro y suave.
+
+Sin embargo, a mitad del camino las reglas cambian: la estructura estricta se rompe y las líneas rectas se convierten en curvas. Gracias a un algoritmo de movimiento fluido, esas curvas no permanecen congeladas, sino que se mueven de forma suave e impredecible, como si fuesen cuerdas, hilos o telas flameando con el viento. La imagen pasa de ser un dibujo geométrico y frío a convertirse en un organismo vivo en constante cambio.
+
+**Desarrollo técnico, estético y conceptual**
+
+La composición habita en el umbral entre la norma y la libertad. En su tramo superior predomina el orden geométrico, la simetría y el trazo calculado: representa la estructura, el pensamiento analítico y la rigidez de los límites preconcebidos. Es el punto de partida donde todo está bajo control y cada trayectoria es predecible.
+
+A medida que la mirada desciende, el tinte se aclara y la tensión se disuelve. La geometría recta da paso a la soltura de la curva, introduciendo una ondulación orgánica que rescata al trazo de su inmovilidad. Lo que comenzó como un esquema disciplinado se transforma en un pulso vivo, un flujo dinámico donde la estructura se rinde ante la flexibilidad, demostrando cómo lo estricto y lo sistemático pueden evolucionar naturalmente hacia la armonía de la vida y el movimiento.
+
+La transición de las líneas rectas a las formas curvas e impredecibles refleja cómo la tecnología puede pasar de ser un frío esquema de cálculo a algo lleno de vida. En el tramo superior, las líneas representan el control absoluto, el orden y la precisión de la informática tradicional. Sin embargo, cuando el algoritmo permite que las líneas fluyan libremente como telas o cuerdas al viento, la imagen deja de ser un simple dibujo geométrico hecho por una computadora y se transforma en un organismo vivo. Es en esta capacidad de romper con sus propias reglas rígidas donde el arte digital encuentra su verdadera magia, demostrando que no es solo calcular o repetir patrones, sino para crear movimiento, libertad y una constante evolución.
+
+
+
+**Bibliografía**
+
+- BREA, José Luis. (2002). Breve -y desordenado- antiglosario-o diccionario de tópicos-sobre el arte electrónico.
+
+**Breve biografía**
+
+Soy Lola Urquiaga y nací en la Ciudad de Buenos Aires un 16 de Enero de 1994. En mi familia el arte y la militancia eran lo común. Durmiendo en ensayos y camarines, corriendo entre butacas. Haciendo experimentos con materiales y soportes en el taller de la casa.
+Mi búsqueda creativa tuvo muchos matices donde la danza, el teatro y el circo fueron mis primeros amores. En el 2014 me mudé a la Ciudad de Mendoza para estudiar la Licenciatura en Artes Visuales en la Universidad Nacional de Cuyo. En esta etapa me entregué a la producción visual y experimenté múltiples técnicas, disciplinas y materiales. En un volantazo de esos que da la vida volví al circo pero esta vez para trabajar en diferentes espectáculos y carpas. Fue cuando me bajé del escenario que la curiosidad y la sed por aprender nuevas formas de expresión descubrí la potencialidad del arte multimedial, siendo totalmente ignorante de por donde empezar que encontré la carrera de Artes Multimediales en la UNA. Hoy me encuentro investigando esta nueva forma de expresión y aprendiendo a plasmar las líneas e imágenes de mi cabeza en códigos para generarlos en este mundo de infinitas posibilidades.
+</Language>
+
+<Language code="en">
+This visual artwork is constructed through a repetition of lines connecting the left side of the screen to the right. At first, each line originates from a fixed point and extends in a straight, uniform manner, following a highly rigid set of rules. As we move downward through the composition, the tones gradually shift from deep black to a soft, light gray.
+
+However, halfway through the composition, the rules change: the strict structure breaks apart, and the straight lines become curves. Through a fluid motion algorithm, these curves do not remain static, but move smoothly and unpredictably, as if they were ropes, threads, or pieces of fabric fluttering in the wind. The image transitions from a cold, geometric drawing into a living organism in constant transformation.
+
+**Technical, aesthetic, and conceptual development**
+
+The composition inhabits the threshold between structure and freedom. In its upper section, geometric order, symmetry, and calculated lines prevail. This represents structure, analytical thinking, and the rigidity of preconceived boundaries. It is the starting point, where everything is under control and each trajectory is predictable.
+
+As the viewer's gaze moves downward, the tone becomes lighter and the tension begins to dissolve. Straight geometry gives way to the looseness of curves, introducing an organic undulation that frees the lines from their immobility. What began as a disciplined scheme transforms into a living pulse, a dynamic flow in which structure surrenders to flexibility, demonstrating how the strict and systematic can naturally evolve toward the harmony of life and movement.
+
+The transition from straight lines to curved and unpredictable forms reflects how technology can move from being a cold computational framework toward something full of life. In the upper section, the lines represent absolute control, order, and the precision of traditional computing. However, when the algorithm allows the lines to flow freely like fabric or ropes in the wind, the image ceases to be merely a geometric drawing produced by a computer and becomes a living organism.
+
+It is precisely in this ability to break away from its own rigid rules that digital art finds its true magic. It demonstrates that technology is not only about calculating or repeating patterns, but also about creating movement, freedom, and continuous transformation.
+
+**Bibliography**
+
+- BREA, José Luis. (2002). Breve -y desordenado- antiglosario-o diccionario de tópicos-sobre el arte electrónico.
+
+**Brief resume**
+
+My name is Lola Urquiaga, and I was born in the city of Buenos Aires on January 16, 1994. In my family, art and activism were part of everyday life. I grew up sleeping through rehearsals and backstage rooms, running between theater seats, and experimenting with different materials and surfaces in the workshop at home.
+
+My creative journey has taken many forms, with dance, theater, and circus being my first loves. In 2014, I moved to the city of Mendoza to study for a Bachelor's Degree in Visual Arts at the National University of Cuyo. During this period, I immersed myself in visual production and experimented with a wide range of techniques, disciplines, and materials.
+
+Then, in one of those unexpected turns that life takes, I returned to the circus, this time working in different shows and circus tents. It was when I stepped away from the stage that my curiosity and thirst for discovering new forms of expression led me to explore the potential of multimedia art. Completely unaware of where to begin, I discovered the Multimedia Arts degree at the National University of the Arts (UNA).
+
+Today, I am exploring this new form of expression, learning how to translate the lines and images in my mind into code and bring them into existence within this world of infinite possibilities.
+</Language>
