@@ -3,13 +3,15 @@
   "type": "module",
   "version": "3.0.0",
   "private": true,
+  "license": "AGPL-3.0-only",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "sync-assets": "node scripts/sync-assets.mjs",
     "predev": "npm run sync-assets",
-    "prebuild": "npm run sync-assets"
+    "prebuild": "npm run sync-assets",
+    "check-licenses": "node scripts/check-licenses.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.2",

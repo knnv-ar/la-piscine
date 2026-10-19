@@ -174,7 +174,8 @@ dependencies:
                lower.startsWith('semester:') ||
                lower.startsWith('year:') ||
                lower.startsWith('author:') ||
-               lower.startsWith('autor:');
+               lower.startsWith('autor:') ||
+               lower.startsWith('license:');
       });
       
       if (hasFrontMatterKey && lines.length > 0) {

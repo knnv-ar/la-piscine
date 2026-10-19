@@ -8,6 +8,8 @@
 ![p5.js](https://img.shields.io/badge/p5.js-1.10-ED225D?logo=p5dotjs&logoColor=white)
 ![i18n](https://img.shields.io/badge/i18n-es%20%7C%20en-blue)
 ![Versión](https://img.shields.io/badge/versión-v3-blue)
+![Licencia código](https://img.shields.io/badge/código-AGPLv3-blue)
+![Licencia obras](https://img.shields.io/badge/obras-licencia%20por%20autor%2Fa-lightgrey)
 
 ---
 
@@ -23,6 +25,7 @@
 - [Dependencias de sketches](#dependencias-de-sketches)
 - [Modo mantenimiento](#modo-mantenimiento)
 - [Deploy](#deploy)
+- [Licencias](#licencias)
 - [Créditos](#créditos)
 
 ---
@@ -126,19 +129,24 @@ la-piscine/
 │   │   └── en/                 # Páginas en inglés
 │   └── utils/
 │       ├── dependencies.ts     # Mapa de dependencias CDN
+│       ├── licenses.mjs        # Licencias disponibles para las obras
 │       ├── selected-projects.ts
 │       └── translations.ts     # Diccionario i18n
 ├── public/
 │   └── assets/                 # Favicon, fotos, etc.
 ├── scripts/
 │   ├── sync-assets.mjs         # Sincronización de assets al build
+│   ├── check-licenses.mjs      # Chequeo de licencias en pull requests
 │   └── rename-projects.mjs     # Utilidad para renombrar carpetas
 ├── astro.config.mjs            # Configuración de Astro
+├── LICENSE                     # AGPLv3 (código de la galería)
 ├── package.json
 ├── tsconfig.json
 └── .github/
+    ├── pull_request_template.md  # Plantilla de montaje de obras
     └── workflows/
-        └── deploy.yml          # CI/CD: build & deploy a GitHub Pages
+        ├── deploy.yml          # CI/CD: build & deploy a GitHub Pages
+        └── check-licenses.yml  # Chequeo de licencias en cada PR
 ```
 
 ---
@@ -173,11 +181,14 @@ la-piscine/
    year: 2026
    cuatrimestre: primer cuatrimestre
    thumbnail: thumbnail.webp
+   license: CC-BY-SA-4.0
    dependencies:
      - p5.v2.3.3
      - p5.sound.v2.3.3
    ---
    ```
+
+   El campo **`license` es obligatorio para las obras nuevas** y lo elige cada autor/a. Las opciones están explicadas en [Licencias](#licencias).
 
    Debajo del frontmatter, incluir el sketch y los bloques `<Language>`:
 
@@ -197,7 +208,13 @@ la-piscine/
 
 4. **Agregar una miniatura cuadrada** (`thumbnail.webp` o `thumbnail.png`) en la carpeta del proyecto.
 
-5. **Verificar localmente** con `npm run dev` y navegar al proyecto.
+5. **Verificar localmente** con `npm run dev` y navegar al proyecto. Para chequear la licencia antes de abrir el pull request:
+
+   ```bash
+   node scripts/check-licenses.mjs --new _projects/2026-tp1-garcia-maria/statement.mdx
+   ```
+
+6. **Abrir el pull request** y completar la plantilla: declaración de autoría, licencia elegida y material de terceros. Un chequeo automático verifica que las obras nuevas declaren una licencia válida.
 
 ---
 
@@ -252,9 +269,40 @@ git push origin main
 
 ---
 
+## Licencias
+
+El repositorio contiene dos capas de naturaleza distinta, y por eso se licencian por separado.
+
+### 1. Código de la galería — AGPLv3
+
+El código que hace funcionar la galería (`src/`, `scripts/`, `.github/`, configuración) se publica bajo la [GNU Affero General Public License v3.0](LICENSE) (AGPLv3).
+
+- Cualquiera puede usar, estudiar, copiar y modificar la galería, por ejemplo para montar la de otra cátedra.
+- Quien publique una versión modificada, **incluso si sólo la ofrece como sitio web**, debe compartir su código fuente bajo la misma licencia.
+
+Elegimos una licencia *copyleft* porque priorizamos la reciprocidad por sobre la mera circulación: lo que se recibe del común, se devuelve al común.
+
+### 2. Obras de estudiantes — licencia elegida por cada autor/a
+
+Cada obra de `_projects/` (toda su carpeta: `sketch.js`, `statement.mdx`, miniatura y demás archivos) pertenece a su autor/a (Ley 11.723) y **no** está alcanzada por la AGPLv3. Su licencia la elige cada estudiante al montar la obra, en el campo `license` del frontmatter:
+
+| Valor de `license` | Licencia | Qué permite a terceros |
+|---|---|---|
+| `CC-BY-SA-4.0` *(sugerida)* | [Creative Commons Atribución-CompartirIgual 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es) | Copiar, modificar y usar la obra, incluso comercialmente, citando la autoría; las obras derivadas deben llevar la misma licencia. |
+| `CC-BY-4.0` | [Creative Commons Atribución 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) | Copiar, modificar y usar la obra, incluso comercialmente, citando la autoría. |
+| `CC-BY-NC-SA-4.0` | [Creative Commons Atribución-NoComercial-CompartirIgual 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es) | Igual que BY-SA, pero sin usos comerciales. |
+| `all-rights-reserved` | Todos los derechos reservados | Nada: la obra se exhibe en la galería, pero no puede reutilizarse sin permiso de su autor/a. |
+
+- La licencia de cada obra se muestra en su página, con enlace al texto de la licencia.
+- **Exhibir no obliga a abrir**: `all-rights-reserved` es una opción válida.
+- **Corpus histórico**: las obras montadas antes de esta política no declaran licencia y se consideran `all-rights-reserved` hasta que su autor/a elija otra. Si sos egresado/a y querés licenciar tu obra, escribile a la cátedra o abrí un pull request agregando el campo `license` a tu `statement.mdx`.
+- **Material de terceros**: una licencia Creative Commons sólo cubre lo que es del autor/a. Las imágenes, sonidos, tipografías o código ajenos conservan su propia licencia y deben declararse en el statement y en el pull request.
+
+---
+
 ## Créditos
 
-- **Proyecto original**: plantilla portfolio de p5.js creada por [Benjamin Habert](https://github.com/benjaminhabert).
+- **Antecedente**: la versión 2 (Ruby/Jekyll) se basó en la plantilla [jekyll-p5-portfolio](https://github.com/BenjaminHabert/jekyll-p5-portfolio) de [Benjamin Habert](https://github.com/BenjaminHabert). La versión 3 es una reescritura completa en Astro que conserva de aquella plantilla sus ideas organizadoras (una carpeta por obra, statement con frontmatter, dependencias por proyecto) y la imagen `default_thumbnail.png`.
 - **Cátedra**: Artes Multimediales 1 y 4, cátedra Lacabanne — [UNA](https://una.edu.ar).
 - **Diseño y desarrollo del proyecto**: Raúl Federico Lacabanne (alias [knnv-ar](https://github.com/knnv-ar)).
 - **Framework**: [Astro](https://astro.build/) · [p5.js](https://p5js.org/) · [MDX](https://mdxjs.com/).
