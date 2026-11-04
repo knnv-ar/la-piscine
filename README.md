@@ -136,7 +136,8 @@ la-piscine/
 │   └── assets/                 # Favicon, fotos, etc.
 ├── scripts/
 │   ├── sync-assets.mjs         # Sincronización de assets al build
-│   ├── check-licenses.mjs      # Chequeo de licencias en pull requests
+│   ├── check-pr.mjs            # Revisión automática de obras en pull requests
+│   ├── check-licenses.mjs      # Chequeo de licencias (uso local)
 │   └── rename-projects.mjs     # Utilidad para renombrar carpetas
 ├── astro.config.mjs            # Configuración de Astro
 ├── LICENSE                     # AGPLv3 (código de la galería)
@@ -146,7 +147,7 @@ la-piscine/
     ├── pull_request_template.md  # Plantilla de montaje de obras
     └── workflows/
         ├── deploy.yml          # CI/CD: build & deploy a GitHub Pages
-        └── check-licenses.yml  # Chequeo de licencias en cada PR
+        └── check-pr.yml        # Revisión de obras + build en cada PR
 ```
 
 ---
@@ -174,7 +175,6 @@ la-piscine/
 
    ```yaml
    ---
-   layout: post
    author: María García
    title: Mi obra
    date: 2026-05-15
@@ -198,23 +198,49 @@ la-piscine/
    </div>
 
    <Language code="es">
-   Descripción en español...
+   Breve descripción de la obra en español.
+
+   **Desarrollo técnico, estético y conceptual**
+
+   Texto del desarrollo en español.
+
+   **Bibliografía**
+
+   - APELLIDO, Nombre. (año). _"Título del libro"_. Ciudad: Editorial.
+
+   **Breve biografía**
+
+   Breve presentación tuya (estudiante) en español.
    </Language>
 
    <Language code="en">
-   Description in English...
+   Brief description of the work in english.
+
+   **Technical, aesthetic, and conceptual development**
+
+   Development text in english.
+
+   **Bibliography**
+
+   - LASTNAME, Firstname. (year). _"Book title"_. City: Publisher.
+
+   **Brief resume**
+
+   Brief presentation of yourself (student) in english.
    </Language>
    ```
 
-4. **Agregar una miniatura cuadrada** (`thumbnail.webp` o `thumbnail.png`) en la carpeta del proyecto.
+   Cada bloque `<Language>` tiene que cerrarse con `</Language>`; si falta, el sitio no compila.
 
-5. **Verificar localmente** con `npm run dev` y navegar al proyecto. Para chequear la licencia antes de abrir el pull request:
+4. **Agregar la miniatura** `thumbnail.webp` en la carpeta del proyecto: formato WebP (no alcanza con renombrar un PNG o JPG) y exactamente 360 × 360 px.
+
+5. **Verificar localmente** con `npm run dev` y navegar al proyecto. Para correr la misma revisión que se hace en el pull request (después de `npm ci`):
 
    ```bash
-   node scripts/check-licenses.mjs --new _projects/2026-tp1-garcia-maria/statement.mdx
+   npm run check-pr -- _projects/2026-tp1-garcia-maria
    ```
 
-6. **Abrir el pull request** y completar la plantilla: declaración de autoría, licencia elegida y material de terceros. Un chequeo automático verifica que las obras nuevas declaren una licencia válida.
+6. **Abrir el pull request** y completar la plantilla: declaración de autoría, licencia elegida y material de terceros. El workflow **Revisión de obras** (`.github/workflows/check-pr.yml`) revisa automáticamente que el PR sólo toque archivos dentro de `_projects/<carpeta>/`, la miniatura, el `statement.mdx` (frontmatter, contenedor del sketch, bloques `<Language>`), la licencia, y que el sitio compile. El resultado aparece en la pestaña *Checks* del PR, con el detalle de cada error.
 
 ---
 

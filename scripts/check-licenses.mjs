@@ -10,7 +10,8 @@
 // - Obras modificadas (--changed): si declaran `license`, debe ser válido
 //   (el corpus histórico sin licencia sigue siendo aceptado).
 //
-// Lo ejecuta .github/workflows/check-licenses.yml en cada pull request que toca _projects/.
+// En los pull requests lo reemplaza scripts/check-pr.mjs (que incluye este chequeo);
+// este script queda para uso local.
 
 import fs from 'fs';
 import { execFileSync } from 'child_process';

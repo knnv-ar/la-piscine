@@ -11,7 +11,8 @@
     "sync-assets": "node scripts/sync-assets.mjs",
     "predev": "npm run sync-assets",
     "prebuild": "npm run sync-assets",
-    "check-licenses": "node scripts/check-licenses.mjs"
+    "check-licenses": "node scripts/check-licenses.mjs",
+    "check-pr": "node scripts/check-pr.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.2",
