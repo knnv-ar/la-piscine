@@ -1,0 +1,29 @@
+name: Check artwork licenses
+
+# Verifica en cada pull request que las obras nuevas declaren una licencia válida
+# en el frontmatter de su statement.mdx. Ver scripts/check-licenses.mjs.
+on:
+  pull_request:
+    paths:
+      - '_projects/**'
+
+permissions:
+  contents: read
+
+jobs:
+  licenses:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (merge commit + base)
+        uses: actions/checkout@v4
+        with:
+          # Profundidad 2: alcanza para comparar el merge del PR contra su base
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Check licenses
+        run: node scripts/check-licenses.mjs --git HEAD^1 HEAD

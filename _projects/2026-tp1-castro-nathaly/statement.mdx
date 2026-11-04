@@ -1,0 +1,85 @@
+---
+author: Nathaly Castro
+title: "ÓRGANO"
+date: 2026-09-16
+year: 2026
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.png
+dependencies:
+  - p5.v2.3.3
+  - p5.sound.v2.3.3
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+<Language code="es">
+Los latidos hacen que nuestro cuerpo siga con vida, aunque sería simplificar demasiado el proceso del órgano relacionado con los sentimientos. Hacen mucho más que eso, son el sistema de alerta por excelencia ante las emociones extremas, incluso a la falta de ellas. Cuando estamos en calma sabemos que está allí pero no lo sentimos en realidad, trabaja en silencio, como si estuviese dormido en esta vida tan movida. Incluso en esos momentos de estrés él sigue trabajando con normalidad, un experto en trabajo bajo presión, cumple una jornada de 24 horas, sin descanso, sin pago de horas extra, un esclavo por excelencia.
+
+
+**Desarrollo técnico, estético y conceptual**
+
+La representación realizada en el sketch se basa en el pensamiento que he desarrollado a lo largo de los años, basado en experiencias propias y ajenas, tanto positivas como negativas.
+
+Creo que este órgano dice mucho de lo que somos, en ocasiones se puede “ver” en las personas con claridad y otras veces parece que no lo podemos percibir, se oculta muy bien. Es complicado hablar de lo que llevamos dentro, suele ser más fácil mirar a los demás. No se trata de definirlo como bueno o malo, mejor o peor, sino de reconocer lo difícil que puede resultar enfrentarnos a nosotros mismos.
+
+La obra fue realizada en p5.js, utilizando un lienzo de 512 × 512 píxeles y una paleta limitada a escala de grises. La imagen del corazón se construye principalmente mediante elipses, curvas de Bézier y un triángulo, mientras que las venas se generan a partir de puntos organizados mediante estructuras de repetición for. La combinación de estas figuras primitivas permite construir una representación orgánica a partir de elementos geométricos simples.
+
+El movimiento se produce mediante datos endógenos, principalmente frameCount y la función sin(). A través de scale(), el corazón aumenta y disminuye su tamaño, generando el latido. También se utilizan map() para transformar los valores de la oscilación en distintos matices de gris. Mediante el método de entrada keyPressed() y un condicional, es posible alternar entre la representación del corazón y una segunda pantalla de monitor cardíaco. En esta última, las estructuras de repetición generan una línea de base y un pico, mientras que la superposición de capas desplazadas produce una estela visual.
+
+Me interesa que el órgano representado trabaje constantemente, al igual que el código que lo construye y ejecuta. Esta relación me permite pensar la imagen generativa como un proceso en el que reglas, estructuras y datos producen una forma que permanece en movimiento.
+
+En relación con los textos de José Luis Brea, encuentro un vínculo con su reflexión sobre la producción intelectual y afectiva en las sociedades del postfordismo. También me interesa su observación sobre la velocidad de transformación de la tecnología y la dificultad del lenguaje para acompañarla. Estas ideas me llevan a pensar cómo intentamos comprender y expresar aquello que cambia constantemente, tanto en la tecnología como en nuestra propia experiencia.
+
+Como referente artístico, tomo las Oscilaciones de Ben F. Laposky, cuyas imágenes fueron producidas mediante oscilaciones electrónicas y registradas a través de un osciloscopio. Me interesa especialmente la manera en que un comportamiento matemático puede convertirse en una experiencia visual. En mi obra, esta referencia aparece en la pantalla del monitor cardíaco, donde la repetición, la oscilación y la superposición de capas generan una imagen a partir de reglas determinadas.
+
+**Bibliografía**
+
+BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario de tópicos– sobre el arte electrónico” en La era postmedia. Acción comunicativa, prácticas (post)artísticas y dispositivos neomediales. Salamanca: CASA Editorial, pp. 4-8.
+
+BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
+
+**Breve biografía**
+
+"Nath" Castro, artista venezolana, nacida en Caracas en 1994. En 2014 comenzó su formación artística en la Universidad Central de Venezuela (UCV), un recorrido que, aunque no llegó a culminar por razones políticas y económicas, razones que también la llevaron a emigrar a los 21 años. Esto significó un quiebre en sus anhelos y sueños, y transformó por completo su manera de mirar, crear y habitar el mundo. Actualmente es estudiante de Artes Multimediales en la Universidad Nacional de las Artes (UNA), en Argentina, donde continúa explorando los cruces entre arte, tecnología y la cotidianidad.
+
+Su práctica nace de una búsqueda constante por encontrar vínculos entre el arte y la vida. Apasionada por el color, lo entiende como lenguaje y como una forma de expresar aquello que la habita. La experimentación ocupa un lugar central en su proceso: probar, alterar, repetir, descubrir, fluir y volver a mirar forman parte de una manera de crear en la que el resultado no siempre está definido.
+
+Como esta obra, por ejemplo: ¿estará completa? ¿Estará culminada? ¿Estará satisfecha con ella? Son preguntas que también forman parte de su proceso creativo. Siempre buscando las posibilidades de transformar reglas, estructuras y datos, no hay límite, etiqueta o prejuicio que defina a esta artista en construcción.
+</Language>
+
+<Language code="en">
+Heartbeats keep our body alive, although it would be too much of a simplification of the process of the organ related to feelings. They do much more than that, they are the warning system par excellence in the face of extreme emotions, even in the absence of them. When we are calm we know that it is there but we do not really feel it, it works in silence, as if it were asleep in this very busy life. Even in those moments of stress it continues working normally, an expert in working under pressure, it works a 24-hour shift, without rest, without overtime pay, a slave par excellence.
+
+
+**Technical, aesthetic and conceptual development**
+
+The representation carried out in the sketch is based on the thought that I have developed over the years, based on my own and others' experiences, both positive and negative.
+
+I believe that this organ says a lot about who we are, sometimes it can be “seen” clearly in people and other times it seems that we cannot perceive it, it hides very well. It is complicated to talk about what we carry inside, it is usually easier to look at others. It is not about defining it as good or bad, better or worse, but rather recognizing how difficult it can be to face ourselves.
+
+The work was created in p5.js, using a 512 × 512 pixel canvas and a palette limited to grayscale. The image of the heart is mainly constructed using ellipses, Bézier curves, and a triangle, while the veins are generated from points organized through for loop structures. The combination of these primitive shapes allows an organic representation to be constructed from simple geometric elements.
+
+The movement is produced through endogenous data, mainly frameCount and the sin() function. Through scale(), the heart increases and decreases in size, generating the heartbeat. map() is also used to transform the oscillation values into different shades of gray. Through the keyPressed() input method and a conditional, it is possible to alternate between the representation of the heart and a second cardiac monitor screen. In the latter, the repetition structures generate a baseline and a peak, while the superposition of displaced layers produces a visual trail.
+
+I am interested in the represented organ working constantly, just like the code that constructs and executes it. This relationship allows me to think of the generative image as a process in which rules, structures, and data produce a form that remains in motion.
+
+In relation to the texts by José Luis Brea, I find a connection with his reflection on intellectual and affective production in post-Fordist societies. I am also interested in his observation about the speed of technological transformation and the difficulty of language to keep up with it. These ideas lead me to think about how we try to understand and express that which constantly changes, both in technology and in our own experience.
+
+As an artistic reference, I use Ben F. Laposky's Oscillations, whose images were produced through electronic oscillations and recorded using an oscilloscope. I am especially interested in the way in which mathematical behavior can become a visual experience. In my work, this reference appears on the cardiac monitor screen, where repetition, oscillation, and the superposition of layers generate an image based on determined rules.
+
+**Bibliography**
+
+BREA, José Luis. (2002). “Breve (y desordenado) antiglosario –o diccionario de tópicos– sobre el arte electrónico” en La era postmedia. Acción comunicativa, prácticas (post)artísticas y dispositivos neomediales. Salamanca: CASA Editorial, pp. 4-8.
+
+BREA, José Luis. (2008). “Redefinición de las prácticas artísticas (s. 21)” en El tercer umbral. Estatuto de las prácticas artísticas en la era del capitalismo cultural. Murcia: CENDEAC, pp. 106-113.
+
+**Brief resume**
+
+"Nath" Castro, Venezuelan artist, born in Caracas in 1994. In 2014, she began her artistic training at the Central University of Venezuela (UCV), a journey that, although she did not complete due to political and economic reasons, reasons that also led her to emigrate at the age of 21. This meant a break in her hopes and dreams, and completely transformed her way of looking at, creating, and inhabiting the world. She is currently a student of Multimedia Arts at the National University of the Arts (UNA), in Argentina, where she continues exploring the intersections between art, technology, and everyday life.
+
+Her practice emerges from a constant search to find connections between art and life. Passionate about color, she understands it as a language and as a way of expressing that which inhabits her. Experimentation occupies a central place in her process: trying, altering, repeating, discovering, flowing, and looking again are part of a way of creating in which the result is not always defined.
+
+Like this work, for example: will it be complete? Will it be finished? Will she be satisfied with it? These are questions that are also part of her creative process. Always searching for the possibilities of transforming rules, structures, and data, there is no limit, label, or prejudice that defines this artist in construction.
+</Language>
