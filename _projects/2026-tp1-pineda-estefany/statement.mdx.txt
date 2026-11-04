@@ -1,0 +1,81 @@
+
+---
+author: Estefany Pineda Calle
+title: PATRON DINAMICO
+date: 2026-11-04
+year: 2026
+cuatrimestre: primer cuatrimestre
+thumbnail: thumbnail.webp
+license: CC-BY-SA-4.0
+dependencies:
+  - p5.v1.11.13
+  - p5.sound.v1.11.13
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+
+<Language code="es">
+PATRON DINAMICO
+
+Es una obra realizada en p5.js que nace de la repetición de líneas en movimiento. A medida que la animación avanza, las líneas cambian su longitud y forman una figura que parece respirar, expandiéndose y contrayéndose de manera constante. Mi intención fue crear una imagen simple pero capaz de generar una sensación de profundidad, ritmo y movimiento únicamente a través del código.
+
+Desde lo visual, me interesa generar una figura que transmita movimiento sin recurrir a muchos pasos, trato de simplificar el código haciendo los llamados necesarios.  Toda la composición está construida únicamente con líneas, pero al repetirse y variar su longitud crean una sensación de vibración y profundidad. Busco que la imagen parezca viva, como si estuviera respirando o respondiendo a un pulso constante.
+
+La principal inspiración es el trabajo de Ben F. Laposky. Me llama la atención cómo lograba obtener imágenes abstractas utilizando señales electrónicas en un osciloscopio. Aunque mi obra está realizada con programación mediante códigos y llamados específicos, comparto esa idea de que una imagen puede surgir de procesos matemáticos y no únicamente del dibujo manual. Más que copiar una de sus obras, intenté recuperar esa relación entre código, tecnología y expresión visual.
+
+"El trabajo que al respecto concierne a las prácticas artísticas tiene entonces que ver con la implementación de imaginarios alternativos."
+(José Luis Brea, "Redefinición de las prácticas artísticas", 2008).
+
+Conecto con lo que dice Brea en el la cita anterior porque en mi obra el objetivo no es representar un objeto o una escena de la realidad, sino construir una imagen a partir de la sincronía en los llamados a cada función, la repetición de líneas, la rotación, la variación de sus longitudes, la coordinación de movimientos y la imaginación, con esto logro generar una forma abstracta que solo puede existir gracias al algoritmo.
+
+Así como Ben F. Laposky utilizó señales electrónicas para generar imágenes, mi obra utiliza instrucciones programadas en p5.js para producir una composición en constante transformación. Ambas propuestas exploran nuevas formas de creación visual mediante el uso de la tecnología, alejándose un poco del dibujo tradicional y demostrando que un sistema de reglas puede convertirse en una herramienta artística.
+
+Al desarrollar esta obra me trasporto al pasado, a aquellas tardes que cuando llegaba del colegio, lo primero que hacía era encender la computadora y esperaba a que te aparecía aquel famoso Windows 95 y su ventanita con cuadros de colores, la primera computadora que tuvimos en casa, en donde buscábamos solo los juegos o tareas básicas, pero cuando te aburrias esperabas un tiempo a que esta misma entrara en un estado de reposo o espera y aparecían figuras parecidas a las que generaba Laposky con el osciloscopio, aquellas que recorrían toda la pantalla cambiando de color y de forma, pero mientras más te quedabas en frente del monitor, la hipnosis de estas figuras era cada vez más envolvente que cuando volvías en sí, te dabas cuanta que habían pasado varios minutos o en ocasiones te generaban sueño.
+
+Hoy en día entendí que programar no consiste únicamente en escribir instrucciones para que algo funcione. También puede convertirse en una herramienta para explorar ideas visuales y experimentar con el movimiento, el ritmo y la forma. En este caso, el código deja de ser solamente un medio técnico y pasa a formar parte del propio lenguaje artístico.
+
+BIOGRAFIA
+
+Estefany pineda nacida en Medellín – Antioquia (Colombia) el 25 de enero de 1996.
+Realizo sus estudios primarios y secundarios en Cali – Valle del Cauca (Colombia), jugo al futbol la mayor parte de su adolescencia y a sus 25 años decidió migrar a Estados unidos a un intercambio cultural para desarrollar mejor el idioma inglés.
+En el 2024 decide viajar a la Argentina para comenzar sus estudios universitarios, El primer año estuvo en Rosario - santa fe, en donde se inscribió para la carrera de odontología, pero nunca conecto con ella así que se mudo a Buenos Aires y encontró en la UNA (Universidad Nacional de Artes) la carrera de Artes multimediales con la cual pudo conectar de manera personal como lo buscaba.
+Actualmente se encuentra cursando su primer año, pero con el cual hasta el momento se siente bastante satisfecha con las bases que está obteniendo. 
+</Language>
+
+<Language code="en">
+
+
+DYNAMIC PATTERN
+
+This piece, created in p5.js, emerges from the repetition of moving lines. As the animation progresses, the lines shift in length to form a figure that seems to breathe—constantly expanding and contracting. My intention was to create a simple image capable of generating a sense of depth, rhythm, and movement solely through code.
+
+Visually, I am interested in creating a form that conveys motion without relying on overly complex processes; I aim to simplify the code by making only the necessary calls. The entire composition is constructed purely with lines, yet their repetition and varying lengths create a sense of vibration and depth. I want the image to feel alive, as if it were breathing or responding to a steady pulse.
+
+My primary inspiration is the work of Ben F. Laposky. I am fascinated by how he managed to create abstract imagery using electronic signals on an oscilloscope. Although my piece is made through code and specific programming calls, I share the idea that an image can arise from mathematical processes rather than just manual drawing. Rather than copying one of his works, I tried to reclaim that connection between code, technology, and visual expression.
+
+"The work concerning artistic practices, then, has to do with the implementation of alternative imaginaries."
+
+(José Luis Brea, "Redefinición de las prácticas artísticas", 2008).
+
+I resonate with Brea's quote because the objective of my work is not to represent a real-world object or scene. Instead, it is to build an image out of synchronized function calls, repeated lines, rotation, varying lengths, coordinated movements, and imagination. Through this, I create an abstract form that can only exist thanks to the algorithm.
+
+Just as Ben F. Laposky used electronic signals to generate images, my work uses programmed instructions in p5.js to produce a constantly transforming composition. Both approaches explore new forms of visual creation through technology, stepping away from traditional drawing and demonstrating that a system of rules can become an artistic tool.
+
+Developing this piece takes me back to my childhood—to those afternoons after school when the first thing I did was turn on our home's first computer. I remember waiting for the famous Windows 95 logo with its colored squares to appear. Back then, we only used it for simple tasks or games, but whenever I got bored and left the computer idle, screensavers would appear. They featured figures similar to the ones Laposky generated with his oscilloscope, floating across the screen while constantly changing shape and color. The longer you stared at the monitor, the more mesmerizing those patterns became, until you suddenly realized several minutes had passed—or found yourself drifting off to sleep.
+
+Today, I understand that programming isn't just about writing instructions to make something work. It can also be a medium to explore visual ideas and experiment with movement, rhythm, and form. In this context, code ceases to be a purely technical tool and becomes an integral part of the artistic language itself.
+
+BIOGRAPHY
+
+Estefany Pineda was born in Medellín, Antioquia (Colombia) on January 25, 1996.
+
+She completed her primary and secondary education in Cali, Valle del Cauca (Colombia). She played soccer through most of her adolescence, and at age 25, she moved to the United States on a cultural exchange program to improve her English.
+
+In 2024, she moved to Argentina to pursue higher education. During her first year, she lived in Rosario, Santa Fe, where she enrolled in dentistry. However, she never fully connected with the field. She then relocated to Buenos Aires and discovered the Multimedia Arts program at the National University of the Arts (UNA), which offered the personal connection she was looking for.
+
+She is currently in her first year of studies and feels deeply satisfied with the foundation she is building.
+
+</Language>

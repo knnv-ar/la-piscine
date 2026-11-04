@@ -1,0 +1,39 @@
+var ancho = 512;
+var alto = 512;
+
+var angulo = 0;
+var rotacion = 0;
+
+var cantidad = 100;
+var largo = 150;
+
+function setup() {
+  let canvas = createCanvas(512, 512); 
+  canvas.parent('div-sketch'); 
+};
+
+
+function draw() {
+  background(20);
+  translate(width / 2, height / 2); //el punto de inicio se traslada al medio
+
+  rotacion += 0.2;
+  rotate(radians(rotacion));//rotacion de lineas lentamente
+  stroke(255);
+  strokeWeight(1);
+
+  for (var i = 0; i < cantidad; i++) { //repeticion del dibujo
+    var a = -90 + i * 2; //angulo de rotacion
+    var l = largo * sin(radians(a) + angulo) + largo;//variacion de largo de lineas
+    //use chatGPT para solucionar un error que no podia hayar 
+
+    // Lado izquierdo
+    line(-60, 0, -60 + cos(radians(a)) * l, sin(radians(a)) * l);
+
+    // Lado derecho
+    line(60, 0, 60 - cos(radians(a)) * l, sin(radians(a)) * l);
+  }
+
+  angulo += 0.03;// velocidad
+}
+
