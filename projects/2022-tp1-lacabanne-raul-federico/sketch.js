@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(400, 400);
+  let canvas = createCanvas(400, 400);
+  canvas.parent('div-sketch');
   background(0);
   estrellas(250, 10, 0, 255);
 }
