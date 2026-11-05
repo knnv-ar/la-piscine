@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { LICENSE_IDS, DEFAULT_LICENSE, normalizeLicense } from '../utils/licenses.mjs';
 
 const projectsCollection = defineCollection({
   type: 'content',
@@ -36,6 +37,18 @@ const projectsCollection = defineCollection({
           data.year = 2020; // Safe historical default
         }
 
+        // License: accept reasonable spellings ("CC BY-SA 4.0", "todos los derechos reservados")
+        // and map them to the canonical id. Works without a license (historical corpus)
+        // get DEFAULT_LICENSE via the schema default below.
+        if (data.licencia && !data.license) {
+          data.license = data.licencia;
+        }
+        if (data.license === null || data.license === '') {
+          delete data.license;
+        } else if (data.license !== undefined) {
+          data.license = normalizeLicense(data.license);
+        }
+
         // Preprocess dependencies safely (maps null or empty keys to an empty array)
         if (data.dependencies === undefined || data.dependencies === null || !Array.isArray(data.dependencies)) {
           data.dependencies = [];
@@ -54,6 +67,13 @@ const projectsCollection = defineCollection({
       semester: z.enum(['first', 'second']).default('first'),
       thumbnail: z.string().optional(),
       dependencies: z.array(z.string()).default([]),
+      license: z
+        .enum(LICENSE_IDS, {
+          errorMap: () => ({
+            message: `Licencia inválida. Valores aceptados: ${LICENSE_IDS.join(', ')}`,
+          }),
+        })
+        .default(DEFAULT_LICENSE),
     })
   ),
 });

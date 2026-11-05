@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import { useTranslations, type Locale } from '../utils/translations';
 import { getDependencyTags } from '../utils/dependencies';
+import { getLicenseDisplay } from '../utils/licenses.mjs';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -10,10 +11,13 @@ interface Props {
 
 const { entry } = Astro.props;
 const { slug } = entry;
-const { title, author, year, semester, dependencies, date } = entry.data;
+const { title, author, year, semester, dependencies, date, license } = entry.data;
 
 const locale = (Astro.currentLocale || 'es') as Locale;
 const t = useTranslations(locale);
+
+// License chosen by the author (historical works default to all-rights-reserved)
+const licenseInfo = getLicenseDisplay(license, locale);
 const base = '/la-piscine';
 
 // Detect if English version of statement is available in the MDX body
@@ -99,10 +103,22 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
               )}
               {formattedDate && (
                 <div class="meta-item">
-                  <span class="meta-title">Fecha</span>
+                  <span class="meta-title">{t('project.date')}</span>
                   <span class="meta-value">{formattedDate}</span>
                 </div>
               )}
+              <div class="meta-item meta-item-license">
+                <span class="meta-title">{t('project.license')}</span>
+                <a
+                  class="meta-value license-link"
+                  href={licenseInfo.url}
+                  rel="license noopener noreferrer"
+                  target="_blank"
+                  title={licenseInfo.name}
+                >
+                  {licenseInfo.short}
+                </a>
+              </div>
             </div>
           </header>
 
@@ -443,6 +459,22 @@ const formattedDate = date ? new Date(date).toLocaleDateString(locale, {
     font-weight: 600;
     color: var(--text-secondary);
     transition: var(--theme-transition);
+  }
+
+  .meta-item-license {
+    grid-column: 1 / -1;
+  }
+
+  .license-link {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+    width: fit-content;
+  }
+
+  .license-link:hover,
+  .license-link:focus-visible {
+    color: var(--accent);
   }
 
   .divider {
