@@ -1,0 +1,55 @@
+---
+author: Oleg Poliakov
+title: Intervención Glitch Interactiva
+date: 2026-04-11
+year: 2026
+cuatrimestre: segundo cuatrimestre
+thumbnail: thumbnail.webp
+license: CC-BY-SA-4.0
+dependencies:
+  - p5.v2.3.3
+---
+
+<div id="div-sketch">
+  <script type="module" src="sketch.js"></script>
+</div>
+
+<Language code="es">
+Obra interactiva de net.art inspirada en la estética del arte tradicional japonés Ukiyo-e (estampas del mundo flotante) y la gráfica contemporánea. La pieza explora la tensión entre el orden del paisaje natural y la distorsión digital mediante la manipulación en tiempo real de imagen, líneas de oleaje y partículas de sakura.
+
+**Desarrollo técnico, estético y conceptual**
+
+**Técnico:** Desarrollado en p5.js operando sobre un lienzo de 500x500 píxeles. En la función `setup()` se implementa `async/await` para garantizar la carga asincrónica de la imagen base. En `draw()`, se aplica la función `copy()` para fragmentar la imagen en franjas horizontales, donde `mouseY` controla la cantidad de cortes y `mouseX` la amplitud del desplazamiento horizontal. Se utiliza `noise()` y `frameCount` para generar un oleaje fluido y el vuelo orgánico de pétalos de sakura. La función `tint()` permite adaptar los valores cromáticos a tres paletas tradicionales (Ukiyo-e, Sumi-e y Tokio Cyberpunk), conmutadas mediante eventos de teclado en `keyPressed()`. La interacción se completa con `mouseIsPressed`, aplicando `filter(INVERT)`.
+
+**Estético:** La propuesta busca fusionar la gráfica clásica japonesa (Ukiyo-e y pintura en tinta Sumi-e) con la estética del glitch y el error neomedial. El dinamismo de la composición evoca la filosofía oriental del *Mono no Aware* (la sensibilidad ante la impermanencia de las cosas).
+
+**Conceptual:** La obra se fundamenta en la definición de arte generativo de Philip Galanter como un sistema que opera con autonomía, donde el viento algorítmico y el movimiento de las olas se autoorganizan. Asimismo, se vincula con la performatividad del código planteada por Inke Arns: las instrucciones ejecutadas en tiempo real funcionan como trazos de pincel digitales. Siguiendo a José Luis Brea, la práctica artística se desplaza del objeto estático hacia la experiencia de un flujo interactivo en la pantalla.
+
+**Bibliografía**
+* ARNS, Inke. (2005). *El código como acto de habla performativo*. Revista Artnodes.
+* BREA, José Luis. (2008). *Redefinición de las prácticas artísticas (s. 21)*. El tercer umbral.
+* GALANTER, Philip. (2011). *Entre dos fuegos: el arte-ciencia*. Revista Artnodes.
+
+**Sobre el estudiante**
+Estudiante de la Licenciatura en Artes Multimediales (UNA).
+</Language>
+
+<Language code="en">
+Interactive net.art piece inspired by traditional Japanese Ukiyo-e aesthetics (pictures of the floating world) and contemporary generative art. The artwork explores the tension between natural landscape motifs and digital distortion through real-time image slicing, procedurally generated wave lines, and falling sakura petals.
+
+**Technical, aesthetic, and conceptual development**
+
+**Technical:** Built with p5.js on a 500x500 canvas. Asynchronous loading is handled with `async/await` in `setup()`. In `draw()`, `copy()` fragments the image into horizontal slices, with `mouseY` defining slice counts and `mouseX` dictating horizontal displacement. `noise()` and `frameCount` create fluid organic wave motions and drifting sakura petals. Keyboard inputs (`keyPressed()`) toggle three traditional color palettes via `tint()`, while `mouseIsPressed` triggers `filter(INVERT)`.
+
+**Aesthetic:** Fuses classic Japanese woodblock prints and Sumi-e ink washing with digital glitch aesthetics, referencing the philosophy of *Mono no Aware* (impermanence of nature).
+
+**Conceptual:** Grounded in Philip Galanter's definition of generative systems, Inke Arns' performative code theory, and José Luis Brea's shift from static art objects to real-time interactive media.
+
+**Bibliography**
+* ARNS, Inke. (2005). *Code as performative speech act*. Artnodes.
+* BREA, José Luis. (2008). *Redefinition of artistic practices*.
+* GALANTER, Philip. (2011). *Shot by both sides: Art-science*. Artnodes.
+
+**About the student**
+Multimedia Arts student at UNA.
+</Language>
