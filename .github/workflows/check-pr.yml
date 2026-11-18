@@ -1,0 +1,67 @@
+name: Revisión de obras
+
+# Revisa cada pull request ANTES de aceptarlo:
+#   1. que sólo toque archivos dentro de _projects/<carpeta-de-la-obra>/,
+#   2. thumbnail.webp (WebP real, 360 × 360 px),
+#   3. statement.mdx (frontmatter, contenedor del sketch, bloques <Language> es/en),
+#   + la licencia (scripts/check-pr.mjs) y que el sitio compile (npm run build).
+#
+# No publica nada: el deploy sigue a cargo de deploy.yml, que corre después del merge.
+# Sin filtro de rutas a propósito: así también se revisan los PR que dejan archivos
+# fuera de _projects/ y el chequeo puede marcarse como obligatorio en las reglas de main.
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: revision-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  revisar:
+    name: Revisar obra
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout (merge del PR + base)
+        uses: actions/checkout@v4
+        with:
+          # Profundidad 2: alcanza para comparar el merge del PR contra su base
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # Misma clave que deploy.yml: el PR reutiliza el caché que guarda main.
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Sincronizar obras
+        run: npm run sync-assets
+
+      - name: Revisar estructura, miniatura, statement y licencia
+        env:
+          PR_AUTHOR_ASSOCIATION: ${{ github.event.pull_request.author_association }}
+        run: node scripts/check-pr.mjs --git HEAD^1 HEAD
+
+      # Se ejecuta aunque falle el paso anterior, para informar también los errores de build.
+      - name: Compilar el sitio
+        if: ${{ !cancelled() }}
+        run: npm run build

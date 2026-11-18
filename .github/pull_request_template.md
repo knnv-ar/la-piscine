@@ -8,7 +8,8 @@
 
 - [ ] `sketch.js` con `canvas.parent('div-sketch')` en `setup()`
 - [ ] `statement.mdx` con frontmatter completo y textos en español e inglés
-- [ ] Miniatura cuadrada de 360 × 360 px (`thumbnail.webp`, `.png` o `.jpg`)
+- [ ] Miniatura `thumbnail.webp` (formato WebP) de 360 × 360 px
+- [ ] Todos los archivos están dentro de `_projects/<año>-tp<n>-<apellido>-<nombre>/` (nada fuera de esa carpeta)
 - [ ] Nombres de carpeta y archivos en kebab-case (sin espacios, mayúsculas, tildes ni "ñ")
 
 ### Declaración de autoría
