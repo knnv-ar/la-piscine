@@ -65,7 +65,7 @@ async function setup() {
   musica = createAudio("sonidos/toallofyou.mp3");
   musica.hide();
 
-  fuenteTitulo = await loadFont("font/dudu-calligraphy.ttf");
+  fuenteTitulo = await loadFont("font/dudu_calligraphy.ttf");
   logoMariposa = await loadImage("imagenes/mariposa.png");
 
   // cargar recuerdos
