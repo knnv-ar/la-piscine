@@ -28,8 +28,8 @@ async function setup() {
   msjError = await loadImage("imagenes/error.webp");
   imgPopupBlanco = await loadImage("imagenes/popup-blanco.webp");
   imgPopupNegro = await loadImage("imagenes/popup-negro.webp");
-  audioMusica = await loadSound("audios/you-are-an-idiot.mp3");
-  audioError = await loadSound("audios/error-windows.mp3");
+  audioMusica = await loadSound("sonidos/you-are-an-idiot.mp3");
+  audioError = await loadSound("sonidos/error-windows.mp3");
 }
 
 function draw() {
