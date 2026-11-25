@@ -61,7 +61,7 @@ async function setup() {
   let canvas = createCanvas(900, 600);
   canvas.parent('div-sketch');
 
-  fotoInicio = await loadImage("imagenes/fondo-inicio.jpg");
+  fotoInicio = await loadImage("imagenes/fondo-inicio.png");
   musica = createAudio("sonidos/to-all-of-you.mp3");
   musica.hide();
 
