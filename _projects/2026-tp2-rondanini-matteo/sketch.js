@@ -62,7 +62,7 @@ async function setup() {
   canvas.parent('div-sketch');
 
   fotoInicio = await loadImage("imagenes/fondo-inicio.png");
-  musica = createAudio("sonidos/to-all-of-you.mp3");
+  musica = createAudio("sonidos/toallofyou.mp3");
   musica.hide();
 
   fuenteTitulo = await loadFont("font/dudu-calligraphy.ttf");
@@ -382,7 +382,6 @@ function mousePressed() {
       } else {
         versionRecuerdo = 0;
       }
-
       // inicio animacion
       animacionRebobinado = true;
       contadorRebobinado = 0;
