@@ -2,7 +2,7 @@
 let t = 0;
 
 function setup() {
- let canvas = createCanvas(512, 512
+ let canvas = createCanvas(512, 512);
  canvas.parent('div-sketch');
 }
 
