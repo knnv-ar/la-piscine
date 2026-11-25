@@ -3,7 +3,7 @@ let arrastrarx = 0;
 let arrastrary = 0;
 
 function setup() {
-  createCanvas(600, 600);
+ let canvas= createCanvas(600, 600);
   canvas.parent('div-sketch');
   textAlign(CENTER, CENTER);
   fill(255, 0, 0);
