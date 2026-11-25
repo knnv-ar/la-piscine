@@ -65,17 +65,17 @@ async function setup() {
   musica = createAudio("sonidos/to-all-of-you.mp3");
   musica.hide();
 
-  fuenteTitulo = await loadFont("tipografias/dudu-calligraphy.ttf");
+  fuenteTitulo = await loadFont("font/dudu-calligraphy.ttf");
   logoMariposa = await loadImage("imagenes/mariposa.png");
 
   // cargar recuerdos
-  fotos.push(await loadImage("imagenes/atardecer.jpg"));
-  fotos.push(await loadImage("imagenes/comedor.jpg"));
-  fotos.push(await loadImage("imagenes/munecas.jpg"));
-  fotos.push(await loadImage("imagenes/gato.jpg"));
-  fotos.push(await loadImage("imagenes/ella.jpg"));
-  fotos.push(await loadImage("imagenes/ella-rojo.jpg"));
-  fotos.push(await loadImage("imagenes/ciudad.jpg"));
+  fotos.push(await loadImage("imagenes/atardecer.png"));
+  fotos.push(await loadImage("imagenes/comedor.png"));
+  fotos.push(await loadImage("imagenes/munecas.png"));
+  fotos.push(await loadImage("imagenes/gato.png"));
+  fotos.push(await loadImage("imagenes/ella.png"));
+  fotos.push(await loadImage("imagenes/ella-rojo.png"));
+  fotos.push(await loadImage("imagenes/ciudad.png"));
 }
 
 function draw() {
