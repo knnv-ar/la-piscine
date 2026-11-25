@@ -20,16 +20,16 @@ let velocidad = 5;
 let popups = [];
 
 async function setup() {
-  createCanvas(496, 374);
- // canvas.parent('div-sketch');
+  let canvas = createCanvas(496, 374);
+  canvas.parent('div-sketch');
 
-  windows = await loadImage("multimedia/desktop.webp");
-  msjInicio = await loadImage("multimedia/mensaje-inicio.webp")
-  msjError = await loadImage("multimedia/error.webp");
-  imgPopupBlanco = await loadImage("multimedia/popup-blanco.webp");
-  imgPopupNegro = await loadImage("multimedia/popup-negro.webp");
-  audioMusica = await loadSound("multimedia/you-are-an-idiot.mp3");
-  audioError = await loadSound("multimedia/error-windows.mp3");
+  windows = await loadImage("imagenes/desktop.webp");
+  msjInicio = await loadImage("imagenes/mensaje-inicio.webp")
+  msjError = await loadImage("imagenes/error.webp");
+  imgPopupBlanco = await loadImage("imagenes/popup-blanco.webp");
+  imgPopupNegro = await loadImage("imagenes/popup-negro.webp");
+  audioMusica = await loadSound("audios/you-are-an-idiot.mp3");
+  audioError = await loadSound("audios/error-windows.mp3");
 }
 
 function draw() {
