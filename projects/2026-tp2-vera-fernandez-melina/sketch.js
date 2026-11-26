@@ -38,7 +38,7 @@ async function setup() {
  
   // el lienzo mantiene la proporción de la imagen y entra en la ventana
   let ancho = min(windowWidth, (windowHeight * fondo.width) / fondo.height);
-  createCanvas(ancho, (ancho * fondo.height) / fondo.width);
+let canvas= createCanvas(ancho, (ancho * fondo.height) / fondo.width);
   canvas.parent('div-sketch');
  
   for (let i = 0; i < archivosVideo.length; i++) {
