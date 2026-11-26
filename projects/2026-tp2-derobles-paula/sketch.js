@@ -31,7 +31,7 @@ async function setup() {
   let canvas = createCanvas(550, 550);
   canvas.parent('div-sketch');
  
-  video = createVideo("ojos/ojos.mov");
+  video = createVideo("ojos/ojos.mp4");
   video.loop();
   video.speed(0.5);
   video.hide();
