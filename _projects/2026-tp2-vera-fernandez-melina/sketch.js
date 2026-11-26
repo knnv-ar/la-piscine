@@ -34,7 +34,7 @@ let xFrase;
  
 async function setup() {
   fondo = await loadImage("archivos/subte.jpg");
-  musica = await loadSound("archivos/EndoftheSummer.mp3");
+  musica = await loadSound("archivos/endofthesummer.mp3");
  
   // el lienzo mantiene la proporción de la imagen y entra en la ventana
   let ancho = min(windowWidth, (windowHeight * fondo.width) / fondo.height);
