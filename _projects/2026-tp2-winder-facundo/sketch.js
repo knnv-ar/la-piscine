@@ -1,47 +1,47 @@
-var Artista1;
-var Artista2;
-var Meme1;
-var Meme2;
-var Meme3;
-var Meme4;
-var Meme5;
-var FondoBanana;
-var Obras = [];
+let Artista1;
+let Artista2;
+let Meme1;
+let Meme2;
+let Meme3;
+let Meme4;
+let Meme5;
+let FondoBanana;
+let Obras = [];
 
-var ImagenActual = 0;
-var Estado = 0;
-var imagenesCargadas = false;
+let ImagenActual = 0;
+let Estado = 0;
+let imagenesCargadas = false;
 
 async function CargarImagenes() {
 //Obras
   Obras[0] = {
-    original: await loadImage("arte/Comediante.jpeg"),
+    original: await loadImage("arte/comediante.jpeg"),
     nombre: "Comediante"
   };
 
   Obras[1] = {
-    original: await loadImage("arte/Lafuente.jpeg"),
+    original: await loadImage("arte/lafuente.jpeg"),
     nombre: "Lafuente"
   };
 
   Obras[2] = {
-    original: await loadImage("arte/PopArt.jpg"),
+    original: await loadImage("arte/popart.jpg"),
     nombre: "Pop Art"
   };
 
   //Meme
-  Meme1 = await loadImage("imagenesRetoque/MemeSorprendido.png");
-  Meme2 = await loadImage("imagenesRetoque/Negrosorprendido.png");
-  Meme3 = await loadImage("imagenesRetoque/Anteojos.png");
-  Meme4 = await loadImage("imagenesRetoque/RiendoMeme.png");
-  Meme5 = await loadImage("imagenesRetoque/Monomeme.png");
+  Meme1 = await loadImage("retoque/memesorprendido.png");
+  Meme2 = await loadImage("retoque/negrosorprendido.png");
+  Meme3 = await loadImage("retoque/anteojos.png");
+  Meme4 = await loadImage("retoque/riendoMeme.png");
+  Meme5 = await loadImage("retoque/monomeme.png");
 
   //Artistas
-  Artista1 = await loadImage("Artistas/MaurizzioC.png");
-  Artista2 = await loadImage("Artistas/Marcel_Duchamp.png");
+  Artista1 = await loadImage("artistas/maurizzioc.png");
+  Artista2 = await loadImage("artistas/marcel_duchamp.png");
 
   //Fondos
-  FondoBanana = await loadImage("Fondos/Comediante.jpg");
+  FondoBanana = await loadImage("fondos/comediante.jpg");
 
   imagenesCargadas = true;
 }
@@ -175,7 +175,7 @@ function RetocarObra() {
 
     push();
 
-    for (var i = 0; i < 70; i++) {
+    for (let i = 0; i < 70; i++) {
       line(10 + i * 15, 0, 10 + i * 15, 1000);
     }
 
@@ -185,8 +185,8 @@ function RetocarObra() {
     textSize(60);
     text("6", 65, 160);
 
-    for (var x = 100; x < 1000; x += 40) {
-      for (var y = 160; y < 1000; y += 40) {
+    for (let x = 100; x < 1000; x += 40) {
+      for (let y = 160; y < 1000; y += 40) {
         text("0", x, y);
       }
     }
@@ -237,9 +237,9 @@ function RetocarObra() {
     rect(0, 0, 1000, 1000);
     noStroke();
 
-    for (var i = 0; i < 30; i++) {
-      var x = random(-150, 1000);
-      var y = random(-150, 1000);
+    for (let i = 0; i < 30; i++) {
+      let x = random(-150, 1000);
+      let y = random(-150, 1000);
 
       fill(
         random(255),
