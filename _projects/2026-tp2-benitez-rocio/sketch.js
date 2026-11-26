@@ -9,11 +9,11 @@ async function setup() {
   canvas.parent('div-sketch'); 
 
 //Guardo las imagenes
-  imgFlores[0] = await loadImage("img/flor 1.png");
-  imgFlores[1] = await loadImage("img/flor 2.png");
-  imgFlores[2] = await loadImage("img/flor 3.png");
-  imgFlores[3] = await loadImage("img/flor 4.png");
-  imgFlores[4] = await loadImage("img/flor 5.png");
+  imgFlores[0] = await loadImage("img/flor1.png");
+  imgFlores[1] = await loadImage("img/flor2.png");
+  imgFlores[2] = await loadImage("img/flor3.png");
+  imgFlores[3] = await loadImage("img/flor4.png");
+  imgFlores[4] = await loadImage("img/flor5.png");
 
 //Imagen de Cesped
   fondoCesped = await loadImage("img/pasto.png");
