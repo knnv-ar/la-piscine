@@ -36,9 +36,9 @@ async function setup() {
   video.speed(0.5);
   video.hide();
 
-  fondo = await loadImage("fondo/fondo.jpeg");
-  criatura = await loadImage("ayudante/conejo.png");
-  caja = await loadImage("caja/caja.jpeg");
+  fondo = await loadImage("img/fondo.jpeg");
+  criatura = await loadImage("img/conejo.png");
+  caja = await loadImage("img/caja.jpeg");
 
   sonido = await loadSound("sonido/shine.mp3");
   appear = await loadSound("sonido/appear.mp3");
