@@ -1,0 +1,57 @@
+---
+author: Stetle Jet Lee
+title: Vuelo y Dispersión
+date: 2026-09-02
+year: 2026
+cuatrimestre: primero cuatrimestre
+thumbnail: thumbnail.webp
+license: CC-BY-SA-4.0
+dependencies:
+- p5.v2.3.3
+---
+
+<div id="div-sketch">
+  <script type="text/javascript" src="sketch.js"></script>
+</div>
+
+<Language code="es">
+Una pieza generativa dinámica que representa una secuencia de figuras aladas en vuelo. A través de la interacción con el mouse, el usuario controla la cantidad de figuras en pantalla y el nivel de fragmentación estructural que sufren a medida que avanzan en el espacio, disolviendo su forma en trazos caóticos.
+
+**Desarrollo técnico, estético y conceptual**
+
+A nivel técnico, el código se ajusta a las restricciones de p5.js utilizando un lienzo de 512x512 y una paleta estricta de escala de grises. La figura principal no es un mapa de bits, sino un dibujo vectorial construido exclusivamente con primitivas y formas `vertex()`. La composición se genera mediante un bucle `for` que secuencia las figuras en el eje horizontal. Dentro de este bucle, se aplican transformaciones espaciales (`translate`, `scale`) y movimientos orgánicos vinculando la posición vertical a funciones trigonométricas (`sin`) y datos endógenos (`frameCount`). Los datos exógenos (`mouseX`, `mouseY`) determinan parámetros clave: la cantidad de iteraciones del bucle y la variable de dispersión aleatoria (`random`) que disloca los vértices.
+
+Estéticamente, el trabajo es correspondiente a las exploraciones de Charles Csuri (específicamente su célebre obra *Hummingbird* de 1968). Al igual que Csuri utilizaba algoritmos para fragmentar las coordenadas matemáticas de un dibujo lineal hasta convertirlo en abstracción, este sketch simula ese desdoblamiento progresivo. La figura inicial conserva su morfología, pero las instancias posteriores sufren una entropía visual dictada por el sistema.
+
+Conceptualmente, el proyecto se articula con dos textos fundamentales. En primer lugar, aborda el principio de "Variabilidad" propuesto por Lev Manovich en *El lenguaje de los nuevos medios de comunicación*. A diferencia de un dibujo estático, esta obra es un objeto líquido; las coordenadas exactas de sus vértices nunca son idénticas en dos fotogramas consecutivos debido a la función `random()`, creando infinitas versiones de la misma trayectoria. En segundo lugar, dialoga con la noción de sistema autónomo descrita por Philip Galanter en *¿Qué es el Arte Generativo?*. El autor diseña las reglas anatómicas básicas y la coreografía de la secuencia, pero cede el micro-control del trazo al azar computacional, estableciendo una co-autoría entre el programador y la máquina.
+
+**Bibliografía**
+
+- GALANTER, Philip. (2003). _"What is Generative Art? Complexity Theory as a Context for Art Theory"_. Nueva York: New York University.
+- MANOVICH, Lev. (2005). _"El lenguaje de los nuevos medios de comunicación. La imagen en la era digital"_. Buenos Aires: Paidós.
+
+**Breve biografía**
+
+Stetle J. Lee es un estudiante de arte, músico amateur y modelo nacido en Corea del Sur y radicado en Buenos Aires, y simplemente una persona con muchas ambiciones. Antes de venirse a vivir a Buenos Aires, también vivió en Los Ángeles y viajó por otros países de Asia.
+</Language>
+
+<Language code="en">
+A dynamic generative piece depicting a sequence of winged figures in flight. Through mouse interaction, the user controls the number of figures on screen and the level of structural fragmentation they undergo as they move through space, dissolving their form into chaotic strokes.
+
+**Technical, aesthetic, and conceptual development**
+
+Technically, the code adheres to p5.js constraints using a 512x512 canvas and a strict grayscale palette. The main figure is not a bitmap, but a vector drawing built exclusively with primitives and `vertex()` shapes. The composition is generated through a `for` loop that sequences the figures along the horizontal axis. Inside this loop, spatial transformations (`translate`, `scale`) and organic movements are applied by linking the vertical position to trigonometric functions (`sin`) and endogenous data (`frameCount`). Exogenous inputs (`mouseX`, `mouseY`) determine key parameters: the number of loop iterations and the random dispersion variable (`random`) that displaces the vertices.
+
+Aesthetically, the work corresponds to the explorations of Charles Csuri (specifically his celebrated 1968 piece *Hummingbird*). Just as Csuri used algorithms to fragment the mathematical coordinates of a line drawing until turning it into abstraction, this sketch simulates that progressive unfolding. The initial figure preserves its morphology, while subsequent instances undergo visual entropy dictated by the system.
+
+Conceptually, the project engages with two foundational texts. First, it addresses the principle of "Variability" proposed by Lev Manovich in *The Language of New Media*. Unlike a static drawing, this work is a liquid object; the exact coordinates of its vertices are never identical across two consecutive frames due to the `random()` function, creating infinite versions of the same trajectory. Second, it enters into dialogue with the notion of the autonomous system described by Philip Galanter in *What is Generative Art?*. The author designs the basic anatomical rules and sequence choreography, yet cedes micro-control of the stroke to computational randomness, establishing a co-authorship between programmer and machine.
+
+**Bibliography**
+
+- GALANTER, Philip. (2003). _"What is Generative Art? Complexity Theory as a Context for Art Theory"_. New York: New York University.
+- MANOVICH, Lev. (2005). _"El lenguaje de los nuevos medios de comunicación. La imagen en la era digital"_. Buenos Aires: Paidós.
+
+**Brief resume**
+
+Stetle J. Lee is an art student, amateur musician, and model born in South Korea and based in Buenos Aires—and simply someone with big ambitions. Before moving to Buenos Aires, they also lived in Los Angeles and traveled across other countries in Asia.
+</Language>
